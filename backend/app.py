@@ -21,11 +21,21 @@ app.config['MONGODB_PASSWORD'] = os.environ["MONGO_INITDB_ROOT_PASSWORD"]
 db = MongoEngine()
 db.init_app(app)
 
+# Wrapper to return error
 def json_response_error(message):
-    return jsonify({"error": message})
+    return json_response("error", message)
 
-def json_response_ok():
-    return jsonify({"response": "ok"})
+# Wrapper to return ok
+def json_response_ok(message=""):
+    return json_response("ok", message)
+
+# Function to easily respond with json message
+def json_response(response, message=""):
+    obj = {"response": response}
+    if not message == "":
+        obj["message"] = message
+    return jsonify(obj)
+
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
@@ -56,6 +66,7 @@ def upload_file():
       <input type=submit value=Upload>
     </form>
     '''
+
 
 @app.route('/papers')
 def get_paper():
