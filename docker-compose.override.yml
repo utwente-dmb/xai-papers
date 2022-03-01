@@ -3,3 +3,7 @@ services:
     build: 
       context: ./frontend
       dockerfile: Dockerfile.dev
+  
+  backend:
+    environment:
+      - FLASK_DEBUG=1

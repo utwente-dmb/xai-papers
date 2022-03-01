@@ -1,12 +1,4 @@
 services:
-  frontend:
-    ports:
-      - "3000:3000"
-    volumes:
-      - "./frontend:/app"
-      - "/app/node_modules"
-    depends_on:
-      - mongo
   mongo:
       image: mongo:latest
       env_file:
@@ -15,6 +7,24 @@ services:
         - 27017:27017
       volumes:
         - data_mongo:/data/db
-        
+
+  frontend:
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./frontend:/app"
+      - "/app/node_modules"
+    depends_on:
+      - mongo
+
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - "./backend:/app"
+    depends_on:
+      - mongo
+      
 volumes:
   data_mongo:
