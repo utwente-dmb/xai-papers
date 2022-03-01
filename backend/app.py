@@ -57,5 +57,10 @@ def upload_file():
     </form>
     '''
 
+@app.route('/papers')
+def get_paper():
+    return Paper.objects().to_json()
+
+
 if __name__ == "__main__":
     app.run()
