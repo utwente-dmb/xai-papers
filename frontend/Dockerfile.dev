@@ -7,4 +7,4 @@ COPY package-lock.json .
 RUN npm install 
 RUN npm install -g nodemon
 
-CMD ["nodemon", "start", "--ext", "tsx,ts,js,jsx"]
+CMD ["nodemon", "start", "--ext", "tsx,ts,js,jsx", "-L"]
