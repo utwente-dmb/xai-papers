@@ -16,6 +16,7 @@ services:
       - "/app/node_modules"
     depends_on:
       - mongo
+      - backend
 
   backend:
     build: ./backend
