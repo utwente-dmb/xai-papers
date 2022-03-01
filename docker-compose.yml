@@ -1,6 +1,10 @@
 services:
   mongo:
       image: mongo:latest
+      hostname: mongo
+      environment:
+        MONGODB_DATA_DIR: /data/db
+        MONGO_INITDB_DATABASE: db
       env_file:
         - "mongo.env"
       ports:
@@ -22,6 +26,8 @@ services:
     build: ./backend
     ports:
       - "5000:5000"
+    env_file:
+      - "mongo.env"
     volumes:
       - "./backend:/app"
     depends_on:
