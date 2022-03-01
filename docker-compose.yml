@@ -5,3 +5,16 @@ services:
     volumes:
       - "./frontend:/app"
       - "/app/node_modules"
+    depends_on:
+      - mongo
+  mongo:
+      image: mongo:latest
+      env_file:
+        - "mongo.env"
+      ports:
+        - 27017:27017
+      volumes:
+        - data_mongo:/data/db
+        
+volumes:
+  data_mongo:
