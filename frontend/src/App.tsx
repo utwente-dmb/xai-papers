@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'; 
 import logo from './logo.svg';
+import { Button } from 'antd'
 import './App.css';
 
 function App() {
@@ -9,7 +10,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        </p> 
+        <Button type="primary"> 
+          Primary Button
+        </Button>
         <a
           className="App-link"
           href="https://reactjs.org"
