@@ -5,7 +5,12 @@
     "url": "https://doi.org/10.24963/ijcai.2020/373",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Deng Pan, Xiangrui Li, Xin Li 0081, Dongxiao Zhu",
+    "Authors": [
+      "Deng Pan",
+      "Xiangrui Li",
+      "Xin Li 0081",
+      "Dongxiao Zhu"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -35,7 +40,14 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/6441",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Ming Tu, Kevin Huang 0002, Guangtao Wang, Jing Huang 0019, Xiaodong He 0002, Bowen Zhou",
+    "Authors": [
+      "Ming Tu",
+      "Kevin Huang 0002",
+      "Guangtao Wang",
+      "Jing Huang 0019",
+      "Xiaodong He 0002",
+      "Bowen Zhou"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -64,7 +76,11 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.00924",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "Patrick Esser, Robin Rombach, Bj\u00f6rn Ommer",
+    "Authors": [
+      "Patrick Esser",
+      "Robin Rombach",
+      "Bj\u00f6rn Ommer"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -95,7 +111,14 @@
     "url": "https://doi.org/10.1109/ICDM50108.2020.00046",
     "Year": "2020",
     "Venue": "ICDM",
-    "Authors": "Haoyu Liu, Fenglong Ma, Yaqing Wang, Shibo He, Jiming Chen 0001, Jing Gao",
+    "Authors": [
+      "Haoyu Liu",
+      "Fenglong Ma",
+      "Yaqing Wang",
+      "Shibo He",
+      "Jiming Chen 0001",
+      "Jing Gao"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -123,7 +146,14 @@
     "url": "https://openreview.net/forum?id=BkgnhTEtDS",
     "Year": "2020",
     "Venue": "ICLR",
-    "Authors": "Michael Tsang, Dehua Cheng, Hanpeng Liu, Xue Feng, Eric Zhou, Yan Liu 0002",
+    "Authors": [
+      "Michael Tsang",
+      "Dehua Cheng",
+      "Hanpeng Liu",
+      "Xue Feng",
+      "Eric Zhou",
+      "Yan Liu 0002"
+    ],
     "Type of Data": [
       "Images",
       "Text",
@@ -156,7 +186,12 @@
     "url": "http://proceedings.mlr.press/v119/rieger20a.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Laura Rieger, Chandan Singh, W. James Murdoch, Bin Yu",
+    "Authors": [
+      "Laura Rieger",
+      "Chandan Singh",
+      "W. James Murdoch",
+      "Bin Yu"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -187,7 +222,13 @@
     "url": "https://doi.org/10.1145/3394486.3403186",
     "Year": "2020",
     "Venue": "KDD",
-    "Authors": "Menghai Pan, Weixiao Huang, Yanhua Li, Xun Zhou, Jun Luo 0007",
+    "Authors": [
+      "Menghai Pan",
+      "Weixiao Huang",
+      "Yanhua Li",
+      "Xun Zhou",
+      "Jun Luo 0007"
+    ],
     "Type of Data": [
       "Other"
     ],
@@ -215,7 +256,12 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/477bdb55b231264bb53a7942fd84254d-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Rohan R. Paleja, Andrew Silva, Letian Chen, Matthew C. Gombolay",
+    "Authors": [
+      "Rohan R. Paleja",
+      "Andrew Silva",
+      "Letian Chen",
+      "Matthew C. Gombolay"
+    ],
     "Type of Data": [
       "Graph data",
       "Other"
@@ -244,7 +290,10 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/8fb134f258b1f7865a6ab2d935a897c9-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Minh N. Vu, My T. Thai",
+    "Authors": [
+      "Minh N. Vu",
+      "My T. Thai"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -273,7 +322,15 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/4be2c8f27b8a420492f2d44463933eb6-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Wangchunshu Zhou, Jinyi Hu, Hanlin Zhang, Xiaodan Liang, Maosong Sun, Chenyan Xiong, Jian Tang",
+    "Authors": [
+      "Wangchunshu Zhou",
+      "Jinyi Hu",
+      "Hanlin Zhang",
+      "Xiaodan Liang",
+      "Maosong Sun",
+      "Chenyan Xiong",
+      "Jian Tang"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -301,7 +358,12 @@
     "url": "https://doi.org/10.1145/3397271.3401286",
     "Year": "2020",
     "Venue": "SIGIR",
-    "Authors": "Procheta Sen, Debasis Ganguly, Manisha Verma, Gareth J. F. Jones",
+    "Authors": [
+      "Procheta Sen",
+      "Debasis Ganguly",
+      "Manisha Verma",
+      "Gareth J. F. Jones"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -331,7 +393,11 @@
     "url": "https://doi.org/10.18653/v1/p19-1560",
     "Year": "2019",
     "Venue": "ACL",
-    "Authors": "Hui Liu, Qingyu Yin, William Yang Wang",
+    "Authors": [
+      "Hui Liu",
+      "Qingyu Yin",
+      "William Yang Wang"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -361,7 +427,14 @@
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Wagner_Interpretable_and_Fine-Grained_Visual_Explanations_for_Convolutional_Neural_Networks_CVPR_2019_paper.html",
     "Year": "2019",
     "Venue": "CVPR",
-    "Authors": "J\u00f6rg Wagner, Jan Mathias K\u00f6hler, Tobias Gindele, Leon Hetzel, Jakob Thadd\u00e4us Wiedemer, Sven Behnke",
+    "Authors": [
+      "J\u00f6rg Wagner",
+      "Jan Mathias K\u00f6hler",
+      "Tobias Gindele",
+      "Leon Hetzel",
+      "Jakob Thadd\u00e4us Wiedemer",
+      "Sven Behnke"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -390,7 +463,11 @@
     "url": "https://openreview.net/forum?id=H1ziPjC5Fm",
     "Year": "2019",
     "Venue": "ICLR",
-    "Authors": "Jos\u00e9 Oramas M., Kaili Wang, Tinne Tuytelaars",
+    "Authors": [
+      "Jos\u00e9 Oramas M.",
+      "Kaili Wang",
+      "Tinne Tuytelaars"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -420,7 +497,9 @@
     "url": "http://proceedings.mlr.press/v97/wang19a.html",
     "Year": "2019",
     "Venue": "ICML",
-    "Authors": "Tong Wang",
+    "Authors": [
+      "Tong Wang"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Text",
@@ -453,7 +532,10 @@
     "url": "https://proceedings.neurips.cc/paper/2019/hash/3ab6be46e1d6b21d59a3c3a0b9d0f6ef-Abstract.html",
     "Year": "2019",
     "Venue": "NeurIPS",
-    "Authors": "Patrick Schwab, Walter Karlen",
+    "Authors": [
+      "Patrick Schwab",
+      "Walter Karlen"
+    ],
     "Type of Data": [
       "Images",
       "Any"
@@ -484,7 +566,15 @@
     "url": "https://doi.org/10.1145/3331184.3331254",
     "Year": "2019",
     "Venue": "SIGIR",
-    "Authors": "Xu Chen 0017, Hanxiong Chen, Hongteng Xu, Yongfeng Zhang, Yixin Cao 0002, Zheng Qin, Hongyuan Zha",
+    "Authors": [
+      "Xu Chen 0017",
+      "Hanxiong Chen",
+      "Hongteng Xu",
+      "Yongfeng Zhang",
+      "Yixin Cao 0002",
+      "Zheng Qin",
+      "Hongyuan Zha"
+    ],
     "Type of Data": [
       "Images",
       "Text",
@@ -514,7 +604,10 @@
     "url": "https://doi.org/10.1145/3331184.3331377",
     "Year": "2019",
     "Venue": "SIGIR",
-    "Authors": "Manisha Verma, Debasis Ganguly",
+    "Authors": [
+      "Manisha Verma",
+      "Debasis Ganguly"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -543,7 +636,13 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17354",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "Quanshi Zhang, Ruiming Cao, Feng Shi, Ying Nian Wu, Song-Chun Zhu",
+    "Authors": [
+      "Quanshi Zhang",
+      "Ruiming Cao",
+      "Feng Shi",
+      "Ying Nian Wu",
+      "Song-Chun Zhu"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -574,7 +673,12 @@
     "url": "https://doi.org/10.1109/ICDM.2018.00082",
     "Year": "2018",
     "Venue": "ICDM",
-    "Authors": "Fan Yang 0023, Ninghao Liu, Suhang Wang, Xia Hu",
+    "Authors": [
+      "Fan Yang 0023",
+      "Ninghao Liu",
+      "Suhang Wang",
+      "Xia Hu"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "User-item matrix"
@@ -603,7 +707,12 @@
     "url": "http://proceedings.mlr.press/v80/chen18j.html",
     "Year": "2018",
     "Venue": "ICML",
-    "Authors": "Jianbo Chen, Le Song, Martin J. Wainwright, Michael I. Jordan",
+    "Authors": [
+      "Jianbo Chen",
+      "Le Song",
+      "Martin J. Wainwright",
+      "Michael I. Jordan"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -634,7 +743,10 @@
     "url": "https://doi.org/10.1145/3219819.3220072",
     "Year": "2018",
     "Venue": "KDD",
-    "Authors": "Georgina Peake, Jun Wang",
+    "Authors": [
+      "Georgina Peake",
+      "Jun Wang"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -662,7 +774,10 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/3e9f0fc9b2f89e043bc6233994dfcf76-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "David Alvarez-Melis, Tommi S. Jaakkola",
+    "Authors": [
+      "David Alvarez-Melis",
+      "Tommi S. Jaakkola"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -691,7 +806,15 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/c5ff2543b53f4cc0ad3819a36752467b-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Amit Dhurandhar, Pin-Yu Chen, Ronny Luss, Chun-Chen Tu, Pai-Shun Ting, Karthikeyan Shanmugam, Payel Das",
+    "Authors": [
+      "Amit Dhurandhar",
+      "Pin-Yu Chen",
+      "Ronny Luss",
+      "Chun-Chen Tu",
+      "Pai-Shun Ting",
+      "Karthikeyan Shanmugam",
+      "Payel Das"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -720,7 +843,10 @@
     "url": "https://doi.org/10.1109/ICCV.2017.371",
     "Year": "2017",
     "Venue": "ICCV",
-    "Authors": "Ruth C. Fong, Andrea Vedaldi",
+    "Authors": [
+      "Ruth C. Fong",
+      "Andrea Vedaldi"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -749,7 +875,11 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5643",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Arjun R. Akula, Shuai Wang, Song-Chun Zhu",
+    "Authors": [
+      "Arjun R. Akula",
+      "Shuai Wang",
+      "Song-Chun Zhu"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -777,7 +907,10 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5749",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Jianbo Chen, Michael I. Jordan",
+    "Authors": [
+      "Jianbo Chen",
+      "Michael I. Jordan"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -809,7 +942,13 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5774",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Gabriele Ciravegna, Francesco Giannini, Stefano Melacci, Marco Maggini, Marco Gori",
+    "Authors": [
+      "Gabriele Ciravegna",
+      "Francesco Giannini",
+      "Stefano Melacci",
+      "Marco Maggini",
+      "Marco Gori"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -838,7 +977,10 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5780",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Sebastian Dalleiger, Jilles Vreeken",
+    "Authors": [
+      "Sebastian Dalleiger",
+      "Jilles Vreeken"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -867,7 +1009,17 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/6268",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Xin Dong 0010, Jingchao Ni, Wei Cheng 0002, Zhengzhang Chen, Bo Zong, Dongjin Song, Yanchi Liu, Haifeng Chen, Gerard de Melo",
+    "Authors": [
+      "Xin Dong 0010",
+      "Jingchao Ni",
+      "Wei Cheng 0002",
+      "Zhengzhang Chen",
+      "Bo Zong",
+      "Dongjin Song",
+      "Yanchi Liu",
+      "Haifeng Chen",
+      "Gerard de Melo"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -895,7 +1047,11 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5827",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Frederik Harder, Matthias Bauer, Mijung Park",
+    "Authors": [
+      "Frederik Harder",
+      "Matthias Bauer",
+      "Mijung Park"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -925,7 +1081,12 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5837",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Mengdi Huai, Di Wang 0015, Chenglin Miao, Aidong Zhang",
+    "Authors": [
+      "Mengdi Huai",
+      "Di Wang 0015",
+      "Chenglin Miao",
+      "Aidong Zhang"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -956,7 +1117,13 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5845",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Tomoki Ito, Kota Tsubouchi, Hiroki Sakaji, Tatsuo Yamashita, Kiyoshi Izumi",
+    "Authors": [
+      "Tomoki Ito",
+      "Kota Tsubouchi",
+      "Hiroki Sakaji",
+      "Tatsuo Yamashita",
+      "Kiyoshi Izumi"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -984,7 +1151,13 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5423",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Wentian Li, Xidong Feng, Haotian An, Xiang Yao Ng, Yu-Jin Zhang",
+    "Authors": [
+      "Wentian Li",
+      "Xidong Feng",
+      "Haotian An",
+      "Xiang Yao Ng",
+      "Yu-Jin Zhang"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1012,7 +1185,12 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5631",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Prashan Madumal, Tim Miller 0001, Liz Sonenberg, Frank Vetere",
+    "Authors": [
+      "Prashan Madumal",
+      "Tim Miller 0001",
+      "Liz Sonenberg",
+      "Frank Vetere"
+    ],
     "Type of Data": [
       "Other"
     ],
@@ -1043,7 +1221,13 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5632",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Woo-Jeoung Nam, Shir Gur, Jaesik Choi, Lior Wolf, Seong-Whan Lee",
+    "Authors": [
+      "Woo-Jeoung Nam",
+      "Shir Gur",
+      "Jaesik Choi",
+      "Lior Wolf",
+      "Seong-Whan Lee"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1071,7 +1255,12 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5433",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Yashaswi Pathak, Siddhartha Laghuvarapu, Sarvesh Mehta, U. Deva Priyakumar",
+    "Authors": [
+      "Yashaswi Pathak",
+      "Siddhartha Laghuvarapu",
+      "Sarvesh Mehta",
+      "U. Deva Priyakumar"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -1099,7 +1288,11 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/6858",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Badri N. Patro, Anupriy, Vinay Namboodiri",
+    "Authors": [
+      "Badri N. Patro",
+      "Anupriy",
+      "Vinay Namboodiri"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -1128,7 +1321,13 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/6098",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Yulong Wang, Xiaolu Zhang, Xiaolin Hu, Bo Zhang, Hang Su 0006",
+    "Authors": [
+      "Yulong Wang",
+      "Xiaolu Zhang",
+      "Xiaolin Hu",
+      "Bo Zhang",
+      "Hang Su 0006"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1157,7 +1356,16 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/6112",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Mike Wu, Sonali Parbhoo, Michael C. Hughes, Ryan Kindle, Leo A. Celi, Maurizio Zazzi, Volker Roth 0001, Finale Doshi-Velez",
+    "Authors": [
+      "Mike Wu",
+      "Sonali Parbhoo",
+      "Michael C. Hughes",
+      "Ryan Kindle",
+      "Leo A. Celi",
+      "Maurizio Zazzi",
+      "Volker Roth 0001",
+      "Finale Doshi-Velez"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -1185,7 +1393,14 @@
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5479",
     "Year": "2020",
     "Venue": "AAAI",
-    "Authors": "Haoxi Zhong, Yuzhong Wang, Cunchao Tu, Tianyang Zhang, Zhiyuan Liu 0001, Maosong Sun",
+    "Authors": [
+      "Haoxi Zhong",
+      "Yuzhong Wang",
+      "Cunchao Tu",
+      "Tianyang Zhang",
+      "Zhiyuan Liu 0001",
+      "Maosong Sun"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1214,7 +1429,12 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.656",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Pepa Atanasova, Jakob Grue Simonsen, Christina Lioma, Isabelle Augenstein",
+    "Authors": [
+      "Pepa Atanasova",
+      "Jakob Grue Simonsen",
+      "Christina Lioma",
+      "Isabelle Augenstein"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1243,7 +1463,11 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.494",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Hanjie Chen, Guangtao Zheng, Yangfeng Ji",
+    "Authors": [
+      "Hanjie Chen",
+      "Guangtao Zheng",
+      "Yangfeng Ji"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1273,7 +1497,12 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.51",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Hila Gonen, Ganesh Jawahar, Djam\u00e9 Seddah, Yoav Goldberg",
+    "Authors": [
+      "Hila Gonen",
+      "Ganesh Jawahar",
+      "Djam\u00e9 Seddah",
+      "Yoav Goldberg"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1302,7 +1531,11 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.492",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Xiaochuang Han, Byron C. Wallace, Yulia Tsvetkov",
+    "Authors": [
+      "Xiaochuang Han",
+      "Byron C. Wallace",
+      "Yulia Tsvetkov"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1331,7 +1564,10 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.771",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Sawan Kumar, Partha P. Talukdar",
+    "Authors": [
+      "Sawan Kumar",
+      "Partha P. Talukdar"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1360,7 +1596,10 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.48",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Yi-Ju Lu, Cheng-Te Li",
+    "Authors": [
+      "Yi-Ju Lu",
+      "Cheng-Te Li"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1389,7 +1628,14 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.387",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Akash Kumar Mohankumar, Preksha Nema, Sharan Narasimhan, Mitesh M. Khapra, Balaji Vasan Srinivasan, Balaraman Ravindran",
+    "Authors": [
+      "Akash Kumar Mohankumar",
+      "Preksha Nema",
+      "Sharan Narasimhan",
+      "Mitesh M. Khapra",
+      "Balaji Vasan Srinivasan",
+      "Balaraman Ravindran"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1418,7 +1664,12 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.579",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Hamed Shahbazi, Xiaoli Z. Fern, Reza Ghaeini, Prasad Tadepalli",
+    "Authors": [
+      "Hamed Shahbazi",
+      "Xiaoli Z. Fern",
+      "Reza Ghaeini",
+      "Prasad Tadepalli"
+    ],
     "Type of Data": [
       "Text",
       "Other"
@@ -1447,7 +1698,15 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.495",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Sanjay Subramanian, Ben Bogin, Nitish Gupta, Tomer Wolfson, Sameer Singh 0001, Jonathan Berant, Matt Gardner 0001",
+    "Authors": [
+      "Sanjay Subramanian",
+      "Ben Bogin",
+      "Nitish Gupta",
+      "Tomer Wolfson",
+      "Sameer Singh 0001",
+      "Jonathan Berant",
+      "Matt Gardner 0001"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -1479,7 +1738,12 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.383",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Zhiyong Wu, Yun Chen, Ben Kao, Qun Liu",
+    "Authors": [
+      "Zhiyong Wu",
+      "Yun Chen",
+      "Ben Kao",
+      "Qun Liu"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1510,7 +1774,13 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.97",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Lianwei Wu, Yuan Rao, Yongqiang Zhao, Hao Liang, Ambreen Nazir",
+    "Authors": [
+      "Lianwei Wu",
+      "Yuan Rao",
+      "Yongqiang Zhao",
+      "Hao Liang",
+      "Ambreen Nazir"
+    ],
     "Type of Data": [
       "Text",
       "Graph data"
@@ -1540,7 +1810,12 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.717",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Jingyuan Zhang, Mingming Sun, Yue Feng, Ping Li 0001",
+    "Authors": [
+      "Jingyuan Zhang",
+      "Mingming Sun",
+      "Yue Feng",
+      "Ping Li 0001"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -1568,7 +1843,11 @@
     "url": "https://doi.org/10.18653/v1/2020.acl-main.78",
     "Year": "2020",
     "Venue": "ACL",
-    "Authors": "Fan Zhou, Shengming Zhang, Yi Yang",
+    "Authors": [
+      "Fan Zhou",
+      "Shengming Zhang",
+      "Yi Yang"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1596,7 +1875,12 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.01294",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "Xu Cheng, Zhefan Rao, Yilan Chen, Quanshi Zhang",
+    "Authors": [
+      "Xu Cheng",
+      "Zhefan Rao",
+      "Yilan Chen",
+      "Quanshi Zhang"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1625,7 +1909,10 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.00869",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "Zixuan Huang, Yin Li",
+    "Authors": [
+      "Zixuan Huang",
+      "Yin Li"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1654,7 +1941,12 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.00881",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "Tomas Jakab, Ankush Gupta 0001, Hakan Bilen, Andrea Vedaldi",
+    "Authors": [
+      "Tomas Jakab",
+      "Ankush Gupta 0001",
+      "Hakan Bilen",
+      "Andrea Vedaldi"
+    ],
     "Type of Data": [
       "Images",
       "Video"
@@ -1684,7 +1976,12 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.00956",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "Mohammad A. A. K. Jalwana, Naveed Akhtar, Mohammed Bennamoun, Ajmal Mian",
+    "Authors": [
+      "Mohammad A. A. K. Jalwana",
+      "Naveed Akhtar",
+      "Mohammed Bennamoun",
+      "Ajmal Mian"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1712,7 +2009,12 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.01114",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "Edward Kim, Divya Gopinath, Corina S. Pasareanu, Sanjit A. Seshia",
+    "Authors": [
+      "Edward Kim",
+      "Divya Gopinath",
+      "Corina S. Pasareanu",
+      "Sanjit A. Seshia"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1741,7 +2043,16 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.00867",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "WenQian Liu, Runze Li, Meng Zheng, Srikrishna Karanam, Ziyan Wu, Bir Bhanu, Richard J. Radke, Octavia I. Camps",
+    "Authors": [
+      "WenQian Liu",
+      "Runze Li",
+      "Meng Zheng",
+      "Srikrishna Karanam",
+      "Ziyan Wu",
+      "Bir Bhanu",
+      "Richard J. Radke",
+      "Octavia I. Camps"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1771,7 +2082,12 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.00926",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "Yujun Shen, Jinjin Gu, Xiaoou Tang, Bolei Zhou",
+    "Authors": [
+      "Yujun Shen",
+      "Jinjin Gu",
+      "Xiaoou Tang",
+      "Bolei Zhou"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1799,7 +2115,10 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.00900",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "Pei Wang, Nuno Vasconcelos",
+    "Authors": [
+      "Pei Wang",
+      "Nuno Vasconcelos"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1827,7 +2146,15 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.00868",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "Weibin Wu, Yuxin Su, Xixian Chen, Shenglin Zhao, Irwin King, Michael R. Lyu, Yu-Wing Tai",
+    "Authors": [
+      "Weibin Wu",
+      "Yuxin Su",
+      "Xixian Chen",
+      "Shenglin Zhao",
+      "Irwin King",
+      "Michael R. Lyu",
+      "Yu-Wing Tai"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1856,7 +2183,15 @@
     "url": "https://doi.org/10.1109/CVPR42600.2020.00954",
     "Year": "2020",
     "Venue": "CVPR",
-    "Authors": "Yiran Xu, Xiaoyin Yang, Lihang Gong, Hsuan-Chu Lin, Tz-Ying Wu, Yunsheng Li, Nuno Vasconcelos",
+    "Authors": [
+      "Yiran Xu",
+      "Xiaoyin Yang",
+      "Lihang Gong",
+      "Hsuan-Chu Lin",
+      "Tz-Ying Wu",
+      "Yunsheng Li",
+      "Nuno Vasconcelos"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1885,7 +2220,13 @@
     "url": "https://doi.org/10.1109/ICDM50108.2020.00128",
     "Year": "2020",
     "Venue": "ICDM",
-    "Authors": "Jiahao Ji, Jingyuan Wang, Zhe Jiang 0001, Jingtian Ma, Hu Zhang",
+    "Authors": [
+      "Jiahao Ji",
+      "Jingyuan Wang",
+      "Zhe Jiang 0001",
+      "Jingtian Ma",
+      "Hu Zhang"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -1913,7 +2254,13 @@
     "url": "https://openreview.net/forum?id=BkxRRkSKwr",
     "Year": "2020",
     "Venue": "ICLR",
-    "Authors": "Xisen Jin, Zhongyu Wei, Junyi Du, Xiangyang Xue, Xiang Ren 0001",
+    "Authors": [
+      "Xisen Jin",
+      "Zhongyu Wei",
+      "Junyi Du",
+      "Xiangyang Xue",
+      "Xiang Ren 0001"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -1943,7 +2290,12 @@
     "url": "https://openreview.net/forum?id=HJlSmC4FPS",
     "Year": "2020",
     "Venue": "ICLR",
-    "Authors": "Sreyas Mohan, Zahra Kadkhodaie, Eero P. Simoncelli, Carlos Fernandez-Granda",
+    "Authors": [
+      "Sreyas Mohan",
+      "Zahra Kadkhodaie",
+      "Eero P. Simoncelli",
+      "Carlos Fernandez-Granda"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -1972,7 +2324,12 @@
     "url": "https://openreview.net/forum?id=r1ecqn4YwB",
     "Year": "2020",
     "Venue": "ICLR",
-    "Authors": "Boris N. Oreshkin, Dmitri Carpov, Nicolas Chapados, Yoshua Bengio",
+    "Authors": [
+      "Boris N. Oreshkin",
+      "Dmitri Carpov",
+      "Nicolas Chapados",
+      "Yoshua Bengio"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -2000,7 +2357,15 @@
     "url": "https://openreview.net/forum?id=SJgzLkBKPB",
     "Year": "2020",
     "Venue": "ICLR",
-    "Authors": "Nikaash Puri, Sukriti Verma, Piyush Gupta, Dhruv Kayastha, Shripad Deshmukh, Balaji Krishnamurthy, Sameer Singh 0001",
+    "Authors": [
+      "Nikaash Puri",
+      "Sukriti Verma",
+      "Piyush Gupta",
+      "Dhruv Kayastha",
+      "Shripad Deshmukh",
+      "Balaji Krishnamurthy",
+      "Sameer Singh 0001"
+    ],
     "Type of Data": [
       "Images",
       "Other"
@@ -2029,7 +2394,12 @@
     "url": "https://openreview.net/forum?id=H1xFWgrFPS",
     "Year": "2020",
     "Venue": "ICLR",
-    "Authors": "Sumedha Singla, Brian Pollack, Junxiang Chen, Kayhan Batmanghelich",
+    "Authors": [
+      "Sumedha Singla",
+      "Brian Pollack",
+      "Junxiang Chen",
+      "Kayhan Batmanghelich"
+    ],
     "Type of Data": [
       "Images",
       "Any"
@@ -2060,7 +2430,10 @@
     "url": "https://openreview.net/forum?id=SJlh8CEYDB",
     "Year": "2020",
     "Venue": "ICLR",
-    "Authors": "Yuan Yang, Le Song",
+    "Authors": [
+      "Yuan Yang",
+      "Le Song"
+    ],
     "Type of Data": [
       "Images",
       "Graph data"
@@ -2091,7 +2464,13 @@
     "url": "http://proceedings.mlr.press/v119/anders20a.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Christopher J. Anders, Plamen Pasliev, Ann-Kathrin Dombrowski, Klaus-Robert M\u00fcller, Pan Kessel",
+    "Authors": [
+      "Christopher J. Anders",
+      "Plamen Pasliev",
+      "Ann-Kathrin Dombrowski",
+      "Klaus-Robert M\u00fcller",
+      "Pan Kessel"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -2124,7 +2503,13 @@
     "url": "http://proceedings.mlr.press/v119/chalasani20a.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Prasad Chalasani, Jiefeng Chen, Amrita Roy Chowdhury 0001, Xi Wu 0001, Somesh Jha",
+    "Authors": [
+      "Prasad Chalasani",
+      "Jiefeng Chen",
+      "Amrita Roy Chowdhury 0001",
+      "Xi Wu 0001",
+      "Somesh Jha"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -2154,7 +2539,11 @@
     "url": "http://proceedings.mlr.press/v119/chaudhary20a.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Yatin Chaudhary, Hinrich Sch\u00fctze, Pankaj Gupta",
+    "Authors": [
+      "Yatin Chaudhary",
+      "Hinrich Sch\u00fctze",
+      "Pankaj Gupta"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -2183,7 +2572,11 @@
     "url": "http://proceedings.mlr.press/v119/jin20b.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Wengong Jin, Regina Barzilay, Tommi S. Jaakkola",
+    "Authors": [
+      "Wengong Jin",
+      "Regina Barzilay",
+      "Tommi S. Jaakkola"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -2211,7 +2604,11 @@
     "url": "http://proceedings.mlr.press/v119/lakkaraju20a.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Himabindu Lakkaraju, Nino Arsov, Osbert Bastani",
+    "Authors": [
+      "Himabindu Lakkaraju",
+      "Nino Arsov",
+      "Osbert Bastani"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -2243,7 +2640,12 @@
     "url": "http://proceedings.mlr.press/v119/moshkovitz20a.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Michal Moshkovitz, Sanjoy Dasgupta, Cyrus Rashtchian, Nave Frost",
+    "Authors": [
+      "Michal Moshkovitz",
+      "Sanjoy Dasgupta",
+      "Cyrus Rashtchian",
+      "Nave Frost"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -2271,7 +2673,13 @@
     "url": "http://proceedings.mlr.press/v119/park20a.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Jung Yeon Park, Kenneth Theo Carr, Stephan Zheng, Yisong Yue, Rose Yu",
+    "Authors": [
+      "Jung Yeon Park",
+      "Kenneth Theo Carr",
+      "Stephan Zheng",
+      "Yisong Yue",
+      "Rose Yu"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -2301,7 +2709,12 @@
     "url": "http://proceedings.mlr.press/v119/plumb20a.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Gregory Plumb, Jonathan Terhorst, Sriram Sankararaman, Ameet Talwalkar",
+    "Authors": [
+      "Gregory Plumb",
+      "Jonathan Terhorst",
+      "Sriram Sankararaman",
+      "Ameet Talwalkar"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -2330,7 +2743,13 @@
     "url": "http://proceedings.mlr.press/v119/quinn20a.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Thomas P. Quinn, Dang Nguyen, Santu Rana, Sunil Gupta 0001, Svetha Venkatesh",
+    "Authors": [
+      "Thomas P. Quinn",
+      "Dang Nguyen",
+      "Santu Rana",
+      "Sunil Gupta 0001",
+      "Svetha Venkatesh"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -2358,7 +2777,12 @@
     "url": "http://proceedings.mlr.press/v119/shi20f.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Wenxian Shi, Hao Zhou, Ning Miao, Lei Li 0005",
+    "Authors": [
+      "Wenxian Shi",
+      "Hao Zhou",
+      "Ning Miao",
+      "Lei Li 0005"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -2386,7 +2810,10 @@
     "url": "http://proceedings.mlr.press/v119/voynov20a.html",
     "Year": "2020",
     "Venue": "ICML",
-    "Authors": "Andrey Voynov, Artem Babenko",
+    "Authors": [
+      "Andrey Voynov",
+      "Artem Babenko"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -2414,7 +2841,12 @@
     "url": "https://doi.org/10.24963/ijcai.2020/63",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Emanuele Albini, Antonio Rago 0001, Pietro Baroni, Francesca Toni",
+    "Authors": [
+      "Emanuele Albini",
+      "Antonio Rago 0001",
+      "Pietro Baroni",
+      "Francesca Toni"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -2442,7 +2874,13 @@
     "url": "https://doi.org/10.24963/ijcai.2020/273",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Ege Beyazit, Doruk Tuncel, Xu Yuan, Nian-Feng Tzeng, Xindong Wu 0001",
+    "Authors": [
+      "Ege Beyazit",
+      "Doruk Tuncel",
+      "Xu Yuan",
+      "Nian-Feng Tzeng",
+      "Xindong Wu 0001"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -2472,7 +2910,15 @@
     "url": "https://doi.org/10.24963/ijcai.2020/414",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Zhongxia Chen, Xiting Wang, Xing Xie 0001, Mehul Parsana, Akshay Soni, Xiang Ao, Enhong Chen",
+    "Authors": [
+      "Zhongxia Chen",
+      "Xiting Wang",
+      "Xing Xie 0001",
+      "Mehul Parsana",
+      "Akshay Soni",
+      "Xiang Ao",
+      "Enhong Chen"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -2501,7 +2947,13 @@
     "url": "https://doi.org/10.24963/ijcai.2020/309",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Gabriele Ciravegna, Francesco Giannini, Marco Gori, Marco Maggini, Stefano Melacci",
+    "Authors": [
+      "Gabriele Ciravegna",
+      "Francesco Giannini",
+      "Marco Gori",
+      "Marco Maggini",
+      "Stefano Melacci"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -2530,7 +2982,12 @@
     "url": "https://doi.org/10.24963/ijcai.2020/395",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Kentaro Kanamori, Takuya Takagi, Ken Kobayashi, Hiroki Arimura",
+    "Authors": [
+      "Kentaro Kanamori",
+      "Takuya Takagi",
+      "Ken Kobayashi",
+      "Hiroki Arimura"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -2560,7 +3017,10 @@
     "url": "https://doi.org/10.24963/ijcai.2020/336",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Trung-Hoang Le, Hady W. Lauw",
+    "Authors": [
+      "Trung-Hoang Le",
+      "Hady W. Lauw"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -2589,7 +3049,14 @@
     "url": "https://doi.org/10.24963/ijcai.2020/342",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Yaqiong Li, Xuhui Fan, Ling Chen, Bin Li, Zheng Yu, Scott A. Sisson",
+    "Authors": [
+      "Yaqiong Li",
+      "Xuhui Fan",
+      "Ling Chen",
+      "Bin Li",
+      "Zheng Yu",
+      "Scott A. Sisson"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -2617,7 +3084,11 @@
     "url": "https://doi.org/10.24963/ijcai.2020/278",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Biagio La Rosa, Roberto Capobianco, Daniele Nardi",
+    "Authors": [
+      "Biagio La Rosa",
+      "Roberto Capobianco",
+      "Daniele Nardi"
+    ],
     "Type of Data": [
       "Other"
     ],
@@ -2645,7 +3116,10 @@
     "url": "https://doi.org/10.24963/ijcai.2020/645",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Shuoyao Wang, Diwei Zhu",
+    "Authors": [
+      "Shuoyao Wang",
+      "Diwei Zhu"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Text"
@@ -2676,7 +3150,13 @@
     "url": "https://doi.org/10.24963/ijcai.2020/193",
     "Year": "2020",
     "Venue": "IJCAI",
-    "Authors": "Lianwei Wu, Yuan Rao, Xiong Yang, Wanzhen Wang, Ambreen Nazir",
+    "Authors": [
+      "Lianwei Wu",
+      "Yuan Rao",
+      "Xiong Yang",
+      "Wanzhen Wang",
+      "Ambreen Nazir"
+    ],
     "Type of Data": [
       "Text",
       "Graph data",
@@ -2706,7 +3186,14 @@
     "url": "https://doi.org/10.1145/3394486.3403221",
     "Year": "2020",
     "Venue": "KDD",
-    "Authors": "Xiaojie Guo, Liang Zhao 0002, Zhao Qin, Lingfei Wu, Amarda Shehu, Yanfang Ye",
+    "Authors": [
+      "Xiaojie Guo",
+      "Liang Zhao 0002",
+      "Zhao Qin",
+      "Lingfei Wu",
+      "Amarda Shehu",
+      "Yanfang Ye"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -2735,7 +3222,11 @@
     "url": "https://doi.org/10.1145/3394486.3403383",
     "Year": "2020",
     "Venue": "KDD",
-    "Authors": "Tommaso Lanciano, Francesco Bonchi, Aristides Gionis",
+    "Authors": [
+      "Tommaso Lanciano",
+      "Francesco Bonchi",
+      "Aristides Gionis"
+    ],
     "Type of Data": [
       "Images",
       "Graph data"
@@ -2766,7 +3257,11 @@
     "url": "https://doi.org/10.1145/3394486.3403066",
     "Year": "2020",
     "Venue": "KDD",
-    "Authors": "Thai Le, Suhang Wang, Dongwon Lee 0001",
+    "Authors": [
+      "Thai Le",
+      "Suhang Wang",
+      "Dongwon Lee 0001"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -2794,7 +3289,13 @@
     "url": "https://doi.org/10.1145/3394486.3403071",
     "Year": "2020",
     "Venue": "KDD",
-    "Authors": "Jian Liang, Bing Bai, Yuren Cao, Kun Bai, Fei Wang",
+    "Authors": [
+      "Jian Liang",
+      "Bing Bai",
+      "Yuren Cao",
+      "Kun Bai",
+      "Fei Wang"
+    ],
     "Type of Data": [
       "Images",
       "Text",
@@ -2826,7 +3327,14 @@
     "url": "https://doi.org/10.1145/3394486.3403276",
     "Year": "2020",
     "Venue": "KDD",
-    "Authors": "Xianfeng Tang, Yozen Liu, Neil Shah, Xiaolin Shi, Prasenjit Mitra, Suhang Wang",
+    "Authors": [
+      "Xianfeng Tang",
+      "Yozen Liu",
+      "Neil Shah",
+      "Xiaolin Shi",
+      "Prasenjit Mitra",
+      "Suhang Wang"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -2856,7 +3364,12 @@
     "url": "https://doi.org/10.1145/3394486.3403085",
     "Year": "2020",
     "Venue": "KDD",
-    "Authors": "Hao Yuan, Jiliang Tang, Xia Hu, Shuiwang Ji",
+    "Authors": [
+      "Hao Yuan",
+      "Jiliang Tang",
+      "Xia Hu",
+      "Shuiwang Ji"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -2884,7 +3397,15 @@
     "url": "https://doi.org/10.1145/3394486.3403087",
     "Year": "2020",
     "Venue": "KDD",
-    "Authors": "Xianli Zhang, Buyue Qian, Shilei Cao 0001, Yang Li, Hang Chen, Yefeng Zheng, Ian Davidson",
+    "Authors": [
+      "Xianli Zhang",
+      "Buyue Qian",
+      "Shilei Cao 0001",
+      "Yang Li",
+      "Hang Chen",
+      "Yefeng Zheng",
+      "Ian Davidson"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Time series"
@@ -2913,7 +3434,13 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/eccd2a86bae4728b38627162ba297828-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Jo\u00e3o Marques-Silva 0001, Thomas Gerspacher, Martin C. Cooper, Alexey Ignatiev, Nina Narodytska",
+    "Authors": [
+      "Jo\u00e3o Marques-Silva 0001",
+      "Thomas Gerspacher",
+      "Martin C. Cooper",
+      "Alexey Ignatiev",
+      "Nina Narodytska"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -2942,7 +3469,22 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/d9dbc51dc534921589adf460c85cd824-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Sercan \u00d6mer Arik, Chun-Liang Li, Jinsung Yoon, Rajarishi Sinha, Arkady Epshteyn, Long T. Le, Vikas Menon, Shashank Singh 0005, Leyou Zhang, Martin Nikoltchev, Yash Sonthalia, Hootan Nakhost, Elli Kanal, Tomas Pfister",
+    "Authors": [
+      "Sercan \u00d6mer Arik",
+      "Chun-Liang Li",
+      "Jinsung Yoon",
+      "Rajarishi Sinha",
+      "Arkady Epshteyn",
+      "Long T. Le",
+      "Vikas Menon",
+      "Shashank Singh 0005",
+      "Leyou Zhang",
+      "Martin Nikoltchev",
+      "Yash Sonthalia",
+      "Hootan Nakhost",
+      "Elli Kanal",
+      "Tomas Pfister"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -2970,7 +3512,14 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/56f9f88906aebf4ad985aaec7fa01313-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Cher Bass, Mariana da Silva, Carole H. Sudre, Petru-Daniel Tudosiu, Stephen M. Smith, Emma C. Robinson",
+    "Authors": [
+      "Cher Bass",
+      "Mariana da Silva",
+      "Carole H. Sudre",
+      "Petru-Daniel Tudosiu",
+      "Stephen M. Smith",
+      "Emma C. Robinson"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -3000,7 +3549,12 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/ce758408f6ef98d7c7a7b786eca7b3a8-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Jonathan Crabb\u00e9, Yao Zhang, William R. Zame, Mihaela van der Schaar",
+    "Authors": [
+      "Jonathan Crabb\u00e9",
+      "Yao Zhang",
+      "William R. Zame",
+      "Mihaela van der Schaar"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -3030,7 +3584,11 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/0d770c496aa3da6d2c3f2bd19e7b9d6b-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Christopher Frye, Colin Rowat, Ilya Feige",
+    "Authors": [
+      "Christopher Frye",
+      "Colin Rowat",
+      "Ilya Feige"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Time series",
@@ -3061,7 +3619,12 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/6fe43269967adbb64ec6149852b5cc3e-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Erik H\u00e4rk\u00f6nen, Aaron Hertzmann, Jaakko Lehtinen, Sylvain Paris",
+    "Authors": [
+      "Erik H\u00e4rk\u00f6nen",
+      "Aaron Hertzmann",
+      "Jaakko Lehtinen",
+      "Sylvain Paris"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -3090,7 +3653,12 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/32e54441e6382a7fbacbbbaf3c450059-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Tom Heskes, Evi Sijben, Ioan Gabriel Bucur, Tom Claassen",
+    "Authors": [
+      "Tom Heskes",
+      "Evi Sijben",
+      "Ioan Gabriel Bucur",
+      "Tom Claassen"
+    ],
     "Type of Data": [
       "Time series",
       "Any"
@@ -3120,7 +3688,14 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/9e9a30b74c49d07d8150c8c83b1ccf07-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Shailee Jain, Vy A. Vo, Shivangi Mahto, Amanda LeBel, Javier S. Turek, Alexander Huth",
+    "Authors": [
+      "Shailee Jain",
+      "Vy A. Vo",
+      "Shivangi Mahto",
+      "Amanda LeBel",
+      "Javier S. Turek",
+      "Alexander Huth"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -3149,7 +3724,15 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/e37b08dd3015330dcbb5d6663667b8b8-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Dongsheng Luo, Wei Cheng 0002, Dongkuan Xu, Wenchao Yu, Bo Zong, Haifeng Chen, Xiang Zhang 0001",
+    "Authors": [
+      "Dongsheng Luo",
+      "Wei Cheng 0002",
+      "Dongkuan Xu",
+      "Wenchao Yu",
+      "Bo Zong",
+      "Haifeng Chen",
+      "Xiang Zhang 0001"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -3179,7 +3762,10 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/c74956ffb38ba48ed6ce977af6727275-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Jesse Mu, Jacob Andreas",
+    "Authors": [
+      "Jesse Mu",
+      "Jacob Andreas"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -3209,7 +3795,13 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/3a93a609b97ec0ab0ff5539eb79ef33a-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "\"Matthew R. OShaughnessy\", Gregory Canal, Marissa Connor, Christopher Rozell, Mark A. Davenport",
+    "Authors": [
+      "\"Matthew R. OShaughnessy\"",
+      "Gregory Canal",
+      "Marissa Connor",
+      "Christopher Rozell",
+      "Mark A. Davenport"
+    ],
     "Type of Data": [
       "Images",
       "Any"
@@ -3241,7 +3833,12 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/24aef8cb3281a2422a59b51659f1ad2e-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Tejaswini Pedapati, Avinash Balakrishnan, Karthikeyan Shanmugam, Amit Dhurandhar",
+    "Authors": [
+      "Tejaswini Pedapati",
+      "Avinash Balakrishnan",
+      "Karthikeyan Shanmugam",
+      "Amit Dhurandhar"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -3270,7 +3867,12 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/426f990b332ef8193a61cc90516c1245-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Karthikeyan Natesan Ramamurthy, Bhanukiran Vinzamuri, Yunfeng Zhang, Amit Dhurandhar",
+    "Authors": [
+      "Karthikeyan Natesan Ramamurthy",
+      "Bhanukiran Vinzamuri",
+      "Yunfeng Zhang",
+      "Amit Dhurandhar"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -3302,7 +3904,10 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/8ee7730e97c67473a424ccfeff49ab20-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Kaivalya Rawal, Himabindu Lakkaraju",
+    "Authors": [
+      "Kaivalya Rawal",
+      "Himabindu Lakkaraju"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -3333,7 +3938,11 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/443dec3062d0286986e21dc0631734c9-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Michael Tsang, Sirisha Rambhatla, Yan Liu 0002",
+    "Authors": [
+      "Michael Tsang",
+      "Sirisha Rambhatla",
+      "Yan Liu 0002"
+    ],
     "Type of Data": [
       "Images",
       "Text",
@@ -3363,7 +3972,11 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/1487987e862c44b91a0296cf3866387e-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Alex Tseng, Avanti Shrikumar, Anshul Kundaje",
+    "Authors": [
+      "Alex Tseng",
+      "Avanti Shrikumar",
+      "Anshul Kundaje"
+    ],
     "Type of Data": [
       "Any",
       "Other"
@@ -3392,7 +4005,11 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/d5ab8dc7ef67ca92e41d730982c5c602-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Herman Yau, Chris Russell 0001, Simon Hadfield",
+    "Authors": [
+      "Herman Yau",
+      "Chris Russell 0001",
+      "Simon Hadfield"
+    ],
     "Type of Data": [
       "Other"
     ],
@@ -3420,7 +4037,14 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/ecb287ff763c169694f682af52c1f309-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Chih-Kuan Yeh, Been Kim, Sercan \u00d6mer Arik, Chun-Liang Li, Tomas Pfister, Pradeep Ravikumar",
+    "Authors": [
+      "Chih-Kuan Yeh",
+      "Been Kim",
+      "Sercan \u00d6mer Arik",
+      "Chun-Liang Li",
+      "Tomas Pfister",
+      "Pradeep Ravikumar"
+    ],
     "Type of Data": [
       "Images",
       "Text",
@@ -3451,7 +4075,10 @@
     "url": "https://proceedings.neurips.cc/paper/2020/hash/510f2318f324cf07fce24c3a4b89c771-Abstract.html",
     "Year": "2020",
     "Venue": "NeurIPS",
-    "Authors": "Ding Zhou, Xue-Xin Wei",
+    "Authors": [
+      "Ding Zhou",
+      "Xue-Xin Wei"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -3480,7 +4107,14 @@
     "url": "https://doi.org/10.1145/3397271.3401042",
     "Year": "2020",
     "Venue": "SIGIR",
-    "Authors": "Tong Chen 0005, Hongzhi Yin, Guanhua Ye, Zi Huang, Yang Wang 0023, Meng Wang 0001",
+    "Authors": [
+      "Tong Chen 0005",
+      "Hongzhi Yin",
+      "Guanhua Ye",
+      "Zi Huang",
+      "Yang Wang 0023",
+      "Meng Wang 0001"
+    ],
     "Type of Data": [
       "Text",
       "User-item matrix"
@@ -3510,7 +4144,11 @@
     "url": "https://doi.org/10.1145/3397271.3401277",
     "Year": "2020",
     "Venue": "SIGIR",
-    "Authors": "Jiaming Qu, Jaime Arguello, Yue Wang 0035",
+    "Authors": [
+      "Jiaming Qu",
+      "Jaime Arguello",
+      "Yue Wang 0035"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -3538,7 +4176,13 @@
     "url": "https://doi.org/10.1145/3397271.3401312",
     "Year": "2020",
     "Venue": "SIGIR",
-    "Authors": "Carl Yang, Jieyu Zhang, Haonan Wang, Bangzheng Li, Jiawei Han 0001",
+    "Authors": [
+      "Carl Yang",
+      "Jieyu Zhang",
+      "Haonan Wang",
+      "Bangzheng Li",
+      "Jiawei Han 0001"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -3567,7 +4211,14 @@
     "url": "https://doi.org/10.1145/3366423.3380100",
     "Year": "2020",
     "Venue": "WWW",
-    "Authors": "Xueqi Li, Wenjun Jiang, Weiguang Chen, Jie Wu 0001, Guojun Wang 0001, Kenli Li 0001",
+    "Authors": [
+      "Xueqi Li",
+      "Wenjun Jiang",
+      "Weiguang Chen",
+      "Jie Wu 0001",
+      "Guojun Wang 0001",
+      "Kenli Li 0001"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -3596,7 +4247,12 @@
     "url": "https://doi.org/10.1145/3366423.3380227",
     "Year": "2020",
     "Venue": "WWW",
-    "Authors": "Binny Mathew, Sandipan Sikdar, Florian Lemmerich, Markus Strohmaier",
+    "Authors": [
+      "Binny Mathew",
+      "Sandipan Sikdar",
+      "Florian Lemmerich",
+      "Markus Strohmaier"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -3625,7 +4281,11 @@
     "url": "https://doi.org/10.1145/3366423.3380298",
     "Year": "2020",
     "Venue": "WWW",
-    "Authors": "Christof Naumzik, Patrick Zoechbauer, Stefan Feuerriegel",
+    "Authors": [
+      "Christof Naumzik",
+      "Patrick Zoechbauer",
+      "Stefan Feuerriegel"
+    ],
     "Type of Data": [
       "Other"
     ],
@@ -3655,7 +4315,11 @@
     "url": "https://doi.org/10.1145/3366423.3380087",
     "Year": "2020",
     "Venue": "WWW",
-    "Authors": "Martin Pawelczyk, Klaus Broelemann, Gjergji Kasneci",
+    "Authors": [
+      "Martin Pawelczyk",
+      "Klaus Broelemann",
+      "Gjergji Kasneci"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -3684,7 +4348,14 @@
     "url": "https://doi.org/10.1145/3366423.3380164",
     "Year": "2020",
     "Venue": "WWW",
-    "Authors": "Peijie Sun, Le Wu, Kun Zhang, Yanjie Fu, Richang Hong, Meng Wang 0001",
+    "Authors": [
+      "Peijie Sun",
+      "Le Wu",
+      "Kun Zhang",
+      "Yanjie Fu",
+      "Richang Hong",
+      "Meng Wang 0001"
+    ],
     "Type of Data": [
       "Text",
       "User-item matrix"
@@ -3713,7 +4384,13 @@
     "url": "https://doi.org/10.1145/3366423.3380253",
     "Year": "2020",
     "Venue": "WWW",
-    "Authors": "Wen Wang, Han Zhao 0002, Honglei Zhuang, Nirav Shah, Rema Padman",
+    "Authors": [
+      "Wen Wang",
+      "Han Zhao 0002",
+      "Honglei Zhuang",
+      "Nirav Shah",
+      "Rema Padman"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Time series"
@@ -3742,7 +4419,15 @@
     "url": "https://doi.org/10.1145/3366423.3380172",
     "Year": "2020",
     "Venue": "WWW",
-    "Authors": "Yongchun Zhu, Dongbo Xi, Bowen Song, Fuzhen Zhuang, Shuai Chen, Xi Gu, Qing He 0003",
+    "Authors": [
+      "Yongchun Zhu",
+      "Dongbo Xi",
+      "Bowen Song",
+      "Fuzhen Zhuang",
+      "Shuai Chen",
+      "Xi Gu",
+      "Qing He 0003"
+    ],
     "Type of Data": [
       "Other"
     ],
@@ -3770,7 +4455,10 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33014561",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Raghuram Mandyam Annasamy, Katia P. Sycara",
+    "Authors": [
+      "Raghuram Mandyam Annasamy",
+      "Katia P. Sycara"
+    ],
     "Type of Data": [
       "Images",
       "Other"
@@ -3801,7 +4489,11 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.330153",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Xu Chen 0017, Yongfeng Zhang, Zheng Qin",
+    "Authors": [
+      "Xu Chen 0017",
+      "Yongfeng Zhang",
+      "Zheng Qin"
+    ],
     "Type of Data": [
       "Text",
       "User-item matrix"
@@ -3830,7 +4522,12 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33013622",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Jingyue Gao, Xiting Wang, Yasha Wang, Xing Xie 0001",
+    "Authors": [
+      "Jingyue Gao",
+      "Xiting Wang",
+      "Yasha Wang",
+      "Xing Xie 0001"
+    ],
     "Type of Data": [
       "Text",
       "User-item matrix"
@@ -3860,7 +4557,12 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33011385",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Sijie He, Xinyan Li, Vidyashankar Sivakumar, Arindam Banerjee 0001",
+    "Authors": [
+      "Sijie He",
+      "Xinyan Li",
+      "Vidyashankar Sivakumar",
+      "Arindam Banerjee 0001"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -3888,7 +4590,11 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33011511",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Alexey Ignatiev, Nina Narodytska, Jo\u00e3o Marques-Silva 0001",
+    "Authors": [
+      "Alexey Ignatiev",
+      "Nina Narodytska",
+      "Jo\u00e3o Marques-Silva 0001"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -3918,7 +4624,10 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33014139",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Liang Lan, Yu Geng 0002",
+    "Authors": [
+      "Liang Lan",
+      "Yu Geng 0002"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Text"
@@ -3948,7 +4657,12 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33012970",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Daoming Lyu, Fangkai Yang, Bo Liu, Steven Gustafson",
+    "Authors": [
+      "Daoming Lyu",
+      "Fangkai Yang",
+      "Bo Liu",
+      "Steven Gustafson"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -3976,7 +4690,10 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33014723",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Mirko Polato, Fabio Aiolli",
+    "Authors": [
+      "Mirko Polato",
+      "Fabio Aiolli"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -4006,7 +4723,10 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33013052",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Farhad Shakerin, Gopal Gupta",
+    "Authors": [
+      "Farhad Shakerin",
+      "Gopal Gupta"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Any"
@@ -4035,7 +4755,11 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33017023",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Vivian Dos Santos Silva, Andr\u00e9 Freitas, Siegfried Handschuh",
+    "Authors": [
+      "Vivian Dos Santos Silva",
+      "Andr\u00e9 Freitas",
+      "Siegfried Handschuh"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -4064,7 +4788,10 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33012514",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Nicholay Topin, Manuela Veloso",
+    "Authors": [
+      "Nicholay Topin",
+      "Manuela Veloso"
+    ],
     "Type of Data": [
       "Other"
     ],
@@ -4093,7 +4820,14 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33015329",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Xiang Wang 0010, Dingxian Wang, Canran Xu, Xiangnan He 0001, Yixin Cao 0002, Tat-Seng Chua",
+    "Authors": [
+      "Xiang Wang 0010",
+      "Dingxian Wang",
+      "Canran Xu",
+      "Xiangnan He 0001",
+      "Yixin Cao 0002",
+      "Tat-Seng Chua"
+    ],
     "Type of Data": [
       "Graph data",
       "User-item matrix"
@@ -4123,7 +4857,11 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33012539",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Sandareka Wickramanayake, Wynne Hsu, Mong-Li Lee",
+    "Authors": [
+      "Sandareka Wickramanayake",
+      "Wynne Hsu",
+      "Mong-Li Lee"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4152,7 +4890,12 @@
     "url": "https://doi.org/10.1609/aaai.v33i01.33015717",
     "Year": "2019",
     "Venue": "AAAI",
-    "Authors": "Hao Yuan, Yongjun Chen, Xia Hu, Shuiwang Ji",
+    "Authors": [
+      "Hao Yuan",
+      "Yongjun Chen",
+      "Xia Hu",
+      "Shuiwang Ji"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -4181,7 +4924,11 @@
     "url": "https://doi.org/10.18653/v1/p19-1284",
     "Year": "2019",
     "Venue": "ACL",
-    "Authors": "Jasmijn Bastings, Wilker Aziz, Ivan Titov",
+    "Authors": [
+      "Jasmijn Bastings",
+      "Wilker Aziz",
+      "Ivan Titov"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -4213,7 +4960,12 @@
     "url": "https://doi.org/10.18653/v1/p19-1261",
     "Year": "2019",
     "Venue": "ACL",
-    "Authors": "Yichen Jiang, Nitish Joshi, Yen-Chun Chen 0001, Mohit Bansal",
+    "Authors": [
+      "Yichen Jiang",
+      "Nitish Joshi",
+      "Yen-Chun Chen 0001",
+      "Mohit Bansal"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -4241,7 +4993,14 @@
     "url": "https://doi.org/10.18653/v1/p19-1006",
     "Year": "2019",
     "Venue": "ACL",
-    "Authors": "Junyu Lu, Chenbin Zhang, Zeying Xie, Guang Ling, Tom Chao Zhou, Zenglin Xu",
+    "Authors": [
+      "Junyu Lu",
+      "Chenbin Zhang",
+      "Zeying Xie",
+      "Guang Ling",
+      "Tom Chao Zhou",
+      "Zenglin Xu"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -4269,7 +5028,12 @@
     "url": "https://doi.org/10.18653/v1/p19-1081",
     "Year": "2019",
     "Venue": "ACL",
-    "Authors": "Seungwhan Moon, Pararth Shah, Anuj Kumar, Rajen Subba",
+    "Authors": [
+      "Seungwhan Moon",
+      "Pararth Shah",
+      "Anuj Kumar",
+      "Rajen Subba"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -4297,7 +5061,11 @@
     "url": "https://doi.org/10.18653/v1/p19-1570",
     "Year": "2019",
     "Venue": "ACL",
-    "Authors": "Abhishek Panigrahi, Harsha Vardhan Simhadri, Chiranjib Bhattacharyya",
+    "Authors": [
+      "Abhishek Panigrahi",
+      "Harsha Vardhan Simhadri",
+      "Chiranjib Bhattacharyya"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -4330,7 +5098,12 @@
     "url": "https://doi.org/10.18653/v1/p19-1487",
     "Year": "2019",
     "Venue": "ACL",
-    "Authors": "Nazneen Fatema Rajani, Bryan McCann, Caiming Xiong, Richard Socher",
+    "Authors": [
+      "Nazneen Fatema Rajani",
+      "Bryan McCann",
+      "Caiming Xiong",
+      "Richard Socher"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -4359,7 +5132,11 @@
     "url": "https://doi.org/10.18653/v1/p19-1488",
     "Year": "2019",
     "Venue": "ACL",
-    "Authors": "Alona Sydorova, Nina P\u00f6rner, Benjamin Roth 0001",
+    "Authors": [
+      "Alona Sydorova",
+      "Nina P\u00f6rner",
+      "Benjamin Roth 0001"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Text"
@@ -4389,7 +5166,12 @@
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Fukui_Attention_Branch_Network_Learning_of_Attention_Mechanism_for_Visual_Explanation_CVPR_2019_paper.html",
     "Year": "2019",
     "Venue": "CVPR",
-    "Authors": "Hiroshi Fukui, Tsubasa Hirakawa, Takayoshi Yamashita, Hironobu Fujiyoshi",
+    "Authors": [
+      "Hiroshi Fukui",
+      "Tsubasa Hirakawa",
+      "Takayoshi Yamashita",
+      "Hironobu Fujiyoshi"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4417,7 +5199,10 @@
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Kanehira_Learning_to_Explain_With_Complemental_Examples_CVPR_2019_paper.html",
     "Year": "2019",
     "Venue": "CVPR",
-    "Authors": "Atsushi Kanehira, Tatsuya Harada",
+    "Authors": [
+      "Atsushi Kanehira",
+      "Tatsuya Harada"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4446,7 +5231,12 @@
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Kanehira_Multimodal_Explanations_by_Predicting_Counterfactuality_in_Videos_CVPR_2019_paper.html",
     "Year": "2019",
     "Venue": "CVPR",
-    "Authors": "Atsushi Kanehira, Kentaro Takemoto, Sho Inayoshi, Tatsuya Harada",
+    "Authors": [
+      "Atsushi Kanehira",
+      "Kentaro Takemoto",
+      "Sho Inayoshi",
+      "Tatsuya Harada"
+    ],
     "Type of Data": [
       "Video"
     ],
@@ -4475,7 +5265,13 @@
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Pope_Explainability_Methods_for_Graph_Convolutional_Neural_Networks_CVPR_2019_paper.html",
     "Year": "2019",
     "Venue": "CVPR",
-    "Authors": "Phillip E. Pope, Soheil Kolouri, Mohammad Rostami, Charles E. Martin, Heiko Hoffmann",
+    "Authors": [
+      "Phillip E. Pope",
+      "Soheil Kolouri",
+      "Mohammad Rostami",
+      "Charles E. Martin",
+      "Heiko Hoffmann"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -4503,7 +5299,11 @@
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Shi_Explainable_and_Explicit_Visual_Reasoning_Over_Scene_Graphs_CVPR_2019_paper.html",
     "Year": "2019",
     "Venue": "CVPR",
-    "Authors": "Jiaxin Shi, Hanwang Zhang, Juanzi Li",
+    "Authors": [
+      "Jiaxin Shi",
+      "Hanwang Zhang",
+      "Juanzi Li"
+    ],
     "Type of Data": [
       "Images",
       "Graph data"
@@ -4532,7 +5332,15 @@
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Zeng_End-To-End_Interpretable_Neural_Motion_Planner_CVPR_2019_paper.html",
     "Year": "2019",
     "Venue": "CVPR",
-    "Authors": "Wenyuan Zeng, Wenjie Luo, Simon Suo, Abbas Sadat, Bin Yang 0021, Sergio Casas 0002, Raquel Urtasun",
+    "Authors": [
+      "Wenyuan Zeng",
+      "Wenjie Luo",
+      "Simon Suo",
+      "Abbas Sadat",
+      "Bin Yang 0021",
+      "Sergio Casas 0002",
+      "Raquel Urtasun"
+    ],
     "Type of Data": [
       "Time series",
       "Other"
@@ -4561,7 +5369,12 @@
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Zhang_Interpreting_CNNs_via_Decision_Trees_CVPR_2019_paper.html",
     "Year": "2019",
     "Venue": "CVPR",
-    "Authors": "Quanshi Zhang, Yu Yang, Haotian Ma, Ying Nian Wu",
+    "Authors": [
+      "Quanshi Zhang",
+      "Yu Yang",
+      "Haotian Ma",
+      "Ying Nian Wu"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4592,7 +5405,13 @@
     "url": "https://doi.org/10.1109/ICCV.2019.00928",
     "Year": "2019",
     "Venue": "ICCV",
-    "Authors": "Runjin Chen, Hao Chen, Ge Huang, Jie Ren, Quanshi Zhang",
+    "Authors": [
+      "Runjin Chen",
+      "Hao Chen",
+      "Ge Huang",
+      "Jie Ren",
+      "Quanshi Zhang"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4620,7 +5439,15 @@
     "url": "https://doi.org/10.1109/ICCV.2019.00694",
     "Year": "2019",
     "Venue": "ICCV",
-    "Authors": "Fabian Manhardt, Diego Mart\u00edn Arroyo, Christian Rupprecht 0001, Benjamin Busam, Tolga Birdal, Nassir Navab, Federico Tombari",
+    "Authors": [
+      "Fabian Manhardt",
+      "Diego Mart\u00edn Arroyo",
+      "Christian Rupprecht 0001",
+      "Benjamin Busam",
+      "Tolga Birdal",
+      "Nassir Navab",
+      "Federico Tombari"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4648,7 +5475,12 @@
     "url": "https://doi.org/10.1109/ICCV.2019.00485",
     "Year": "2019",
     "Venue": "ICCV",
-    "Authors": "Pablo Navarrete Michelini, Hanwen Liu, Yunhua Lu, Xingqun Jiang",
+    "Authors": [
+      "Pablo Navarrete Michelini",
+      "Hanwen Liu",
+      "Yunhua Lu",
+      "Xingqun Jiang"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4678,7 +5510,12 @@
     "url": "https://doi.org/10.1109/ICCV.2019.00754",
     "Year": "2019",
     "Venue": "ICCV",
-    "Authors": "Badri N. Patro, Mayank Lunayach, Shivansh Patel, Vinay Namboodiri",
+    "Authors": [
+      "Badri N. Patro",
+      "Mayank Lunayach",
+      "Shivansh Patel",
+      "Vinay Namboodiri"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -4708,7 +5545,16 @@
     "url": "https://doi.org/10.1109/ICCV.2019.00268",
     "Year": "2019",
     "Venue": "ICCV",
-    "Authors": "Ramprasaath Ramasamy Selvaraju, Stefan Lee, Yilin Shen, Hongxia Jin, Shalini Ghosh, Larry P. Heck, Dhruv Batra, Devi Parikh",
+    "Authors": [
+      "Ramprasaath Ramasamy Selvaraju",
+      "Stefan Lee",
+      "Yilin Shen",
+      "Hongxia Jin",
+      "Shalini Ghosh",
+      "Larry P. Heck",
+      "Dhruv Batra",
+      "Devi Parikh"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -4738,7 +5584,11 @@
     "url": "https://doi.org/10.1109/ICCV.2019.00211",
     "Year": "2019",
     "Venue": "ICCV",
-    "Authors": "Akshayvarun Subramanya, Vipin Pillai, Hamed Pirsiavash",
+    "Authors": [
+      "Akshayvarun Subramanya",
+      "Vipin Pillai",
+      "Hamed Pirsiavash"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4766,7 +5616,11 @@
     "url": "https://doi.org/10.1109/ICCV.2019.00504",
     "Year": "2019",
     "Venue": "ICCV",
-    "Authors": "Yiyou Sun, Sathya N. Ravi, Vikas Singh",
+    "Authors": [
+      "Yiyou Sun",
+      "Sathya N. Ravi",
+      "Vikas Singh"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4797,7 +5651,10 @@
     "url": "https://doi.org/10.1109/ICCV.2019.00613",
     "Year": "2019",
     "Venue": "ICCV",
-    "Authors": "Tianfu Wu 0001, Xi Song",
+    "Authors": [
+      "Tianfu Wu 0001",
+      "Xi Song"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4825,7 +5682,13 @@
     "url": "https://doi.org/10.1109/ICCV.2019.00944",
     "Year": "2019",
     "Venue": "ICCV",
-    "Authors": "Bangjie Yin, Luan Tran, Haoxiang Li, Xiaohui Shen, Xiaoming Liu 0002",
+    "Authors": [
+      "Bangjie Yin",
+      "Luan Tran",
+      "Haoxiang Li",
+      "Xiaohui Shen",
+      "Xiaoming Liu 0002"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -4854,7 +5717,12 @@
     "url": "https://doi.org/10.1109/ICDM.2019.00106",
     "Year": "2019",
     "Venue": "ICDM",
-    "Authors": "Roy Assaf, Ioana Giurgiu, Frank Bagehorn, Anika Schumann",
+    "Authors": [
+      "Roy Assaf",
+      "Ioana Giurgiu",
+      "Frank Bagehorn",
+      "Anika Schumann"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -4882,7 +5750,12 @@
     "url": "https://doi.org/10.1109/ICDM.2019.00111",
     "Year": "2019",
     "Venue": "ICDM",
-    "Authors": "Chao Chen, Yifei Liu, Xi Zhang 0008, Sihong Xie",
+    "Authors": [
+      "Chao Chen",
+      "Yifei Liu",
+      "Xi Zhang 0008",
+      "Sihong Xie"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -4910,7 +5783,10 @@
     "url": "https://doi.org/10.1109/ICDM.2019.00037",
     "Year": "2019",
     "Venue": "ICDM",
-    "Authors": "Shah Muhammad Hamdi, Rafal A. Angryk",
+    "Authors": [
+      "Shah Muhammad Hamdi",
+      "Rafal A. Angryk"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -4939,7 +5815,10 @@
     "url": "https://doi.org/10.1109/ICDM.2019.00187",
     "Year": "2019",
     "Venue": "ICDM",
-    "Authors": "Jaemin Yoo, Lee Sael",
+    "Authors": [
+      "Jaemin Yoo",
+      "Lee Sael"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -4967,7 +5846,14 @@
     "url": "https://doi.org/10.1109/ICDM.2019.00196",
     "Year": "2019",
     "Venue": "ICDM",
-    "Authors": "Xianli Zhang, Buyue Qian, Yang Li, Changchang Yin, Xudong Wang, Qinghua Zheng",
+    "Authors": [
+      "Xianli Zhang",
+      "Buyue Qian",
+      "Yang Li",
+      "Changchang Yin",
+      "Xudong Wang",
+      "Qinghua Zheng"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Graph data"
@@ -4996,7 +5882,11 @@
     "url": "https://doi.org/10.1109/ICDM.2019.00202",
     "Year": "2019",
     "Venue": "ICDM",
-    "Authors": "Zihan Zhou 0003, Mingxuan Sun, Jianhua Chen 0003",
+    "Authors": [
+      "Zihan Zhou 0003",
+      "Mingxuan Sun",
+      "Jianhua Chen 0003"
+    ],
     "Type of Data": [
       "User-item matrix",
       "Other"
@@ -5028,7 +5918,12 @@
     "url": "https://openreview.net/forum?id=B1MXz20cYQ",
     "Year": "2019",
     "Venue": "ICLR",
-    "Authors": "Chun-Hao Chang, Elliot Creager, Anna Goldenberg, David Duvenaud",
+    "Authors": [
+      "Chun-Hao Chang",
+      "Elliot Creager",
+      "Anna Goldenberg",
+      "David Duvenaud"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -5057,7 +5952,12 @@
     "url": "https://openreview.net/forum?id=S1E3Ko09F7",
     "Year": "2019",
     "Venue": "ICLR",
-    "Authors": "Jianbo Chen, Le Song, Martin J. Wainwright, Michael I. Jordan",
+    "Authors": [
+      "Jianbo Chen",
+      "Le Song",
+      "Martin J. Wainwright",
+      "Michael I. Jordan"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -5088,7 +5988,13 @@
     "url": "https://openreview.net/forum?id=rygjcsR9Y7",
     "Year": "2019",
     "Venue": "ICLR",
-    "Authors": "Vincent Fortuin, Matthias H\u00fcser, Francesco Locatello, Heiko Strathmann, Gunnar R\u00e4tsch",
+    "Authors": [
+      "Vincent Fortuin",
+      "Matthias H\u00fcser",
+      "Francesco Locatello",
+      "Heiko Strathmann",
+      "Gunnar R\u00e4tsch"
+    ],
     "Type of Data": [
       "Images",
       "Time series"
@@ -5119,7 +6025,11 @@
     "url": "https://openreview.net/forum?id=SkEqro0ctQ",
     "Year": "2019",
     "Venue": "ICLR",
-    "Authors": "Chandan Singh, W. James Murdoch, Bin Yu",
+    "Authors": [
+      "Chandan Singh",
+      "W. James Murdoch",
+      "Bin Yu"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -5149,7 +6059,12 @@
     "url": "https://openreview.net/forum?id=ryxSrhC9KX",
     "Year": "2019",
     "Venue": "ICLR",
-    "Authors": "Charles Y. Zheng, Francisco Pereira, Chris I. Baker, Martin N. Hebart",
+    "Authors": [
+      "Charles Y. Zheng",
+      "Francisco Pereira",
+      "Chris I. Baker",
+      "Martin N. Hebart"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -5178,7 +6093,11 @@
     "url": "http://proceedings.mlr.press/v97/guo19b.html",
     "Year": "2019",
     "Venue": "ICML",
-    "Authors": "Tian Guo 0002, Tao Lin, Nino Antulov-Fantulin",
+    "Authors": [
+      "Tian Guo 0002",
+      "Tao Lin",
+      "Nino Antulov-Fantulin"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -5207,7 +6126,11 @@
     "url": "http://proceedings.mlr.press/v97/ancona19a.html",
     "Year": "2019",
     "Venue": "ICML",
-    "Authors": "Marco Ancona, Cengiz \u00d6ztireli, Markus H. Gross",
+    "Authors": [
+      "Marco Ancona",
+      "Cengiz \u00d6ztireli",
+      "Markus H. Gross"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -5238,7 +6161,12 @@
     "url": "http://proceedings.mlr.press/v97/duncker19a.html",
     "Year": "2019",
     "Venue": "ICML",
-    "Authors": "Lea Duncker, Gergo Bohner, Julien Boussard, Maneesh Sahani",
+    "Authors": [
+      "Lea Duncker",
+      "Gergo Bohner",
+      "Julien Boussard",
+      "Maneesh Sahani"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -5267,7 +6195,14 @@
     "url": "http://proceedings.mlr.press/v97/goyal19a.html",
     "Year": "2019",
     "Venue": "ICML",
-    "Authors": "Yash Goyal, Ziyan Wu, Jan Ernst, Dhruv Batra, Devi Parikh, Stefan Lee",
+    "Authors": [
+      "Yash Goyal",
+      "Ziyan Wu",
+      "Jan Ernst",
+      "Dhruv Batra",
+      "Devi Parikh",
+      "Stefan Lee"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -5297,7 +6232,12 @@
     "url": "http://proceedings.mlr.press/v97/singla19a.html",
     "Year": "2019",
     "Venue": "ICML",
-    "Authors": "Sahil Singla 0002, Eric Wallace, Shi Feng, Soheil Feizi",
+    "Authors": [
+      "Sahil Singla 0002",
+      "Eric Wallace",
+      "Shi Feng",
+      "Soheil Feizi"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -5326,7 +6266,14 @@
     "url": "http://proceedings.mlr.press/v97/vedantam19a.html",
     "Year": "2019",
     "Venue": "ICML",
-    "Authors": "Ramakrishna Vedantam, Karan Desai, Stefan Lee, Marcus Rohrbach, Dhruv Batra, Devi Parikh",
+    "Authors": [
+      "Ramakrishna Vedantam",
+      "Karan Desai",
+      "Stefan Lee",
+      "Marcus Rohrbach",
+      "Dhruv Batra",
+      "Devi Parikh"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -5356,7 +6303,11 @@
     "url": "http://proceedings.mlr.press/v97/wang19p.html",
     "Year": "2019",
     "Venue": "ICML",
-    "Authors": "Shengjie Wang, Tianyi Zhou, Jeff A. Bilmes",
+    "Authors": [
+      "Shengjie Wang",
+      "Tianyi Zhou",
+      "Jeff A. Bilmes"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -5385,7 +6336,15 @@
     "url": "https://doi.org/10.24963/ijcai.2019/296",
     "Year": "2019",
     "Venue": "IJCAI",
-    "Authors": "Zhongxia Chen, Xiting Wang, Xing Xie 0001, Tong Wu, Guoqing Bu, Yining Wang, Enhong Chen",
+    "Authors": [
+      "Zhongxia Chen",
+      "Xiting Wang",
+      "Xing Xie 0001",
+      "Tong Wu",
+      "Guoqing Bu",
+      "Yining Wang",
+      "Enhong Chen"
+    ],
     "Type of Data": [
       "Text",
       "User-item matrix"
@@ -5414,7 +6373,13 @@
     "url": "https://doi.org/10.24963/ijcai.2019/325",
     "Year": "2019",
     "Venue": "IJCAI",
-    "Authors": "Francesco Fusco, Michalis Vlachos, Vasileios Vasileiadis, Kathrin Wardatzky, Johannes Schneider",
+    "Authors": [
+      "Francesco Fusco",
+      "Michalis Vlachos",
+      "Vasileios Vasileiadis",
+      "Kathrin Wardatzky",
+      "Johannes Schneider"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -5443,7 +6408,14 @@
     "url": "https://doi.org/10.24963/ijcai.2019/650",
     "Year": "2019",
     "Venue": "IJCAI",
-    "Authors": "Min Hou, Le Wu, Enhong Chen, Zhi Li, Vincent W. Zheng, Qi Liu 0003",
+    "Authors": [
+      "Min Hou",
+      "Le Wu",
+      "Enhong Chen",
+      "Zhi Li",
+      "Vincent W. Zheng",
+      "Qi Liu 0003"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -5476,7 +6448,10 @@
     "url": "https://doi.org/10.24963/ijcai.2019/376",
     "Year": "2019",
     "Venue": "IJCAI",
-    "Authors": "Eoin M. Kenny, Mark T. Keane",
+    "Authors": [
+      "Eoin M. Kenny",
+      "Mark T. Keane"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -5508,7 +6483,12 @@
     "url": "https://doi.org/10.24963/ijcai.2019/402",
     "Year": "2019",
     "Venue": "IJCAI",
-    "Authors": "Longyuan Li, Junchi Yan, Xiaokang Yang, Yaohui Jin",
+    "Authors": [
+      "Longyuan Li",
+      "Junchi Yan",
+      "Xiaokang Yang",
+      "Yaohui Jin"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -5536,7 +6516,10 @@
     "url": "https://doi.org/10.24963/ijcai.2019/838",
     "Year": "2019",
     "Venue": "IJCAI",
-    "Authors": "Yue Zhang, Arti Ramesh",
+    "Authors": [
+      "Yue Zhang",
+      "Arti Ramesh"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -5565,7 +6548,12 @@
     "url": "https://doi.org/10.1145/3292500.3330857",
     "Year": "2019",
     "Venue": "KDD",
-    "Authors": "Weiyu Cheng, Yanyan Shen, Linpeng Huang, Yanmin Zhu",
+    "Authors": [
+      "Weiyu Cheng",
+      "Yanyan Shen",
+      "Linpeng Huang",
+      "Yanmin Zhu"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -5593,7 +6581,13 @@
     "url": "https://doi.org/10.1145/3292500.3330930",
     "Year": "2019",
     "Venue": "KDD",
-    "Authors": "Yunzhe Jia, James Bailey 0001, Kotagiri Ramamohanarao, Christopher Leckie, Michael E. Houle",
+    "Authors": [
+      "Yunzhe Jia",
+      "James Bailey 0001",
+      "Kotagiri Ramamohanarao",
+      "Christopher Leckie",
+      "Michael E. Houle"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -5623,7 +6617,12 @@
     "url": "https://doi.org/10.1145/3292500.3330908",
     "Year": "2019",
     "Venue": "KDD",
-    "Authors": "Yao Ming, Panpan Xu, Huamin Qu, Liu Ren",
+    "Authors": [
+      "Yao Ming",
+      "Panpan Xu",
+      "Huamin Qu",
+      "Liu Ren"
+    ],
     "Type of Data": [
       "Text",
       "Time series",
@@ -5654,7 +6653,13 @@
     "url": "https://doi.org/10.1145/3292500.3330935",
     "Year": "2019",
     "Venue": "KDD",
-    "Authors": "Kai Shu, Limeng Cui, Suhang Wang, Dongwon Lee 0001, Huan Liu 0001",
+    "Authors": [
+      "Kai Shu",
+      "Limeng Cui",
+      "Suhang Wang",
+      "Dongwon Lee 0001",
+      "Huan Liu 0001"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -5682,7 +6687,15 @@
     "url": "https://doi.org/10.1145/3292500.3330889",
     "Year": "2019",
     "Venue": "KDD",
-    "Authors": "Zhiqiang Tao, Sheng Li 0001, Zhaowen Wang, Chen Fang, Longqi Yang, Handong Zhao, Yun Fu 0001",
+    "Authors": [
+      "Zhiqiang Tao",
+      "Sheng Li 0001",
+      "Zhaowen Wang",
+      "Chen Fang",
+      "Longqi Yang",
+      "Handong Zhao",
+      "Yun Fu 0001"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -5711,7 +6724,14 @@
     "url": "https://doi.org/10.1145/3292500.3330921",
     "Year": "2019",
     "Venue": "KDD",
-    "Authors": "Yujun Yan, Jiong Zhu, Marlena Duda, Eric Solarz, Chandra Sekhar Sripada, Danai Koutra",
+    "Authors": [
+      "Yujun Yan",
+      "Jiong Zhu",
+      "Marlena Duda",
+      "Eric Solarz",
+      "Chandra Sekhar Sripada",
+      "Danai Koutra"
+    ],
     "Type of Data": [
       "Images",
       "Time series"
@@ -5741,7 +6761,11 @@
     "url": "https://doi.org/10.1145/3292500.3330845",
     "Year": "2019",
     "Venue": "KDD",
-    "Authors": "Tomoki Yoshida, Ichiro Takeuchi, Masayuki Karasuyama",
+    "Authors": [
+      "Tomoki Yoshida",
+      "Ichiro Takeuchi",
+      "Masayuki Karasuyama"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -5771,7 +6795,14 @@
     "url": "https://doi.org/10.1145/3292500.3330898",
     "Year": "2019",
     "Venue": "KDD",
-    "Authors": "Xuezhou Zhang, Sarah Tan, Paul Koch, Yin Lou, Urszula Chajewska, Rich Caruana",
+    "Authors": [
+      "Xuezhou Zhang",
+      "Sarah Tan",
+      "Paul Koch",
+      "Yin Lou",
+      "Urszula Chajewska",
+      "Rich Caruana"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -5799,7 +6830,11 @@
     "url": "https://doi.org/10.1145/3292500.3330985",
     "Year": "2019",
     "Venue": "KDD",
-    "Authors": "Jie Zhao, Ziyu Guan, Huan Sun",
+    "Authors": [
+      "Jie Zhao",
+      "Ziyu Guan",
+      "Huan Sun"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -5827,7 +6862,14 @@
     "url": "https://proceedings.neurips.cc/paper/2019/hash/adf7ee2dcf142b0e11888e72b43fcb75-Abstract.html",
     "Year": "2019",
     "Venue": "NeurIPS",
-    "Authors": "Chaofan Chen, Oscar Li, Daniel Tao, Alina Barnett, Cynthia Rudin, Jonathan Su",
+    "Authors": [
+      "Chaofan Chen",
+      "Oscar Li",
+      "Daniel Tao",
+      "Alina Barnett",
+      "Cynthia Rudin",
+      "Jonathan Su"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -5855,7 +6897,12 @@
     "url": "https://proceedings.neurips.cc/paper/2019/hash/77d2afcb31f6493e350fca61764efb9a-Abstract.html",
     "Year": "2019",
     "Venue": "NeurIPS",
-    "Authors": "Amirata Ghorbani, James Wexler, James Y. Zou, Been Kim",
+    "Authors": [
+      "Amirata Ghorbani",
+      "James Wexler",
+      "James Y. Zou",
+      "Been Kim"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -5885,7 +6932,13 @@
     "url": "https://proceedings.neurips.cc/paper/2019/hash/6950aa02ae8613af620668146dd11840-Abstract.html",
     "Year": "2019",
     "Venue": "NeurIPS",
-    "Authors": "Lukas Hoyer, Mauricio Munoz, Prateek Katiyar, Anna Khoreva, Volker Fischer 0003",
+    "Authors": [
+      "Lukas Hoyer",
+      "Mauricio Munoz",
+      "Prateek Katiyar",
+      "Anna Khoreva",
+      "Volker Fischer 0003"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -5914,7 +6967,10 @@
     "url": "https://proceedings.neurips.cc/paper/2019/hash/ae3539867aaeec609a4260c6feb725f4-Abstract.html",
     "Year": "2019",
     "Venue": "NeurIPS",
-    "Authors": "Wonjae Kim, Yoonho Lee",
+    "Authors": [
+      "Wonjae Kim",
+      "Yoonho Lee"
+    ],
     "Type of Data": [
       "Images",
       "Text",
@@ -5944,7 +7000,10 @@
     "url": "https://proceedings.neurips.cc/paper/2019/hash/68053af2923e00204c3ca7c6a3150cf7-Abstract.html",
     "Year": "2019",
     "Venue": "NeurIPS",
-    "Authors": "Pei Wang, Nuno Vasconcelos",
+    "Authors": [
+      "Pei Wang",
+      "Nuno Vasconcelos"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -5973,7 +7032,13 @@
     "url": "https://proceedings.neurips.cc/paper/2019/hash/d80b7040b773199015de6d3b4293c8ff-Abstract.html",
     "Year": "2019",
     "Venue": "NeurIPS",
-    "Authors": "Zhitao Ying, Dylan Bourgeois, Jiaxuan You, Marinka Zitnik, Jure Leskovec",
+    "Authors": [
+      "Zhitao Ying",
+      "Dylan Bourgeois",
+      "Jiaxuan You",
+      "Marinka Zitnik",
+      "Jure Leskovec"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -6003,7 +7068,11 @@
     "url": "https://doi.org/10.1145/3331184.3331211",
     "Year": "2019",
     "Venue": "SIGIR",
-    "Authors": "Krisztian Balog, Filip Radlinski, Shushan Arakelyan",
+    "Authors": [
+      "Krisztian Balog",
+      "Filip Radlinski",
+      "Shushan Arakelyan"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -6031,7 +7100,13 @@
     "url": "https://doi.org/10.1145/3331184.3331245",
     "Year": "2019",
     "Venue": "SIGIR",
-    "Authors": "Xianjing Han, Xuemeng Song, Jianhua Yin, Yinglong Wang 0001, Liqiang Nie",
+    "Authors": [
+      "Xianjing Han",
+      "Xuemeng Song",
+      "Jianhua Yin",
+      "Yinglong Wang 0001",
+      "Liqiang Nie"
+    ],
     "Type of Data": [
       "Images",
       "Text",
@@ -6062,7 +7137,14 @@
     "url": "https://doi.org/10.1145/3331184.3331216",
     "Year": "2019",
     "Venue": "SIGIR",
-    "Authors": "Chenliang Li, Cong Quan, Li Peng, Yunwei Qi, Yuming Deng, Libing Wu",
+    "Authors": [
+      "Chenliang Li",
+      "Cong Quan",
+      "Li Peng",
+      "Yunwei Qi",
+      "Yuming Deng",
+      "Libing Wu"
+    ],
     "Type of Data": [
       "Text",
       "User-item matrix"
@@ -6092,7 +7174,12 @@
     "url": "https://doi.org/10.1145/3331184.3331244",
     "Year": "2019",
     "Venue": "SIGIR",
-    "Authors": "Yiyi Tao, Yiling Jia, Nan Wang, Hongning Wang",
+    "Authors": [
+      "Yiyi Tao",
+      "Yiling Jia",
+      "Nan Wang",
+      "Hongning Wang"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -6121,7 +7208,13 @@
     "url": "https://doi.org/10.1145/3331184.3331203",
     "Year": "2019",
     "Venue": "SIGIR",
-    "Authors": "Yikun Xian, Zuohui Fu, S. Muthukrishnan, Gerard de Melo, Yongfeng Zhang",
+    "Authors": [
+      "Yikun Xian",
+      "Zuohui Fu",
+      "S. Muthukrishnan",
+      "Gerard de Melo",
+      "Yongfeng Zhang"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -6150,7 +7243,15 @@
     "url": "https://doi.org/10.1145/3331184.3331242",
     "Year": "2019",
     "Venue": "SIGIR",
-    "Authors": "Xun Yang, Xiangnan He 0001, Xiang Wang 0010, Yunshan Ma, Fuli Feng, Meng Wang 0001, Tat-Seng Chua",
+    "Authors": [
+      "Xun Yang",
+      "Xiangnan He 0001",
+      "Xiang Wang 0010",
+      "Yunshan Ma",
+      "Fuli Feng",
+      "Meng Wang 0001",
+      "Tat-Seng Chua"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -6180,7 +7281,16 @@
     "url": "https://doi.org/10.1145/3308558.3313607",
     "Year": "2019",
     "Venue": "WWW",
-    "Authors": "Weizhi Ma, Min Zhang 0006, Yue Cao, Woojeong Jin, Chenyang Wang, Yiqun Liu 0001, Shaoping Ma, Xiang Ren 0001",
+    "Authors": [
+      "Weizhi Ma",
+      "Min Zhang 0006",
+      "Yue Cao",
+      "Woojeong Jin",
+      "Chenyang Wang",
+      "Yiqun Liu 0001",
+      "Shaoping Ma",
+      "Xiang Ren 0001"
+    ],
     "Type of Data": [
       "Graph data",
       "User-item matrix"
@@ -6209,7 +7319,12 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17410",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "Yonatan Bisk, Kevin J. Shih, Yejin Choi, Daniel Marcu",
+    "Authors": [
+      "Yonatan Bisk",
+      "Kevin J. Shih",
+      "Yejin Choi",
+      "Daniel Marcu"
+    ],
     "Type of Data": [
       "Other"
     ],
@@ -6237,7 +7352,12 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16629",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "Shiou Tian Hsu, Changsung Moon, Paul Jones 0001, Nagiza F. Samatova",
+    "Authors": [
+      "Shiou Tian Hsu",
+      "Changsung Moon",
+      "Paul Jones 0001",
+      "Nagiza F. Samatova"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -6265,7 +7385,12 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17082",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "Oscar Li, Hao Liu 0015, Chaofan Chen, Cynthia Rudin",
+    "Authors": [
+      "Oscar Li",
+      "Hao Liu 0015",
+      "Chaofan Chen",
+      "Cynthia Rudin"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -6293,7 +7418,12 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16673",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "An T. Nguyen 0001, Aditya Kharosekar, Matthew Lease, Byron C. Wallace",
+    "Authors": [
+      "An T. Nguyen 0001",
+      "Aditya Kharosekar",
+      "Matthew Lease",
+      "Byron C. Wallace"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -6321,7 +7451,12 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17090",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "Hamid Palangi, Paul Smolensky, Xiaodong He 0001, Li Deng 0001",
+    "Authors": [
+      "Hamid Palangi",
+      "Paul Smolensky",
+      "Xiaodong He 0001",
+      "Li Deng 0001"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -6351,7 +7486,11 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16982",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "Marco T\u00falio Ribeiro, Sameer Singh 0001, Carlos Guestrin",
+    "Authors": [
+      "Marco T\u00falio Ribeiro",
+      "Sameer Singh 0001",
+      "Carlos Guestrin"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -6387,7 +7526,10 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17337",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "Andrew Slavin Ross, Finale Doshi-Velez",
+    "Authors": [
+      "Andrew Slavin Ross",
+      "Finale Doshi-Velez"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -6416,7 +7558,10 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16396",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "Raif M. Rustamov, James T. Klosowski",
+    "Authors": [
+      "Raif M. Rustamov",
+      "James T. Klosowski"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -6447,7 +7592,13 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17433",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "Anant Subramanian, Danish Pruthi, Harsh Jhamtani, Taylor Berg-Kirkpatrick, Eduard H. Hovy",
+    "Authors": [
+      "Anant Subramanian",
+      "Danish Pruthi",
+      "Harsh Jhamtani",
+      "Taylor Berg-Kirkpatrick",
+      "Eduard H. Hovy"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -6481,7 +7632,14 @@
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16285",
     "Year": "2018",
     "Venue": "AAAI",
-    "Authors": "Mike Wu, Michael C. Hughes, Sonali Parbhoo, Maurizio Zazzi, Volker Roth 0001, Finale Doshi-Velez",
+    "Authors": [
+      "Mike Wu",
+      "Michael C. Hughes",
+      "Sonali Parbhoo",
+      "Maurizio Zazzi",
+      "Volker Roth 0001",
+      "Finale Doshi-Velez"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Time series"
@@ -6511,7 +7669,11 @@
     "url": "https://www.aclweb.org/anthology/P18-1101/",
     "Year": "2018",
     "Venue": "ACL",
-    "Authors": "Tiancheng Zhao, Kyusong Lee, Maxine Esk\u00e9nazi",
+    "Authors": [
+      "Tiancheng Zhao",
+      "Kyusong Lee",
+      "Maxine Esk\u00e9nazi"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -6540,7 +7702,11 @@
     "url": "https://www.aclweb.org/anthology/P18-1200/",
     "Year": "2018",
     "Venue": "ACL",
-    "Authors": "Ryo Takahashi, Ran Tian, Kentaro Inui",
+    "Authors": [
+      "Ryo Takahashi",
+      "Ran Tian",
+      "Kentaro Inui"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -6570,7 +7736,13 @@
     "url": "https://www.aclweb.org/anthology/P18-1208/",
     "Year": "2018",
     "Venue": "ACL",
-    "Authors": "Amir Zadeh 0001, Paul Pu Liang, Soujanya Poria, Erik Cambria, Louis-Philippe Morency",
+    "Authors": [
+      "Amir Zadeh 0001",
+      "Paul Pu Liang",
+      "Soujanya Poria",
+      "Erik Cambria",
+      "Louis-Philippe Morency"
+    ],
     "Type of Data": [
       "Text",
       "Video",
@@ -6601,7 +7773,11 @@
     "url": "https://www.aclweb.org/anthology/P18-1032/",
     "Year": "2018",
     "Venue": "ACL",
-    "Authors": "Nina P\u00f6rner, Hinrich Sch\u00fctze, Benjamin Roth 0001",
+    "Authors": [
+      "Nina P\u00f6rner",
+      "Hinrich Sch\u00fctze",
+      "Benjamin Roth 0001"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -6629,7 +7805,12 @@
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Chuang_Learning_to_Act_CVPR_2018_paper.html",
     "Year": "2018",
     "Venue": "CVPR",
-    "Authors": "Ching-Yao Chuang, Jiaman Li, Antonio Torralba 0001, Sanja Fidler",
+    "Authors": [
+      "Ching-Yao Chuang",
+      "Jiaman Li",
+      "Antonio Torralba 0001",
+      "Sanja Fidler"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -6659,7 +7840,10 @@
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Fong_Net2Vec_Quantifying_and_CVPR_2018_paper.html",
     "Year": "2018",
     "Venue": "CVPR",
-    "Authors": "Ruth Fong, Andrea Vedaldi",
+    "Authors": [
+      "Ruth Fong",
+      "Andrea Vedaldi"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -6688,7 +7872,12 @@
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Mascharka_Transparency_by_Design_CVPR_2018_paper.html",
     "Year": "2018",
     "Venue": "CVPR",
-    "Authors": "David Mascharka, Philip Tran, Ryan Soklaski, Arjun Majumdar",
+    "Authors": [
+      "David Mascharka",
+      "Philip Tran",
+      "Ryan Soklaski",
+      "Arjun Majumdar"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -6717,7 +7906,15 @@
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Park_Multimodal_Explanations_Justifying_CVPR_2018_paper.html",
     "Year": "2018",
     "Venue": "CVPR",
-    "Authors": "Dong Huk Park, Lisa Anne Hendricks, Zeynep Akata, Anna Rohrbach, Bernt Schiele, Trevor Darrell, Marcus Rohrbach",
+    "Authors": [
+      "Dong Huk Park",
+      "Lisa Anne Hendricks",
+      "Zeynep Akata",
+      "Anna Rohrbach",
+      "Bernt Schiele",
+      "Trevor Darrell",
+      "Marcus Rohrbach"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -6748,7 +7945,12 @@
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Interpret_Neural_Networks_CVPR_2018_paper.html",
     "Year": "2018",
     "Venue": "CVPR",
-    "Authors": "Yulong Wang, Hang Su 0006, Bo Zhang 0010, Xiaolin Hu 0001",
+    "Authors": [
+      "Yulong Wang",
+      "Hang Su 0006",
+      "Bo Zhang 0010",
+      "Xiaolin Hu 0001"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -6776,7 +7978,13 @@
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Interpretable_Video_Captioning_CVPR_2018_paper.html",
     "Year": "2018",
     "Venue": "CVPR",
-    "Authors": "Xian Wu, Guanbin Li, Qingxing Cao, Qingge Ji, Liang Lin",
+    "Authors": [
+      "Xian Wu",
+      "Guanbin Li",
+      "Qingxing Cao",
+      "Qingge Ji",
+      "Liang Lin"
+    ],
     "Type of Data": [
       "Video"
     ],
@@ -6804,7 +8012,11 @@
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Interpretable_Convolutional_Neural_CVPR_2018_paper.html",
     "Year": "2018",
     "Venue": "CVPR",
-    "Authors": "Quanshi Zhang, Ying Nian Wu, Song-Chun Zhu",
+    "Authors": [
+      "Quanshi Zhang",
+      "Ying Nian Wu",
+      "Song-Chun Zhu"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -6834,7 +8046,13 @@
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_DeepVoting_A_Robust_CVPR_2018_paper.html",
     "Year": "2018",
     "Venue": "CVPR",
-    "Authors": "Zhishuai Zhang, Cihang Xie, Jianyu Wang, Lingxi Xie, Alan L. Yuille",
+    "Authors": [
+      "Zhishuai Zhang",
+      "Cihang Xie",
+      "Jianyu Wang",
+      "Lingxi Xie",
+      "Alan L. Yuille"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -6864,7 +8082,12 @@
     "url": "https://doi.org/10.1109/ICDM.2018.00135",
     "Year": "2018",
     "Venue": "ICDM",
-    "Authors": "Kishlay Jha, Yaqing Wang, Guangxu Xun, Aidong Zhang",
+    "Authors": [
+      "Kishlay Jha",
+      "Yaqing Wang",
+      "Guangxu Xun",
+      "Aidong Zhang"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -6892,7 +8115,12 @@
     "url": "https://doi.org/10.1109/ICDM.2018.00036",
     "Year": "2018",
     "Venue": "ICDM",
-    "Authors": "Isak Karlsson, Jonathan Rebane, Panagiotis Papapetrou, Aristides Gionis",
+    "Authors": [
+      "Isak Karlsson",
+      "Jonathan Rebane",
+      "Panagiotis Papapetrou",
+      "Aristides Gionis"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -6920,7 +8148,14 @@
     "url": "https://doi.org/10.1109/ICDM.2018.00074",
     "Year": "2018",
     "Venue": "ICDM",
-    "Authors": "Xiting Wang, Yiru Chen, Jie Yang, Le Wu, Zhengtao Wu, Xing Xie 0001",
+    "Authors": [
+      "Xiting Wang",
+      "Yiru Chen",
+      "Jie Yang",
+      "Le Wu",
+      "Zhengtao Wu",
+      "Xing Xie 0001"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -6949,7 +8184,15 @@
     "url": "https://openreview.net/forum?id=Hkn7CBaTW",
     "Year": "2018",
     "Venue": "ICLR",
-    "Authors": "Pieter-Jan Kindermans, Kristof T. Sch\u00fctt, Maximilian Alber, Klaus-Robert M\u00fcller, Dumitru Erhan, Been Kim, Sven D\u00e4hne",
+    "Authors": [
+      "Pieter-Jan Kindermans",
+      "Kristof T. Sch\u00fctt",
+      "Maximilian Alber",
+      "Klaus-Robert M\u00fcller",
+      "Dumitru Erhan",
+      "Been Kim",
+      "Sven D\u00e4hne"
+    ],
     "Type of Data": [
       "Images",
       "Any"
@@ -6978,7 +8221,11 @@
     "url": "https://openreview.net/forum?id=SJJQVZW0b",
     "Year": "2018",
     "Venue": "ICLR",
-    "Authors": "Tianmin Shu, Caiming Xiong, Richard Socher",
+    "Authors": [
+      "Tianmin Shu",
+      "Caiming Xiong",
+      "Richard Socher"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -7007,7 +8254,11 @@
     "url": "https://openreview.net/forum?id=S1J2ZyZ0Z",
     "Year": "2018",
     "Venue": "ICLR",
-    "Authors": "Alexander Trott, Caiming Xiong, Richard Socher",
+    "Authors": [
+      "Alexander Trott",
+      "Caiming Xiong",
+      "Richard Socher"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -7036,7 +8287,11 @@
     "url": "http://proceedings.mlr.press/v80/adel18a.html",
     "Year": "2018",
     "Venue": "ICML",
-    "Authors": "Tameem Adel, Zoubin Ghahramani, Adrian Weller",
+    "Authors": [
+      "Tameem Adel",
+      "Zoubin Ghahramani",
+      "Adrian Weller"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -7065,7 +8320,12 @@
     "url": "http://proceedings.mlr.press/v80/ainsworth18a.html",
     "Year": "2018",
     "Venue": "ICML",
-    "Authors": "Samuel K. Ainsworth, Nicholas J. Foti, Adrian K. C. Lee, Emily B. Fox",
+    "Authors": [
+      "Samuel K. Ainsworth",
+      "Nicholas J. Foti",
+      "Adrian K. C. Lee",
+      "Emily B. Fox"
+    ],
     "Type of Data": [
       "Images",
       "Video",
@@ -7095,7 +8355,15 @@
     "url": "http://proceedings.mlr.press/v80/kim18d.html",
     "Year": "2018",
     "Venue": "ICML",
-    "Authors": "Been Kim, Martin Wattenberg, Justin Gilmer, Carrie J. Cai, James Wexler, Fernanda B. Vi\u00e9gas, Rory Sayres",
+    "Authors": [
+      "Been Kim",
+      "Martin Wattenberg",
+      "Justin Gilmer",
+      "Carrie J. Cai",
+      "James Wexler",
+      "Fernanda B. Vi\u00e9gas",
+      "Rory Sayres"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -7126,7 +8394,13 @@
     "url": "http://proceedings.mlr.press/v80/verma18a.html",
     "Year": "2018",
     "Venue": "ICML",
-    "Authors": "Abhinav Verma, Vijayaraghavan Murali, Rishabh Singh, Pushmeet Kohli, Swarat Chaudhuri",
+    "Authors": [
+      "Abhinav Verma",
+      "Vijayaraghavan Murali",
+      "Rishabh Singh",
+      "Pushmeet Kohli",
+      "Swarat Chaudhuri"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -7154,7 +8428,12 @@
     "url": "https://doi.org/10.24963/ijcai.2018/472",
     "Year": "2018",
     "Venue": "IJCAI",
-    "Authors": "Liang Hu 0004, Songlei Jian, Longbing Cao, Qingkui Chen",
+    "Authors": [
+      "Liang Hu 0004",
+      "Songlei Jian",
+      "Longbing Cao",
+      "Qingkui Chen"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Text",
@@ -7184,7 +8463,10 @@
     "url": "https://doi.org/10.24963/ijcai.2018/46",
     "Year": "2018",
     "Venue": "IJCAI",
-    "Authors": "Christophe Labreuche, Simon Fossier",
+    "Authors": [
+      "Christophe Labreuche",
+      "Simon Fossier"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -7213,7 +8495,11 @@
     "url": "https://doi.org/10.24963/ijcai.2018/341",
     "Year": "2018",
     "Venue": "IJCAI",
-    "Authors": "Ninghao Liu, Donghwa Shin, Xia Hu",
+    "Authors": [
+      "Ninghao Liu",
+      "Donghwa Shin",
+      "Xia Hu"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -7246,7 +8532,15 @@
     "url": "https://doi.org/10.24963/ijcai.2018/590",
     "Year": "2018",
     "Venue": "IJCAI",
-    "Authors": "Ling Luo, Xiang Ao, Feiyang Pan, Jin Wang 0007, Tong Zhao, Ningzi Yu, Qing He 0003",
+    "Authors": [
+      "Ling Luo",
+      "Xiang Ao",
+      "Feiyang Pan",
+      "Jin Wang 0007",
+      "Tong Zhao",
+      "Ningzi Yu",
+      "Qing He 0003"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -7274,7 +8568,11 @@
     "url": "https://doi.org/10.24963/ijcai.2018/269",
     "Year": "2018",
     "Venue": "IJCAI",
-    "Authors": "Antonio Rago 0001, Oana Cocarascu, Francesca Toni",
+    "Authors": [
+      "Antonio Rago 0001",
+      "Oana Cocarascu",
+      "Francesca Toni"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -7303,7 +8601,12 @@
     "url": "https://doi.org/10.24963/ijcai.2018/601",
     "Year": "2018",
     "Venue": "IJCAI",
-    "Authors": "Motoki Sato, Jun Suzuki, Hiroyuki Shindo, Yuji Matsumoto 0001",
+    "Authors": [
+      "Motoki Sato",
+      "Jun Suzuki",
+      "Hiroyuki Shindo",
+      "Yuji Matsumoto 0001"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -7332,7 +8635,11 @@
     "url": "https://doi.org/10.24963/ijcai.2018/708",
     "Year": "2018",
     "Venue": "IJCAI",
-    "Authors": "Andy Shih, Arthur Choi, Adnan Darwiche",
+    "Authors": [
+      "Andy Shih",
+      "Arthur Choi",
+      "Adnan Darwiche"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -7362,7 +8669,12 @@
     "url": "https://doi.org/10.1145/3219819.3219904",
     "Year": "2018",
     "Venue": "KDD",
-    "Authors": "Tian Bai, Shanshan Zhang, Brian L. Egleston, Slobodan Vucetic",
+    "Authors": [
+      "Tian Bai",
+      "Shanshan Zhang",
+      "Brian L. Egleston",
+      "Slobodan Vucetic"
+    ],
     "Type of Data": [
       "Text",
       "Time series"
@@ -7392,7 +8704,13 @@
     "url": "https://doi.org/10.1145/3219819.3220063",
     "Year": "2018",
     "Venue": "KDD",
-    "Authors": "Lingyang Chu, Xia Hu, Juhua Hu, Lanjun Wang, Jian Pei",
+    "Authors": [
+      "Lingyang Chu",
+      "Xia Hu",
+      "Juhua Hu",
+      "Lanjun Wang",
+      "Jian Pei"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -7422,7 +8740,12 @@
     "url": "https://doi.org/10.1145/3219819.3220099",
     "Year": "2018",
     "Venue": "KDD",
-    "Authors": "Mengnan Du, Ninghao Liu, Qingquan Song, Xia Hu",
+    "Authors": [
+      "Mengnan Du",
+      "Ninghao Liu",
+      "Qingquan Song",
+      "Xia Hu"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -7450,7 +8773,9 @@
     "url": "https://doi.org/10.1145/3219819.3219871",
     "Year": "2018",
     "Venue": "KDD",
-    "Authors": "Vijay Manikandan Janakiraman",
+    "Authors": [
+      "Vijay Manikandan Janakiraman"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -7479,7 +8804,12 @@
     "url": "https://doi.org/10.1145/3219819.3220001",
     "Year": "2018",
     "Venue": "KDD",
-    "Authors": "Ninghao Liu, Xiao Huang 0001, Jundong Li, Xia Hu",
+    "Authors": [
+      "Ninghao Liu",
+      "Xiao Huang 0001",
+      "Jundong Li",
+      "Xia Hu"
+    ],
     "Type of Data": [
       "Graph data",
       "Other"
@@ -7511,7 +8841,11 @@
     "url": "https://doi.org/10.1145/3219819.3220027",
     "Year": "2018",
     "Venue": "KDD",
-    "Authors": "Ninghao Liu, Hongxia Yang, Xia Hu",
+    "Authors": [
+      "Ninghao Liu",
+      "Hongxia Yang",
+      "Xia Hu"
+    ],
     "Type of Data": [
       "Text",
       "Any"
@@ -7544,7 +8878,12 @@
     "url": "https://doi.org/10.1145/3219819.3220060",
     "Year": "2018",
     "Venue": "KDD",
-    "Authors": "Jingyuan Wang, Ze Wang, Jianfeng Li, Junjie Wu 0001",
+    "Authors": [
+      "Jingyuan Wang",
+      "Ze Wang",
+      "Jianfeng Li",
+      "Junjie Wu 0001"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -7573,7 +8912,12 @@
     "url": "https://doi.org/10.1145/3219819.3219821",
     "Year": "2018",
     "Venue": "KDD",
-    "Authors": "Carl Yang, Xiaolin Shi, Luo Jie, Jiawei Han 0001",
+    "Authors": [
+      "Carl Yang",
+      "Xiaolin Shi",
+      "Luo Jie",
+      "Jiawei Han 0001"
+    ],
     "Type of Data": [
       "Time series",
       "Graph data"
@@ -7604,7 +8948,11 @@
     "url": "https://doi.org/10.1145/3219819.3220073",
     "Year": "2018",
     "Venue": "KDD",
-    "Authors": "Chengxi Zang, Peng Cui 0001, Wenwu Zhu 0001",
+    "Authors": [
+      "Chengxi Zang",
+      "Peng Cui 0001",
+      "Wenwu Zhu 0001"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Time series"
@@ -7633,7 +8981,12 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/4c7a167bb329bd92580a99ce422d6fa6-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Oana-Maria Camburu, Tim Rockt\u00e4schel, Thomas Lukasiewicz, Phil Blunsom",
+    "Authors": [
+      "Oana-Maria Camburu",
+      "Tim Rockt\u00e4schel",
+      "Thomas Lukasiewicz",
+      "Phil Blunsom"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -7661,7 +9014,13 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/4b4edc2630fe75800ddc29a7b4070add-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Wenbo Guo 0002, Sui Huang, Yunzhe Tao, Xinyu Xing, Lin Lin",
+    "Authors": [
+      "Wenbo Guo 0002",
+      "Sui Huang",
+      "Yunzhe Tao",
+      "Xinyu Xing",
+      "Lin Lin"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -7691,7 +9050,12 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/caa202034f268232c26fac9435f54e15-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Maya R. Gupta, Dara Bahri, Andrew Cotter, Kevin Robert Canini",
+    "Authors": [
+      "Maya R. Gupta",
+      "Dara Bahri",
+      "Andrew Cotter",
+      "Kevin Robert Canini"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -7720,7 +9084,15 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/285e19f20beded7d215102b49d5c09a0-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Jay Heo, Haebeom Lee, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang, Sung Ju Hwang",
+    "Authors": [
+      "Jay Heo",
+      "Haebeom Lee",
+      "Saehoon Kim",
+      "Juho Lee",
+      "Kwang Joon Kim",
+      "Eunho Yang",
+      "Sung Ju Hwang"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -7748,7 +9120,11 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/4aeae10ea1c6433c926cdfa558d31134-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Will Norcliffe-Brown, Stathis Vafeias, Sarah Parisot",
+    "Authors": [
+      "Will Norcliffe-Brown",
+      "Stathis Vafeias",
+      "Sarah Parisot"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -7779,7 +9155,11 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/b495ce63ede0f4efc9eec62cb947c162-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Gregory Plumb, Denali Molitor, Ameet S. Talwalkar",
+    "Authors": [
+      "Gregory Plumb",
+      "Denali Molitor",
+      "Ameet S. Talwalkar"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Any"
@@ -7812,7 +9192,13 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/74378afe5e8b20910cf1f939e57f0480-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Michael Tsang, Hanpeng Liu, Sanjay Purushotham, Pavankumar Murali, Yan Liu 0002",
+    "Authors": [
+      "Michael Tsang",
+      "Hanpeng Liu",
+      "Sanjay Purushotham",
+      "Pavankumar Murali",
+      "Yan Liu 0002"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -7846,7 +9232,9 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/32bbf7b2bc4ed14eb1e9c2580056a989-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Tong Wang",
+    "Authors": [
+      "Tong Wang"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -7874,7 +9262,12 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/8a7129b8f3edd95b7d969dfc2c8e9d9d-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Chih-Kuan Yeh, Joon Sik Kim, Ian En-Hsu Yen, Pradeep Ravikumar",
+    "Authors": [
+      "Chih-Kuan Yeh",
+      "Joon Sik Kim",
+      "Ian En-Hsu Yen",
+      "Pradeep Ravikumar"
+    ],
     "Type of Data": [
       "Any",
       "Images"
@@ -7903,7 +9296,11 @@
     "url": "https://proceedings.neurips.cc/paper/2018/hash/300891a62162b960cf02ce3827bb363c-Abstract.html",
     "Year": "2018",
     "Venue": "NeurIPS",
-    "Authors": "Xin Zhang 0035, Armando Solar-Lezama, Rishabh Singh",
+    "Authors": [
+      "Xin Zhang 0035",
+      "Armando Solar-Lezama",
+      "Rishabh Singh"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -7931,7 +9328,12 @@
     "url": "https://doi.org/10.1145/3209978.3210010",
     "Year": "2018",
     "Venue": "SIGIR",
-    "Authors": "Nan Wang, Hongning Wang, Yiling Jia, Yue Yin",
+    "Authors": [
+      "Nan Wang",
+      "Hongning Wang",
+      "Yiling Jia",
+      "Yue Yin"
+    ],
     "Type of Data": [
       "User-item matrix",
       "Text"
@@ -7961,7 +9363,12 @@
     "url": "https://doi.org/10.1145/3178876.3186070",
     "Year": "2018",
     "Venue": "WWW",
-    "Authors": "Chong Chen, Min Zhang 0006, Yiqun Liu 0001, Shaoping Ma",
+    "Authors": [
+      "Chong Chen",
+      "Min Zhang 0006",
+      "Yiqun Liu 0001",
+      "Shaoping Ma"
+    ],
     "Type of Data": [
       "Text",
       "User-item matrix"
@@ -7991,7 +9398,13 @@
     "url": "https://doi.org/10.1145/3178876.3186066",
     "Year": "2018",
     "Venue": "WWW",
-    "Authors": "Xiang Wang 0010, Xiangnan He 0001, Fuli Feng, Liqiang Nie, Tat-Seng Chua",
+    "Authors": [
+      "Xiang Wang 0010",
+      "Xiangnan He 0001",
+      "Fuli Feng",
+      "Liqiang Nie",
+      "Tat-Seng Chua"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -8020,7 +9433,13 @@
     "url": "https://doi.org/10.1145/3178876.3185995",
     "Year": "2018",
     "Venue": "WWW",
-    "Authors": "Huijun Wu 0001, Chen Wang 0008, Jie Yin, Kai Lu, Liming Zhu",
+    "Authors": [
+      "Huijun Wu 0001",
+      "Chen Wang 0008",
+      "Jie Yin",
+      "Kai Lu",
+      "Liming Zhu"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -8050,7 +9469,12 @@
     "url": "http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14909",
     "Year": "2017",
     "Venue": "AAAI",
-    "Authors": "Quanshi Zhang, Ruiming Cao, Ying Nian Wu, Song-Chun Zhu",
+    "Authors": [
+      "Quanshi Zhang",
+      "Ruiming Cao",
+      "Ying Nian Wu",
+      "Song-Chun Zhu"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -8080,7 +9504,12 @@
     "url": "https://doi.org/10.18653/v1/P17-1088",
     "Year": "2017",
     "Venue": "ACL",
-    "Authors": "Qizhe Xie, Xuezhe Ma, Zihang Dai, Eduard H. Hovy",
+    "Authors": [
+      "Qizhe Xie",
+      "Xuezhe Ma",
+      "Zihang Dai",
+      "Eduard H. Hovy"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -8108,7 +9537,13 @@
     "url": "https://doi.org/10.1109/CVPR.2017.354",
     "Year": "2017",
     "Venue": "CVPR",
-    "Authors": "David Bau, Bolei Zhou, Aditya Khosla, Aude Oliva, Antonio Torralba 0001",
+    "Authors": [
+      "David Bau",
+      "Bolei Zhou",
+      "Aditya Khosla",
+      "Aude Oliva",
+      "Antonio Torralba 0001"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -8138,7 +9573,12 @@
     "url": "https://doi.org/10.1109/CVPR.2017.110",
     "Year": "2017",
     "Venue": "CVPR",
-    "Authors": "Yinpeng Dong, Hang Su 0006, Jun Zhu 0001, Bo Zhang 0010",
+    "Authors": [
+      "Yinpeng Dong",
+      "Hang Su 0006",
+      "Jun Zhu 0001",
+      "Bo Zhang 0010"
+    ],
     "Type of Data": [
       "Video"
     ],
@@ -8167,7 +9607,14 @@
     "url": "https://doi.org/10.1109/CVPR.2017.234",
     "Year": "2017",
     "Venue": "CVPR",
-    "Authors": "Xiaodan Liang, Liang Lin, Xiaohui Shen, Jiashi Feng, Shuicheng Yan, Eric P. Xing",
+    "Authors": [
+      "Xiaodan Liang",
+      "Liang Lin",
+      "Xiaohui Shen",
+      "Jiashi Feng",
+      "Shuicheng Yan",
+      "Eric P. Xing"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -8195,7 +9642,10 @@
     "url": "https://doi.org/10.1109/ICCV.2017.320",
     "Year": "2017",
     "Venue": "ICCV",
-    "Authors": "Jinkyu Kim, John F. Canny",
+    "Authors": [
+      "Jinkyu Kim",
+      "John F. Canny"
+    ],
     "Type of Data": [
       "Images",
       "Video"
@@ -8224,7 +9674,14 @@
     "url": "https://doi.org/10.1109/ICCV.2017.74",
     "Year": "2017",
     "Venue": "ICCV",
-    "Authors": "Ramprasaath R. Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam, Devi Parikh, Dhruv Batra",
+    "Authors": [
+      "Ramprasaath R. Selvaraju",
+      "Michael Cogswell",
+      "Abhishek Das",
+      "Ramakrishna Vedantam",
+      "Devi Parikh",
+      "Dhruv Batra"
+    ],
     "Type of Data": [
       "Images",
       "Text"
@@ -8254,7 +9711,12 @@
     "url": "https://doi.org/10.1109/ICCV.2017.611",
     "Year": "2017",
     "Venue": "ICCV",
-    "Authors": "Daniel E. Worrall, Stephan J. Garbin, Daniyar Turmukhambetov, Gabriel J. Brostow",
+    "Authors": [
+      "Daniel E. Worrall",
+      "Stephan J. Garbin",
+      "Daniyar Turmukhambetov",
+      "Gabriel J. Brostow"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -8284,7 +9746,10 @@
     "url": "https://doi.org/10.1109/ICDM.2017.45",
     "Year": "2017",
     "Venue": "ICDM",
-    "Authors": "Masafumi Oyamada, Shinji Nakadai",
+    "Authors": [
+      "Masafumi Oyamada",
+      "Shinji Nakadai"
+    ],
     "Type of Data": [
       "User-item matrix"
     ],
@@ -8314,7 +9779,10 @@
     "url": "https://openreview.net/forum?id=ryhqQFKgl",
     "Year": "2017",
     "Venue": "ICLR",
-    "Authors": "Haizi Yu, Lav R. Varshney",
+    "Authors": [
+      "Haizi Yu",
+      "Lav R. Varshney"
+    ],
     "Type of Data": [
       "Other"
     ],
@@ -8343,7 +9811,15 @@
     "url": "http://proceedings.mlr.press/v70/dempsey17a.html",
     "Year": "2017",
     "Venue": "ICML",
-    "Authors": "Walter H. Dempsey, Alexander Moreno, Christy K. Scott, Michael L. Dennis, David H. Gustafson, Susan A. Murphy, James M. Rehg",
+    "Authors": [
+      "Walter H. Dempsey",
+      "Alexander Moreno",
+      "Christy K. Scott",
+      "Michael L. Dennis",
+      "David H. Gustafson",
+      "Susan A. Murphy",
+      "James M. Rehg"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Time series"
@@ -8372,7 +9848,13 @@
     "url": "http://proceedings.mlr.press/v70/foerster17a.html",
     "Year": "2017",
     "Venue": "ICML",
-    "Authors": "Jakob N. Foerster, Justin Gilmer, Jascha Sohl-Dickstein, Jan Chorowski, David Sussillo",
+    "Authors": [
+      "Jakob N. Foerster",
+      "Justin Gilmer",
+      "Jascha Sohl-Dickstein",
+      "Jan Chorowski",
+      "David Sussillo"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -8402,7 +9884,11 @@
     "url": "https://doi.org/10.24963/ijcai.2017/371",
     "Year": "2017",
     "Venue": "IJCAI",
-    "Authors": "Andrew Slavin Ross, Michael C. Hughes, Finale Doshi-Velez",
+    "Authors": [
+      "Andrew Slavin Ross",
+      "Michael C. Hughes",
+      "Finale Doshi-Velez"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -8433,7 +9919,12 @@
     "url": "https://doi.org/10.1145/3097983.3098039",
     "Year": "2017",
     "Venue": "KDD",
-    "Authors": "Gabriele Tolomei, Fabrizio Silvestri, Andrew Haines, Mounia Lalmas",
+    "Authors": [
+      "Gabriele Tolomei",
+      "Fabrizio Silvestri",
+      "Andrew Haines",
+      "Mounia Lalmas"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -8461,7 +9952,12 @@
     "url": "https://proceedings.neurips.cc/paper/2017/hash/c182f930a06317057d31c73bb2fedd4f-Abstract.html",
     "Year": "2017",
     "Venue": "NeurIPS",
-    "Authors": "Ethan R. Elenberg, Alexandros G. Dimakis, Moran Feldman, Amin Karbasi",
+    "Authors": [
+      "Ethan R. Elenberg",
+      "Alexandros G. Dimakis",
+      "Moran Feldman",
+      "Amin Karbasi"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -8489,7 +9985,11 @@
     "url": "https://proceedings.neurips.cc/paper/2017/hash/0a0a0c8aaa00ade50f74a3f0ca981ed7-Abstract.html",
     "Year": "2017",
     "Venue": "NeurIPS",
-    "Authors": "Wei-Ning Hsu, Yu Zhang 0033, James R. Glass",
+    "Authors": [
+      "Wei-Ning Hsu",
+      "Yu Zhang 0033",
+      "James R. Glass"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -8518,7 +10018,11 @@
     "url": "https://proceedings.neurips.cc/paper/2017/hash/2cd4e8a2ce081c3d7c32c3cde4312ef7-Abstract.html",
     "Year": "2017",
     "Venue": "NeurIPS",
-    "Authors": "Yunzhu Li, Jiaming Song, Stefano Ermon",
+    "Authors": [
+      "Yunzhu Li",
+      "Jiaming Song",
+      "Stefano Ermon"
+    ],
     "Type of Data": [
       "Other"
     ],
@@ -8546,7 +10050,10 @@
     "url": "https://proceedings.neurips.cc/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html",
     "Year": "2017",
     "Venue": "NeurIPS",
-    "Authors": "Scott M. Lundberg, Su-In Lee",
+    "Authors": [
+      "Scott M. Lundberg",
+      "Su-In Lee"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -8579,7 +10086,12 @@
     "url": "https://proceedings.neurips.cc/paper/2017/hash/dc6a7e655d7e5840e66733e9ee67cc69-Abstract.html",
     "Year": "2017",
     "Venue": "NeurIPS",
-    "Authors": "Maithra Raghu, Justin Gilmer, Jason Yosinski, Jascha Sohl-Dickstein",
+    "Authors": [
+      "Maithra Raghu",
+      "Justin Gilmer",
+      "Jason Yosinski",
+      "Jascha Sohl-Dickstein"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images"
@@ -8609,7 +10121,15 @@
     "url": "https://doi.org/10.1109/ICDM.2016.0097",
     "Year": "2016",
     "Venue": "ICDM",
-    "Authors": "Junxiang Chen, Yale Chang, Brian Hobbs, Peter J. Castaldi, Michael H. Cho, Edwin K. Silverman, Jennifer G. Dy",
+    "Authors": [
+      "Junxiang Chen",
+      "Yale Chang",
+      "Brian Hobbs",
+      "Peter J. Castaldi",
+      "Michael H. Cho",
+      "Edwin K. Silverman",
+      "Jennifer G. Dy"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -8638,7 +10158,13 @@
     "url": "https://doi.org/10.1109/ICDM.2016.0101",
     "Year": "2016",
     "Venue": "ICDM",
-    "Authors": "Xuan-Hong Dang, Arlei Silva, Ambuj K. Singh, Ananthram Swami, Prithwish Basu",
+    "Authors": [
+      "Xuan-Hong Dang",
+      "Arlei Silva",
+      "Ambuj K. Singh",
+      "Ananthram Swami",
+      "Prithwish Basu"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -8666,7 +10192,14 @@
     "url": "https://doi.org/10.1109/ICDM.2016.0171",
     "Year": "2016",
     "Venue": "ICDM",
-    "Authors": "Tong Wang 0011, Cynthia Rudin, Finale Doshi-Velez, Yimin Liu, Erica Klampfl, Perry MacNeille",
+    "Authors": [
+      "Tong Wang 0011",
+      "Cynthia Rudin",
+      "Finale Doshi-Velez",
+      "Yimin Liu",
+      "Erica Klampfl",
+      "Perry MacNeille"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -8694,7 +10227,11 @@
     "url": "https://doi.org/10.1145/2939672.2939874",
     "Year": "2016",
     "Venue": "KDD",
-    "Authors": "Himabindu Lakkaraju, Stephen H. Bach, Jure Leskovec",
+    "Authors": [
+      "Himabindu Lakkaraju",
+      "Stephen H. Bach",
+      "Jure Leskovec"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -8722,7 +10259,11 @@
     "url": "https://doi.org/10.1145/2939672.2939778",
     "Year": "2016",
     "Venue": "KDD",
-    "Authors": "Marco T\u00falio Ribeiro, Sameer Singh 0001, Carlos Guestrin",
+    "Authors": [
+      "Marco T\u00falio Ribeiro",
+      "Sameer Singh 0001",
+      "Carlos Guestrin"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -8760,7 +10301,14 @@
     "url": "https://proceedings.neurips.cc/paper/2016/hash/7c9d0b1f96aebd7b5eca8c3edaa19ebb-Abstract.html",
     "Year": "2016",
     "Venue": "NeurIPS",
-    "Authors": "Xi Chen 0022, Yan Duan, Rein Houthooft, John Schulman, Ilya Sutskever, Pieter Abbeel",
+    "Authors": [
+      "Xi Chen 0022",
+      "Yan Duan",
+      "Rein Houthooft",
+      "John Schulman",
+      "Ilya Sutskever",
+      "Pieter Abbeel"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -8788,7 +10336,14 @@
     "url": "https://proceedings.neurips.cc/paper/2016/hash/231141b34c82aa95e48810a9d1b33a79-Abstract.html",
     "Year": "2016",
     "Venue": "NeurIPS",
-    "Authors": "Edward Choi, Mohammad Taha Bahadori, Jimeng Sun, Joshua Kulas, Andy Schuetz, Walter F. Stewart",
+    "Authors": [
+      "Edward Choi",
+      "Mohammad Taha Bahadori",
+      "Jimeng Sun",
+      "Joshua Kulas",
+      "Andy Schuetz",
+      "Walter F. Stewart"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -8816,7 +10371,12 @@
     "url": "https://proceedings.neurips.cc/paper/2016/hash/0a09c8844ba8f0936c20bd791130d6b6-Abstract.html",
     "Year": "2016",
     "Venue": "NeurIPS",
-    "Authors": "Wittawat Jitkrittum, Zolt\u00e1n Szab\u00f3 0001, Kacper P. Chwialkowski, Arthur Gretton",
+    "Authors": [
+      "Wittawat Jitkrittum",
+      "Zolt\u00e1n Szab\u00f3 0001",
+      "Kacper P. Chwialkowski",
+      "Arthur Gretton"
+    ],
     "Type of Data": [
       "Tabular / structured",
       "Images",
@@ -8848,7 +10408,11 @@
     "url": "https://proceedings.neurips.cc/paper/2016/hash/5680522b8e2bb01943234bce7bf84534-Abstract.html",
     "Year": "2016",
     "Venue": "NeurIPS",
-    "Authors": "Been Kim, Oluwasanmi Koyejo, Rajiv Khanna",
+    "Authors": [
+      "Been Kim",
+      "Oluwasanmi Koyejo",
+      "Rajiv Khanna"
+    ],
     "Type of Data": [
       "Images"
     ],
@@ -8877,7 +10441,10 @@
     "url": "https://proceedings.neurips.cc/paper/2016/hash/97d0145823aeb8ed80617be62e08bdcc-Abstract.html",
     "Year": "2016",
     "Venue": "NeurIPS",
-    "Authors": "Himabindu Lakkaraju, Jure Leskovec",
+    "Authors": [
+      "Himabindu Lakkaraju",
+      "Jure Leskovec"
+    ],
     "Type of Data": [
       "Time series",
       "User-item matrix"
@@ -8908,7 +10475,10 @@
     "url": "https://proceedings.neurips.cc/paper/2016/hash/b2531e7bb29bf22e1daae486fae3417a-Abstract.html",
     "Year": "2016",
     "Venue": "NeurIPS",
-    "Authors": "Yuan Zhao 0004, Il Memming Park",
+    "Authors": [
+      "Yuan Zhao 0004",
+      "Il Memming Park"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -8936,7 +10506,14 @@
     "url": "https://doi.org/10.1145/2911451.2911522",
     "Year": "2016",
     "Venue": "SIGIR",
-    "Authors": "Yukun Zhao, Shangsong Liang, Zhaochun Ren, Jun Ma 0001, Emine Yilmaz, Maarten de Rijke",
+    "Authors": [
+      "Yukun Zhao",
+      "Shangsong Liang",
+      "Zhaochun Ren",
+      "Jun Ma 0001",
+      "Emine Yilmaz",
+      "Maarten de Rijke"
+    ],
     "Type of Data": [
       "Text",
       "Time series",
@@ -8967,7 +10544,12 @@
     "url": "http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9738",
     "Year": "2015",
     "Venue": "AAAI",
-    "Authors": "Been Kim, Kayur Patel, Afshin Rostamizadeh, Julie A. Shah",
+    "Authors": [
+      "Been Kim",
+      "Kayur Patel",
+      "Afshin Rostamizadeh",
+      "Julie A. Shah"
+    ],
     "Type of Data": [
       "Text"
     ],
@@ -8995,7 +10577,11 @@
     "url": "https://doi.org/10.1145/2783258.2783407",
     "Year": "2015",
     "Venue": "KDD",
-    "Authors": "Jialei Wang, Ryohei Fujimaki, Yosuke Motohashi",
+    "Authors": [
+      "Jialei Wang",
+      "Ryohei Fujimaki",
+      "Yosuke Motohashi"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -9025,7 +10611,11 @@
     "url": "https://proceedings.neurips.cc/paper/2015/hash/82965d4ed8150294d4330ace00821d77-Abstract.html",
     "Year": "2015",
     "Venue": "NeurIPS",
-    "Authors": "Been Kim, Julie A. Shah, Finale Doshi-Velez",
+    "Authors": [
+      "Been Kim",
+      "Julie A. Shah",
+      "Finale Doshi-Velez"
+    ],
     "Type of Data": [
       "Tabular / structured"
     ],
@@ -9053,7 +10643,12 @@
     "url": "https://doi.org/10.3115/v1/p14-1046",
     "Year": "2014",
     "Venue": "ACL",
-    "Authors": "Alona Fyshe, Partha Pratim Talukdar, Brian Murphy, Tom M. Mitchell",
+    "Authors": [
+      "Alona Fyshe",
+      "Partha Pratim Talukdar",
+      "Brian Murphy",
+      "Tom M. Mitchell"
+    ],
     "Type of Data": [
       "Time series",
       "Text"
@@ -9084,7 +10679,12 @@
     "url": "https://doi.org/10.1109/ICDM.2014.118",
     "Year": "2014",
     "Venue": "ICDM",
-    "Authors": "Jeffrey Chan, Christopher Leckie, James Bailey 0001, Kotagiri Ramamohanarao",
+    "Authors": [
+      "Jeffrey Chan",
+      "Christopher Leckie",
+      "James Bailey 0001",
+      "Kotagiri Ramamohanarao"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -9112,7 +10712,11 @@
     "url": "https://doi.org/10.1145/2623330.2623733",
     "Year": "2014",
     "Venue": "KDD",
-    "Authors": "Nicola Barbieri, Francesco Bonchi, Giuseppe Manco 0001",
+    "Authors": [
+      "Nicola Barbieri",
+      "Francesco Bonchi",
+      "Giuseppe Manco 0001"
+    ],
     "Type of Data": [
       "Graph data"
     ],
@@ -9141,7 +10745,11 @@
     "url": "https://doi.org/10.1145/2623330.2623694",
     "Year": "2014",
     "Venue": "KDD",
-    "Authors": "Mohamed F. Ghalwash, Vladan Radosavljevic, Zoran Obradovic",
+    "Authors": [
+      "Mohamed F. Ghalwash",
+      "Vladan Radosavljevic",
+      "Zoran Obradovic"
+    ],
     "Type of Data": [
       "Time series"
     ],
@@ -9170,7 +10778,14 @@
     "url": "https://doi.org/10.1145/2600428.2609579",
     "Year": "2014",
     "Venue": "SIGIR",
-    "Authors": "Yongfeng Zhang, Guokun Lai, Min Zhang 0006, Yi Zhang, Yiqun Liu 0001, Shaoping Ma",
+    "Authors": [
+      "Yongfeng Zhang",
+      "Guokun Lai",
+      "Min Zhang 0006",
+      "Yi Zhang",
+      "Yiqun Liu 0001",
+      "Shaoping Ma"
+    ],
     "Type of Data": [
       "Text",
       "User-item matrix"

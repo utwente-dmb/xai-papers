@@ -1,7 +1,7 @@
 import csv
 import json
 
-array_columns = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
+array_columns = {"Authors", "Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"}
 
 def import_csv(csv_loc):
     # read csv to list of dicts
