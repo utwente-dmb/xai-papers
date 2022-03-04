@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@antv/graphin": "^2.5.0",
     "@antv/graphin-components": "^2.4.0",
     "@antv/graphin-icons": "^1.0.0",
