@@ -15,8 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Validate JSON
-        uses: OrRosenblatt/validate-json-action@a7082767d95a588f79b1d742a835b11bbfd4ea32
-        with:
-          schema: ./db/schema.json
-          json: ./db/db.json
+      - name: Validate db json
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: ./db/schema.json
+          INPUT_JSONS: ./db/db.json
