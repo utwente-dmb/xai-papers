@@ -1,4 +1,4 @@
-name: Validate db json
+name: Database validation
 
 on:
   push:
