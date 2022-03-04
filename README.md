@@ -1,14 +1,10 @@
 # DMB Literature Website
-## How to setup
-#### Setup .env
-Create a file ```mongo.env``` with keys ```MONGO_INITDB_ROOT_USERNAME``` and ```MONGO_INITDB_ROOT_PASSWORD```.
+![Database validation](https://github.com/BorisGerretzen/DMBLiteratureWebsite/actions/workflows/main.yml/badge.svg)\
+This is a research paper visualisation website, hosted on Github pages. If you want your paper added to the database, follow the instructions below.
 
-#### Create venv
-Go to backend folder, ```cd backend```\
-Create new venv, ```python -m venv venv```\
-Activate venv, ```.\venv\Scripts\activate```\
-Install requirements, ```pip install -r requirements.txt```
+## Add a paper
+asdasdasdasdasasd
 
-## How to run
-For debugging: ```docker-compose up --build```\
-For production: ```docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build```
+
+## Remove a paper
+asdasdasdasdaas
