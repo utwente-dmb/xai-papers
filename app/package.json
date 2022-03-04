@@ -1,6 +1,7 @@
 {
   "name": "app",
   "version": "0.1.0",
+  "homepage": "https://borisgerretzen.github.io/DMBLiteratureWebsite/",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
