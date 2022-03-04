@@ -1,10 +1,10 @@
-name: Validation
+name: Deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [ boris ]
   pull_request:
-    branches: [ master ]
+    branches: [ boris ]
 
   workflow_dispatch:
 
@@ -14,9 +14,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.14'
+      - run: npm install
+      - run: npm build
 
-      - name: Validate db json
-        uses: docker://orrosenblatt/validate-json-action:latest
-        env:
-          INPUT_SCHEMA: ./db/schema.json
-          INPUT_JSONS: ./db/db.json
+      - uses: peaceiris/actions-gh-pages@v3
+      with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./build
