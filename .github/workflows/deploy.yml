@@ -2,9 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ boris ]
-  pull_request:
-    branches: [ boris ]
+    branches: [ master ]
 
   workflow_dispatch:
 
