@@ -1,6 +1,7 @@
 import csv
 import json
 
+array_columns = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
 
 def import_csv(csv_loc):
     # read csv to list of dicts
@@ -13,7 +14,7 @@ def import_csv(csv_loc):
         for row in rows:
             obj = {}
             for k, v in row.items():
-                if ',' in v:
+                if k in array_columns:
                     v = [x.strip() for x in v.split(',')]
                 obj[k] = v
             objs.append(obj)
