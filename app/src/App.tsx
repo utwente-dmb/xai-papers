@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import 'antd/dist/antd.css';
-import { Button, Layout, Menu, Table, Mentions } from 'antd'
+import { Layout, Menu, Table } from 'antd'
 import { PlusCircleOutlined, DotChartOutlined, MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons'
 import { TestComponent } from './components'
 import { useAppSelector } from './hooks';
 
-const { Header, Content, Footer, Sider} = Layout
+const { Header, Footer, Sider} = Layout
 
 const columns = [
   {
@@ -25,10 +25,9 @@ const columns = [
   },
   {
     title: 'Authors',
-    key: 'authors',
     dataIndex: 'Authors',
+    key: 'authors',
   }
-  
 ];
 
 function App() {
