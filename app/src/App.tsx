@@ -12,6 +12,7 @@ import {
   DatePicker,
   Space,
   Dropdown,
+  Input,
 } from "antd";
 import {
   PlusCircleOutlined,
@@ -31,6 +32,7 @@ import { text } from "stream/consumers";
 import { TestChart } from "./components";
 import { CustomDropDown } from "./components";
 
+const { Search } = Input;
 const { Header, Content, Footer, Sider } = Layout;
 const { Panel } = Collapse;
 
@@ -107,30 +109,30 @@ function App() {
         </Menu>
       </Sider>
       <Layout>
-        <Header style={{ position: "sticky", top: 0, width: "100%" }}>
-          <Menu theme="dark" mode="horizontal">
-            <Menu.Item key="1">Share</Menu.Item>
-            <Menu.Item key="2">About</Menu.Item>
-            <Menu.Item key="3">Feedback</Menu.Item>
-          </Menu>
-        </Header>
+        
         <Content style={{ padding: "0 50px", marginTop: 20 }}>
-          <TestChart></TestChart>
-          <Row justify="end">
-            <Col span={12}>
-              <CustomDropDown />
+          <Row gutter={10}>
+            <Col span={5}>
+              <TestChart></TestChart>
             </Col>
-            <Col>
-              <CustomDropDown />
+            <Col span={5}>
+              <TestChart></TestChart>
             </Col>
-            <Col>
-              <CustomDropDown />
+            <Col span={14}>
+              <TestChart></TestChart>
             </Col>
+          </Row>
+          <Row justify="end" gutter={4} style={{ marginTop: 10 }}>
+            {Object.values(CustomDropDown())}
             <Col>
               <RangePicker></RangePicker>
             </Col>
+            <Col>
+              <Search placeholder="input search text" style={{ width: 200 }} />
+            </Col>
           </Row>
           <Table
+            style={{ marginTop: 10 }}
             columns={columns}
             dataSource={papersData}
             expandable={{
@@ -140,14 +142,13 @@ function App() {
                 </a>
               ),
             }}
-          />
+          ></Table>
           {/* <Collapse>
             <Panel header="This header" key="1" extra={genExtra()}>
               {"asv"}
             </Panel>
           </Collapse> */}
         </Content>
-        <Footer>Footer</Footer>
       </Layout>
     </Layout>
   );
