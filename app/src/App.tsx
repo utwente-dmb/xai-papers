@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
+import papers from './db/db.json'
 import { Button, Layout, Menu } from 'antd'
 import { PlusCircleOutlined, DotChartOutlined, MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons'
+
+console.log('Papers', papers, 'Papers')
 
 const { Header, Content, Footer, Sider} = Layout
 
@@ -14,7 +17,7 @@ function App() {
         collapsible
         collapsed={collapsed}
         onCollapse={(collapsed, type) => {
-          console.log("Where does this even get logged?", collapsed, type)
+          console.log("Ah, so this gets logged in the browser console using F12", collapsed, type)
           setCollapsed(collapsed)
         }}
         style={{
