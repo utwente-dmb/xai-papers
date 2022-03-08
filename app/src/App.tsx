@@ -38,7 +38,6 @@ function App() {
   const papersData = papers.map((paper) => ({...paper, key: papers.indexOf(paper), Authors: paper.Authors[0] + ' et al.'}))
 
   return (
-
       <Layout>
         <Sider
           collapsible
