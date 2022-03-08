@@ -20,11 +20,16 @@ import {
   MenuUnfoldOutlined,
   SettingOutlined,
   GoogleCircleFilled,
+  DownOutlined,
+  DownloadOutlined,
 } from "@ant-design/icons";
 import { TestComponent } from "./components";
 import { useAppSelector } from "./hooks";
-import { TestChart } from "./components";
 import { text } from "stream/consumers";
+
+//Testing
+import { TestChart } from "./components";
+import { CustomDropDown } from "./components";
 
 const { Header, Content, Footer, Sider } = Layout;
 const { Panel } = Collapse;
@@ -58,38 +63,6 @@ const genExtra = () => (
   <a href={"google.com"} style={{ margin: 0 }}>
     {"google.com"}
   </a>
-);
-
-const menu = (
-  <Menu>
-    <Menu.Item>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        1st menu item
-      </a>
-    </Menu.Item>
-    <Menu.Item>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.aliyun.com"
-      >
-        2nd menu item
-      </a>
-    </Menu.Item>
-    <Menu.Item>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        3rd menu item
-      </a>
-    </Menu.Item>
-  </Menu>
 );
 
 function App() {
@@ -134,24 +107,24 @@ function App() {
         </Menu>
       </Sider>
       <Layout>
-        {/* <Header style={{ position: "sticky", top: 0, width: "100%" }}>
+        <Header style={{ position: "sticky", top: 0, width: "100%" }}>
           <Menu theme="dark" mode="horizontal">
             <Menu.Item key="1">Share</Menu.Item>
             <Menu.Item key="2">About</Menu.Item>
             <Menu.Item key="3">Feedback</Menu.Item>
           </Menu>
-        </Header> */}
+        </Header>
         <Content style={{ padding: "0 50px", marginTop: 20 }}>
           <TestChart></TestChart>
           <Row justify="end">
+            <Col span={12}>
+              <CustomDropDown />
+            </Col>
             <Col>
-              <Space direction="vertical">
-                <Space wrap>
-                  <Dropdown overlay={menu} placement="bottomLeft">
-                    <Button>test filter drop down</Button>
-                  </Dropdown>
-                </Space>
-              </Space>
+              <CustomDropDown />
+            </Col>
+            <Col>
+              <CustomDropDown />
             </Col>
             <Col>
               <RangePicker></RangePicker>
