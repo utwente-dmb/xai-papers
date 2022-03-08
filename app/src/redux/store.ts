@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { papersReducer } from './slices'
 
-const store = configureStore({
+export const store = configureStore({
     reducer: {
         papers: papersReducer
     }

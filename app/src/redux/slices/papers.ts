@@ -1,12 +1,8 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 import papers from '../../db/db.json'
-import type { RootState } from '../store'
+import { Paper } from '../../types'
 
-interface PapersState {
-
-}
-
-const initialState: PapersState = papers
+const initialState: Array<Paper> = papers
 
 const papersSlice = createSlice({
     name: 'papers',
