@@ -5,20 +5,82 @@ export interface Paper {
     Year: string
     Venue: string
     Authors: Array<string>
-    'Type of Data': Array<string>
-    'Type of Problem': Array<string>
-    'Type of Model to be Explained': Array<string>
-    'Type of Task': Array<string>
-    'Type of Explanation': Array<string>
-    'Method used to explain': Array<string>
+    'Type of Data': Array<Data>
+    'Type of Problem': Array<Problem>
+    'Type of Model to be Explained': Array<Model>
+    'Type of Task': Array<Task>
+    'Type of Explanation': Array<Explanation>
+    'Method used to explain': Array<Method>
     'Should the paper be included?': string
     'Should the paper be included with filter?': string
 }
 
-export type Data = 'Graph Data' | 'Images' | 'Other' | 'Tabular / structured' | 'Text' | 'Time series' | 'User-item matrix' | 'Video'
-export type Explanation = 'Decision Rules' | 'Decision Tree' |'Disentanglement' | 'Feature Importance' | 'Feature Plot' | 'Graph' | 'Heatmap' | 'Localization' | 'Other' | 'Prototypes' | 'Representation Synthesis' | 'Representation Visualization' | 'Text' | 'Time series' | 'User-item matrix' | 'White-box model'
-export type Problem = ''
-export type Model = 'model'
-export type Task = ''
-export type Method = ''
+export enum Data {
+    GraphData = 'Graph data',
+    Images = 'Images',
+    Other = 'Other',
+    TabularStructured = 'Tabular / structured',
+    Text = 'Text',
+    TimeSeries = 'Time series',
+    UserItemMatrix = 'User-item matrix',
+    Video = 'Video',
+    Any = 'Any'
+}
+
+export enum Explanation {
+    DecisionRules = 'Decision Rules',
+    DecisionTree = 'Decision Tree',
+    Disentanglement = 'Disentanglement',
+    FeatureImportance = 'Feature Importance',
+    FeaturePlot = 'Feature plot',
+    Graph = 'Graph',
+    Heatmap = 'Heatmap',
+    Localization = 'Localization',
+    Other = 'Other',
+    Prototypes = 'Prototypes',
+    RepresentationSynthesis = 'Representation Synthesis',
+    RepresentationVisualization = 'Representation Visualization',
+    Text = 'Text',
+    TimeSeries = 'Time series',
+    UserItemMatrix = 'User-item matrix',
+    WhiteBoxModel = 'White-box model'
+}
+
+export enum Problem {
+    ModelExplanation = 'Model Explanation',
+    ModelInspection = 'Model Inspection',
+    OutcomeExplanation = 'Outcome Explanation',
+    TransparentBoxDesign = 'Transparent Box Design'
+}
+
+export enum Model {
+    NeuralNetwork = '(Deep) Neural Network',
+    ModelAgnostic = 'Any (for a specific task); model-agnostic',
+    Bayesian = 'Bayesian or Hierarchical Network',
+    LogisticRegression = 'Logistic Regression',
+    Other = 'Other',
+    SupportVectorMachine = 'Support Vector Machine',
+    TreeEnsemble = 'Tree Ensemble'
+}
+
+export enum Task {
+    AnomalyDetections = 'Anomaly detection',
+    Classification = 'Classification',
+    Clustering = 'Clustering',
+    Generation = 'Generation',
+    Other = 'Other',
+    PolicyLearning = 'Policy learning',
+    QuestionAnswering = 'Question Answering',
+    Recommendation = 'Recommendation',
+    Regression = 'Regression',
+    RepresntationLearning = 'Representation learning',
+    Retrieval = 'Retrieval'
+}
+
+export enum Method {
+    InterpretabilityPredictiveModel = 'Interpretability built into the predictive model',
+    PostHocExplanation = 'Post-hoc explanation method',
+    SupervisedExplanationTraining = 'Supervised explanation training',
+}
+
 
