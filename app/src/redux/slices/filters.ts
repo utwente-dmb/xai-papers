@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { Data, Explanation, Method, Model, Problem, Task } from '../../types'
 
-type Filters = {
+export type Filters = {
     data: Array<Data>
     problem: Array<Problem>
     model: Array<Model>
