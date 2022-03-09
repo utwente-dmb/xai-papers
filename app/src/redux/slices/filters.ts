@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { Data, Explanation, Method, Model, Problem, Task } from '../../types'
 
 type Filters = {
@@ -22,7 +22,29 @@ const initialState: Filters = {
 const filtersSlice = createSlice({
     name: 'filters',
     initialState,
-    reducers: {}
+    reducers: {
+        reset() {
+            return initialState
+        },
+        setData(state, action: PayloadAction<Array<Data>>) {
+            state.data = action.payload
+        },
+        setProblem(state, action: PayloadAction<Array<Problem>>) {
+            state.problem = action.payload
+        },
+        setModel(state, action: PayloadAction<Array<Model>>) {
+            state.model = action.payload
+        },
+        setTask(state, action: PayloadAction<Array<Task>>) {
+            state.task = action.payload
+        },
+        setExplanation(state, action: PayloadAction<Array<Explanation>>) {
+            state.explanation = action.payload
+        },
+        setMethod(state, action: PayloadAction<Array<Method>>) {
+            state.method = action.payload
+        }
+    }
 })
 
 export const filtersReducer = filtersSlice.reducer

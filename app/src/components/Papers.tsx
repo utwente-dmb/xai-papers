@@ -1,5 +1,5 @@
 import { Table } from 'antd'
-import { useAppSelector } from "../hooks";
+import { useFilteredPapers } from "../hooks";
 import {TagList} from "../components";
 const columns = [
     {
@@ -26,16 +26,11 @@ const columns = [
 
 function Papers(): JSX.Element {
 
-    const { papers, filters } = useAppSelector((state) => state);
-
-    const filteredPapers = papers.filter((paper) => {
-      return paper
-    })
-    console.log()
+    const filteredPapers = useFilteredPapers()
 
     const papersData = filteredPapers.map((paper) => ({
       ...paper,
-      key: papers.indexOf(paper),
+      key: filteredPapers.indexOf(paper),
       Authors: paper.Authors[0] + " et al.",
     }));
 

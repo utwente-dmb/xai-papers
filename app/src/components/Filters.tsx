@@ -1,20 +1,17 @@
 import React from "react";
 import { Select, Col, Row, DatePicker, Input } from "antd";
 import { Data, Explanation, Method, Model, Problem, Task } from "../types";
+import { filtersActions } from '../redux'
+import { useAppDispatch } from '../hooks'
 
 const { RangePicker } = DatePicker;
 const { Search } = Input;
 
-type FilterProps = {
-  placeholder: string, enumerator: Record<number, string>
+type FilterProps<T> = {
+  placeholder: string, enumerator: Record<number, string>, handleChange: (val: Array<T>) => void
 }
 
-function Filter({placeholder, enumerator}: FilterProps): JSX.Element {
-
-  function handleChange(value: any, option: any) {
-    console.log("Enum", enumerator, Object.entries(enumerator))
-    console.log("Value", value, "Option", option);
-  }
+function Filter<T>({placeholder, enumerator, handleChange}: FilterProps<T> ): JSX.Element {
 
   return (
     <Col span={4}>
@@ -36,14 +33,40 @@ function Filter({placeholder, enumerator}: FilterProps): JSX.Element {
 
 function Filters(): JSX.Element {
 
+  const dispatch = useAppDispatch()
+
+  function handleDataChange(value: Array<Data>) { 
+    dispatch(filtersActions.setData(value))
+  }
+
+  function handleProblemChange(value: Array<Problem>) { 
+    dispatch(filtersActions.setProblem(value))
+  }
+  
+  function handleModelChange(value: Array<Model>) { 
+    dispatch(filtersActions.setModel(value))
+  }
+
+  function handleTaskChange(value: Array<Task>) {
+    dispatch(filtersActions.setTask(value))
+  }
+
+  function handleExplanationChange(value: Array<Explanation>) {
+    dispatch(filtersActions.setExplanation(value))
+  }
+
+  function handleMethodChange(value: Array<Method>) {
+    dispatch(filtersActions.setMethod(value))
+  }
+
   return (
     <Row justify="end" gutter={4} style={{ marginTop: 10 }}>
-      <Filter placeholder="Type of Data" enumerator={Data} />
-      <Filter placeholder="Type of Problem" enumerator={Problem} />
-      <Filter placeholder="Type of Model to be Explained" enumerator={Model} />
-      <Filter placeholder="Type of Task" enumerator={Task} />
-      <Filter placeholder="Type of Explanation" enumerator={Explanation} />
-      <Filter placeholder="Method used to explain" enumerator={Method} />
+      <Filter placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange}/>
+      <Filter placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} />
+      <Filter placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} />
+      <Filter placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} />
+      <Filter placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} />
+      <Filter placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} />
 
       <Col>
         <RangePicker></RangePicker>
@@ -54,7 +77,6 @@ function Filters(): JSX.Element {
       </Col>
     </Row>
   )
-
 }
 
 export default Filters;
