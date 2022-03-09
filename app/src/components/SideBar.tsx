@@ -6,6 +6,7 @@ import {
 import {
 PlusCircleOutlined,
 DotChartOutlined,
+InfoCircleOutlined,
 MenuFoldOutlined,
 MenuUnfoldOutlined,
 } from "@ant-design/icons";
@@ -43,6 +44,8 @@ function SideBar(): JSX.Element {
             </Menu.Item>
             <Menu.Item key="2" icon={<DotChartOutlined />}>
                 Charts
+            </Menu.Item>
+            <Menu.Item key= "3" icon= {<InfoCircleOutlined/>}>
             </Menu.Item>
             </Menu>
         </Sider>
