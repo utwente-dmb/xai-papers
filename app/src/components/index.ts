@@ -1,4 +1,5 @@
-export { default as TestComponent } from './Test'
 export { default as TestChart } from './TestChart'
-export { default as CustomDropDown } from './CustomDropDown'
-
+export { default as Filters } from './Filters'
+export { default as SideBar } from './SideBar'
+export { default as Charts } from './Charts'
+export { default as Papers } from './Papers'
