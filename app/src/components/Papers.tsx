@@ -1,6 +1,6 @@
 import { Table } from 'antd'
 import { useAppSelector } from "../hooks";
-
+import {TagList} from "../components";
 const columns = [
     {
       title: "Title",
@@ -46,9 +46,16 @@ function Papers(): JSX.Element {
             dataSource={papersData}
             expandable={{
               expandedRowRender: (record) => (
-                <a href={record.url} style={{ margin: 0 }}>
+                <><a href={record.url} style={{ margin: 0 }}>
                   {record.url}
+
                 </a>
+                <TagList TagData={record["Type of Data"]} Color="Magenta"></TagList>
+                <TagList TagData={record["Type of Problem"]} Color="Green"></TagList>
+                <TagList TagData={record["Type of Model to be Explained"]} Color="Blue"></TagList>
+                <TagList TagData={record["Type of Task"]} Color="Orange"></TagList>
+                <TagList TagData={record["Type of Explanation"]} Color="Red"></TagList>
+                <TagList TagData={record["Method used to explain"]} Color="Brown"></TagList></>
               ),
             }}
           ></Table>
