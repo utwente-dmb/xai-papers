@@ -1,13 +1,13 @@
-import { Layout, Row, Col} from "antd"
+import { Row, Col} from "antd"
 import TestChart from "./TestChart"
 
 function Charts(): JSX.Element {
-
+  
 	return (
 		<Row gutter={10}>
 			<Col span={5}>
 				<TestChart></TestChart>
-			</Col>
+			</Col> 
 			<Col span={5}>
 				<TestChart></TestChart>
 			</Col>
