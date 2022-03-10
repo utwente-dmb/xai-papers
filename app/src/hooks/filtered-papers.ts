@@ -25,7 +25,7 @@ export function useFilteredPapers(): Array<Paper> {
             for (const type of filtersForKey) {
                 const paperTypes = paper[paperVal]
                 if (Array.isArray(paperTypes) && paperTypes.some((el) => el === type)) {
-                    return paper
+                    return true
                 }
             }
         }
