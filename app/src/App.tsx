@@ -1,144 +1,22 @@
-import React, { useState } from 'react';
-import 'antd/dist/antd.css';
-import { Button, Layout, Menu } from 'antd'
-import { PlusCircleOutlined, DotChartOutlined, MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons'
+import "antd/dist/antd.css";
+import {
+  Layout,
+} from "antd";
+import { Filters, SideBar, Charts, Papers } from "./components";
 
-const { Header, Content, Footer, Sider} = Layout
+const {  Content } = Layout;
 
 function App() {
-  const [collapsed, setCollapsed] = useState(true)
-
+  
   return (
     <Layout>
-      <Sider
-        collapsible
-        collapsed={collapsed}
-        onCollapse={(collapsed, type) => {
-          console.log("Where does this even get logged?", collapsed, type)
-          setCollapsed(collapsed)
-        }}
-        style={{
-          overflow: "auto",
-          height: "100vh",
-          position: "sticky",
-          top: 0,
-          left: 0
-        }}
-        trigger={collapsed ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>}
-      >
-        <Menu theme="dark" mode="inline">
-          <Menu.Item key="1" icon={<PlusCircleOutlined />}>Add Paper</Menu.Item>
-          <Menu.Item key="2" icon={<DotChartOutlined />}>Charts</Menu.Item>
-        </Menu>
-      </Sider>
+      <SideBar />
       <Layout>
-        <Header style={{position: 'sticky', top: 0, width: '100%'}}>
-          <Menu theme="dark" mode="horizontal">
-            <Menu.Item key="1">Share</Menu.Item>
-            <Menu.Item key="2">About</Menu.Item>  
-            <Menu.Item key="3">Feedback</Menu.Item>
-          </Menu>
-        </Header>
-        <Content>
-        <div style={{ padding: 24, background: "#fff", textAlign: "center" }}>
-            ...
-            <br />
-            Really
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            long
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            ...
-            <br />
-            content
-          </div>
+        <Content style={{ padding: "0 50px", marginTop: 20 }}>
+          <Charts />
+          <Filters />
+          <Papers />
         </Content>
-        <Footer>Footer</Footer>
       </Layout>
     </Layout>
   );
