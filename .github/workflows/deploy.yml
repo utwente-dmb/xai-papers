@@ -3,15 +3,14 @@ name: Deploy
 on:
   push:
     branches: [ master ]
+    paths-ignore:
+    - '**.md'
 
   workflow_dispatch:
 
 jobs:
   Deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./app
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
