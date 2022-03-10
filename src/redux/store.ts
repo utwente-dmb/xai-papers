@@ -1,11 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit'
-import { papersReducer, filtersReducer } from './slices'
+import { configureStore } from "@reduxjs/toolkit"
+import { papersReducer, filtersReducer } from "./slices"
 
 export const store = configureStore({
-    reducer: {
-        papers: papersReducer,
-        filters: filtersReducer
-    }
+	reducer: {
+		papers: papersReducer,
+		filters: filtersReducer
+	}
 })
 
 

@@ -1,8 +1,8 @@
-import React from "react";
-import { Tag } from "antd";
+import React from "react"
+import { Tag } from "antd"
 
 type TagProps = {
-  TagData: Array<String>;
+  TagData: Array<string>;
   Color:
     | "pink"
     | "red"
@@ -27,12 +27,12 @@ type TagProps = {
 };
 
 function TagList({ TagData, Color }: TagProps): JSX.Element {
-  const TagList = TagData.map((item, index) => (
-    <Tag color={Color} key={index}>
-      {item}
-    </Tag>
-  ));
-  return <>{TagList}</>;
+	const TagList = TagData.map((item, index) => (
+		<Tag color={Color} key={index}>
+			{item}
+		</Tag>
+	))
+	return <>{TagList}</>
 }
 
-export default TagList;
+export default TagList
