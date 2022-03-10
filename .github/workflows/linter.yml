@@ -23,5 +23,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16.14'
-      - run: npm install -g eslint
-      - run: eslint . 
+      - run: npm install
+      - run: npx eslint .
