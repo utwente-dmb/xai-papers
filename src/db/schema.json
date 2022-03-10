@@ -27,37 +27,43 @@
             "Type of Data": {
                 "type": "array",
                 "items": {
-                    "type": "string"
+                    "type": "string",
+                    "enum": ["User-item matrix", "Time series", "Any", "Text", "Tabular / structured", "Images", "Video", "Other", "Graph data"]
                 }
             },
             "Type of Problem": {
                 "type": "array",
                 "items": {
-                    "type": "string"
+                    "type": "string",
+                    "enum": ["Model Explanation", "Transparent Box Design", "Model Inspection", "Outcome Explanation"]
                 }
             },
             "Type of Model to be Explained": {
                 "type": "array",
                 "items": {
-                    "type": "string"
+                    "type": "string",
+                    "enum": ["Logistic Regression", "Tree Ensemble", "Support Vector Machine", "Any (for a specific task); model-agnostic", "(Deep) Neural Network", "Other", "Bayesian or Hierarchical Network"]
                 }
             },
             "Type of Task": {
                 "type": "array",
                 "items": {
-                    "type": "string"
+                    "type": "string",
+                    "enum": ["Classification", "Policy learning", "Generation", "Question Answering", "Representation learning", "Regression", "Retrieval", "Anomaly detection", "Recommendation", "Other", "Clustering"]
                 }
             },
             "Type of Explanation": {
                 "type": "array",
                 "items": {
-                    "type": "string"
+                    "type": "string",
+                    "enum": ["Disentanglement", "Feature plot", "Prototypes", "Decision Rules", "Feature Importance", "Text", "Decision Tree", "Representation Visualization", "Localization", "White-box model", "Heatmap", "Other", "Representation Synthesis", "Graph"]
                 }
             },
             "Method used to explain": {
                 "type": "array",
                 "items": {
-                    "type": "string"
+                    "type": "string",
+                    "enum": ["Interpretability built into the predictive model", "Supervised explanation training", "Post-hoc explanation method"]
                 }
             },
             "Should the paper be included?": {
