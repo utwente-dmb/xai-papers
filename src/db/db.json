@@ -30,9 +30,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/TuHW0HZ20",
@@ -66,9 +64,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/EsserRO20",
@@ -101,9 +97,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/LiuMWH0G20",
@@ -136,9 +130,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/TsangCLFZL20",
@@ -176,9 +168,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/RiegerSMY20",
@@ -212,9 +202,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/PanHLZL20",
@@ -246,9 +234,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/PalejaSCG20",
@@ -280,9 +266,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/VuT20",
@@ -312,9 +296,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/ZhouHZLSXT20",
@@ -348,9 +330,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/SenGVJ20",
@@ -383,9 +363,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/LiuYW19",
@@ -417,9 +395,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/WagnerKGHWB19",
@@ -453,9 +429,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/MWT19",
@@ -487,9 +461,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/Wang19",
@@ -522,9 +494,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/SchwabK19",
@@ -556,9 +526,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/ChenCXZ0QZ19",
@@ -594,9 +562,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/VermaG19",
@@ -626,9 +592,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/ZhangCSWZ18",
@@ -663,9 +627,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/YangLWH18",
@@ -697,9 +659,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/ChenSWJ18",
@@ -733,9 +693,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/PeakeW18",
@@ -764,9 +722,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/Alvarez-MelisJ18",
@@ -796,9 +752,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/DhurandharCLTTS18",
@@ -833,9 +787,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/FongV17",
@@ -865,9 +817,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/AkulaWZ20",
@@ -897,9 +847,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/ChenJ20",
@@ -932,9 +880,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/CiravegnaGMMG20",
@@ -967,9 +913,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/DalleigerV20",
@@ -999,9 +943,7 @@
     "Method used to explain": [
       "Interpretability built into the predictive model",
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/DongNCCZSLCM20",
@@ -1037,9 +979,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/HarderBP20",
@@ -1071,9 +1011,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/HuaiWMZ20",
@@ -1107,9 +1045,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/ItoTSYI20",
@@ -1141,9 +1077,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/LiFANZ20",
@@ -1175,9 +1109,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/Madumal0SV20",
@@ -1211,9 +1143,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/NamGCWL20",
@@ -1245,9 +1175,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/PathakLMP20",
@@ -1278,9 +1206,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/PatroAN20",
@@ -1311,9 +1237,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/WangZHZS20",
@@ -1346,9 +1270,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/WuPHKCZ0D20",
@@ -1383,9 +1305,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/ZhongWTZ0S20",
@@ -1419,9 +1339,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/AtanasovaSLA20",
@@ -1453,9 +1371,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/ChenZJ20",
@@ -1487,9 +1403,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/GonenJSG20",
@@ -1521,9 +1435,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/HanWT20",
@@ -1554,9 +1466,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/KumarT20",
@@ -1586,9 +1496,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/LuL20",
@@ -1618,9 +1526,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/MohankumarNNKSR20",
@@ -1654,9 +1560,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/ShahbaziFGT20",
@@ -1688,9 +1592,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/SubramanianBGWS20",
@@ -1728,9 +1630,7 @@
     "Method used to explain": [
       "Interpretability built into the predictive model",
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/WuCKL20",
@@ -1764,9 +1664,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/WuRZLN20",
@@ -1800,9 +1698,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/ZhangSFL20",
@@ -1833,9 +1729,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/ZhouZY20",
@@ -1865,9 +1759,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/ChengRCZ20",
@@ -1899,9 +1791,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/HuangL20",
@@ -1931,9 +1821,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/JakabGBV20",
@@ -1966,9 +1854,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/JalwanaABM20",
@@ -1999,9 +1885,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/KimGPS20",
@@ -2033,9 +1917,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/LiuLZKWBRC20",
@@ -2072,9 +1954,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/ShenGTZ20",
@@ -2105,9 +1985,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/WangV20",
@@ -2136,9 +2014,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/WuSCZKLT20a",
@@ -2173,9 +2049,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/XuYGLWLV20",
@@ -2210,9 +2084,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/JiWJMZ20",
@@ -2244,9 +2116,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/JinWDXR20",
@@ -2280,9 +2150,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/MohanKSF20",
@@ -2314,9 +2182,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/OreshkinCCB20",
@@ -2347,9 +2213,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/PuriVGKDK020",
@@ -2384,9 +2248,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/SinglaPCB20",
@@ -2420,9 +2282,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/YangS20",
@@ -2454,9 +2314,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/AndersPDMK20",
@@ -2493,9 +2351,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/ChalasaniC00J20",
@@ -2529,9 +2385,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/ChaudharySG20",
@@ -2562,9 +2416,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/JinBJ20a",
@@ -2594,9 +2446,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/LakkarajuAB20",
@@ -2630,9 +2480,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/MoshkovitzDRF20",
@@ -2663,9 +2511,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/ParkCZYY20",
@@ -2699,9 +2545,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/PlumbTST20",
@@ -2733,9 +2577,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/QuinnNR0V20",
@@ -2767,9 +2609,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/ShiZM020",
@@ -2800,9 +2640,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/VoynovB20",
@@ -2831,9 +2669,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/AlbiniRBT20",
@@ -2864,9 +2700,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/BeyazitTYT020",
@@ -2900,9 +2734,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/ChenW0PSAC20",
@@ -2937,9 +2769,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/CiravegnaGGMM20",
@@ -2972,9 +2802,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/KanamoriTKA20",
@@ -3007,9 +2835,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/LeL20",
@@ -3039,9 +2865,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/LiFCLYS20",
@@ -3074,9 +2898,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/RosaCN20",
@@ -3106,9 +2928,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/WangZ20a",
@@ -3140,9 +2960,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/WuRYWN20",
@@ -3176,9 +2994,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/GuoZQWSY20",
@@ -3212,9 +3028,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/LancianoBG20",
@@ -3247,9 +3061,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/LeW020",
@@ -3279,9 +3091,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/LiangBCBW20",
@@ -3317,9 +3127,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/TangLSSMW20",
@@ -3354,9 +3162,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/YuanTHJ20",
@@ -3387,9 +3193,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/ZhangQ0LCZD20",
@@ -3424,9 +3228,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/0001GCIN20",
@@ -3459,9 +3261,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/ArikLYSELM0ZNSN20",
@@ -3502,9 +3302,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/BassSSTSR20",
@@ -3539,9 +3337,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/CrabbeZZS20",
@@ -3574,9 +3370,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/FryeRF20",
@@ -3609,9 +3403,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/HarkonenHLP20",
@@ -3643,9 +3435,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/HeskesSBC20",
@@ -3678,9 +3468,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/JainVMLTH20",
@@ -3714,9 +3502,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/LuoCXYZC020",
@@ -3752,9 +3538,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/MuA20",
@@ -3785,9 +3569,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/OShaughnessyCCR20",
@@ -3823,9 +3605,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/PedapatiBSD20",
@@ -3857,9 +3637,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/RamamurthyVZD20",
@@ -3894,9 +3672,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/RawalL20",
@@ -3928,9 +3704,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/TsangR020",
@@ -3962,9 +3736,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/TsengSK20",
@@ -3995,9 +3767,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/Yau0H20",
@@ -4027,9 +3797,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/YehKALPR20",
@@ -4065,9 +3833,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/ZhouW20",
@@ -4097,9 +3863,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/ChenYYH0020",
@@ -4134,9 +3898,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/QuAW20",
@@ -4166,9 +3928,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/YangZWL020",
@@ -4201,9 +3961,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/LiJC0WL20",
@@ -4237,9 +3995,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/MathewSLS20",
@@ -4271,9 +4027,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/NaumzikZF20",
@@ -4305,9 +4059,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/PawelczykBK20",
@@ -4338,9 +4090,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/SunWZFHW20",
@@ -4374,9 +4124,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/WangZZSP20",
@@ -4409,9 +4157,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/ZhuXSZCGH20",
@@ -4445,9 +4191,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/AnnasamyS19",
@@ -4479,9 +4223,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/ChenZQ19",
@@ -4512,9 +4254,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/GaoWW019",
@@ -4547,9 +4287,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/HeLSB19",
@@ -4580,9 +4318,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/IgnatievNM19",
@@ -4614,9 +4350,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/LanG19",
@@ -4647,9 +4381,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/LyuYLG19",
@@ -4680,9 +4412,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/PolatoA19",
@@ -4713,9 +4443,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/ShakerinG19",
@@ -4745,9 +4473,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/SilvaFH19",
@@ -4778,9 +4504,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/TopinV19",
@@ -4810,9 +4534,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/WangWX00C19",
@@ -4847,9 +4569,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/WickramanayakeH19",
@@ -4880,9 +4600,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/YuanCHJ19",
@@ -4914,9 +4632,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/BastingsAT19",
@@ -4950,9 +4666,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/JiangJCB19",
@@ -4983,9 +4697,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/LuZXLZX19",
@@ -5018,9 +4730,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/MoonSKS19",
@@ -5051,9 +4761,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/PanigrahiSB19",
@@ -5088,9 +4796,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/RajaniMXS19",
@@ -5122,9 +4828,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/SydorovaPR19",
@@ -5156,9 +4860,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/FukuiHYF19",
@@ -5189,9 +4891,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/KanehiraH19",
@@ -5221,9 +4921,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/KanehiraTIH19",
@@ -5255,9 +4953,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/PopeKRMH19",
@@ -5289,9 +4985,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/ShiZL19",
@@ -5322,9 +5016,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/ZengLSSYCU19",
@@ -5359,9 +5051,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/ZhangYMW19",
@@ -5395,9 +5085,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/ChenCHRZ19",
@@ -5429,9 +5117,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/ManhardtA0BBNT19",
@@ -5465,9 +5151,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/MicheliniLLJ19",
@@ -5500,9 +5184,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/PatroLPN19",
@@ -5535,9 +5217,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/SelvarajuLSJGHB19",
@@ -5574,9 +5254,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/SubramanyaPP19",
@@ -5606,9 +5284,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/SunRS19",
@@ -5641,9 +5317,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/WuS19",
@@ -5672,9 +5346,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/YinTLS019",
@@ -5707,9 +5379,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/AssafGBS19",
@@ -5740,9 +5410,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/ChenL0X19",
@@ -5773,9 +5441,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/HamdiA19",
@@ -5805,9 +5471,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/YooS19",
@@ -5836,9 +5500,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/ZhangQLYWZ19",
@@ -5872,9 +5534,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/ZhouSC19",
@@ -5908,9 +5568,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/ChangCGD19",
@@ -5942,9 +5600,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/ChenSWJ19",
@@ -5978,9 +5634,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/FortuinHLSR19",
@@ -6015,9 +5669,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/SinghMY19",
@@ -6049,9 +5701,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/ZhengPBH19",
@@ -6083,9 +5733,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/0002LA19",
@@ -6116,9 +5764,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/AnconaOG19",
@@ -6151,9 +5797,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/DunckerBBS19",
@@ -6185,9 +5829,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/GoyalWEBPL19",
@@ -6222,9 +5864,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/SinglaWFF19",
@@ -6256,9 +5896,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/VedantamDLRBP19",
@@ -6293,9 +5931,7 @@
     "Method used to explain": [
       "Interpretability built into the predictive model",
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/WangZB19",
@@ -6326,9 +5962,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/ChenW0WBWC19",
@@ -6363,9 +5997,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/FuscoVVWS19",
@@ -6398,9 +6030,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/HouWCLZL19",
@@ -6438,9 +6068,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/KennyK19",
@@ -6473,9 +6101,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/LiYYJ19",
@@ -6506,9 +6132,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/ZhangR19",
@@ -6538,9 +6162,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/ChengSHZ19",
@@ -6571,9 +6193,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/Jia0RLH19",
@@ -6607,9 +6227,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/MingXQR19",
@@ -6643,9 +6261,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/ShuCW0L19",
@@ -6677,9 +6293,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/Tao0WFYZ019",
@@ -6714,9 +6328,7 @@
     "Method used to explain": [
       "Interpretability built into the predictive model",
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/YanZDSSK19",
@@ -6751,9 +6363,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/YoshidaTK19",
@@ -6785,9 +6395,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/ZhangTKLCC19",
@@ -6820,9 +6428,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/ZhaoGS19",
@@ -6852,9 +6458,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/ChenLTBRS19",
@@ -6887,9 +6491,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/GhorbaniWZK19",
@@ -6922,9 +6524,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/HoyerMKKF19",
@@ -6957,9 +6557,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/KimL19",
@@ -6990,9 +6588,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/WangN19",
@@ -7022,9 +6618,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/YingBYZL19",
@@ -7058,9 +6652,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/BalogRA19",
@@ -7090,9 +6682,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/HanSYWN19",
@@ -7127,9 +6717,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/LiQPQDW19",
@@ -7164,9 +6752,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/TaoJWW19",
@@ -7198,9 +6784,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/XianFMMZ19",
@@ -7233,9 +6817,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/Yang0WMF0C19",
@@ -7271,9 +6853,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/MaZCJWLMR19",
@@ -7309,9 +6889,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/BiskSCM18",
@@ -7342,9 +6920,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/HsuM0S18",
@@ -7375,9 +6951,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/LiLCR18",
@@ -7408,9 +6982,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/NguyenKLW18",
@@ -7441,9 +7013,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/PalangiSHD18",
@@ -7476,9 +7046,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/Ribeiro0G18",
@@ -7516,9 +7084,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/RossD18",
@@ -7548,9 +7114,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/RustamovK18",
@@ -7582,9 +7146,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/SubramanianPJBH18",
@@ -7622,9 +7184,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/WuHPZ0D18",
@@ -7659,9 +7219,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/EskenaziLZ18",
@@ -7692,9 +7250,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/InuiTT18",
@@ -7726,9 +7282,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/MorencyCPLZ18",
@@ -7763,9 +7317,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/SchutzeRP18",
@@ -7795,9 +7347,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/ChuangL0F18",
@@ -7830,9 +7380,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/FongV18",
@@ -7862,9 +7410,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/MascharkaTSM18",
@@ -7896,9 +7442,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/ParkHARSDR18",
@@ -7935,9 +7479,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/WangS0H18",
@@ -7968,9 +7510,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/WuLCJL18",
@@ -8002,9 +7542,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/ZhangWZ18a",
@@ -8036,9 +7574,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/ZhangXWXY18",
@@ -8072,9 +7608,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/JhaWXZ18",
@@ -8105,9 +7639,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/KarlssonRPG18",
@@ -8138,9 +7670,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/WangCYWW018",
@@ -8174,9 +7704,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/KindermansSAMEK18",
@@ -8211,9 +7739,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/ShuXS18",
@@ -8244,9 +7770,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/TrottXS18",
@@ -8277,9 +7801,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/AdelGW18",
@@ -8310,9 +7832,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/AinsworthFLF18",
@@ -8345,9 +7865,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/KimWGCWVS18",
@@ -8384,9 +7902,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/VermaMSKC18",
@@ -8418,9 +7934,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/HuJCC18",
@@ -8453,9 +7967,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/LabreucheF18",
@@ -8485,9 +7997,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/LiuSH18",
@@ -8522,9 +8032,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/LuoAPWZYH18",
@@ -8558,9 +8066,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/RagoCT18",
@@ -8591,9 +8097,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/SatoSS018",
@@ -8625,9 +8129,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/ShihCD18",
@@ -8659,9 +8161,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/BaiZEV18",
@@ -8694,9 +8194,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/ChuHHWP18",
@@ -8730,9 +8228,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/DuLSH18",
@@ -8763,9 +8259,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/Janakiraman18",
@@ -8794,9 +8288,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/LiuHLH18",
@@ -8831,9 +8323,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/LiuYH18",
@@ -8868,9 +8358,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/WangWLW18",
@@ -8902,9 +8390,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/YangSJ018",
@@ -8938,9 +8424,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/ZangC018",
@@ -8971,9 +8455,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/CamburuRLB18",
@@ -9004,9 +8486,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/GuoHTXL18",
@@ -9040,9 +8520,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/GuptaBCC18",
@@ -9074,9 +8552,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/HeoLKLKYH18",
@@ -9110,9 +8586,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/Norcliffe-Brown18",
@@ -9145,9 +8619,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/PlumbMT18",
@@ -9182,9 +8654,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/TsangLPML18",
@@ -9222,9 +8692,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/Wang18",
@@ -9252,9 +8720,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/YehKYR18",
@@ -9286,9 +8752,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/ZhangSS18",
@@ -9318,9 +8782,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/WangWJY18",
@@ -9353,9 +8815,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/ChenZLM18",
@@ -9388,9 +8848,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/Wang0FNC18",
@@ -9423,9 +8881,7 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "www/WuWYLZ18",
@@ -9459,9 +8915,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/ZhangCWZ17",
@@ -9494,9 +8948,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/XieMDH17",
@@ -9527,9 +8979,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/BauZKO017",
@@ -9563,9 +9013,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/DongSZZ17",
@@ -9597,9 +9045,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "cvpr/LiangLSFYX17",
@@ -9632,9 +9078,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/KimC17",
@@ -9664,9 +9108,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/SelvarajuCDVPB17",
@@ -9701,9 +9143,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iccv/WorrallGTB17",
@@ -9736,9 +9176,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/OyamadaN17",
@@ -9769,9 +9207,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "iclr/YuV17",
@@ -9801,9 +9237,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/DempseyMSDGMR17",
@@ -9838,9 +9272,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icml/FoersterGSCS17",
@@ -9874,9 +9306,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "ijcai/RossHD17",
@@ -9909,9 +9339,7 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/TolomeiSHL17",
@@ -9942,9 +9370,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/ElenbergDFK17",
@@ -9975,9 +9401,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/HsuZG17",
@@ -10008,9 +9432,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/LiSE17",
@@ -10040,9 +9462,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/LundbergL17",
@@ -10076,9 +9496,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/RaghuGYS17",
@@ -10111,9 +9529,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/ChenCHCCSD16",
@@ -10148,9 +9564,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/DangSSSB16",
@@ -10182,9 +9596,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/WangRDLKM16",
@@ -10217,9 +9629,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/LakkarajuBL16",
@@ -10249,9 +9659,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/Ribeiro0G16",
@@ -10291,9 +9699,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/ChenCDHSSA16",
@@ -10326,9 +9732,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/ChoiBSKSS16",
@@ -10361,9 +9765,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/Jitkrittum0CG16",
@@ -10398,9 +9800,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/KimKK16",
@@ -10431,9 +9831,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/LakkarajuL16",
@@ -10465,9 +9863,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/ZhaoP16",
@@ -10496,9 +9892,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/ZhaoLRMYR16",
@@ -10534,9 +9928,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "aaai/KimPRS15",
@@ -10567,9 +9959,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/WangFM15",
@@ -10601,9 +9991,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "nips/KimSD15",
@@ -10633,9 +10021,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "acl/FysheTMM14",
@@ -10669,9 +10055,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "icdm/ChanLBR14",
@@ -10702,9 +10086,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/BarbieriBM14",
@@ -10735,9 +10117,7 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "kdd/GhalwashRO14",
@@ -10768,9 +10148,7 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   },
   {
     "Paper-ID": "sigir/ZhangL0ZLM14",
@@ -10805,8 +10183,6 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
+    ]
   }
 ]
