@@ -1,28 +1,27 @@
-name: Deploy
+name: Check code cleanliness
 
 on:
   push:
     branches: [ master ]
     paths-ignore:
+    - 'src/db/*'
     - '**.md'
-
+  pull_request:
+    branches: [ master ]
+    paths-ignore:
+    - 'src/db/**'
+    - '**.md'
+    
   workflow_dispatch:
 
 jobs:
-  Deploy:
+  validate:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: '16.14'
       - run: npm install
-      - run: npx eslint . --fix
-      - run: npm run build
-        env:
-          CI: false
-
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./build
+      - run: npx eslint .
