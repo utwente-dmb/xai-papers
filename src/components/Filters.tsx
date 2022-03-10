@@ -1,5 +1,5 @@
 import React from "react";
-import { Select, Col, Row, DatePicker, Input } from "antd";
+import { Select, Col, Row, DatePicker, Input, Switch } from "antd";
 import { Data, Explanation, Method, Model, Problem, Task } from "../types";
 import { filtersActions } from '../redux'
 import { useAppDispatch } from '../hooks'
@@ -59,6 +59,11 @@ function Filters(): JSX.Element {
     dispatch(filtersActions.setMethod(value))
   }
 
+  function handleFilterSwitch(checked: boolean) {
+    console.log("filter State is OR", checked)
+    dispatch(filtersActions.changeState(checked))
+  }
+
   return (
     <Row justify="end" gutter={4} style={{ marginTop: 10 }}>
       <Filter placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange}/>
@@ -67,6 +72,10 @@ function Filters(): JSX.Element {
       <Filter placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} />
       <Filter placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} />
       <Filter placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} />
+
+      <Switch checkedChildren="OR" unCheckedChildren="AND" defaultChecked  onChange={handleFilterSwitch}/>
+
+      <Button onClick={() => handleReset()}>Reset</Button>
 
       <Col>
         <RangePicker></RangePicker>

@@ -16,22 +16,31 @@ export function useFilteredPapers(): Array<Paper> {
 
     const filteredPapers = papers.filter((paper) => {
         let noFilters = true
+        let toAdd = true
 
         for (const [filterKey, paperVal] of Object.entries(map)) {
             const filtersForKey = filters[filterKey as keyof Filters]
+            if (!Array.isArray(filtersForKey)) { continue }
             if (filtersForKey.length > 0) {
                 noFilters = false
             }
             for (const type of filtersForKey) {
                 const paperTypes = paper[paperVal]
-                if (Array.isArray(paperTypes) && paperTypes.some((el) => el === type)) {
-                    return true
+
+                if (filters.filterStateOR) {
+                    if (Array.isArray(paperTypes) && paperTypes.some((el) => el === type)) {
+                        return true
+                    }
+                } else {
+                    if (!Array.isArray(paperTypes) || !paperTypes.some((el) => el === type)) {
+                        toAdd = false
+                    }
                 }
+
             }
         }
 
-        return noFilters
-
+        return filters.filterStateOR ? noFilters : toAdd
     })
 
     return filteredPapers
