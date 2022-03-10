@@ -1,4 +1,4 @@
-import { Layout, Row, Col} from "antd"
+import { Row, Col} from "antd"
 import TestChart from "./TestChart"
 
 function Charts(): JSX.Element {
