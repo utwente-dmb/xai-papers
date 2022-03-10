@@ -7,8 +7,6 @@ on:
     - 'app/src/db/**.json'
   pull_request:
     branches: [ master ]
-    paths:
-    - 'app/src/db/**.json'
     
   workflow_dispatch:
 
