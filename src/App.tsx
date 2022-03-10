@@ -1,25 +1,26 @@
-import "antd/dist/antd.css";
+import React from "react"
+import "antd/dist/antd.css"
 import {
-  Layout,
-} from "antd";
-import { Filters, SideBar, Charts, Papers } from "./components";
+	Layout,
+} from "antd"
+import { Filters, SideBar, Charts, Papers } from "./components"
 
-const {  Content } = Layout;
+const {  Content } = Layout
 
 function App() {
   
-  return (
-    <Layout>
-      <SideBar />
-      <Layout>
-        <Content style={{ padding: "0 50px", marginTop: 20 }}>
-                <Charts />
-             <Filters />
-           <Papers />
-        </Content>
-      </Layout>
-    </Layout>
-  );
+	return (
+		<Layout>
+			<SideBar />
+			<Layout>
+				<Content style={{ padding: "0 50px", marginTop: 20 }}>
+					<Charts />
+					<Filters />
+					<Papers />
+				</Content>
+			</Layout>
+		</Layout>
+	)
 }
 
-export default App;
+export default App
