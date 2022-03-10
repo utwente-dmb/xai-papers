@@ -1,8 +1,7 @@
 import { Paper, Data, Problem, Model, Task, Explanation, Method } from "../types"
 
 export function isPaper(paper: any): paper is Paper {
-	return "Paper-ID" in paper 
-        && "url" in paper 
+	return "url" in paper 
         && "Title" in paper 
         && "Year" in paper 
         && "Venue" in paper 
@@ -19,8 +18,6 @@ export function isPaper(paper: any): paper is Paper {
         && isEnumArray(Explanation)(paper["Type of Explanation"])
         && "Method used to explain" in paper
         && isEnumArray(Method)(paper["Method used to explain"])
-        && "Should the paper be included?" in paper
-        && "Should the paper be included with filter?" in paper
 }
 
 export const isEnumArray = <T>(e: T) => (data: Array<any>): data is Array<T> => {
