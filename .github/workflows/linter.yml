@@ -1,12 +1,16 @@
-name: Database validation
+name: Check code cleanliness
 
 on:
   push:
     branches: [ master ]
-    paths:
-    - 'src/db/**.json'
+    paths-ignore:
+    - 'src/db/*'
+    - '**.md'
   pull_request:
     branches: [ master ]
+    paths-ignore:
+    - 'src/db/**'
+    - '**.md'
     
   workflow_dispatch:
 
@@ -19,8 +23,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16.14'
-      - name: Validate db json
-        uses: docker://orrosenblatt/validate-json-action:latest
-        env:
-          INPUT_SCHEMA: ./src/db/schema.json
-          INPUT_JSONS: ./src/db/db.json
+      - run: npm install -g eslint
+      - run: eslint . 
