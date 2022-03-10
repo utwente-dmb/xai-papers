@@ -13,9 +13,9 @@ function App() {
       <SideBar />
       <Layout>
         <Content style={{ padding: "0 50px", marginTop: 20 }}>
-          <Charts />
-          <Filters />
-          <Papers />
+                <Charts />
+             <Filters />
+           <Papers />
         </Content>
       </Layout>
     </Layout>
