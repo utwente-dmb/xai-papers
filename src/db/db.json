@@ -10808,39 +10808,5 @@
     ],
     "Should the paper be included?": "Yes",
     "Should the paper be included with filter?": "Yes"
-  },
-  {
-    "Paper-ID": "boris/neppaper",
-    "Title": "Hoe zorg je ervoor dat de database validator nee zegt?",
-    "url": "https://doi.org/10.1145/420.69",
-    "Year": "2022",
-    "Venue": "BORIS",
-    "Authors": [
-      "Boris",
-      "Frans"
-    ],
-    "Type of Data": [
-      "Text",
-      "User-item matrix",
-      "Zelf bedacht"
-    ],
-    "Type of Problem": [
-      "Outcome Explanation"
-    ],
-    "Type of Model to be Explained": [
-      "(Deep) Neural Network"
-    ],
-    "Type of Task": [
-      "Recommendation"
-    ],
-    "Type of Explanation": [
-      "Feature Importance",
-      "Text"
-    ],
-    "Method used to explain": [
-      "Interpretability built into the predictive model"
-    ],
-    "Should the paper be included?": "Yes",
-    "Should the paper be included with filter?": "Yes"
   }
 ]
