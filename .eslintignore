@@ -1,2 +1,4 @@
 *.css
 *.svg
+*.chunk.js
+build/*

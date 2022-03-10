@@ -5,7 +5,7 @@ import { Paper } from "../types"
 const map: Record<keyof Omit<Filters, "filterStateOR">, keyof Paper> = {
 	data: "Type of Data", 
 	problem: "Type of Problem", 
-	model: "Type of Model to be Explained",
+	model: "Type of Model to be Explained", 
 	task: "Type of Task",
 	explanation: "Type of Explanation",
 	method: "Method used to explain"

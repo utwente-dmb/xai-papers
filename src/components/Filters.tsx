@@ -3,7 +3,7 @@ import { Select, Col, Row, DatePicker, Input, Switch } from "antd"
 import { Data, Explanation, Method, Model, Problem, Task } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch } from "../hooks"
- 
+  
 const { RangePicker } = DatePicker
 const { Search } = Input
 

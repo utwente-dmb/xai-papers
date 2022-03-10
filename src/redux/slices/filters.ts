@@ -26,7 +26,7 @@ const filtersSlice = createSlice({
 	initialState,
 	reducers: { 
 		reset() {
-			return initialState
+			return initialState 
 		},
 		setData(state, action: PayloadAction<Array<Data>>) {
 			state.data = action.payload
