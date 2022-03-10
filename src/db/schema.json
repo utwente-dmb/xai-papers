@@ -3,9 +3,6 @@
     "items": {
         "type": "object",
         "properties": {
-            "Paper-ID": {
-                "type": "string"
-            },
             "Title": {
                 "type": "string"
             },
@@ -65,16 +62,9 @@
                     "type": "string",
                     "enum": ["Interpretability built into the predictive model", "Supervised explanation training", "Post-hoc explanation method"]
                 }
-            },
-            "Should the paper be included?": {
-                "type": "string"
-            },
-            "Should the paper be included with filter?": {
-                "type": "string"
             }
         },
         "required": [
-            "Paper-ID",
             "Title",
             "url",
             "Year",
@@ -85,9 +75,7 @@
             "Type of Model to be Explained",
             "Type of Task",
             "Type of Explanation",
-            "Method used to explain",
-            "Should the paper be included?",
-            "Should the paper be included with filter?"
+            "Method used to explain"
         ]
     }
 }
