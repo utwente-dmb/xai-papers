@@ -5,13 +5,7 @@ function Charts(): JSX.Element {
   
 	return (
 		<Row gutter={10}>
-			<Col span={5}>
-				<TestChart></TestChart>
-			</Col> 
-			<Col span={5}>
-				<TestChart></TestChart>
-			</Col>
-			<Col span={14}>
+			<Col span={24}>
 				<TestChart></TestChart>
 			</Col>
 		</Row>
