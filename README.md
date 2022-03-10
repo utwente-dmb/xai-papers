@@ -12,4 +12,4 @@ To add a paper, follow these steps:
 
 
 ## Remove a paper
-asdasdasdasdaas
+To remove a paper, follow these steps:
