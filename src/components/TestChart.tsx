@@ -1,10 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Graphin, { GraphinData, Utils, IG6GraphEvent } from "@antv/graphin";
-import { useFilteredPapers } from "../hooks";
-import { GraphinNode } from "@antv/graphin/lib/typings/type";
-import { INode, NodeConfig } from "@antv/g6";
-import { message } from "antd";
+import React from "react"
+import ReactDOM from "react-dom"
+import Graphin, { GraphinData, Utils, IG6GraphEvent } from "@antv/graphin"
+import { useFilteredPapers } from "../hooks"
+import { GraphinNode } from "@antv/graphin/lib/typings/type"
+import { INode, NodeConfig } from "@antv/g6"
+import { message } from "antd"
 
 const data = {
 	nodes: [
@@ -12,7 +12,7 @@ const data = {
 		{ id: "node2", size: 50 },
 	],
 	edges: [{ source: "node0", target: "node2" }],
-};
+}
 
 const data2 = {
 	nodes: [
@@ -52,7 +52,7 @@ const data2 = {
 		{ source: "node3", target: "node15" },
 		{ source: "node3", target: "node16" },
 	],
-};
+}
 
 
 
@@ -64,21 +64,21 @@ const nodeStateStyles = {
 			},
 		},
 	},
-};
+}
 
 function CreateGraphData() {
-	const papers = useFilteredPapers();
-	const nodes: any = [];
-	const edges: any = [];
+	const papers = useFilteredPapers()
+	const nodes: any = []
+	const edges: any = []
 
-	const edgeString: any = [];
+	const edgeString: any = []
 
-	let similarity = 0;
-	const minimumSimilarityForEdge = 2;
-	const minimumDistance = 5;
+	let similarity = 0
+	const minimumSimilarityForEdge = 2
+	const minimumDistance = 5
 
 	papers.forEach(function (value1, index) {
-		nodes.push({ id: value1.url, label: { value: value1.Authors[0] + "et al" }, size: 150 });
+		nodes.push({ id: value1.url, label: { value: value1.Authors[0] + "et al" }, size: 150 })
 		nodes[index].style = {
 			keyshape: {
 				size: 80,
@@ -87,15 +87,15 @@ function CreateGraphData() {
 				fillOpacity: 0.2,
 			},
 			label: { value: value1.Authors[0] + " et al" },
-		};
-	});
+		}
+	})
 
 	papers.forEach(function (value1, index) {
 		papers.forEach(function (value2) {
 			if (value1 != value2) {
-				const typeOfDataSimilarity = value1["Type of Data"].filter(v1 => value2["Type of Data"].includes(v1)).length;
-				console.log(typeOfDataSimilarity);
-				similarity = typeOfDataSimilarity;
+				const typeOfDataSimilarity = value1["Type of Data"].filter(v1 => value2["Type of Data"].includes(v1)).length
+				console.log(typeOfDataSimilarity)
+				similarity = typeOfDataSimilarity
 
 
 				if (similarity > minimumSimilarityForEdge) {
@@ -128,24 +128,24 @@ function CreateGraphData() {
 					}
 
 					if (!edgeString.includes(JSON.stringify(edgeToBeCreatedOpposite))) {
-						edgeString.push(JSON.stringify(edgeToBeCreated));
+						edgeString.push(JSON.stringify(edgeToBeCreated))
 						edges.push(edgeToBeCreated)
 					}
 					else {
-						console.log("edge already exists");
+						console.log("edge already exists")
 					}
 				}
 			}
-		});
-	});
+		})
+	})
 
 	const graphData: GraphinData = {
 		nodes: nodes,
 		edges: edges
-	};
+	}
 
-	console.log(graphData);
-	return graphData;
+	console.log(graphData)
+	return graphData
 }
 
 const defaultNode = {
@@ -161,30 +161,30 @@ const defaultNode = {
 			visible: true,
 		},
 	},
-};
+}
 
 Graphin.registerBehavior("sampleBehavior", {
 	getEvents() {
 		return {
 			"node:click": "onClick",
-		};
+		}
 	},
 	onClick(evt: IG6GraphEvent) {
-		const node = evt.item as INode;
-		const model = node.getModel() as NodeConfig;
-		message.info(model.id);
+		const node = evt.item as INode
+		const model = node.getModel() as NodeConfig
+		message.info(model.id)
 		// window.open(model.id,"_blank")?.focus();
 	},
-});
+})
 
 
 function TestChart() {
-	const data3 = CreateGraphData();
+	const data3 = CreateGraphData()
 	return (
 		<div className="TestChart">
-			<Graphin data={data3} layout={{ name: "force" }} defaultNode={defaultNode} modes={{ default: ["sampleBehavior","drag-canvas","zoom-canvas"] }} />
+			<Graphin data={data3} layout={{ type: "gForce" }} defaultNode={defaultNode} modes={{ default: ["sampleBehavior","drag-canvas","zoom-canvas"] }} />
 		</div>
-	);
+	)
 }
 
-export default TestChart;
+export default TestChart
