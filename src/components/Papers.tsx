@@ -1,11 +1,13 @@
 import { Table } from "antd"
 import { useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
+import { Paper } from "../types"
+
 const columns = [
 	{
 		title: "Title",
 		dataIndex: "Title",
-		render: (text:any, row:any, index:any) => <a href={row.url}>{text}</a>,
+		render: (text:string, row:Paper) => <a href={row.url} target="_blank" rel="noreferrer">{text}</a>,
 		key: "title",
 	},
 	{
@@ -32,7 +34,7 @@ function Papers(): JSX.Element {
 	const papersData = filteredPapers.map((paper) => ({
 		...paper,
 		key: filteredPapers.indexOf(paper),
-		Authors: paper.Authors[0] + " et al.",
+		Authors: [paper.Authors[0] + " et al."],
 	}))
 
 	return (
