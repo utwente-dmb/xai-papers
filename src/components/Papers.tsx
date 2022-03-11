@@ -5,6 +5,7 @@ const columns = [
 	{
 		title: "Title",
 		dataIndex: "Title",
+		render: (text:any, row:any, index:any) => <a href={row.url}>{text}</a>,
 		key: "title",
 	},
 	{
@@ -43,7 +44,6 @@ function Papers(): JSX.Element {
 				expandedRowRender: (record) => (
 					<><a href={record.url} style={{ margin: 0 }}>
 						{record.url}
-
 					</a>
 					<TagList TagData={record["Type of Data"]} Color="Magenta"></TagList>
 					<TagList TagData={record["Type of Problem"]} Color="Green"></TagList>
