@@ -15,7 +15,9 @@ import "antd/dist/antd.dark.css"
 import { Routes, Route, useNavigate } from "react-router-dom"
 import { Papers, About, AddPaper } from "../pages"
 
-const { Content, Sider, Header } = Layout
+const { Content, Sider } = Layout
+
+const baseUrl = "DMBLiteratureWebsite"
 
 function DefaultLayout() {
 
@@ -26,19 +28,19 @@ function DefaultLayout() {
 
 		switch (key) {
 		case "papers": 
-			navigate("/")
+			navigate(`${baseUrl}/`)
 			break
         
 		case "add-paper":
-			navigate("/add-paper")
+			navigate(`${baseUrl}/add-paper`)
 			break
         
 		case "about": 
-			navigate("/about")
+			navigate(`${baseUrl}/about`)
 			break
 
 		default: 
-			navigate("/")
+			navigate(`${baseUrl}/`)
 		}
 	}
 	return (
@@ -77,17 +79,17 @@ function DefaultLayout() {
 				<PageHeader style={{position: "sticky", top: 0, width: "100%", zIndex: 1}}>
 					<div>
 						<p>
-						Dataset collected by Nauta et al. as described in
+							Dataset collected by Nauta et al. as described in
 							<br/>
 							<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
-							&quot;From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI&quot;
+								&quot;From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI&quot;
 							</a>
 							<small>
-							&ensp;(preprint, 2022)
+								&ensp;(preprint, 2022)
 							</small>
 							<br/>
 							<small>
-							This dataset contains papers on explainable AI published in 2014-202 at conferences AAAI, IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR
+								This dataset contains papers on explainable AI published in 2014-202 at conferences AAAI, IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR
 							</small>
 						</p>
 					</div>
@@ -96,9 +98,9 @@ function DefaultLayout() {
 				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
-						<Route path="/" element={<Papers />}/>
-						<Route path="/add-paper" element={<AddPaper />}/>
-						<Route path="/about" element={<About />}/>
+						<Route path={`${baseUrl}/`} element={<Papers />}/>
+						<Route path={`${baseUrl}/add-paper`} element={<AddPaper />}/>
+						<Route path={`${baseUrl}/about`} element={<About />}/>
 					</Routes>
 				</Content>
 			</Layout>
