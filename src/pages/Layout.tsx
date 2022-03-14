@@ -1,7 +1,8 @@
 import { useState } from "react"
 import {
 	Layout,
-	Menu
+	Menu,
+	PageHeader
 } from "antd"
 import {
 	PlusCircleOutlined,
@@ -14,7 +15,7 @@ import "antd/dist/antd.dark.css"
 import { Routes, Route, useNavigate } from "react-router-dom"
 import { Papers, About, AddPaper } from "../pages"
 
-const { Content, Sider } = Layout
+const { Content, Sider, Header } = Layout
 
 function DefaultLayout() {
 
@@ -58,7 +59,7 @@ function DefaultLayout() {
 				}}
 				trigger={sideBarCollapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
 			>
-				<Menu theme="dark" mode="inline" onClick={onItemClick}>
+				<Menu mode="inline" onClick={onItemClick}>
 					<Menu.Item key="papers" icon={<DotChartOutlined />}>
                         Papers
 					</Menu.Item>
@@ -72,6 +73,27 @@ function DefaultLayout() {
 			</Sider>
 
 			<Layout>
+				{/* Header */}
+				<PageHeader style={{position: "sticky", top: 0, width: "100%", zIndex: 1}}>
+					<div>
+						<p>
+						Dataset collected by Nauta et al. as described in
+							<br/>
+							<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
+							&quot;From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI&quot;
+							</a>
+							<small>
+							&ensp;(preprint, 2022)
+							</small>
+							<br/>
+							<small>
+							This dataset contains papers on explainable AI published in 2014-202 at conferences AAAI, IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR
+							</small>
+						</p>
+					</div>
+				</PageHeader>
+
+				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
 						<Route path="/" element={<Papers />}/>
