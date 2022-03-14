@@ -10,6 +10,7 @@ import {
 	MenuFoldOutlined,
 	MenuUnfoldOutlined,
 } from "@ant-design/icons"
+import "antd/dist/antd.dark.css"
 import { Routes, Route, useNavigate } from "react-router-dom"
 import { Papers, About, AddPaper } from "../pages"
 
@@ -20,7 +21,7 @@ function DefaultLayout() {
 	const navigate = useNavigate()
 	const [sideBarCollapsed, setSideBarCollapsed] = useState(true)
 
-	const onItemClick = ({key}: {key: string}) => {
+	const onItemClick = ({ key }: { key: string }) => {
 
 		switch (key) {
 		case "papers": 

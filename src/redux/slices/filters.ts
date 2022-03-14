@@ -8,7 +8,7 @@ export type Filters = {
     task: Array<Task>
     explanation: Array<Explanation>
     method: Array<Method>
-    filterStateOR: boolean
+    filterStateAND: boolean
 }
 
 const initialState: Filters = {
@@ -18,7 +18,7 @@ const initialState: Filters = {
 	task: [],
 	explanation: [],
 	method: [],
-	filterStateOR: true
+	filterStateAND: true
 }
 
 const filtersSlice = createSlice({
@@ -47,7 +47,7 @@ const filtersSlice = createSlice({
 			state.method = action.payload
 		},
 		changeState(state, action: PayloadAction<boolean>) {
-			state.filterStateOR = action.payload
+			state.filterStateAND = action.payload
 		}
 	}
 })
