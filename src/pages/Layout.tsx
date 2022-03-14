@@ -17,7 +17,7 @@ import { Papers, About, AddPaper } from "../pages"
 
 const { Content, Sider } = Layout
 
-const baseUrl = "DMBLiteratureWebsite"
+const baseUrl = "/DMBLiteratureWebsite"
 
 function DefaultLayout() {
 
