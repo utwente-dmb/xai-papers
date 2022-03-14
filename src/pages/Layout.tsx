@@ -10,8 +10,8 @@ import {
 	MenuFoldOutlined,
 	MenuUnfoldOutlined,
 } from "@ant-design/icons"
-import {  Routes, Route, useNavigate } from "react-router-dom"
-import { Papers, About, Charts } from "../pages"
+import { Routes, Route, useNavigate } from "react-router-dom"
+import { Papers, About, AddPaper } from "../pages"
 
 const { Content, Sider } = Layout
 
@@ -21,7 +21,7 @@ function DefaultLayout() {
 	const [sideBarCollapsed, setSideBarCollapsed] = useState(true)
 
 	const onItemClick = ({key}: {key: string}) => {
-		console.log(key)
+
 		switch (key) {
 		case "papers": 
 			navigate("/")
@@ -45,12 +45,7 @@ function DefaultLayout() {
 			<Sider
 				collapsible
 				collapsed={sideBarCollapsed}
-				onCollapse={(collapsed, type) => {
-					console.log(
-						"Ah, so this gets logged in the browser console using F12",
-						collapsed,
-						type
-					)
+				onCollapse={(collapsed) => {
 					setSideBarCollapsed(collapsed)
 				}}
 				style={{
@@ -74,12 +69,12 @@ function DefaultLayout() {
 					</Menu.Item>
 				</Menu>
 			</Sider>
+
 			<Layout>
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
 						<Route path="/" element={<Papers />}/>
-						<Route path="/add-paper" element={<>Add Paper</>}/>
-						<Route path="/charts" element={<Charts />}/>
+						<Route path="/add-paper" element={<AddPaper />}/>
 						<Route path="/about" element={<About />}/>
 					</Routes>
 				</Content>
