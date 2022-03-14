@@ -38,8 +38,7 @@ function Papers(): JSX.Element {
 	}))
 
 	const sortedPapers = papersData.sort((a, b) => {
-		let val = 0
-		val = a.Year.localeCompare(b.Year)
+		let val = a.Year.localeCompare(b.Year)
 
 		if (val === 0 ) {
 			val = a.Venue.localeCompare(b.Venue)
