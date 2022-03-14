@@ -17,7 +17,7 @@ import { Papers, About, AddPaper } from "../pages"
 
 const { Content, Sider } = Layout
 
-const baseUrl = "/DMBLiteratureWebsite"
+const baseUrl = "/DMBLiteratureWebsite/"
 
 function DefaultLayout() {
 
@@ -28,19 +28,19 @@ function DefaultLayout() {
 
 		switch (key) {
 		case "papers": 
-			navigate(`${baseUrl}/`)
+			navigate(`${baseUrl}`)
 			break
         
 		case "add-paper":
-			navigate(`${baseUrl}/add-paper`)
+			navigate(`${baseUrl}add-paper`)
 			break
         
 		case "about": 
-			navigate(`${baseUrl}/about`)
+			navigate(`${baseUrl}about`)
 			break
 
 		default: 
-			navigate(`${baseUrl}/`)
+			navigate(`${baseUrl}`)
 		}
 	}
 	return (
@@ -98,9 +98,9 @@ function DefaultLayout() {
 				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
-						<Route path={`${baseUrl}/`} element={<Papers />}/>
-						<Route path={`${baseUrl}/add-paper`} element={<AddPaper />}/>
-						<Route path={`${baseUrl}/about`} element={<About />}/>
+						<Route path={`${baseUrl}`} element={<Papers />}/>
+						<Route path={`${baseUrl}add-paper`} element={<AddPaper />}/>
+						<Route path={`${baseUrl}about`} element={<About />}/>
 					</Routes>
 				</Content>
 			</Layout>
