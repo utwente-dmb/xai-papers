@@ -2,7 +2,7 @@ import { useAppSelector } from "./redux"
 import { Filters } from "../redux/slices/filters"
 import { Paper } from "../types"
 
-const map: Record<keyof Omit<Filters, "filterStateOR">, keyof Paper> = {
+const map: Record<keyof Omit<Filters, "filterStateAND">, keyof Paper> = {
 	data: "Type of Data", 
 	problem: "Type of Problem", 
 	model: "Type of Model to be Explained", 
@@ -27,20 +27,21 @@ export function useFilteredPapers(): Array<Paper> {
 			for (const type of filtersForKey) {
 				const paperTypes = paper[paperVal]
 
-				if (filters.filterStateOR) {
-					if (Array.isArray(paperTypes) && paperTypes.some((el) => el === type)) {
-						return true
-					}
-				} else {
+				if (filters.filterStateAND) {
 					if (!Array.isArray(paperTypes) || !paperTypes.some((el) => el === type)) {
 						toAdd = false
 					}
+				} else {
+					if (Array.isArray(paperTypes) && paperTypes.some((el) => el === type)) {
+						return true
+					}
+					
 				}
 
 			}
 		}
 
-		return filters.filterStateOR ? noFilters : toAdd
+		return filters.filterStateAND ? toAdd : noFilters
 	})
 
 	return filteredPapers

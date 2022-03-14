@@ -94,7 +94,7 @@ function CreateGraphData() {
 		papers.forEach(function (value2) {
 			if (value1 != value2) {
 				const typeOfDataSimilarity = value1["Type of Data"].filter(v1 => value2["Type of Data"].includes(v1)).length
-				console.log(typeOfDataSimilarity)
+				// console.log(typeOfDataSimilarity)
 				similarity = typeOfDataSimilarity
 
 
@@ -132,7 +132,7 @@ function CreateGraphData() {
 						edges.push(edgeToBeCreated)
 					}
 					else {
-						console.log("edge already exists")
+						// console.log("edge already exists")
 					}
 				}
 			}
@@ -144,7 +144,7 @@ function CreateGraphData() {
 		edges: edges
 	}
 
-	console.log(graphData)
+	// console.log(graphData)
 	return graphData
 }
 
