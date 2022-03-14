@@ -2,7 +2,7 @@ import {
 	Layout,
 } from "antd"
 import {  Routes, Route } from "react-router-dom"
-import { Filters, SideBar } from "../components"
+import { SideBar } from "../components"
 import { Papers, About, Charts } from "../pages"
 
 const { Content } = Layout
