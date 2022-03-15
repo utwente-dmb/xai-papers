@@ -11,7 +11,7 @@ function CreateGraphData() {
 	const edges: any = [];
 	const requiredNodes: Array<Paper> = [];
 	const minimumSimilarityForEdge = 5;
-	const similarityColumns: Array<string> = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"];
+	const similarityColumns: Array<keyof Paper> = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"];
 
 	// Get all pairs of papers
 	const pairs: Array<Array<number>> = [];
@@ -26,16 +26,20 @@ function CreateGraphData() {
 		const paper2: Paper = papers[pair[1]];
 		let similarity = 0;
 		for (const [filterKey, paperVal] of Object.entries(paper1)) {
-			if(similarityColumns.includes(filterKey)) {
-				similarity += paperVal.filter(v1 => paper2[filterKey].includes(v1).length);
+			if(similarityColumns.includes(filterKey as keyof Paper) && Array.isArray(paperVal)) {
+				similarity += paperVal.filter((v1) => {
+					const paper2Val = paper2[filterKey as keyof Paper]
+					return Array.isArray(paper2Val) && paper2Val.some((el) => el === v1)
+				}).length;
+				
 			}
 		}
-		similarity += paper1["Type of Data"].filter(v1 => paper2["Type of Data"].includes(v1)).length;
-		similarity += paper1["Type of Problem"].filter(v1 => paper2["Type of Problem"].includes(v1)).length;
-		similarity += paper1["Type of Model to be Explained"].filter(v1 => paper2["Type of Model to be Explained"].includes(v1)).length;
-		similarity += paper1["Type of Task"].filter(v1 => paper2["Type of Task"].includes(v1)).length;
-		similarity += paper1["Type of Explanation"].filter(v1 => paper2["Type of Explanation"].includes(v1)).length;
-		similarity += paper1["Method used to explain"].filter(v1 => paper2["Method used to explain"].includes(v1)).length;
+		// similarity += paper1["Type of Data"].filter(v1 => paper2["Type of Data"].includes(v1)).length;
+		// similarity += paper1["Type of Problem"].filter(v1 => paper2["Type of Problem"].includes(v1)).length;
+		// similarity += paper1["Type of Model to be Explained"].filter(v1 => paper2["Type of Model to be Explained"].includes(v1)).length;
+		// similarity += paper1["Type of Task"].filter(v1 => paper2["Type of Task"].includes(v1)).length;
+		// similarity += paper1["Type of Explanation"].filter(v1 => paper2["Type of Explanation"].includes(v1)).length;
+		// similarity += paper1["Method used to explain"].filter(v1 => paper2["Method used to explain"].includes(v1)).length;
 
 		if (similarity > minimumSimilarityForEdge) {
 			// Add either paper to node list, if it doesnt exist already
