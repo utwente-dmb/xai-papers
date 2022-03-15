@@ -3,17 +3,20 @@ import ReactDOM from "react-dom"
 import "./index.css"
 import { store } from "./redux"
 import { BrowserRouter } from "react-router-dom"
+import { AliveScope } from "react-activation"
 import { Provider } from "react-redux"
 import { Layout } from "./pages"
 import reportWebVitals from "./reportWebVitals"
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Provider store={store}>
-			<BrowserRouter>
-				<Layout />
-			</BrowserRouter>
-		</Provider>
+		<AliveScope>
+			<Provider store={store}>
+				<BrowserRouter>
+					<Layout />
+				</BrowserRouter>
+			</Provider>
+		</AliveScope>
 	</React.StrictMode>,
 	document.getElementById("root")
 )
