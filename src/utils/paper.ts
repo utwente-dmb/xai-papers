@@ -20,7 +20,7 @@ export function isPaper(paper: any): paper is Paper {
         && isEnumArray(Method)(paper["Method used to explain"])
 }
 
-export const isEnumArray = <T>(e: T) => (data: Array<any>): data is Array<T> => {
+export const isEnumArray = <T>(e: T) => (data: Array<T>): data is Array<T> => {
 	let isTrue = true
 	data.forEach((d) => {
 		if (!isSomeEnum(e)(d)) {

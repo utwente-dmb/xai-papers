@@ -92,7 +92,7 @@ function CreateGraphData() {
 		edges: edges
 	}
 
-	console.log(graphData)
+	// console.log(graphData)
 	return graphData
 }
 

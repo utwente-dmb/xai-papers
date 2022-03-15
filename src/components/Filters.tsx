@@ -31,7 +31,11 @@ function Filter<T>({placeholder, enumerator, handleChange}: FilterProps<T> ): JS
 	)
 }
 
-function Filters(): JSX.Element {
+type FiltersProps = {
+	changeContent: (val: boolean) => void
+}
+
+function Filters({ changeContent }: FiltersProps): JSX.Element {
 
 	const dispatch = useAppDispatch()
 
@@ -60,8 +64,11 @@ function Filters(): JSX.Element {
 	}
 
 	function handleFilterSwitch(checked: boolean) {
-		console.log("filter State is OR", checked)
 		dispatch(filtersActions.changeState(checked))
+	}
+
+	function handleContentChange(checked: boolean) {
+		changeContent(checked)
 	}
 
 	return (
@@ -73,7 +80,8 @@ function Filters(): JSX.Element {
 			<Filter placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} />
 			<Filter placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} />
 
-			<Switch checkedChildren="OR" unCheckedChildren="AND" defaultChecked  onChange={handleFilterSwitch}/>
+			<Switch checkedChildren="Papers" unCheckedChildren="Graphs" defaultChecked onChange={handleContentChange} />
+			<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
 
 			<Col>
 				<RangePicker></RangePicker>

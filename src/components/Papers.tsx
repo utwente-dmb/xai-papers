@@ -37,11 +37,25 @@ function Papers(): JSX.Element {
 		Authors: [paper.Authors[0] + " et al."],
 	}))
 
+	const sortedPapers = papersData.sort((a, b) => {
+		let val = a.Year.localeCompare(b.Year)
+
+		if (val === 0 ) {
+			val = a.Venue.localeCompare(b.Venue)
+		}
+
+		if (val === 0) {
+			val = a.Title.localeCompare(b.Title)
+		}
+
+		return val
+	})
+
 	return (
 		<Table
 			style={{ marginTop: 10 }}
 			columns={columns}
-			dataSource={papersData}
+			dataSource={sortedPapers}
 			expandable={{
 				expandedRowRender: (record) => (
 					<><a href={record.url} style={{ margin: 0 }}>
