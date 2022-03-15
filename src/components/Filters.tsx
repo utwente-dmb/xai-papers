@@ -2,13 +2,16 @@ import React from "react"
 import { Select, Col, Row, DatePicker, Input, Switch } from "antd"
 import { Data, Explanation, Method, Model, Problem, Task } from "../types"
 import { filtersActions } from "../redux"
-import { useAppDispatch } from "../hooks"
+import { useAppDispatch, useAppSelector } from "../hooks"
   
 const { RangePicker } = DatePicker
 const { Search } = Input
 
 type FilterProps<T> = {
-  placeholder: string, enumerator: Record<number, string>, handleChange: (val: Array<T>) => void
+  placeholder: string, 
+  enumerator: Record<number, string>,
+  handleChange: (val: Array<T>) => void,
+  defaultValue: Array<T>
 }
 
 function Filter<T>({placeholder, enumerator, handleChange}: FilterProps<T> ): JSX.Element {
@@ -37,6 +40,7 @@ type FiltersProps = {
 
 function Filters({ changeContent }: FiltersProps): JSX.Element {
 
+	const filters = useAppSelector((state) => state.filters)
 	const dispatch = useAppDispatch()
 
 	function handleDataChange(value: Array<Data>) { 
@@ -73,12 +77,12 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 
 	return (
 		<Row justify="end" gutter={4} style={{ marginTop: 10 }}>
-			<Filter placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange}/>
-			<Filter placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} />
-			<Filter placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} />
-			<Filter placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} />
-			<Filter placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} />
-			<Filter placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} />
+			<Filter placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} defaultValue={filters.data}/>
+			<Filter placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} defaultValue={filters.problem}/>
+			<Filter placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} defaultValue={filters.model}/>
+			<Filter placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} defaultValue={filters.task}/>
+			<Filter placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} defaultValue={filters.explanation}/>
+			<Filter placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} defaultValue={filters.method}/>
 
 			<Switch checkedChildren="Papers" unCheckedChildren="Graphs" defaultChecked onChange={handleContentChange} />
 			<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
