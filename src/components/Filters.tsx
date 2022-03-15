@@ -104,7 +104,7 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 			</Col>
 
 			<Col>
-				<Search style={{ width: 200 }} placeholder="Search titles and authors" onSearch={handleSearch} />
+				<Search style={{ width: 200 }} placeholder="Search titles and authors" onSearch={handleSearch} defaultValue={filters.search} />
 			</Col>
 		</Row>
 	)
