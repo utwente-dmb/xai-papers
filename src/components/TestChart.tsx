@@ -25,15 +25,16 @@ function CreateGraphData() {
 		const paper1: Paper = papers[pair[0]];
 		const paper2: Paper = papers[pair[1]];
 		let similarity = 0;
-		for (const [filterKey, paperVal] of Object.entries(paper1)) {
-			if(similarityColumns.includes(filterKey as keyof Paper) && Array.isArray(paperVal)) {
-				similarity += paperVal.filter((v1) => {
-					const paper2Val = paper2[filterKey as keyof Paper]
-					return Array.isArray(paper2Val) && paper2Val.some((el) => el === v1)
-				}).length;
-				
-			}
+		for (const col of similarityColumns) {
+			const paperVal = paper1[col]
+			if (!Array.isArray(paperVal)) continue
+			
+			similarity += paperVal.filter((v1) => {
+				const paper2Val = paper2[col]
+				return Array.isArray(paper2Val) && paper2Val.some((el) => el === v1)
+			}).length
 		}
+
 		// similarity += paper1["Type of Data"].filter(v1 => paper2["Type of Data"].includes(v1)).length;
 		// similarity += paper1["Type of Problem"].filter(v1 => paper2["Type of Problem"].includes(v1)).length;
 		// similarity += paper1["Type of Model to be Explained"].filter(v1 => paper2["Type of Model to be Explained"].includes(v1)).length;
