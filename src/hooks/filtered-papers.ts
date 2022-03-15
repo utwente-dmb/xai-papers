@@ -2,13 +2,13 @@ import { useAppSelector } from "./redux"
 import { Filters } from "../redux/slices/filters"
 import { Paper } from "../types"
 
-const map: Record<keyof Omit<Filters, "filterStateAND">, keyof Paper> = {
+const map: Record<keyof Omit<Filters, "filterStateAND" | "startYear" | "endYear" | "search" >, keyof Paper> = {
 	data: "Type of Data", 
 	problem: "Type of Problem", 
 	model: "Type of Model to be Explained", 
 	task: "Type of Task",
 	explanation: "Type of Explanation",
-	method: "Method used to explain"
+	method: "Method used to explain",
 }
 
 export function useFilteredPapers(): Array<Paper> {
@@ -35,14 +35,35 @@ export function useFilteredPapers(): Array<Paper> {
 					if (Array.isArray(paperTypes) && paperTypes.some((el) => el === type)) {
 						return true
 					}
-					
 				}
-
 			}
 		}
 
 		return filters.filterStateAND ? toAdd : noFilters
 	})
 
-	return filteredPapers
+	const searchedPapers = filteredPapers.filter((paper) => {
+		let search = filters.search.toLowerCase().trim()
+		if (search.length === 0) return true
+
+		if (search.startsWith("author:")) {
+			search = search.substring(7).trim()
+		} else if (search.startsWith("title:")) {
+			search = search.substring(6).trim()
+		}
+
+		const author = paper.Authors.some((author) => author.toLowerCase().includes(search))
+		const title = paper.Title.toLowerCase().includes(search)
+
+		if (search.startsWith("author:")) {
+			return author
+		} else if (search.startsWith("title:")) {
+			return title
+		} else {
+			return author || title
+		}
+		
+	})
+
+	return searchedPapers
 }

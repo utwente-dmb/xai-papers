@@ -8,6 +8,9 @@ export type Filters = {
     task: Array<Task>
     explanation: Array<Explanation>
     method: Array<Method>
+	startYear?: number
+	endYear?: number
+	search: string
     filterStateAND: boolean
 }
 
@@ -18,6 +21,9 @@ const initialState: Filters = {
 	task: [],
 	explanation: [],
 	method: [],
+	startYear: undefined,
+	endYear: undefined,
+	search: "",
 	filterStateAND: true
 }
 
@@ -48,6 +54,15 @@ const filtersSlice = createSlice({
 		},
 		changeState(state, action: PayloadAction<boolean>) {
 			state.filterStateAND = action.payload
+		},
+		setStartYear(state, action: PayloadAction<number | undefined>) {
+			state.startYear = action.payload
+		},
+		setEndYear(state, action: PayloadAction<number | undefined>) {
+			state.endYear = action.payload
+		},
+		setSearch(state, action: PayloadAction<string>) {
+			state.search = action.payload
 		}
 	}
 })

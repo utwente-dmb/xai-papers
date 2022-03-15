@@ -75,6 +75,18 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 		changeContent(checked)
 	}
 
+	function handleYearChange(value: any) {
+		const startYear = value[0]?.year()
+		const endYear = value[1]?.year()
+
+		dispatch(filtersActions.setStartYear(startYear))
+		dispatch(filtersActions.setEndYear(endYear))
+	}
+
+	function handleSearch(value: string) {
+		dispatch(filtersActions.setSearch(value))
+	}
+
 	return (
 		<Row justify="end" gutter={4} style={{ marginTop: 10 }}>
 			<Filter placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} defaultValue={filters.data}/>
@@ -88,11 +100,11 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 			<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
 
 			<Col>
-				<RangePicker></RangePicker>
+				<RangePicker picker="year" onPanelChange={handleYearChange} ></RangePicker>
 			</Col>
 
 			<Col>
-				<Search placeholder="input search text" style={{ width: 200 }} />
+				<Search style={{ width: 200 }} placeholder="Search titles and authors" onSearch={handleSearch} />
 			</Col>
 		</Row>
 	)
