@@ -1,6 +1,6 @@
 import React from "react"
 import { Select, Col, Row, DatePicker, Input, Switch, Tag } from "antd"
-import { Data, Explanation, Method, Model, Paper, Problem, Task } from "../types"
+import { Data, Explanation, Method, Model, Problem, Task } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { getColor } from "../utils"
@@ -10,14 +10,14 @@ const { Search } = Input
 const { Option } = Select
 
 type Value<T> = {
-	key: string
+	value: string
 	label: T
 }
 
-function toValue<T>(arr: Array<T>, key: string): Array<Value<T>> {
+function toValue<T>(arr: Array<T>, value: string): Array<Value<T>> {
 	return arr.map((item) => ({
 		label: item,
-		key
+		value
 	}))
 }
 
@@ -28,8 +28,8 @@ function fromValue<T>(arr: Array<Value<T>>): Array<T> {
 type FilterProps<T> = {
   placeholder: string, 
   enumerator: Record<number, string>,
-  handleChange: (val: Array<Value<T>>) => void,
-  value: Array<T>
+  handleChange: (val: Array<T>, arg?: any) => void,
+  value: any
 }
 
 type TagRenderProps<T> = {
@@ -40,7 +40,8 @@ type TagRenderProps<T> = {
 }
 
 function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
-	const color = getColor(value)
+	console.log("Tag", label, value)
+	const color = getColor(value.split("+")[1])
 
 	return (
 		<Tag
@@ -57,22 +58,24 @@ function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
 function Filter<T>({ placeholder, enumerator, handleChange, value }: FilterProps<T> ): JSX.Element {
 
 	const val = toValue(value, placeholder)
+	const values = toValue(Object.values(enumerator), placeholder)
 
 	return (
-		<Col span={4}>
+		<Col span={8}>
 			<Select
-				mode="tags"
+				mode="multiple"
 				style={{ width: "100%" }}
 				placeholder={placeholder}
-				// defaultValue={val}
-				value={val}
+				defaultValue={value}
+				// value={val}
 				onChange={handleChange}
+				onDeselect={() => {console.log("deselect")}} // This only exists to fix the removal of tags
 				labelInValue={true}
 				tagRender={tagRender}
 				allowClear
 			>
-				{Object.values(enumerator).map((item: string, index: number) => (
-					<Option value={item} key={index} >{item}</Option>
+				{values.map((item: Value<string>, index: number) => (
+					<Option value={`${item.label}+${item.value}`} key={index}>{item.label}</Option>
 				))}
 			</Select>
 		</Col>
@@ -89,6 +92,7 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 	const dispatch = useAppDispatch()
 
 	function handleDataChange(value: Array<Value<Data>>) { 
+		console.log("Data", value)
 		dispatch(filtersActions.setData(fromValue(value)))
 	}
 

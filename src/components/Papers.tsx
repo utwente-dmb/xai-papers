@@ -76,14 +76,8 @@ function Papers(): JSX.Element {
 						</Row>
 						<Row>
 							{typeArray.map((type) => (
-								<Tag record={record} type={type} key={type}/>
+								<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
 							))}
-							{/* <TagList TagData={record["Type of Data"]} Color="magenta"></TagList>
-							<TagList TagData={record["Type of Problem"]} Color="green"></TagList>
-							<TagList TagData={record["Type of Model to be Explained"]} Color="blue"></TagList>
-							<TagList TagData={record["Type of Task"]} Color="orange"></TagList>
-							<TagList TagData={record["Type of Explanation"]} Color="red"></TagList>
-							<TagList TagData={record["Method used to explain"]} Color="purple"></TagList> */}
 						</Row>
 					</>
 				),
