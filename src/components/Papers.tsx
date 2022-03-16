@@ -1,13 +1,14 @@
-import { Table } from "antd"
+import { Table, Row } from "antd"
 import { useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
 import { Paper } from "../types"
+import { getColor, typeArray } from "../utils"
 
 const columns = [
 	{
 		title: "Title",
 		dataIndex: "Title",
-		render: (text:string, row:Paper) => <a href={row.url} target="_blank" rel="noreferrer">{text}</a>,
+		render: (text: string, row: Paper) => <a href={row.url} target="_blank" rel="noreferrer">{text}</a>,
 		key: "title",
 	},
 	{
@@ -21,11 +22,18 @@ const columns = [
 		key: "year",
 	},
 	{
-		title: "Authors",
-		key: "authors",
-		dataIndex: "Authors",
+		title: "Author",
+		key: "author",
+		dataIndex: "Author",
 	},
 ]
+
+function Tag({ record, type }: { record: Paper, type: keyof Paper}) {
+
+	return (
+		<TagList TagData={record[type] as string[]} Color={getColor(type)}></TagList>
+	)
+}
 
 function Papers(): JSX.Element {
 
@@ -34,7 +42,7 @@ function Papers(): JSX.Element {
 	const papersData = filteredPapers.map((paper) => ({
 		...paper,
 		key: filteredPapers.indexOf(paper),
-		Authors: [paper.Authors[0] + " et al."],
+		Author: [paper.Authors[0] + " et al."],
 	}))
 
 	const sortedPapers = papersData.sort((a, b) => {
@@ -58,15 +66,20 @@ function Papers(): JSX.Element {
 			dataSource={sortedPapers}
 			expandable={{
 				expandedRowRender: (record) => (
-					<><a href={record.url} style={{ margin: 0 }}>
-						{record.url}
-					</a>
-					<TagList TagData={record["Type of Data"]} Color="Magenta"></TagList>
-					<TagList TagData={record["Type of Problem"]} Color="Green"></TagList>
-					<TagList TagData={record["Type of Model to be Explained"]} Color="Blue"></TagList>
-					<TagList TagData={record["Type of Task"]} Color="Orange"></TagList>
-					<TagList TagData={record["Type of Explanation"]} Color="Red"></TagList>
-					<TagList TagData={record["Method used to explain"]} Color="Brown"></TagList></>
+					<>
+						<Row>
+							Authors: {record.Authors.map((author) => { 
+								return record.Authors.indexOf(author) !== record.Authors.length - 1 
+									? author + ", "
+									: author 
+							})}
+						</Row>
+						<Row>
+							{typeArray.map((type) => (
+								<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
+							))}
+						</Row>
+					</>
 				),
 			}}
 		></Table>

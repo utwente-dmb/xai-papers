@@ -32,3 +32,31 @@ export const isEnumArray = <T>(e: T) => (data: Array<T>): data is Array<T> => {
 
 export const isSomeEnum = <T>(e: T) => (token: any): token is T[keyof T] =>
 	Object.values(e).includes(token as T[keyof T])
+
+export const typeArray: (keyof Paper)[] = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
+export const enumArray = [Data, Problem, Model, Task, Explanation, Method]
+
+export const getColor = (type: keyof Paper) => {
+	switch (type) {
+	case "Type of Data":
+		return "magenta"
+        
+	case "Type of Problem":
+		return "green"
+
+	case "Type of Model to be Explained":
+		return "blue"
+
+	case "Type of Task": 
+		return "orange"
+
+	case "Type of Explanation": 
+		return "red"
+
+	case "Method used to explain": 
+		return "purple"
+                
+	default:
+		return "gold"
+	}
+}
