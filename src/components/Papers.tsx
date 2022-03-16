@@ -7,7 +7,7 @@ const columns = [
 	{
 		title: "Title",
 		dataIndex: "Title",
-		render: (text:string, row:Paper) => <a href={row.url} target="_blank" rel="noreferrer">{text}</a>,
+		render: (text: string, row: Paper) => <a href={row.url} target="_blank" rel="noreferrer">{text}</a>,
 		key: "title",
 	},
 	{
@@ -67,12 +67,12 @@ function Papers(): JSX.Element {
 							})}
 						</Row>
 						<Row>
-							<TagList TagData={record["Type of Data"]} Color="Magenta"></TagList>
-							<TagList TagData={record["Type of Problem"]} Color="Green"></TagList>
-							<TagList TagData={record["Type of Model to be Explained"]} Color="Blue"></TagList>
-							<TagList TagData={record["Type of Task"]} Color="Orange"></TagList>
-							<TagList TagData={record["Type of Explanation"]} Color="Red"></TagList>
-							<TagList TagData={record["Method used to explain"]} Color="Brown"></TagList>
+							<TagList TagData={record["Type of Data"]} Color="magenta"></TagList>
+							<TagList TagData={record["Type of Problem"]} Color="green"></TagList>
+							<TagList TagData={record["Type of Model to be Explained"]} Color="blue"></TagList>
+							<TagList TagData={record["Type of Task"]} Color="orange"></TagList>
+							<TagList TagData={record["Type of Explanation"]} Color="red"></TagList>
+							<TagList TagData={record["Method used to explain"]} Color="purple"></TagList>
 						</Row>
 					</>
 				),

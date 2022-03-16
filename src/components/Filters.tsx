@@ -1,8 +1,9 @@
 import React from "react"
-import { Select, Col, Row, DatePicker, Input, Switch } from "antd"
+import { Select, Col, Row, DatePicker, Input, Switch, Tag } from "antd"
 import { Data, Explanation, Method, Model, Problem, Task } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
+import { getColor } from "../utils"
   
 const { RangePicker } = DatePicker
 const { Search } = Input
@@ -14,7 +15,30 @@ type FilterProps<T> = {
   defaultValue: Array<T>
 }
 
-function Filter<T>({placeholder, enumerator, handleChange}: FilterProps<T> ): JSX.Element {
+type TagRenderProps<T> = {
+	label: T
+	closable: boolean
+	value: string
+	onClose: () => void
+}
+
+function tagRender<T>({ label, closable, onClose}: TagRenderProps<T>) {
+
+	const color = getColor(label)
+
+	return (
+		<Tag
+			color={color}
+			closable={closable}
+			onClose={onClose}
+			style={{ marginRight: 3 }}
+		>
+			{label}
+		</Tag>
+	)
+}
+
+function Filter<T>({placeholder, enumerator, handleChange, defaultValue}: FilterProps<T> ): JSX.Element {
 
 	return (
 		<Col span={4}>
@@ -22,9 +46,10 @@ function Filter<T>({placeholder, enumerator, handleChange}: FilterProps<T> ): JS
 				mode="multiple"
 				style={{ width: "100%" }}
 				placeholder={placeholder}
-				defaultValue={[]}
+				defaultValue={defaultValue}
 				onChange={handleChange}
 				optionLabelProp="label"
+				tagRender={tagRender}
 			>
 				{Object.values(enumerator).map((item: string, index: number) => (
 					<Select value={item} key={index}>{item}</Select>
@@ -88,7 +113,7 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 	}
 
 	return (
-		<Row justify="end" gutter={4} style={{ marginTop: 10 }}>
+		<Row justify="end" gutter={4}>
 			<Filter placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} defaultValue={filters.data}/>
 			<Filter placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} defaultValue={filters.problem}/>
 			<Filter placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} defaultValue={filters.model}/>

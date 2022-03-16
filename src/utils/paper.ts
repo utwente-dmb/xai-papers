@@ -32,3 +32,21 @@ export const isEnumArray = <T>(e: T) => (data: Array<T>): data is Array<T> => {
 
 export const isSomeEnum = <T>(e: T) => (token: any): token is T[keyof T] =>
 	Object.values(e).includes(token as T[keyof T])
+
+export const getColor = <T>(label: T) => {
+	let color = "gold"
+	if (Object.values(Data).includes(label as unknown as Data)) {
+		color = "magenta"
+	} else if (Object.values(Problem).includes(label as unknown as Problem)) {
+		color = "green"
+	} else if (Object.values(Model).includes(label as unknown as Model)) {
+		color = "blue"
+	} else if (Object.values(Task).includes(label as unknown as Task)) {
+		color = "orange"
+	} else if (Object.values(Explanation).includes(label as unknown as Explanation)) {
+		color = "red"
+	} else if (Object.values(Method).includes(label as unknown as Method)) {
+		color = "purple"
+	}
+	return color
+}
