@@ -54,6 +54,7 @@ export function useFilteredPapers(): Array<Paper> {
 			return false
 		}
 
+		// Type Filters Check
 		for (const [filterKey, paperVal] of Object.entries(map)) {
 			const filtersForKey = filters[filterKey as keyof Filters]
 			if (!Array.isArray(filtersForKey)) { continue }

@@ -133,7 +133,7 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 	}
 
 	return (
-		<Row justify="end" gutter={4}>
+		<Row gutter={4}>
 			<Filter placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data}/>
 			<Filter placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} value={filters.problem}/>
 			<Filter placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} value={filters.model}/>
@@ -141,16 +141,16 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 			<Filter placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} value={filters.explanation}/>
 			<Filter placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method}/>
 
-			<Switch checkedChildren="Papers" unCheckedChildren="Graphs" defaultChecked onChange={handleContentChange} />
-			<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
-
-			<Col>
+			<Col span={8}>
 				<RangePicker picker="year" onPanelChange={handleYearChange} ></RangePicker>
 			</Col>
 
-			<Col>
-				<Search style={{ width: 200 }} placeholder="Search titles and authors" onSearch={handleSearch} defaultValue={filters.search} />
+			<Col span={6}>
+				<Search placeholder="Search titles and/or authors" onSearch={handleSearch} defaultValue={filters.search} />
 			</Col>
+
+			<Switch checkedChildren="Papers" unCheckedChildren="Graphs" defaultChecked onChange={handleContentChange} />
+			<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
 		</Row>
 	)
 }
