@@ -9,10 +9,28 @@ const { RangePicker } = DatePicker
 const { Search } = Input
 const { Option } = Select
 
+type FilterValue<T> = {
+	label: T
+	value: string
+	key: T
+}
+
+function toFilterValue<T>(arr: Array<T>, type: string) {
+	return arr.map((val) => ({
+		label: val,
+		value: `${type}+${val}`,
+		key: val
+	}))
+} 
+
+function fromFilterValue<T>(arr: Array<FilterValue<T>>) {
+	return arr.map((item) => item.label)
+}
+
 type FilterProps<T> = {
   placeholder: string, 
   enumerator: Record<number, string>,
-  handleChange: (val: Array<T>) => void,
+  handleChange: (val: Array<FilterValue<T>>) => void,
   value: Array<T>
 }
 
@@ -24,13 +42,13 @@ type TagRenderProps<T> = {
 }
 
 function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
-	const color = getColor(value.split("-")[0] as keyof Paper)
+	const color = getColor(value.split("+")[0] as keyof Paper)
 	return (
 		<Tag
 			color={color}
 			closable={closable}
 			onClose={onClose}
-			style={{ marginRight: 3 }}
+			style={{ marginRight: 3}}
 		>
 			{label}
 		</Tag>
@@ -39,21 +57,22 @@ function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
 
 function Filter<T>({ placeholder, enumerator, handleChange, value }: FilterProps<T> ): JSX.Element {
 
+	const defaultValue = toFilterValue(value, placeholder)
+
 	return (
 		<Col span={8}>
 			<Select
 				mode="multiple"
 				style={{ width: "100%" }}
 				placeholder={placeholder}
-				defaultValue={value}
-				value={value}
+				defaultValue={defaultValue}
 				onChange={handleChange}
 				labelInValue={true}
 				tagRender={tagRender}
 				allowClear
 			>
-				{Object.values(enumerator).map((item: string, index: number) => (
-					<Option value={`${placeholder}-${item}`} key={index}>{item}</Option>
+				{Object.values(enumerator).map((item: string) => (
+					<Option value={`${placeholder}+${item}`} key={item}>{item}</Option>
 				))}
 			</Select>
 		</Col>
@@ -69,28 +88,29 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 	const filters = useAppSelector((state) => state.filters)
 	const dispatch = useAppDispatch()
 
-	function handleDataChange(value: Array<Data>) { 
-		dispatch(filtersActions.setData(value))
+	function handleDataChange(value: Array<FilterValue<Data>>) { 
+		console.log("Value", value)
+		dispatch(filtersActions.setData(fromFilterValue(value)))
 	}
 
-	function handleProblemChange(value: Array<Problem>) { 
-		dispatch(filtersActions.setProblem(value))
+	function handleProblemChange(value: Array<FilterValue<Problem>>) { 
+		dispatch(filtersActions.setProblem(fromFilterValue(value)))
 	}
   
-	function handleModelChange(value: Array<Model>) { 
-		dispatch(filtersActions.setModel(value))
+	function handleModelChange(value: Array<FilterValue<Model>>) { 
+		dispatch(filtersActions.setModel(fromFilterValue(value)))
 	}
 
-	function handleTaskChange(value: Array<Task>) {
-		dispatch(filtersActions.setTask(value))
+	function handleTaskChange(value: Array<FilterValue<Task>>) {
+		dispatch(filtersActions.setTask(fromFilterValue(value)))
 	}
 
-	function handleExplanationChange(value: Array<Explanation>) {
-		dispatch(filtersActions.setExplanation(value))
+	function handleExplanationChange(value: Array<FilterValue<Explanation>>) {
+		dispatch(filtersActions.setExplanation(fromFilterValue(value)))
 	}
 
-	function handleMethodChange(value: Array<Method>) {
-		dispatch(filtersActions.setMethod(value))
+	function handleMethodChange(value: Array<FilterValue<Method>>) {
+		dispatch(filtersActions.setMethod(fromFilterValue(value)))
 	}
 
 	function handleFilterSwitch(checked: boolean) {
