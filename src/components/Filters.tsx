@@ -1,6 +1,6 @@
 import React from "react"
 import { Select, Col, Row, DatePicker, Input, Switch, Tag } from "antd"
-import { Data, Explanation, Method, Model, Problem, Task } from "../types"
+import { Data, Explanation, Method, Model, Paper, Problem, Task } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { getColor } from "../utils"
@@ -9,40 +9,22 @@ const { RangePicker } = DatePicker
 const { Search } = Input
 const { Option } = Select
 
-type Value<T> = {
-	value: string
-	label: T
-}
-
-function toValue<T>(arr: Array<T>, value: string): Array<Value<T>> {
-	return arr.map((item) => ({
-		label: item,
-		value
-	}))
-}
-
-function fromValue<T>(arr: Array<Value<T>>): Array<T> {
-	return arr.map((item) => item.label)
-}
-
 type FilterProps<T> = {
   placeholder: string, 
   enumerator: Record<number, string>,
-  handleChange: (val: Array<T>, arg?: any) => void,
-  value: any
+  handleChange: (val: Array<T>) => void,
+  value: Array<T>
 }
 
 type TagRenderProps<T> = {
 	label: T
 	closable: boolean
-	value: any
+	value: string
 	onClose: () => void
 }
 
 function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
-	console.log("Tag", label, value)
-	const color = getColor(value.split("+")[1])
-
+	const color = getColor(value.split("-")[0] as keyof Paper)
 	return (
 		<Tag
 			color={color}
@@ -57,9 +39,6 @@ function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
 
 function Filter<T>({ placeholder, enumerator, handleChange, value }: FilterProps<T> ): JSX.Element {
 
-	const val = toValue(value, placeholder)
-	const values = toValue(Object.values(enumerator), placeholder)
-
 	return (
 		<Col span={8}>
 			<Select
@@ -67,15 +46,14 @@ function Filter<T>({ placeholder, enumerator, handleChange, value }: FilterProps
 				style={{ width: "100%" }}
 				placeholder={placeholder}
 				defaultValue={value}
-				// value={val}
+				value={value}
 				onChange={handleChange}
-				onDeselect={() => {console.log("deselect")}} // This only exists to fix the removal of tags
 				labelInValue={true}
 				tagRender={tagRender}
 				allowClear
 			>
-				{values.map((item: Value<string>, index: number) => (
-					<Option value={`${item.label}+${item.value}`} key={index}>{item.label}</Option>
+				{Object.values(enumerator).map((item: string, index: number) => (
+					<Option value={`${placeholder}-${item}`} key={index}>{item}</Option>
 				))}
 			</Select>
 		</Col>
@@ -91,29 +69,29 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 	const filters = useAppSelector((state) => state.filters)
 	const dispatch = useAppDispatch()
 
-	function handleDataChange(value: Array<Value<Data>>) { 
+	function handleDataChange(value: Array<Data>) { 
 		console.log("Data", value)
-		dispatch(filtersActions.setData(fromValue(value)))
+		dispatch(filtersActions.setData(value))
 	}
 
-	function handleProblemChange(value: Array<Value<Problem>>) { 
-		dispatch(filtersActions.setProblem(fromValue(value)))
+	function handleProblemChange(value: Array<Problem>) { 
+		dispatch(filtersActions.setProblem(value))
 	}
   
-	function handleModelChange(value: Array<Value<Model>>) { 
-		dispatch(filtersActions.setModel(fromValue(value)))
+	function handleModelChange(value: Array<Model>) { 
+		dispatch(filtersActions.setModel(value))
 	}
 
-	function handleTaskChange(value: Array<Value<Task>>) {
-		dispatch(filtersActions.setTask(fromValue(value)))
+	function handleTaskChange(value: Array<Task>) {
+		dispatch(filtersActions.setTask(value))
 	}
 
-	function handleExplanationChange(value: Array<Value<Explanation>>) {
-		dispatch(filtersActions.setExplanation(fromValue(value)))
+	function handleExplanationChange(value: Array<Explanation>) {
+		dispatch(filtersActions.setExplanation(value))
 	}
 
-	function handleMethodChange(value: Array<Value<Method>>) {
-		dispatch(filtersActions.setMethod(fromValue(value)))
+	function handleMethodChange(value: Array<Method>) {
+		dispatch(filtersActions.setMethod(value))
 	}
 
 	function handleFilterSwitch(checked: boolean) {
