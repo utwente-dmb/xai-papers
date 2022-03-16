@@ -70,7 +70,6 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 	const dispatch = useAppDispatch()
 
 	function handleDataChange(value: Array<Data>) { 
-		console.log("Data", value)
 		dispatch(filtersActions.setData(value))
 	}
 
