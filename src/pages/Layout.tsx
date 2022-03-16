@@ -76,7 +76,7 @@ function DefaultLayout() {
 
 			<Layout>
 				{/* Header */}
-				<PageHeader style={{position: "sticky", top: 0, width: "100%", zIndex: 1}}>
+				<PageHeader style={{ top: 0, width: "100%", zIndex: 1}}>
 					<div>
 						<p>
 							Dataset collected by Nauta et al. as described in
@@ -89,7 +89,7 @@ function DefaultLayout() {
 							</small>
 							<br/>
 							<small>
-								This dataset contains papers on explainable AI published in 2014-202 at conferences AAAI, IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR
+								This dataset contains papers on explainable AI published in 2014-2020 at conferences AAAI, IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR
 							</small>
 						</p>
 					</div>
