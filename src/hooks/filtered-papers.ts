@@ -18,6 +18,42 @@ export function useFilteredPapers(): Array<Paper> {
 		let noFilters = true
 		let toAdd = true
 
+		// Search Query check
+		let search = filters.search.toLowerCase().trim()
+		if (search.length > 0) {
+			let proceed = false
+			let searchAuthor = true
+			let searchTitle = true
+
+			if (search.startsWith("author:")) {
+				search = search.substring(7).trim()
+				searchTitle = false
+			} else if (search.startsWith("title:")) {
+				search = search.substring(6).trim()
+				searchAuthor = false
+			}
+
+			const author = paper.Authors.some((author) => author.toLowerCase().includes(search))
+			const title = paper.Title.toLowerCase().includes(search)
+
+			if (searchAuthor) {
+				proceed = proceed || author
+			}
+			if (searchTitle) {
+				proceed = proceed || title
+			}
+
+			if (!proceed) return false
+		}
+
+		// Year Check
+		if (typeof filters.startYear !== "undefined" && parseInt(paper.Year) < filters.startYear) {
+			return false
+		}
+		if (typeof filters.endYear !== "undefined" && parseInt(paper.Year) > filters.endYear) {
+			return false
+		}
+
 		for (const [filterKey, paperVal] of Object.entries(map)) {
 			const filtersForKey = filters[filterKey as keyof Filters]
 			if (!Array.isArray(filtersForKey)) { continue }
@@ -42,28 +78,28 @@ export function useFilteredPapers(): Array<Paper> {
 		return filters.filterStateAND ? toAdd : noFilters
 	})
 
-	const searchedPapers = filteredPapers.filter((paper) => {
-		let search = filters.search.toLowerCase().trim()
-		if (search.length === 0) return true
+	// const searchedPapers = filteredPapers.filter((paper) => {
+	// 	let search = filters.search.toLowerCase().trim()
+	// 	if (search.length === 0) return true
 
-		if (search.startsWith("author:")) {
-			search = search.substring(7).trim()
-		} else if (search.startsWith("title:")) {
-			search = search.substring(6).trim()
-		}
+	// 	if (search.startsWith("author:")) {
+	// 		search = search.substring(7).trim()
+	// 	} else if (search.startsWith("title:")) {
+	// 		search = search.substring(6).trim()
+	// 	}
 
-		const author = paper.Authors.some((author) => author.toLowerCase().includes(search))
-		const title = paper.Title.toLowerCase().includes(search)
+	// 	const author = paper.Authors.some((author) => author.toLowerCase().includes(search))
+	// 	const title = paper.Title.toLowerCase().includes(search)
 
-		if (search.startsWith("author:")) {
-			return author
-		} else if (search.startsWith("title:")) {
-			return title
-		} else {
-			return author || title
-		}
+	// 	if (search.startsWith("author:")) {
+	// 		return author
+	// 	} else if (search.startsWith("title:")) {
+	// 		return title
+	// 	} else {
+	// 		return author || title
+	// 	}
 		
-	})
+	// })
 
-	return searchedPapers
+	return filteredPapers
 }

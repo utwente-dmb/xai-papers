@@ -89,7 +89,6 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 	const dispatch = useAppDispatch()
 
 	function handleDataChange(value: Array<FilterValue<Data>>) { 
-		console.log("Value", value)
 		dispatch(filtersActions.setData(fromFilterValue(value)))
 	}
 
