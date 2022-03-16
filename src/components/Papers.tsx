@@ -2,6 +2,7 @@ import { Table, Row } from "antd"
 import { useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
 import { Paper } from "../types"
+import { getColor, typeArray } from "../utils"
 
 const columns = [
 	{
@@ -26,6 +27,13 @@ const columns = [
 		dataIndex: "Author",
 	},
 ]
+
+function Tag({ record, type }: { record: Paper, type: keyof Paper}) {
+
+	return (
+		<TagList TagData={record[type] as string[]} Color={getColor(type)}></TagList>
+	)
+}
 
 function Papers(): JSX.Element {
 
@@ -67,12 +75,15 @@ function Papers(): JSX.Element {
 							})}
 						</Row>
 						<Row>
-							<TagList TagData={record["Type of Data"]} Color="magenta"></TagList>
+							{typeArray.map((type) => (
+								<Tag record={record} type={type} key={type}/>
+							))}
+							{/* <TagList TagData={record["Type of Data"]} Color="magenta"></TagList>
 							<TagList TagData={record["Type of Problem"]} Color="green"></TagList>
 							<TagList TagData={record["Type of Model to be Explained"]} Color="blue"></TagList>
 							<TagList TagData={record["Type of Task"]} Color="orange"></TagList>
 							<TagList TagData={record["Type of Explanation"]} Color="red"></TagList>
-							<TagList TagData={record["Method used to explain"]} Color="purple"></TagList>
+							<TagList TagData={record["Method used to explain"]} Color="purple"></TagList> */}
 						</Row>
 					</>
 				),
