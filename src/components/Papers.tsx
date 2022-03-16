@@ -1,4 +1,4 @@
-import { Table } from "antd"
+import { Table, Row } from "antd"
 import { useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
 import { Paper } from "../types"
@@ -21,9 +21,9 @@ const columns = [
 		key: "year",
 	},
 	{
-		title: "Authors",
-		key: "authors",
-		dataIndex: "Authors",
+		title: "Author",
+		key: "author",
+		dataIndex: "Author",
 	},
 ]
 
@@ -34,7 +34,7 @@ function Papers(): JSX.Element {
 	const papersData = filteredPapers.map((paper) => ({
 		...paper,
 		key: filteredPapers.indexOf(paper),
-		Authors: [paper.Authors[0] + " et al."],
+		Author: [paper.Authors[0] + " et al."],
 	}))
 
 	const sortedPapers = papersData.sort((a, b) => {
@@ -58,15 +58,23 @@ function Papers(): JSX.Element {
 			dataSource={sortedPapers}
 			expandable={{
 				expandedRowRender: (record) => (
-					<><a href={record.url} style={{ margin: 0 }}>
-						{record.url}
-					</a>
-					<TagList TagData={record["Type of Data"]} Color="Magenta"></TagList>
-					<TagList TagData={record["Type of Problem"]} Color="Green"></TagList>
-					<TagList TagData={record["Type of Model to be Explained"]} Color="Blue"></TagList>
-					<TagList TagData={record["Type of Task"]} Color="Orange"></TagList>
-					<TagList TagData={record["Type of Explanation"]} Color="Red"></TagList>
-					<TagList TagData={record["Method used to explain"]} Color="Brown"></TagList></>
+					<>
+						<Row>
+							Authors: {record.Authors.map((author) => { 
+								return record.Authors.indexOf(author) !== record.Authors.length - 1 
+									? author + ", "
+									: author 
+							})}
+						</Row>
+						<Row>
+							<TagList TagData={record["Type of Data"]} Color="Magenta"></TagList>
+							<TagList TagData={record["Type of Problem"]} Color="Green"></TagList>
+							<TagList TagData={record["Type of Model to be Explained"]} Color="Blue"></TagList>
+							<TagList TagData={record["Type of Task"]} Color="Orange"></TagList>
+							<TagList TagData={record["Type of Explanation"]} Color="Red"></TagList>
+							<TagList TagData={record["Method used to explain"]} Color="Brown"></TagList>
+						</Row>
+					</>
 				),
 			}}
 		></Table>
