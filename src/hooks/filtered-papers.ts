@@ -74,7 +74,7 @@ export function useFilteredPapers(): Array<Paper> {
 			if (filtersForKey.length > 0) {
 				noFilters = false
 			}
-			
+
 			for (const type of filtersForKey) {
 				const paperTypes = paper[paperVal]
 
@@ -98,29 +98,6 @@ export function useFilteredPapers(): Array<Paper> {
 
 		return filters.filterStateAND ? toAdd : noFilters
 	})
-
-	// const searchedPapers = filteredPapers.filter((paper) => {
-	// 	let search = filters.search.toLowerCase().trim()
-	// 	if (search.length === 0) return true
-
-	// 	if (search.startsWith("author:")) {
-	// 		search = search.substring(7).trim()
-	// 	} else if (search.startsWith("title:")) {
-	// 		search = search.substring(6).trim()
-	// 	}
-
-	// 	const author = paper.Authors.some((author) => author.toLowerCase().includes(search))
-	// 	const title = paper.Title.toLowerCase().includes(search)
-
-	// 	if (search.startsWith("author:")) {
-	// 		return author
-	// 	} else if (search.startsWith("title:")) {
-	// 		return title
-	// 	} else {
-	// 		return author || title
-	// 	}
-		
-	// })
 
 	return filteredPapers
 }
