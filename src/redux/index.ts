@@ -1,2 +1,2 @@
 export * from "./store"
-export { filtersActions, papersActions, navigationActions} from "./slices"
+export { filtersActions, papersActions } from "./slices"
