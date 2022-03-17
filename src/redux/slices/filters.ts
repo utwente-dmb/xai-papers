@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
-import { Data, Explanation, Method, Model, Problem, Task } from "../../types"
+import { Data, Explanation, Method, Model, Problem, Task, Venue } from "../../types"
 
 export type Filters = {
     data: Array<Data>
@@ -8,6 +8,7 @@ export type Filters = {
     task: Array<Task>
     explanation: Array<Explanation>
     method: Array<Method>
+	venue?: Venue
 	startYear?: number
 	endYear?: number
 	search: string
@@ -21,6 +22,7 @@ const initialState: Filters = {
 	task: [],
 	explanation: [],
 	method: [],
+	venue: undefined,
 	startYear: undefined,
 	endYear: undefined,
 	search: "",
@@ -51,6 +53,9 @@ const filtersSlice = createSlice({
 		},
 		setMethod(state, action: PayloadAction<Array<Method>>) {
 			state.method = action.payload
+		},
+		setVenue(state, action: PayloadAction<Venue | undefined>) {
+			state.venue = action.payload
 		},
 		changeState(state, action: PayloadAction<boolean>) {
 			state.filterStateAND = action.payload

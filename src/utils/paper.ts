@@ -1,10 +1,11 @@
-import { Paper, Data, Problem, Model, Task, Explanation, Method } from "../types"
+import { Paper, Data, Problem, Model, Task, Explanation, Method, Venue } from "../types"
 
 export function isPaper(paper: any): paper is Paper {
 	return "url" in paper 
         && "Title" in paper 
         && "Year" in paper 
         && "Venue" in paper 
+		&& isSomeEnum(Venue)(paper["Venue"])
         && "Authors" in paper 
         && "Type of Data" in paper
         && isEnumArray(Data)(paper["Type of Data"])

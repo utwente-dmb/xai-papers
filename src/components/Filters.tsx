@@ -1,7 +1,7 @@
 import React from "react"
 import { Select, Col, Row, DatePicker, Input, Switch, Tag, Tooltip } from "antd"
 import { InfoCircleOutlined } from "@ant-design/icons"
-import { Data, Explanation, Method, Model, Paper, Problem, Task, FilterValue } from "../types"
+import { Data, Explanation, Method, Model, Paper, Problem, Task, FilterValue, Venue } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { getColor, toFilterValue, fromFilterValue } from "../utils"
@@ -93,6 +93,10 @@ function Filters(): JSX.Element {
 		dispatch(filtersActions.setMethod(fromFilterValue(value)))
 	}
 
+	function handleVenueChange(value: Array<FilterValue<Venue>>) {
+		dispatch(filtersActions.setVenue(fromFilterValue(value)[0]))
+	}
+
 	function handleFilterSwitch(checked: boolean) {
 		dispatch(filtersActions.changeState(checked))
 	}
@@ -118,7 +122,7 @@ function Filters(): JSX.Element {
 			<Filter placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} value={filters.task}/>
 			<Filter placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} value={filters.explanation}/>
 			<Filter placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method}/>
-
+			<Filter placeholder="Venue" enumerator={Venue} handleChange={handleVenueChange} value={filters.venue ? [filters.venue] : []}/>
 			<Col span={8}>
 				<RangePicker 
 					picker="year" 
@@ -133,11 +137,11 @@ function Filters(): JSX.Element {
 
 			<Col span={6}>
 				<Search 
-					placeholder="Search titles and/or authors" 
+					placeholder="Search titles, authors and venues" 
 					onSearch={handleSearch} 
 					defaultValue={filters.search} 
 					suffix={
-						<Tooltip title="Prefix with 'author:', 'venue:' or 'title:' to search the respective field">
+						<Tooltip title="Prefix with 'author:', 'venue:' or 'title:' to only search in the respective field">
 							<InfoCircleOutlined />
 						</Tooltip>
 					}

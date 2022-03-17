@@ -9,6 +9,7 @@ const map: Record<keyof Omit<Filters, "filterStateAND" | "startYear" | "endYear"
 	task: "Type of Task",
 	explanation: "Type of Explanation",
 	method: "Method used to explain",
+	venue: "Venue",
 }
 
 export function useFilteredPapers(): Array<Paper> {
@@ -68,7 +69,21 @@ export function useFilteredPapers(): Array<Paper> {
 		// Type Filters Check
 		for (const [filterKey, paperVal] of Object.entries(map)) {
 			const filtersForKey = filters[filterKey as keyof Filters]
-			if (!Array.isArray(filtersForKey)) { continue }
+			if (!Array.isArray(filtersForKey)) {
+				if (filterKey === "venue" && typeof filtersForKey !== "undefined") {
+					console.log("Venue", filtersForKey, paperVal)
+					if (filters.filterStateAND) {
+						if (paper.Venue !== filtersForKey) {
+							toAdd = false
+						}
+					} else {
+						if (paper.Venue === filtersForKey) {
+							return true
+						}
+					}
+				}
+				continue
+			}
 			if (filtersForKey.length > 0) {
 				noFilters = false
 			}

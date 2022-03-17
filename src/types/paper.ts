@@ -83,4 +83,18 @@ export enum Method {
     SupervisedExplanationTraining = "Supervised explanation training",
 }
 
+export enum Venue {
+    ACL = "ACL",
+    ICDM = "ICDM",
+    KDD = "KDD",
+    SIGIR = "SIGIR",
+    AAAI = "AAAI",
+    NeurIPS = "NeurIPS",
+    ICCV = "ICCV",
+    ICLR = "ICLR",
+    WWW = "WWW",
+    IJCAI = "IJCAI",
+    ICML = "ICML",
+    CVPR = "CVPR"
+}
 
