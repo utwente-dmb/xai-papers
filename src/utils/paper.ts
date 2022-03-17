@@ -1,3 +1,4 @@
+import { Filters } from "../redux/slices/filters"
 import { Paper, Data, Problem, Model, Task, Explanation, Method, Venue } from "../types"
 
 export function isPaper(paper: any): paper is Paper {
@@ -36,6 +37,16 @@ export const isSomeEnum = <T>(e: T) => (token: any): token is T[keyof T] =>
 
 export const typeArray: (keyof Paper)[] = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
 export const enumArray = [Data, Problem, Model, Task, Explanation, Method]
+
+export const enumKeyMap: Record<keyof Omit<Filters, "filterStateAND" | "startYear" | "endYear" | "search" >, keyof Paper> = {
+	data: "Type of Data", 
+	problem: "Type of Problem", 
+	model: "Type of Model to be Explained", 
+	task: "Type of Task",
+	explanation: "Type of Explanation",
+	method: "Method used to explain",
+	venue: "Venue",
+}
 
 export const getColor = (type: keyof Paper) => {
 	switch (type) {
