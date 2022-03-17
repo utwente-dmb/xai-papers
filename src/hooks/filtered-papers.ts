@@ -9,6 +9,7 @@ const map: Record<keyof Omit<Filters, "filterStateAND" | "startYear" | "endYear"
 	task: "Type of Task",
 	explanation: "Type of Explanation",
 	method: "Method used to explain",
+	venue: "Venue",
 }
 
 export function useFilteredPapers(): Array<Paper> {
@@ -24,23 +25,34 @@ export function useFilteredPapers(): Array<Paper> {
 			let proceed = false
 			let searchAuthor = true
 			let searchTitle = true
+			let searchVenue = true
 
 			if (search.startsWith("author:")) {
 				search = search.substring(7).trim()
 				searchTitle = false
+				searchVenue = false
 			} else if (search.startsWith("title:")) {
 				search = search.substring(6).trim()
 				searchAuthor = false
+				searchVenue = false
+			} else if (search.startsWith("venue:")) {
+				search = search.substring(6).trim()
+				searchAuthor = false
+				searchTitle = false
 			}
 
 			const author = paper.Authors.some((author) => author.toLowerCase().includes(search))
 			const title = paper.Title.toLowerCase().includes(search)
+			const venue = paper.Venue.toLowerCase().includes(search)
 
 			if (searchAuthor) {
 				proceed = proceed || author
 			}
 			if (searchTitle) {
 				proceed = proceed || title
+			}
+			if (searchVenue) {
+				proceed = proceed || venue
 			}
 
 			if (!proceed) return false
@@ -57,7 +69,21 @@ export function useFilteredPapers(): Array<Paper> {
 		// Type Filters Check
 		for (const [filterKey, paperVal] of Object.entries(map)) {
 			const filtersForKey = filters[filterKey as keyof Filters]
-			if (!Array.isArray(filtersForKey)) { continue }
+			if (!Array.isArray(filtersForKey)) {
+				if (filterKey === "venue" && typeof filtersForKey !== "undefined") {
+					console.log("Venue", filtersForKey, paperVal)
+					if (filters.filterStateAND) {
+						if (paper.Venue !== filtersForKey) {
+							toAdd = false
+						}
+					} else {
+						if (paper.Venue === filtersForKey) {
+							return true
+						}
+					}
+				}
+				continue
+			}
 			if (filtersForKey.length > 0) {
 				noFilters = false
 			}

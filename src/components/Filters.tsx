@@ -1,38 +1,15 @@
 import React from "react"
-import { Select, Col, Row, DatePicker, Input, Switch, Tag } from "antd"
-import { Data, Explanation, Method, Model, Paper, Problem, Task } from "../types"
+import { Select, Col, Row, DatePicker, Input, Switch, Tag, Tooltip } from "antd"
+import { InfoCircleOutlined } from "@ant-design/icons"
+import { Data, Explanation, Method, Model, Paper, Problem, Task, FilterValue, Venue } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
-import { getColor } from "../utils"
+import { getColor, toFilterValue, fromFilterValue } from "../utils"
+import Moment from "moment"
   
 const { RangePicker } = DatePicker
 const { Search } = Input
 const { Option } = Select
-
-type FilterValue<T> = {
-	label: T
-	value: string
-	key: T
-}
-
-function toFilterValue<T>(arr: Array<T>, type: string) {
-	return arr.map((val) => ({
-		label: val,
-		value: `${type}+${val}`,
-		key: val
-	}))
-} 
-
-function fromFilterValue<T>(arr: Array<FilterValue<T>>) {
-	return arr.map((item) => item.label)
-}
-
-type FilterProps<T> = {
-  placeholder: string, 
-  enumerator: Record<number, string>,
-  handleChange: (val: Array<FilterValue<T>>) => void,
-  value: Array<T>
-}
 
 type TagRenderProps<T> = {
 	label: T
@@ -54,6 +31,13 @@ function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
 		</Tag>
 	)
 }
+
+type FilterProps<T> = {
+	placeholder: string, 
+	enumerator: Record<number, string>,
+	handleChange: (val: Array<FilterValue<T>>) => void,
+	value: Array<T>
+  }
 
 function Filter<T>({ placeholder, enumerator, handleChange, value }: FilterProps<T> ): JSX.Element {
 
@@ -79,11 +63,8 @@ function Filter<T>({ placeholder, enumerator, handleChange, value }: FilterProps
 	)
 }
 
-type FiltersProps = {
-	changeContent: (val: boolean) => void
-}
 
-function Filters({ changeContent }: FiltersProps): JSX.Element {
+function Filters(): JSX.Element {
 
 	const filters = useAppSelector((state) => state.filters)
 	const dispatch = useAppDispatch()
@@ -112,13 +93,14 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 		dispatch(filtersActions.setMethod(fromFilterValue(value)))
 	}
 
+	function handleVenueChange(value: Array<FilterValue<Venue>>) {
+		dispatch(filtersActions.setVenue(fromFilterValue(value)[0]))
+	}
+
 	function handleFilterSwitch(checked: boolean) {
 		dispatch(filtersActions.changeState(checked))
 	}
 
-	function handleContentChange(checked: boolean) {
-		changeContent(checked)
-	}
 
 	function handleYearChange(value: any) {
 		const startYear = value[0]?.year()
@@ -140,16 +122,32 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 			<Filter placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} value={filters.task}/>
 			<Filter placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} value={filters.explanation}/>
 			<Filter placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method}/>
-
+			<Filter placeholder="Venue" enumerator={Venue} handleChange={handleVenueChange} value={filters.venue ? [filters.venue] : []}/>
 			<Col span={8}>
-				<RangePicker picker="year" onPanelChange={handleYearChange} ></RangePicker>
+				<RangePicker 
+					picker="year" 
+					onPanelChange={handleYearChange} 
+					allowEmpty={[true, true]}
+					defaultValue={[
+						filters.startYear ? Moment([filters.startYear]) : null, 
+						filters.endYear ? Moment([filters.endYear]) : null
+					]}
+				></RangePicker>
 			</Col>
 
 			<Col span={6}>
-				<Search placeholder="Search titles and/or authors" onSearch={handleSearch} defaultValue={filters.search} />
+				<Search 
+					placeholder="Search titles, authors and venues" 
+					onSearch={handleSearch} 
+					defaultValue={filters.search} 
+					suffix={
+						<Tooltip title="Prefix with 'author:', 'venue:' or 'title:' to only search in the respective field">
+							<InfoCircleOutlined />
+						</Tooltip>
+					}
+				/>
 			</Col>
 
-			<Switch checkedChildren="Papers" unCheckedChildren="Graphs" defaultChecked onChange={handleContentChange} />
 			<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
 		</Row>
 	)

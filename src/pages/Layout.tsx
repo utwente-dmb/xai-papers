@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import "antd/dist/antd.dark.css"
 import {
 	Layout,
 	Menu,
@@ -10,39 +11,31 @@ import {
 	InfoCircleOutlined,
 	MenuFoldOutlined,
 	MenuUnfoldOutlined,
+	UnorderedListOutlined
 } from "@ant-design/icons"
-import "antd/dist/antd.dark.css" 
-import { Routes, Route, useNavigate } from "react-router-dom"
-import { Papers, About, AddPaper } from "../pages"
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
+import { Papers, About, AddPaper, Charts } from "../pages"
+import { pathToPage, pageToPath, baseUrl } from "../utils"
 
 const { Content, Sider } = Layout
 
-const baseUrl = "/DMBLiteratureWebsite/"
-
 function DefaultLayout() {
 
+	const location = useLocation()
 	const navigate = useNavigate()
-	const [sideBarCollapsed, setSideBarCollapsed] = useState(true)
+
+	const [sideBarCollapsed, setSideBarCollapsed] = useState(false)
+	const [selectedKeys, setSelectedKeys] = useState<string[]>()
+
+	useEffect(() => {
+		setSelectedKeys([pathToPage(location.pathname)])
+	}, [])
 
 	const onItemClick = ({ key }: { key: string }) => {
-
-		switch (key) {
-		case "papers": 
-			navigate(`${baseUrl}`)
-			break
-        
-		case "add-paper":
-			navigate(`${baseUrl}add-paper`)
-			break
-        
-		case "about": 
-			navigate(`${baseUrl}about`)
-			break
-
-		default: 
-			navigate(`${baseUrl}`)
-		}
+		navigate(pageToPath(key))
+		setSelectedKeys([key])
 	}
+
 	return (
 		<Layout>
 			{/* SideBar */}
@@ -61,16 +54,15 @@ function DefaultLayout() {
 				}}
 				trigger={sideBarCollapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
 			>
-				<Menu mode="inline" onClick={onItemClick}>
-					<Menu.Item key="papers" icon={<DotChartOutlined />}>
-                        Papers
-					</Menu.Item>
-					<Menu.Item key="add-paper" icon={<PlusCircleOutlined />}>
-                        Add Paper
-					</Menu.Item>
-					<Menu.Item key="about" icon= {<InfoCircleOutlined/>}>
-                        About
-					</Menu.Item>
+				<Menu 
+					mode="inline" 
+					onClick={onItemClick}
+					selectedKeys={selectedKeys}
+				>
+					<Menu.Item key="papers" icon={<UnorderedListOutlined />}>Papers</Menu.Item>
+					<Menu.Item key="charts" icon={<DotChartOutlined />}>Chart</Menu.Item>
+					<Menu.Item key="add-paper" icon={<PlusCircleOutlined />}>Add Paper</Menu.Item>
+					<Menu.Item key="about" icon= {<InfoCircleOutlined/>}>About</Menu.Item>
 				</Menu>
 			</Sider>
 
@@ -99,6 +91,7 @@ function DefaultLayout() {
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
 						<Route path={`${baseUrl}`} element={<Papers />}/>
+						<Route path={`${baseUrl}charts`} element={<Charts />}/>
 						<Route path={`${baseUrl}add-paper`} element={<AddPaper />}/>
 						<Route path={`${baseUrl}about`} element={<About />}/>
 					</Routes>
