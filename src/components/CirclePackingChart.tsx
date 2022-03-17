@@ -2,7 +2,7 @@ import { ResponsiveCirclePackingCanvas } from "@nivo/circle-packing"
 import { useFilteredPapers } from "../hooks"
 import { Paper } from "../types"
 import { Select } from "antd"
-import { Row, Col } from "antd"
+import { Col } from "antd"
 
 const { Option } = Select
 
@@ -35,7 +35,6 @@ const columns: Array<keyof Paper> = ["Type of Data", "Type of Problem", "Type of
 
 function GenerateData(columnValue: string) {
 	const papers: any = useFilteredPapers()
-
 	const count: any = {
 		"Type of Data": {}, "Type of Problem": {}, "Type of Model to be Explained": {}, "Type of Task": {}, "Type of Explanation": {},
 		"Method used to explain": {}
@@ -61,7 +60,7 @@ function GenerateData(columnValue: string) {
 }
 
 function handleChange(value: any) {
-	// GenerateData(value)
+	// const acsd = GenerateData(value)
 }
 
 function SelectForChart() {
