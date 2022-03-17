@@ -4,22 +4,49 @@ import {TagList} from "../components"
 import { Paper } from "../types"
 import { getColor, typeArray } from "../utils"
 
-const columns = [
+type Column<T> = {
+	title: string, 
+	dataIndex: string, 
+	render?: (text: string, row: T) => React.ReactNode, 
+	key: string, 
+	sorter?: {
+		compare: (a: T, b: T) => number,
+		multiple: number
+	},
+	defaultSortOrder?: "ascend" | "descend"
+}
+
+const columns: Array<Column<Paper>> = [
 	{
 		title: "Title",
 		dataIndex: "Title",
 		render: (text: string, row: Paper) => <a href={row.url} target="_blank" rel="noreferrer">{text}</a>,
 		key: "title",
+		defaultSortOrder: "ascend",
+		sorter: {
+			compare: (a: Paper, b: Paper) => a.Title.localeCompare(b.Title),
+			multiple: 1
+		}
 	},
 	{
 		title: "Venue",
 		dataIndex: "Venue",
 		key: "venue",
+		defaultSortOrder: "ascend",
+		sorter: {
+			compare: (a: Paper, b: Paper) => a.Venue.localeCompare(b.Venue),
+			multiple: 2
+		}
 	},
 	{
 		title: "Year",
 		dataIndex: "Year",
 		key: "year",
+		defaultSortOrder: "ascend",
+		sorter: {
+			compare: (a: Paper, b: Paper) => a.Year.localeCompare(b.Year),
+			multiple: 3
+		}
 	},
 	{
 		title: "Author",
@@ -45,26 +72,13 @@ function Papers(): JSX.Element {
 		Author: [paper.Authors[0] + " et al."],
 	}))
 
-	const sortedPapers = papersData.sort((a, b) => {
-		let val = a.Year.localeCompare(b.Year)
-
-		if (val === 0 ) {
-			val = a.Venue.localeCompare(b.Venue)
-		}
-
-		if (val === 0) {
-			val = a.Title.localeCompare(b.Title)
-		}
-
-		return val
-	})
-
 	return (
 		<Table
 			style={{ marginTop: 10 }}
 			columns={columns}
-			dataSource={sortedPapers}
-			expandable={{
+			dataSource={papersData}
+			expandable={{ 
+				expandRowByClick: true,
 				expandedRowRender: (record) => (
 					<>
 						<Row>
