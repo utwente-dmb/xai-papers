@@ -11,7 +11,7 @@ import {
 	MenuFoldOutlined,
 	MenuUnfoldOutlined,
 } from "@ant-design/icons"
-import "antd/dist/antd.css" 
+import "antd/dist/antd.dark.css" 
 import { Routes, Route, useNavigate } from "react-router-dom"
 import { Papers, About, AddPaper } from "../pages"
 
