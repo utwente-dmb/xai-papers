@@ -69,26 +69,18 @@ export function useFilteredPapers(): Array<Paper> {
 		// Type Filters Check
 		for (const [filterKey, paperVal] of Object.entries(map)) {
 			const filtersForKey = filters[filterKey as keyof Filters]
-			if (!Array.isArray(filtersForKey)) {
-				if (filterKey === "venue" && typeof filtersForKey !== "undefined") {
-					console.log("Venue", filtersForKey, paperVal)
-					if (filters.filterStateAND) {
-						if (paper.Venue !== filtersForKey) {
-							toAdd = false
-						}
-					} else {
-						if (paper.Venue === filtersForKey) {
-							return true
-						}
-					}
-				}
-				continue
-			}
+			if (!Array.isArray(filtersForKey)) continue
+			
 			if (filtersForKey.length > 0) {
 				noFilters = false
 			}
+			
 			for (const type of filtersForKey) {
 				const paperTypes = paper[paperVal]
+
+				if (!Array.isArray(paperTypes) && type === paperTypes) {
+					return true
+				}
 
 				if (filters.filterStateAND) {
 					if (!Array.isArray(paperTypes) || !paperTypes.some((el) => el === type)) {
@@ -99,6 +91,8 @@ export function useFilteredPapers(): Array<Paper> {
 						return true
 					}
 				}
+
+
 			}
 		}
 

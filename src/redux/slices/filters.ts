@@ -8,7 +8,7 @@ export type Filters = {
     task: Array<Task>
     explanation: Array<Explanation>
     method: Array<Method>
-	venue?: Venue
+	venue: Array<Venue>
 	startYear?: number
 	endYear?: number
 	search: string
@@ -22,7 +22,7 @@ const initialState: Filters = {
 	task: [],
 	explanation: [],
 	method: [],
-	venue: undefined,
+	venue: [],
 	startYear: undefined,
 	endYear: undefined,
 	search: "",
@@ -54,7 +54,7 @@ const filtersSlice = createSlice({
 		setMethod(state, action: PayloadAction<Array<Method>>) {
 			state.method = action.payload
 		},
-		setVenue(state, action: PayloadAction<Venue | undefined>) {
+		setVenue(state, action: PayloadAction<Array<Venue>>) {
 			state.venue = action.payload
 		},
 		changeState(state, action: PayloadAction<boolean>) {

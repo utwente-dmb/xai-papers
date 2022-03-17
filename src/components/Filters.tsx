@@ -94,7 +94,7 @@ function Filters(): JSX.Element {
 	}
 
 	function handleVenueChange(value: Array<FilterValue<Venue>>) {
-		dispatch(filtersActions.setVenue(fromFilterValue(value)[0]))
+		dispatch(filtersActions.setVenue(fromFilterValue(value)))
 	}
 
 	function handleFilterSwitch(checked: boolean) {
@@ -122,7 +122,7 @@ function Filters(): JSX.Element {
 			<Filter placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} value={filters.task}/>
 			<Filter placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} value={filters.explanation}/>
 			<Filter placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method}/>
-			<Filter placeholder="Venue" enumerator={Venue} handleChange={handleVenueChange} value={filters.venue ? [filters.venue] : []}/>
+			<Filter placeholder="Venue" enumerator={Venue} handleChange={handleVenueChange} value={filters.venue}/>
 			<Col span={8}>
 				<RangePicker 
 					picker="year" 
