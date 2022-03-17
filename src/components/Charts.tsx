@@ -1,6 +1,5 @@
 import { Row, Col } from "antd"
-import TestChart from "./TestChart"
-import { CirclePackingChart } from "."
+import { TestChart,CirclePackingChart,GrowthLineChart } from "."
 
 function Charts(): JSX.Element {
 
@@ -13,6 +12,9 @@ function Charts(): JSX.Element {
 			</Row>
 			<Row>
 				<CirclePackingChart></CirclePackingChart>
+			</Row>
+			<Row>
+				<GrowthLineChart></GrowthLineChart>
 			</Row>
 		</div>
 	)
