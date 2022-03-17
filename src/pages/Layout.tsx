@@ -12,36 +12,22 @@ import {
 	MenuUnfoldOutlined,
 } from "@ant-design/icons"
 import "antd/dist/antd.dark.css"
-import { Routes, Route, useNavigate } from "react-router-dom"
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
 import { Papers, About, AddPaper } from "../pages"
+import { pathToPage, pageToPath, baseUrl } from "../utils"
 
 const { Content, Sider } = Layout
 
-const baseUrl = "/DMBLiteratureWebsite/"
-
 function DefaultLayout() {
 
+	const location = useLocation()
 	const navigate = useNavigate()
 	const [sideBarCollapsed, setSideBarCollapsed] = useState(true)
 
+	console.log("Location", location.pathname, pathToPage(location.pathname))
+
 	const onItemClick = ({ key }: { key: string }) => {
-
-		switch (key) {
-		case "papers": 
-			navigate(`${baseUrl}`)
-			break
-        
-		case "add-paper":
-			navigate(`${baseUrl}add-paper`)
-			break
-        
-		case "about": 
-			navigate(`${baseUrl}about`)
-			break
-
-		default: 
-			navigate(`${baseUrl}`)
-		}
+		navigate(pageToPath(key))
 	}
 	return (
 		<Layout>
@@ -61,7 +47,11 @@ function DefaultLayout() {
 				}}
 				trigger={sideBarCollapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
 			>
-				<Menu mode="inline" onClick={onItemClick}>
+				<Menu 
+					mode="inline" 
+					onClick={onItemClick}
+					defaultSelectedKeys={[pathToPage(location.pathname)]}
+				>
 					<Menu.Item key="papers" icon={<DotChartOutlined />}>
                         Papers
 					</Menu.Item>
