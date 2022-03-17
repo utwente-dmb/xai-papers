@@ -5,6 +5,7 @@ import { Data, Explanation, Method, Model, Paper, Problem, Task, FilterValue } f
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { getColor, toFilterValue, fromFilterValue } from "../utils"
+import Moment from "moment"
   
 const { RangePicker } = DatePicker
 const { Search } = Input
@@ -123,7 +124,10 @@ function Filters(): JSX.Element {
 					picker="year" 
 					onPanelChange={handleYearChange} 
 					allowEmpty={[true, true]}
-					// defaultValue={[filters.startYear, filters.endYear]}
+					defaultValue={[
+						filters.startYear ? Moment([filters.startYear]) : null, 
+						filters.endYear ? Moment([filters.endYear]) : null
+					]}
 				></RangePicker>
 			</Col>
 
