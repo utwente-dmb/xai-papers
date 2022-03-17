@@ -1,38 +1,13 @@
 import React from "react"
 import { Select, Col, Row, DatePicker, Input, Switch, Tag } from "antd"
-import { Data, Explanation, Method, Model, Paper, Problem, Task } from "../types"
+import { Data, Explanation, Method, Model, Paper, Problem, Task, FilterValue } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
-import { getColor } from "../utils"
+import { getColor, toFilterValue, fromFilterValue } from "../utils"
   
 const { RangePicker } = DatePicker
 const { Search } = Input
 const { Option } = Select
-
-type FilterValue<T> = {
-	label: T
-	value: string
-	key: T
-}
-
-function toFilterValue<T>(arr: Array<T>, type: string) {
-	return arr.map((val) => ({
-		label: val,
-		value: `${type}+${val}`,
-		key: val
-	}))
-} 
-
-function fromFilterValue<T>(arr: Array<FilterValue<T>>) {
-	return arr.map((item) => item.label)
-}
-
-type FilterProps<T> = {
-  placeholder: string, 
-  enumerator: Record<number, string>,
-  handleChange: (val: Array<FilterValue<T>>) => void,
-  value: Array<T>
-}
 
 type TagRenderProps<T> = {
 	label: T
@@ -54,6 +29,13 @@ function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
 		</Tag>
 	)
 }
+
+type FilterProps<T> = {
+	placeholder: string, 
+	enumerator: Record<number, string>,
+	handleChange: (val: Array<FilterValue<T>>) => void,
+	value: Array<T>
+  }
 
 function Filter<T>({ placeholder, enumerator, handleChange, value }: FilterProps<T> ): JSX.Element {
 
