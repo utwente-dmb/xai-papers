@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import "antd/dist/antd.dark.css"
 import {
 	Layout,
 	Menu,
@@ -12,7 +13,6 @@ import {
 	MenuUnfoldOutlined,
 	UnorderedListOutlined
 } from "@ant-design/icons"
-import "antd/dist/antd.dark.css"
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
 import { Papers, About, AddPaper, Charts } from "../pages"
 import { pathToPage, pageToPath, baseUrl } from "../utils"
