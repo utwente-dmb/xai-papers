@@ -24,23 +24,34 @@ export function useFilteredPapers(): Array<Paper> {
 			let proceed = false
 			let searchAuthor = true
 			let searchTitle = true
+			let searchVenue = true
 
 			if (search.startsWith("author:")) {
 				search = search.substring(7).trim()
 				searchTitle = false
+				searchVenue = false
 			} else if (search.startsWith("title:")) {
 				search = search.substring(6).trim()
 				searchAuthor = false
+				searchVenue = false
+			} else if (search.startsWith("venue:")) {
+				search = search.substring(6).trim()
+				searchAuthor = false
+				searchTitle = false
 			}
 
 			const author = paper.Authors.some((author) => author.toLowerCase().includes(search))
 			const title = paper.Title.toLowerCase().includes(search)
+			const venue = paper.Venue.toLowerCase().includes(search)
 
 			if (searchAuthor) {
 				proceed = proceed || author
 			}
 			if (searchTitle) {
 				proceed = proceed || title
+			}
+			if (searchVenue) {
+				proceed = proceed || venue
 			}
 
 			if (!proceed) return false

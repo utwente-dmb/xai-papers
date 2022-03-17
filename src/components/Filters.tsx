@@ -1,5 +1,6 @@
 import React from "react"
-import { Select, Col, Row, DatePicker, Input, Switch, Tag } from "antd"
+import { Select, Col, Row, DatePicker, Input, Switch, Tag, Tooltip } from "antd"
+import { InfoCircleOutlined } from "@ant-design/icons"
 import { Data, Explanation, Method, Model, Paper, Problem, Task, FilterValue } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
@@ -61,11 +62,8 @@ function Filter<T>({ placeholder, enumerator, handleChange, value }: FilterProps
 	)
 }
 
-type FiltersProps = {
-	changeContent: (val: boolean) => void
-}
 
-function Filters({ changeContent }: FiltersProps): JSX.Element {
+function Filters(): JSX.Element {
 
 	const filters = useAppSelector((state) => state.filters)
 	const dispatch = useAppDispatch()
@@ -98,9 +96,6 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 		dispatch(filtersActions.changeState(checked))
 	}
 
-	function handleContentChange(checked: boolean) {
-		changeContent(checked)
-	}
 
 	function handleYearChange(value: any) {
 		const startYear = value[0]?.year()
@@ -124,14 +119,27 @@ function Filters({ changeContent }: FiltersProps): JSX.Element {
 			<Filter placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method}/>
 
 			<Col span={8}>
-				<RangePicker picker="year" onPanelChange={handleYearChange} ></RangePicker>
+				<RangePicker 
+					picker="year" 
+					onPanelChange={handleYearChange} 
+					allowEmpty={[true, true]}
+					// defaultValue={[filters.startYear, filters.endYear]}
+				></RangePicker>
 			</Col>
 
 			<Col span={6}>
-				<Search placeholder="Search titles and/or authors" onSearch={handleSearch} defaultValue={filters.search} />
+				<Search 
+					placeholder="Search titles and/or authors" 
+					onSearch={handleSearch} 
+					defaultValue={filters.search} 
+					suffix={
+						<Tooltip title="Prefix with 'author:', 'venue:' or 'title:' to search the respective field">
+							<InfoCircleOutlined />
+						</Tooltip>
+					}
+				/>
 			</Col>
 
-			<Switch checkedChildren="Papers" unCheckedChildren="Graphs" defaultChecked onChange={handleContentChange} />
 			<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
 		</Row>
 	)
