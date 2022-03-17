@@ -1,16 +1,7 @@
 import { useAppSelector } from "./redux"
 import { Filters } from "../redux/slices/filters"
 import { Paper } from "../types"
-
-const map: Record<keyof Omit<Filters, "filterStateAND" | "startYear" | "endYear" | "search" >, keyof Paper> = {
-	data: "Type of Data", 
-	problem: "Type of Problem", 
-	model: "Type of Model to be Explained", 
-	task: "Type of Task",
-	explanation: "Type of Explanation",
-	method: "Method used to explain",
-	venue: "Venue",
-}
+import { enumKeyMap } from "../utils"
 
 export function useFilteredPapers(): Array<Paper> {
 	const { papers, filters } = useAppSelector((state) => state)
@@ -67,7 +58,7 @@ export function useFilteredPapers(): Array<Paper> {
 		}
 
 		// Type Filters Check
-		for (const [filterKey, paperVal] of Object.entries(map)) {
+		for (const [filterKey, paperVal] of Object.entries(enumKeyMap)) {
 			const filtersForKey = filters[filterKey as keyof Filters]
 			if (!Array.isArray(filtersForKey)) continue
 			
