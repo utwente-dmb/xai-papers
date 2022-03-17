@@ -1,0 +1,30 @@
+name: Check code cleanliness
+
+on:
+  push:
+    branches: [ master ]
+    paths-ignore:
+    - 'src/db/*'
+    - '**.md'
+  pull_request:
+    branches: [ master ]
+    paths-ignore:
+    - 'src/db/**'
+    - '**.md'
+    
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.14'
+      - run: npm install eslint
+      - run: npm install @typescript-eslint/eslint-plugin
+      - run: npm install @typescript-eslint/parser
+      - run: npm install eslint-plugin-react
+      - run: npx eslint .

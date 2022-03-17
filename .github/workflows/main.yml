@@ -4,11 +4,9 @@ on:
   push:
     branches: [ master ]
     paths:
-    - 'app/src/db/**.json'
+    - 'src/db/**.json'
   pull_request:
     branches: [ master ]
-    paths:
-    - 'app/src/db/**.json'
     
   workflow_dispatch:
 
@@ -18,9 +16,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.14'
       - name: Validate db json
         uses: docker://orrosenblatt/validate-json-action:latest
         env:
-          INPUT_SCHEMA: ./app/src/db/schema.json
-          INPUT_JSONS: ./app/src/db/db.json
+          INPUT_SCHEMA: ./src/db/schema.json
+          INPUT_JSONS: ./src/db/db.json
