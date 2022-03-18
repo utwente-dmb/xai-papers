@@ -63,10 +63,6 @@ export function useFilteredPapers(): Array<Paper> {
 			const paperTypes = paper[paperVal]
 
 			if (!Array.isArray(filtersForKey)) continue
-			
-			if (filterKey === "venue") {
-				console.log("First", filtersForKey, filterKey, paperVal, paperTypes, filtersForKey.some((el) => el === paperTypes))
-			}
 
 			if (filterKey === "venue" ) {
 				if (filtersForKey.length > 0 && !filtersForKey.some((el) => el === paperTypes)) {
