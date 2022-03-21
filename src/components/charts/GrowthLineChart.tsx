@@ -1,5 +1,6 @@
 import { useFilteredPapers } from "../../hooks"
-import { ResponsiveLine, Line } from "@nivo/line"
+import { ResponsiveLine } from "@nivo/line"
+import { BasicTooltip } from "@nivo/tooltip"
 import { useState } from "react"
 import { Select, Col } from "antd"
 import { typeArray } from "../../utils"
@@ -51,18 +52,29 @@ function GenerateData(col: string) {
 				}
 			} else {
 				dataRaw[elem] = []
-				dataRaw[elem].push({ x: value["Year"], y: 1 })
+				dataRaw[elem].push({ x: value["Year"], y: 1, z: elem })
 			}
 
 		}
 	})
 
-	const dataFormated = []
+	let dataFormated = []
 	for (const [key, value] of Object.entries(dataRaw)) {
-		dataFormated.push({ "id": key, "data": value })
+		dataFormated.push({ "id": key, "data": value, "label": "yabba" })
 	}
-
+	dataFormated = dataFormated.reverse()
 	return dataFormated
+}
+
+function CustomTooltip(props: any) {
+	console.log(props)
+	return (
+		<BasicTooltip
+			id={props.tickValues}
+			value={props.value}
+			color={props.color}
+		/>
+	)
 }
 
 function GrowthLineChart() {
@@ -116,36 +128,37 @@ function GrowthLineChart() {
 				}}
 				curve={"monotoneX"}
 				useMesh={true}
-				enableSlices={false}
-				legends={[
-					{
-						anchor: "top-right",
-						direction: "column",
-						justify: false,
-						translateX: 100,
-						translateY: 0,
-						itemsSpacing: 0,
-						itemDirection: "left-to-right",
-						itemWidth: 80,
-						itemHeight: 20,
-						itemOpacity: 0.75,
-						symbolSize: 12,
-						symbolShape: "circle",
-						symbolBorderColor: "rgba(0, 0, 0, .5)",
-						effects: [
-							{
-								on: "hover",
-								style: {
-									itemBackground: "rgba(0, 0, 0, .03)",
-									itemOpacity: 1
+				enableSlices="x"
+				legends={
+					[
+						{
+							anchor: "top-right",
+							direction: "column",
+							justify: false,
+							translateX: 100,
+							translateY: 0,
+							itemsSpacing: 0,
+							itemDirection: "left-to-right",
+							itemWidth: 80,
+							itemHeight: 20,
+							itemOpacity: 0.75,
+							symbolSize: 12,
+							symbolShape: "circle",
+							symbolBorderColor: "rgba(0, 0, 0, .5)",
+							effects: [
+								{
+									on: "hover",
+									style: {
+										itemBackground: "rgba(0, 0, 0, .03)",
+										itemOpacity: 1
+									}
 								}
-							}
-						]
-					}
-				]
+							]
+						}
+					]
 				}
 			>
-			</ResponsiveLine>
+			</ResponsiveLine >
 		</div >)
 }
 
