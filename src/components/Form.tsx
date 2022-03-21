@@ -69,8 +69,6 @@ function AddPaperForm() {
 		console.log(values)
 	}
 
-
-
 	return (
 		<Form {...layout} name="nest-messages" onFinish={onSubmit} >
 			<Item label="Title"
