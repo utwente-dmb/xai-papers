@@ -1,11 +1,12 @@
 import { useState } from "react"
 import { Form, Input, InputNumber, Button } from "antd"
+import { Url } from "url"
 
 const layout = {
 	labelCol: {
 		span: 4,
-	}, 
-	wrapperCol: { 
+	},
+	wrapperCol: {
 		span: 16,
 	},
 }
@@ -24,25 +25,71 @@ const validateMessages = {
 /* eslint-enable no-template-curly-in-string */
 
 type FormState = {
-  name: string
-  doi: string
-  year: number
+	name: string
+	doi: string
+	year: number
+	venue: string
+	authors: string
+	type_of_problem: string
+	type_of_model: string
+	type_of_task: string
+	type_of_expl: string
+	method: string
+
 }
 
 function AddPaperForm() {
 	const onFinish = (values: any) => {
 		console.log(values)
 	}
-
-	const [formState, setFormState] = useState<FormState>({
+	const initialState = {
 		name: "",
 		doi: "",
-		year: 0
-	})
+		year: 0,
+		venue: "",
+		authors: "",
+		type_of_problem: "",
+		type_of_model: "",
+		type_of_task: "",
+		type_of_expl: "",
+		method: ""
 
-	function handleChangeName(value: string) { 
-		setFormState({...formState, name: value})
+
+
+
+
 	}
+
+	const [formState, setFormState] = useState<FormState>(initialState)
+
+
+
+	function handleChangeDoi(value: string) {
+		setFormState({ ...formState, doi: value })
+	}
+	function handleChangeYear(value: number) {
+		setFormState({ ...formState, year: value })
+	}
+	function handleChangeVenue(value: string) {
+		setFormState({ ...formState, venue: value })
+	}
+	function handleChangeAuthours(value: string) {
+		setFormState({ ...formState, authors: value })
+	}
+	function handleChangeTypeofProblem(value: string) {
+		setFormState({ ...formState, type_of_problem: value })
+	}
+	function handleChangeTypeofModel(value: string) {
+		setFormState({ ...formState, type_of_model: value })
+	}
+	function handleChangeTypeofTask(value: string) {
+		setFormState({ ...formState, type_of_task: value })
+	}
+	function handleChangeTypeofExplanation(value: string) {
+		setFormState({ ...formState, type_of_expl: value })
+	}
+
+
 
 	return (
 		<Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
@@ -51,7 +98,7 @@ function AddPaperForm() {
 				label="Title"
 				rules={[
 					{
-						required: true,
+
 					},
 				]}
 			>
@@ -62,40 +109,41 @@ function AddPaperForm() {
 				label="Doi"
 				rules={[
 					{
-						type: "email",
+
 					},
 				]}
 			>
 				<Input />
 			</Form.Item>
 			<Form.Item
-				name={["paper", "age"]}
+				name={["paper", "year"]}
 				label="Year of Publication"
 				rules={[
 					{
 						type: "number",
-            
+
 					},
 				]}
 			>
 				<InputNumber />
 			</Form.Item>
+
 			<Form.Item name={["paper", "venue"]} label="Venue">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["paper", "Authours"]} label="Authours">
+			<Form.Item name={["paper", "authours"]} label="Authours">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["paper", "venue"]} label="Type of Data">
+			<Form.Item name={["paper", "type_of_data"]} label="Type of Data">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["paper", "venue"]} label="Type of Problem">
+			<Form.Item name={["paper", "type_of_problem"]} label="Type of Problem">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["paper", "venue"]} label="Type of Model to be Explained">
+			<Form.Item name={["paper", "type_of_model"]} label="Type of Model to be Explained">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["paper", "venue"]} label="Type of Task">
+			<Form.Item name={["paper", ""]} label="Type of Task">
 				<Input />
 			</Form.Item>
 			<Form.Item name={["paper", "venue"]} label="Type of Explanation">
@@ -106,7 +154,7 @@ function AddPaperForm() {
 			</Form.Item>
 			<Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
 				<Button type="primary" htmlType="submit">
-          Submit
+					Submit
 				</Button>
 			</Form.Item>
 		</Form>
