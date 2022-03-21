@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import "antd/dist/antd.dark.css"
+import "antd/dist/antd.css"
 import {
 	Layout,
 	Menu,
