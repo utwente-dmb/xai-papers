@@ -10,7 +10,7 @@ const { Item } = Form
 
 const layout = {
 	labelCol: {
-		span: 4,
+		span: 6,
 	},
 	wrapperCol: {
 		span: 8,
@@ -113,7 +113,7 @@ function AddPaperForm() {
 				<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleChangeMethod} value={form.Method}/>
 			</Item>
 
-			<Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
+			<Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 7 }}>
 				<Button type="primary" htmlType="submit">
 					Submit
 				</Button>
