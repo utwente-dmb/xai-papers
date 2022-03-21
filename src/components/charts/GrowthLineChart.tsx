@@ -24,12 +24,10 @@ const theme = {
 	}
 }
 
-function GenerateData(column: string) {
+function GenerateData(col: string) {
 	const papers: any = useFilteredPapers().reverse()
 
 	const dataRaw: any = {}
-
-	const col = column
 
 	papers.forEach(function (value: any) {
 		if (!dataRaw["Papers"]) {
