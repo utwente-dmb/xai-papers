@@ -1,15 +1,15 @@
 import React from "react"
 import Graphin, { GraphinData, IG6GraphEvent } from "@antv/graphin"
-import { useFilteredPapers } from "../hooks"
+import { useFilteredPapers } from "../../hooks"
 import { INode, NodeConfig } from "@antv/g6"
 import { message } from "antd"
-import { Paper } from "../types/paper"
+import { Paper } from "../../types"
 
 function CreateGraphData() {
 	const papers = useFilteredPapers()
 	const nodes: any = []
 	const edges: any = []
-	const requiredNodes: Array<Paper> = []
+	// const requiredNodes: Array<Paper> = []
 	const minimumSimilarityForEdge = 5
 	const similarityColumns: Array<keyof Paper> = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
 
@@ -35,21 +35,8 @@ function CreateGraphData() {
 			}).length
 		}
 
-		// similarity += paper1["Type of Data"].filter(v1 => paper2["Type of Data"].includes(v1)).length;
-		// similarity += paper1["Type of Problem"].filter(v1 => paper2["Type of Problem"].includes(v1)).length;
-		// similarity += paper1["Type of Model to be Explained"].filter(v1 => paper2["Type of Model to be Explained"].includes(v1)).length;
-		// similarity += paper1["Type of Task"].filter(v1 => paper2["Type of Task"].includes(v1)).length;
-		// similarity += paper1["Type of Explanation"].filter(v1 => paper2["Type of Explanation"].includes(v1)).length;
-		// similarity += paper1["Method used to explain"].filter(v1 => paper2["Method used to explain"].includes(v1)).length;
-
 		if (similarity > minimumSimilarityForEdge) {
 			// Add either paper to node list, if it doesnt exist already
-			// if (!requiredNodes.includes(paper1)) {
-			// 	requiredNodes.push(paper1);
-			// }
-			// if (!requiredNodes.includes(paper2)) {
-			// 	requiredNodes.push(paper2);
-			// }
 
 			// Create edge and add to edge list
 			const edge = {
@@ -126,7 +113,7 @@ Graphin.registerBehavior("sampleBehavior", {
 })
 
 
-function TestChart() {
+function ConnectedChart() {
 	const data3 = CreateGraphData()
 	return (
 		<div className="TestChart">
@@ -146,4 +133,4 @@ function TestChart() {
 	)
 }
 
-export default TestChart
+export default ConnectedChart

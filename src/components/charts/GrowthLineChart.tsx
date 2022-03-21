@@ -1,4 +1,4 @@
-import { useFilteredPapers } from "../hooks"
+import { useFilteredPapers } from "../../hooks"
 import { ResponsiveLine, Line } from "@nivo/line"
 import { Col } from "antd"
 

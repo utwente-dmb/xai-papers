@@ -1,8 +1,9 @@
+import { useState } from "react"
 import { ResponsiveCirclePackingCanvas } from "@nivo/circle-packing"
-import { useFilteredPapers } from "../hooks"
-import { Paper } from "../types"
-import { Select } from "antd"
-import { Col } from "antd"
+import { useFilteredPapers } from "../../hooks"
+import { Paper } from "../../types"
+import { typeArray } from "../../utils"
+import { Select, Col } from "antd"
 
 const { Option } = Select
 
@@ -24,24 +25,33 @@ const theme = {
 	}
 }
 
-let data: any = {
-	"name": "root",
-	"children": [
+let data: {
+	name: string,
+	children: Array<{ 
+		name: string,
+		value: number
+	}>
+} = {
+	name: "root",
+	children: [
 
 	]
 }
 
-const columns: Array<keyof Paper> = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
 
 function GenerateData(columnValue: string) {
-	const papers: any = useFilteredPapers()
-	const count: any = {
-		"Type of Data": {}, "Type of Problem": {}, "Type of Model to be Explained": {}, "Type of Task": {}, "Type of Explanation": {},
+	const papers: Paper[] = useFilteredPapers()
+	const count: { [key: string]: { [key: string]: number } } = {
+		"Type of Data": {}, 
+		"Type of Problem": {}, 
+		"Type of Model to be Explained": {}, 
+		"Type of Task": {}, 
+		"Type of Explanation": {},
 		"Method used to explain": {}
 	}
 
 	papers.forEach(function (value: any) {
-		for (const col of columns) {
+		for (const col of typeArray) {
 			for (const elem of value[col]) {
 				if (count[col][elem]) {
 					count[col][elem] += 1
@@ -59,29 +69,27 @@ function GenerateData(columnValue: string) {
 	return data
 }
 
-function handleChange(value: any) {
-	// const acsd = GenerateData(value)
-}
-
-function SelectForChart() {
-	const options = columns.map(elem =>
-		<Option key={elem} value={elem}>
-			{elem}
-		</Option>)
-	return (
-		<Select defaultValue="Type of Data" style={{ width: 240 }} onChange={handleChange}>
-			{options}
-		</Select>)
-}
 
 function CirclePackingChart() {
-	data = GenerateData("Type of Data")
+	const [type, setType] = useState("Type of Data")
+
+	function handleChange(value: string) {
+		setType(value)
+	}
+
+	data = GenerateData(type)
 	return (
 		<Col span={24} style={{
 			height: "500px",
 			width: "500px",
 		}}>
-			<SelectForChart></SelectForChart>
+			<Select defaultValue={type} style={{ width: 240 }} onChange={handleChange}>
+				{typeArray.map(elem =>
+					<Option key={elem} value={elem}>
+						{elem}
+					</Option>
+				)}
+			</Select>
 
 			<ResponsiveCirclePackingCanvas
 				data={data}
