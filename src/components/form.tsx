@@ -2,7 +2,7 @@ import { Form, Input, InputNumber, Button } from "antd"
 
 const layout = {
 	labelCol: {
-		span: 8,
+		span: 4,
 	}, 
 	wrapperCol: { 
 		span: 16,
