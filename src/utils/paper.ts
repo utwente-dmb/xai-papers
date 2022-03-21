@@ -1,10 +1,12 @@
-import { Paper, Data, Problem, Model, Task, Explanation, Method } from "../types"
+import { Filters } from "../redux/slices/filters"
+import { Paper, Data, Problem, Model, Task, Explanation, Method, Venue } from "../types"
 
 export function isPaper(paper: any): paper is Paper {
 	return "url" in paper 
         && "Title" in paper 
         && "Year" in paper 
         && "Venue" in paper 
+		&& isSomeEnum(Venue)(paper["Venue"])
         && "Authors" in paper 
         && "Type of Data" in paper
         && isEnumArray(Data)(paper["Type of Data"])
@@ -20,7 +22,7 @@ export function isPaper(paper: any): paper is Paper {
         && isEnumArray(Method)(paper["Method used to explain"])
 }
 
-export const isEnumArray = <T>(e: T) => (data: Array<any>): data is Array<T> => {
+export const isEnumArray = <T>(e: T) => (data: Array<T>): data is Array<T> => {
 	let isTrue = true
 	data.forEach((d) => {
 		if (!isSomeEnum(e)(d)) {
@@ -32,3 +34,41 @@ export const isEnumArray = <T>(e: T) => (data: Array<any>): data is Array<T> => 
 
 export const isSomeEnum = <T>(e: T) => (token: any): token is T[keyof T] =>
 	Object.values(e).includes(token as T[keyof T])
+
+export const typeArray: (keyof Paper)[] = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
+export const enumArray = [Data, Problem, Model, Task, Explanation, Method]
+
+export const enumKeyMap: Record<keyof Omit<Filters, "filterStateAND" | "startYear" | "endYear" | "search" >, keyof Paper> = {
+	data: "Type of Data", 
+	problem: "Type of Problem", 
+	model: "Type of Model to be Explained", 
+	task: "Type of Task",
+	explanation: "Type of Explanation",
+	method: "Method used to explain",
+	venue: "Venue",
+}
+
+export const getColor = (type: keyof Paper) => {
+	switch (type) {
+	case "Type of Data":
+		return "magenta"
+        
+	case "Type of Problem":
+		return "green"
+
+	case "Type of Model to be Explained":
+		return "blue"
+
+	case "Type of Task": 
+		return "orange"
+
+	case "Type of Explanation": 
+		return "red"
+
+	case "Method used to explain": 
+		return "purple"
+                
+	default:
+		return "gold"
+	}
+}

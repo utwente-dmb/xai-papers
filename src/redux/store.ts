@@ -4,7 +4,7 @@ import { papersReducer, filtersReducer } from "./slices"
 export const store = configureStore({
 	reducer: {
 		papers: papersReducer,
-		filters: filtersReducer
+		filters: filtersReducer,
 	}
 })
 

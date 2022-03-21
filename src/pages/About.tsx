@@ -2,7 +2,7 @@ import "./styles.css";
 import { Card, Col, Row } from "antd";
 import "antd/dist/antd.css";
 
-export default function App() {
+export default function About() {
   return (
     <div className="about">
       <div className="container">
@@ -77,3 +77,4 @@ export default function App() {
     </div>
   );
 }
+

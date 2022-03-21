@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
-import { Data, Explanation, Method, Model, Problem, Task } from "../../types"
+import { Data, Explanation, Method, Model, Problem, Task, Venue } from "../../types"
 
 export type Filters = {
     data: Array<Data>
@@ -8,7 +8,11 @@ export type Filters = {
     task: Array<Task>
     explanation: Array<Explanation>
     method: Array<Method>
-    filterStateOR: boolean
+	venue: Array<Venue>
+	startYear?: number
+	endYear?: number
+	search: string
+    filterStateAND: boolean
 }
 
 const initialState: Filters = {
@@ -18,7 +22,11 @@ const initialState: Filters = {
 	task: [],
 	explanation: [],
 	method: [],
-	filterStateOR: true
+	venue: [],
+	startYear: undefined,
+	endYear: undefined,
+	search: "",
+	filterStateAND: true
 }
 
 const filtersSlice = createSlice({
@@ -46,8 +54,20 @@ const filtersSlice = createSlice({
 		setMethod(state, action: PayloadAction<Array<Method>>) {
 			state.method = action.payload
 		},
+		setVenue(state, action: PayloadAction<Array<Venue>>) {
+			state.venue = action.payload
+		},
 		changeState(state, action: PayloadAction<boolean>) {
-			state.filterStateOR = action.payload
+			state.filterStateAND = action.payload
+		},
+		setStartYear(state, action: PayloadAction<number | undefined>) {
+			state.startYear = action.payload
+		},
+		setEndYear(state, action: PayloadAction<number | undefined>) {
+			state.endYear = action.payload
+		},
+		setSearch(state, action: PayloadAction<string>) {
+			state.search = action.payload
 		}
 	}
 })
