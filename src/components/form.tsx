@@ -1,13 +1,9 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import "antd/dist/antd.css"
-import "./index.css"
+import { useState } from "react"
 import { Form, Input, InputNumber, Button } from "antd"
-
 
 const layout = {
 	labelCol: {
-		span: 8,
+		span: 4,
 	}, 
 	wrapperCol: { 
 		span: 16,
@@ -27,15 +23,31 @@ const validateMessages = {
 }
 /* eslint-enable no-template-curly-in-string */
 
-const Demo = () => {
+type FormState = {
+  name: string
+  doi: string
+  year: number
+}
+
+function AddPaperForm() {
 	const onFinish = (values: any) => {
 		console.log(values)
+	}
+
+	const [formState, setFormState] = useState<FormState>({
+		name: "",
+		doi: "",
+		year: 0
+	})
+
+	function handleChangeName(value: string) { 
+		setFormState({...formState, name: value})
 	}
 
 	return (
 		<Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
 			<Form.Item
-				name={["user", "title"]}
+				name={["paper", "title"]}
 				label="Title"
 				rules={[
 					{
@@ -46,7 +58,7 @@ const Demo = () => {
 				<Input />
 			</Form.Item>
 			<Form.Item
-				name={["user", "doi"]}
+				name={["paper", "doi"]}
 				label="Doi"
 				rules={[
 					{
@@ -57,7 +69,7 @@ const Demo = () => {
 				<Input />
 			</Form.Item>
 			<Form.Item
-				name={["user", "age"]}
+				name={["paper", "age"]}
 				label="Year of Publication"
 				rules={[
 					{
@@ -68,28 +80,28 @@ const Demo = () => {
 			>
 				<InputNumber />
 			</Form.Item>
-			<Form.Item name={["user", "venue"]} label="Venue">
+			<Form.Item name={["paper", "venue"]} label="Venue">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["user", "Authours"]} label="Authours">
+			<Form.Item name={["paper", "Authours"]} label="Authours">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["user", "venue"]} label="Type of Data">
+			<Form.Item name={["paper", "venue"]} label="Type of Data">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["user", "venue"]} label="Type of Problem">
+			<Form.Item name={["paper", "venue"]} label="Type of Problem">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["user", "venue"]} label="Type of Model to be Explained">
+			<Form.Item name={["paper", "venue"]} label="Type of Model to be Explained">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["user", "venue"]} label="Type of Task">
+			<Form.Item name={["paper", "venue"]} label="Type of Task">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["user", "venue"]} label="Type of Explanation">
+			<Form.Item name={["paper", "venue"]} label="Type of Explanation">
 				<Input />
 			</Form.Item>
-			<Form.Item name={["user", "venue"]} label="Method used to explain">
+			<Form.Item name={["paper", "venue"]} label="Method used to explain">
 				<Input />
 			</Form.Item>
 			<Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
@@ -101,4 +113,4 @@ const Demo = () => {
 	)
 }
 
-ReactDOM.render(<Demo />, document.getElementById("container"))
+export default AddPaperForm
