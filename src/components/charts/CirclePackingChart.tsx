@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { ResponsiveCirclePackingCanvas } from "@nivo/circle-packing"
-import { useFilteredPapers } from "../hooks"
-import { Paper } from "../types"
-import { typeArray } from "../utils"
+import { useFilteredPapers } from "../../hooks"
+import { Paper } from "../../types"
+import { typeArray } from "../../utils"
 import { Select, Col } from "antd"
 
 const { Option } = Select

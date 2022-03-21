@@ -1,13 +1,13 @@
 import { Row, Col } from "antd"
-import { TestChart,CirclePackingChart,GrowthLineChart } from "."
+import { ConnectedChart, CirclePackingChart, GrowthLineChart } from "./charts"
 
-function Charts(): JSX.Element {
+function Chart(): JSX.Element {
 
 	return (
 		<div>
 			<Row gutter={10}>
 				<Col span={24}>
-					<TestChart></TestChart>
+					<ConnectedChart></ConnectedChart>
 				</Col>
 			</Row>
 			<Row>
@@ -20,4 +20,4 @@ function Charts(): JSX.Element {
 	)
 }
 
-export default Charts
+export default Chart

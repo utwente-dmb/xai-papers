@@ -1,11 +1,11 @@
-import { Filters, Charts } from "../components"
+import { Filters, Chart } from "../components"
 
 function App() {
 
 	return (
 		<>
 			<Filters />
-			<Charts />
+			<Chart />
 		</>
 	)
 }
