@@ -108,7 +108,7 @@ function GrowthLineChart() {
 
 				axisBottom={{
 					format: "%Y",
-					tickValues: "every 365 days",
+					tickValues: "every year",
 				}}
 				pointSize={16}
 				pointBorderWidth={1}
