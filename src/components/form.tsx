@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Form, Input, InputNumber, Button } from "antd"
 
 const layout = {
@@ -22,9 +23,25 @@ const validateMessages = {
 }
 /* eslint-enable no-template-curly-in-string */
 
+type FormState = {
+  name: string
+  doi: string
+  year: number
+}
+
 function AddPaperForm() {
 	const onFinish = (values: any) => {
 		console.log(values)
+	}
+
+	const [formState, setFormState] = useState<FormState>({
+		name: "",
+		doi: "",
+		year: 0
+	})
+
+	function handleChangeName(value: string) { 
+		setFormState({...formState, name: value})
 	}
 
 	return (
