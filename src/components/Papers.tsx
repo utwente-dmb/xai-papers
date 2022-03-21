@@ -3,6 +3,7 @@ import { useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
 import { Paper } from "../types"
 import { getColor, typeArray } from "../utils"
+import { printNames } from "../utils/utils"
 
 type Column<T> = {
 	title: string, 
@@ -82,11 +83,7 @@ function Papers(): JSX.Element {
 				expandedRowRender: (record) => (
 					<>
 						<Row>
-							Authors: {record.Authors.map((author) => { 
-								return record.Authors.indexOf(author) !== record.Authors.length - 1 
-									? author + ", "
-									: author 
-							})}
+							Authors: {printNames(record.Authors)}
 						</Row>
 						<Row>
 							{typeArray.map((type) => (
