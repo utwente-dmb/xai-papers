@@ -60,7 +60,7 @@ const Demo = () => {
         rules={[
           {
             type: 'number',
-            
+
           },
         ]}
       >

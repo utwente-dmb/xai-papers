@@ -50,7 +50,7 @@ export default function About() {
             <h1 className="font-weight-light">Contributions</h1>
             <p> Do you want to get involved in the research or have any questions? Please feel free to email us here </p>
 
-            </div>
+          </div>
 
 
         </div>
