@@ -1,3 +1,4 @@
+import { AddPaperForm } from "../components"
 
 function AddPaper() {
 	return (
@@ -6,7 +7,8 @@ function AddPaper() {
 			<p>The original paper already includes classification of over 300 research papers.Of course this list is not exhaustive and therefore we would like to ask the wider research community to aid in extending the original research.</p>
 
 			<p>You can contribute to this project by going to the project&rsquo;s GitHub (https://github.com/BorisGerretzen/DMBLiteratureWebsite/blob/master/src/db/db.json). This page shows the current contents of the database. To add a new entry simply fork the project and append the db.json file using the following template.</p>
-			<h2>Template</h2>
+			<AddPaperForm />
+			{/* <h2>Template</h2>
 			<p>&#123;<br/>
 				&quot;Title&quot;: &quot;Title here&quot;,<br/>
 				&quot;url&quot;: &quot;DOI here&quot;,<br/>
@@ -48,7 +50,7 @@ function AddPaper() {
 				&ldquo;Explanation method type 2 here&rdquo;,<br/>
 				&ldquo;Explanation method type 3 here&rdquo;<br/>
 				] <br/>
-				&#125;</p>
+				&#125;</p> */}
 
 			<p>For an overview of the Options and formatting of the above fields please see the documentation below. Make sure when replacing the fields to maintain the quotation marks.</p>
 
