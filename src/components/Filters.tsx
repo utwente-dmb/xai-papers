@@ -19,7 +19,9 @@ type TagRenderProps<T> = {
 }
 
 function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
+
 	const color = getColor(value.split("+")[0] as keyof Paper)
+
 	return (
 		<Tag
 			color={color}
@@ -115,7 +117,8 @@ function Filters(): JSX.Element {
 	}
 
 	return (
-		<Row gutter={4}>
+		<Row gutter={4}>			
+			<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
 			<Filter placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data}/>
 			<Filter placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} value={filters.problem}/>
 			<Filter placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} value={filters.model}/>
@@ -148,7 +151,7 @@ function Filters(): JSX.Element {
 				/>
 			</Col>
 
-			<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
+
 		</Row>
 	)
 }
