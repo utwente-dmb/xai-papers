@@ -1,16 +1,7 @@
 import { useAppSelector } from "./redux"
 import { Filters } from "../redux/slices/filters"
 import { Paper } from "../types"
-
-const map: Record<keyof Omit<Filters, "filterStateAND" | "startYear" | "endYear" | "search" >, keyof Paper> = {
-	data: "Type of Data", 
-	problem: "Type of Problem", 
-	model: "Type of Model to be Explained", 
-	task: "Type of Task",
-	explanation: "Type of Explanation",
-	method: "Method used to explain",
-	venue: "Venue",
-}
+import { enumKeyMap } from "../utils"
 
 export function useFilteredPapers(): Array<Paper> {
 	const { papers, filters } = useAppSelector((state) => state)
@@ -67,28 +58,25 @@ export function useFilteredPapers(): Array<Paper> {
 		}
 
 		// Type Filters Check
-		for (const [filterKey, paperVal] of Object.entries(map)) {
+		for (const [filterKey, paperVal] of Object.entries(enumKeyMap)) {
 			const filtersForKey = filters[filterKey as keyof Filters]
-			if (!Array.isArray(filtersForKey)) {
-				if (filterKey === "venue" && typeof filtersForKey !== "undefined") {
-					console.log("Venue", filtersForKey, paperVal)
-					if (filters.filterStateAND) {
-						if (paper.Venue !== filtersForKey) {
-							toAdd = false
-						}
-					} else {
-						if (paper.Venue === filtersForKey) {
-							return true
-						}
-					}
+			const paperTypes = paper[paperVal]
+
+			if (!Array.isArray(filtersForKey)) continue
+
+			if (filterKey === "venue" ) {
+				if (filtersForKey.length > 0 && !filtersForKey.some((el) => el === paperTypes)) {
+					return false
+				} else {
+					continue
 				}
-				continue
 			}
+
 			if (filtersForKey.length > 0) {
 				noFilters = false
 			}
+
 			for (const type of filtersForKey) {
-				const paperTypes = paper[paperVal]
 
 				if (filters.filterStateAND) {
 					if (!Array.isArray(paperTypes) || !paperTypes.some((el) => el === type)) {
@@ -104,29 +92,6 @@ export function useFilteredPapers(): Array<Paper> {
 
 		return filters.filterStateAND ? toAdd : noFilters
 	})
-
-	// const searchedPapers = filteredPapers.filter((paper) => {
-	// 	let search = filters.search.toLowerCase().trim()
-	// 	if (search.length === 0) return true
-
-	// 	if (search.startsWith("author:")) {
-	// 		search = search.substring(7).trim()
-	// 	} else if (search.startsWith("title:")) {
-	// 		search = search.substring(6).trim()
-	// 	}
-
-	// 	const author = paper.Authors.some((author) => author.toLowerCase().includes(search))
-	// 	const title = paper.Title.toLowerCase().includes(search)
-
-	// 	if (search.startsWith("author:")) {
-	// 		return author
-	// 	} else if (search.startsWith("title:")) {
-	// 		return title
-	// 	} else {
-	// 		return author || title
-	// 	}
-		
-	// })
 
 	return filteredPapers
 }
