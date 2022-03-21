@@ -23,14 +23,13 @@ function GenerateData() {
 	const papers: any = useFilteredPapers().reverse()
 	console.log(papers)
 	const dataRaw: any = {}
-	let currentYear = "2014"
-
-	const columns = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
+	let currentYear = "1900"
 
 	const col = "Type of Data"
 
 	papers.forEach(function (value: any) {
 		for (const elem of value[col]) {
+			currentYear = value["Year"]
 			if (dataRaw[elem]) {
 				if (dataRaw[elem][dataRaw[elem].length - 1]["x"]) {
 					dataRaw[elem][dataRaw[elem].length - 1]["y"] += 1
@@ -40,7 +39,6 @@ function GenerateData() {
 				dataRaw[elem].push({ x: currentYear, y: 1 })
 			}
 			if (value["Year"] > dataRaw[elem][dataRaw[elem].length - 1]["x"]) {
-				currentYear = value["Year"]
 				dataRaw[elem].push({ x: currentYear, y: dataRaw[elem][dataRaw[elem].length - 1]["y"] + 1 })
 			}
 		}
