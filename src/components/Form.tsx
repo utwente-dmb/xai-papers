@@ -73,19 +73,18 @@ function AddPaperForm() {
 
 	return (
 		<Form {...layout} name="nest-messages" onFinish={onSubmit} >
-			<Item name={["paper", "Title"]} label="Title"
+			<Item label="Title"
 			>
 				<Input defaultValue={form.Title} onChange={handleChangeTitle}/>
 			</Item>
-			<Item name={["paper", "Doi"]} label="Doi"
-			>
+			<Item label="Doi">
 				<Input defaultValue={form.Doi} onChange={handleChangeDoi}/>
 			</Item>
-			<Item name={["paper", "year"]} label="Year of Publication">
+			<Item label="Year of Publication">
 				<InputNumber defaultValue={form.Year} onChange={handleChangeYear}/>
 			</Item>
 
-			<Item name="authors" label="Authors" >
+			<Item label="Authors" >
 				<Input defaultValue={printNames(form.Authors)} onChange={handleChangeAuthors}/>
 			</Item>
 
