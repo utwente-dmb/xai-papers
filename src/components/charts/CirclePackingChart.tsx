@@ -129,7 +129,6 @@ function CirclePackingChart() {
 					]
 				}}
 				animate={false}
-				theme={theme}
 			/>
 		</Col>
 	)
