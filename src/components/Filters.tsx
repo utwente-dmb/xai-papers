@@ -1,4 +1,4 @@
-import { Col, Row, DatePicker, Input, Tooltip, Switch } from "antd"
+import { Col, Row, DatePicker, Input, Tooltip, Switch, Form } from "antd"
 import { InfoCircleOutlined } from "@ant-design/icons"
 import { Data, Explanation, Method, Model, Problem, Task, FilterValue, Venue } from "../types"
 import { filtersActions } from "../redux"
@@ -63,11 +63,17 @@ function Filters(): JSX.Element {
 
 	return (
 		<Row gutter={[2, 2]} justify="center">
-			<Col span={24} flex="center">
-				<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
-				<Tooltip title="State of the Filter: AND selects only papers with all of the selected types, OR selects all papers with any of the selected types">
-					<InfoCircleOutlined />
-				</Tooltip>
+			<Col span={24}>
+				<Form.Item 
+					label="State of Filter" 
+					tooltip={{ 
+						title: "AND selects papers with all of the selected types, OR selects papers with any of the selected types",
+						icon: <InfoCircleOutlined/>
+					}}
+				>
+
+					<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
+				</Form.Item>
 			</Col>
 
 			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data}  span={8}/>
