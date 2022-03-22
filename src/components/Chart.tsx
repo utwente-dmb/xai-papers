@@ -4,8 +4,6 @@ import { useState } from "react"
 
 const { Button, Group } = Radio
 
-const graphTypes = ["Connected Graph", "Tableu", "LineChart"]
-
 const graphMap: { [key: string]: JSX.Element} = {
 	"Connected Graph": (<ConnectedChart />),
 	"Tableau": (<CirclePackingChart />),
@@ -13,19 +11,18 @@ const graphMap: { [key: string]: JSX.Element} = {
 }
 
 function Chart(): JSX.Element {
-	const [type, setType] = useState(graphTypes[0])
+	const [chart, setChart] = useState("Connected Graph")
 
-	function HandleChange(e: any) {
-		setType(e.target.value)
+	function HandleChartChange(e: any) {
+		setChart(e.target.value)
 	}
-
 
 	return (
 		<>
 			<Row gutter={10}>
 				<Col span={24}>
-					<Group defaultValue={graphTypes[0]} buttonStyle="solid" onChange={HandleChange}>
-						{graphTypes.map(elem =>
+					<Group defaultValue={"Connected Graph"} buttonStyle="solid" onChange={HandleChartChange}>
+						{Object.keys(graphMap).map(elem =>
 							<Button key={elem} value={elem}>
 								{elem}
 							</Button>)}
@@ -34,10 +31,9 @@ function Chart(): JSX.Element {
 			</Row>
 			<Row gutter={10}>
 				<Col span={24}>
-					{graphMap[type]}
+					{graphMap[chart]}
 				</Col>
 			</Row>
-			
 		</>
 	)
 }

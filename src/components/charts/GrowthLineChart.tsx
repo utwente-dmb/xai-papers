@@ -119,6 +119,7 @@ function GrowthLineChart() {
 				curve={"monotoneX"}
 				useMesh={true}
 				enableSlices="x"
+				pointLabelYOffset={-12}
 				legends={
 					[
 						{
