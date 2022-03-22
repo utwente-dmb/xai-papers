@@ -1,4 +1,4 @@
-import { Table, Row } from "antd"
+import { Table, Row, Button } from "antd"
 import { useExpandingAllInTable, useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
 import { Paper } from "../types"
@@ -76,32 +76,37 @@ function Papers(): JSX.Element {
 	const expandController = useExpandingAllInTable(allKeys, "key", false)
 
 	return (
-		<Table
-			style={{ marginTop: 10 }}
-			columns={columns}
-			dataSource={papersData}
-			expandable={{ 
-				expandRowByClick: true,
-				expandedRowRender: (record) => (
-					<>
-						<Row>
+		<>
+			<Button className="expand-all" style={{marginTop: 12}}>
+				Expand All Rows
+			</Button>
+			<Table
+				style={{ marginTop: 10 }}
+				columns={columns}
+				dataSource={papersData}
+				expandable={{ 
+					expandRowByClick: true,
+					expandedRowRender: (record) => (
+						<>
+							<Row>
 							Authors: {printNames(record.Authors)}
-						</Row>
-						<Row>
-							{typeArray.map((type) => (
-								<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
-							))}
-						</Row>
-					</>
-				),
-			}}
-			className={
-				expandController.isAllExpanded() ? "table-expanding-all" : ""
-			}
-			expandedRowKeys={expandController.expandedRowKeys}
-			onExpand={expandController.onExpand}
-			rowKey={expandController.rowKey}
-		></Table>
+							</Row>
+							<Row>
+								{typeArray.map((type) => (
+									<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
+								))}
+							</Row>
+						</>
+					),
+				}}
+				className={
+					expandController.isAllExpanded() ? "table-expanding-all" : ""
+				}
+				expandedRowKeys={expandController.expandedRowKeys}
+				onExpand={expandController.onExpand}
+				rowKey={expandController.rowKey}
+			></Table>
+		</>
 	)
 }
 

@@ -25,19 +25,18 @@ export function useExpandingAllInTable(keys: any, keyName: any, defaultExpanded:
 	}
 
 	useLayoutEffect(() => {
-		// const element = document.getElementsByClassName(
-		// 	"ant-table-expand-icon-th"
-		// )[0]
-		// console.log("Element", element)
-		// if (lastExpandEventHandler.current) {
-		// 	element.removeEventListener(
-		// 		"click",
-		// 		lastExpandEventHandler.current,
-		// 		false
-		// 	)
-		// }
-		// element.addEventListener("click", expandEventHandler, false)
-		// lastExpandEventHandler.current = expandEventHandler
+		const element = document.getElementsByClassName(
+			"expand-all"
+		)[0]
+		if (lastExpandEventHandler.current) {
+			element.removeEventListener(
+				"click",
+				lastExpandEventHandler.current,
+				false
+			)
+		}
+		element.addEventListener("click", expandEventHandler, false)
+		lastExpandEventHandler.current = expandEventHandler
 	})
   
 	return {
