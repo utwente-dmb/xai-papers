@@ -62,7 +62,7 @@ function Filters(): JSX.Element {
 	}
 
 	return (
-		<Row gutter={[2, 2]} justify="center">
+		<Row gutter={[4, 4]} justify="center">
 			<Col span={24}>
 				<Form.Item 
 					label="State of Filter" 
@@ -71,7 +71,6 @@ function Filters(): JSX.Element {
 						icon: <InfoCircleOutlined/>
 					}}
 				>
-
 					<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
 				</Form.Item>
 			</Col>
@@ -83,6 +82,7 @@ function Filters(): JSX.Element {
 			<Select placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} value={filters.explanation}  span={8}/>
 			<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method}  span={8}/>
 			<Select placeholder="Venue" enumerator={Venue} handleChange={handleVenueChange} value={filters.venue}  span={8}/>
+
 			<Col span={8}>
 				<RangePicker 
 					picker="year" 
@@ -107,8 +107,6 @@ function Filters(): JSX.Element {
 					}
 				/>
 			</Col>
-
-
 		</Row>
 	)
 }
