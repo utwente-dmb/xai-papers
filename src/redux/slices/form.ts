@@ -1,32 +1,19 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 import { Problem, Method, Data, Task, Explanation, Model, Paper, FilterValue, Venue } from "../../types"
 
-type Form = {
-	Title: string
-	Doi: string
-	Year: number
-	Venue: string
-	Authors: Array<string>
-    "Type of Data": Array<Data>
-    "Type of Problem": Array<Problem>
-    "Type of Model": Array<Model>
-    "Type of Task": Array<Task>
-    "Type of Explanation": Array<Explanation>
-	Method: Array<Method>
-}
 
-const initialState: Form = {
+const initialState: Paper = {
 	Title: "",
-	Doi: "",
-	Year: 2020,
+	url: "",
+	Year: "2020",
 	Venue: "",
 	Authors: [],
 	"Type of Data": [],
 	"Type of Problem": [],
-	"Type of Model": [],
+	"Type of Model to be Explained": [],
 	"Type of Task": [],
 	"Type of Explanation": [],
-	Method: []
+	"Method used to explain": []
 }
 
 const formSlice = createSlice({
@@ -37,10 +24,10 @@ const formSlice = createSlice({
 			state.Title = action.payload
 		},
 		setDoi(state, action: PayloadAction<string>) {
-			state.Doi = action.payload
+			state.url = action.payload
 		},
 		setYear(state, action: PayloadAction<number>) {
-			state.Year = action.payload
+			state.Year = action.payload.toString()
 		},
 		setAuthors(state, action: PayloadAction<Array<string>>) {
 			state.Authors = action.payload
@@ -55,7 +42,7 @@ const formSlice = createSlice({
 			state["Type of Problem"] = action.payload
 		},
 		setModel(state, action: PayloadAction<Array<Model>>) {
-			state["Type of Model"] = action.payload
+			state["Type of Model to be Explained"] = action.payload
 		},
 		setTask(state, action: PayloadAction<Array<Task>>) {
 			state["Type of Task"] = action.payload
@@ -64,7 +51,7 @@ const formSlice = createSlice({
 			state["Type of Explanation"] = action.payload
 		},
 		setMethod(state, action: PayloadAction<Array<Method>>) {
-			state.Method = action.payload
+			state["Method used to explain"] = action.payload
 		},
 	}
 })
