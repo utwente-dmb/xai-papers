@@ -1,5 +1,5 @@
 import { Table, Row } from "antd"
-import { useFilteredPapers } from "../hooks"
+import { useExpandingAllInTable, useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
 import { Paper } from "../types"
 import { getColor, typeArray, printNames } from "../utils"
@@ -65,12 +65,15 @@ function Tag({ record, type }: { record: Paper, type: keyof Paper}) {
 function Papers(): JSX.Element {
 
 	const filteredPapers = useFilteredPapers()
-
+	
 	const papersData = filteredPapers.map((paper) => ({
 		...paper,
 		key: filteredPapers.indexOf(paper),
 		Author: [paper.Authors[0] + " et al."],
 	}))
+	
+	const allKeys = papersData.map((paper) => paper.key)
+	const expandController = useExpandingAllInTable(allKeys, "key", false)
 
 	return (
 		<Table
@@ -92,6 +95,12 @@ function Papers(): JSX.Element {
 					</>
 				),
 			}}
+			className={
+				expandController.isAllExpanded() ? "table-expanding-all" : ""
+			}
+			expandedRowKeys={expandController.expandedRowKeys}
+			onExpand={expandController.onExpand}
+			rowKey={expandController.rowKey}
 		></Table>
 	)
 }
