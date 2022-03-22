@@ -6,38 +6,22 @@ const { Button, Group } = Radio
 
 const graphTypes = ["Connected Graph", "Tableu", "LineChart"]
 
+const graphMap: { [key: string]: JSX.Element} = {
+	"Connected Graph": (<ConnectedChart />),
+	"Tableau": (<CirclePackingChart />),
+	"LineChart": (<GrowthLineChart />)
+}
+
 function Chart(): JSX.Element {
 	const [type, setType] = useState(graphTypes[0])
 
 	function HandleChange(e: any) {
-		console.log(e.target.value)
 		setType(e.target.value)
 	}
 
-	function ReturnGraph():JSX.Element {
-		switch (type) {
-			
-		case graphTypes[0]: {
-			return (<ConnectedChart />)
-			break
-		}
-		case graphTypes[1]: {
-			return (<CirclePackingChart />)
-			break
-		}
-		case graphTypes[2]: {
-			return (<GrowthLineChart />)
-			break
-		}
-		default:{
-			return(<ConnectedChart />)
-			break
-		}
-		}
-	}
 
 	return (
-		<div>
+		<>
 			<Row gutter={10}>
 				<Col span={24}>
 					<Group defaultValue={graphTypes[0]} buttonStyle="solid" onChange={HandleChange}>
@@ -50,16 +34,11 @@ function Chart(): JSX.Element {
 			</Row>
 			<Row gutter={10}>
 				<Col span={24}>
-					<ReturnGraph/>
+					{graphMap[type]}
 				</Col>
 			</Row>
-			{/* <Row>
-				<CirclePackingChart></CirclePackingChart>
-			</Row>
-			<Row>
-				<GrowthLineChart></GrowthLineChart>
-			</Row> */}
-		</div>
+			
+		</>
 	)
 }
 
