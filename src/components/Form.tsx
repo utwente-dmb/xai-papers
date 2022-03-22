@@ -1,7 +1,7 @@
 import { Form, Input, InputNumber, Button, Col, Row } from "antd"
 import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Paper } from "../types"
 import Select from "./Select"
-import { fromFilterValue } from "../utils"
+import { fromFilterValue, printNames } from "../utils"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { formActions } from "../redux"
 import { printNames } from "../utils/utils"
