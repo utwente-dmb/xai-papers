@@ -27,7 +27,7 @@ const theme = {
 
 let data: {
 	name: string,
-	children: Array<{ 
+	children: Array<{
 		name: string,
 		value: number
 	}>
@@ -38,14 +38,13 @@ let data: {
 	]
 }
 
-
 function GenerateData(columnValue: string) {
 	const papers: Paper[] = useFilteredPapers()
 	const count: { [key: string]: { [key: string]: number } } = {
-		"Type of Data": {}, 
-		"Type of Problem": {}, 
-		"Type of Model to be Explained": {}, 
-		"Type of Task": {}, 
+		"Type of Data": {},
+		"Type of Problem": {},
+		"Type of Model to be Explained": {},
+		"Type of Task": {},
 		"Type of Explanation": {},
 		"Method used to explain": {}
 	}
@@ -79,18 +78,16 @@ function CirclePackingChart() {
 
 	data = GenerateData(type)
 	return (
-		<Col span={24} style={{
-			height: "500px",
-			width: "500px",
-		}}>
-			<Select defaultValue={type} style={{ width: 240 }} onChange={handleChange}>
-				{typeArray.map(elem =>
-					<Option key={elem} value={elem}>
-						{elem}
-					</Option>
-				)}
-			</Select>
-
+		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
+			<Col offset={20}>
+				<Select defaultValue={type} style={{ width: 240 }} onChange={handleChange}>
+					{typeArray.map(elem =>
+						<Option key={elem} value={elem}>
+							{elem}
+						</Option>
+					)}
+				</Select>
+			</Col>
 			<ResponsiveCirclePackingCanvas
 				data={data}
 				margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
@@ -130,7 +127,7 @@ function CirclePackingChart() {
 				}}
 				animate={false}
 			/>
-		</Col>
+		</div>
 	)
 }
 

@@ -1,10 +1,10 @@
 import React from "react"
-import { Col, Row, DatePicker, Input, Switch, Tag, Tooltip } from "antd"
+import { Col, Row, DatePicker, Input, Tooltip, Form, Radio, RadioChangeEvent } from "antd"
 import { InfoCircleOutlined } from "@ant-design/icons"
-import { Data, Explanation, Method, Model, Paper, Problem, Task, FilterValue, Venue } from "../types"
+import { Data, Explanation, Method, Model, Problem, Task, FilterValue, Venue } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
-import { getColor, toFilterValue, fromFilterValue } from "../utils"
+import { fromFilterValue } from "../utils"
 import Select from "./Select"
 import Moment from "moment"
   
@@ -45,10 +45,9 @@ function Filters(): JSX.Element {
 		dispatch(filtersActions.setVenue(fromFilterValue(value)))
 	}
 
-	function handleFilterSwitch(checked: boolean) {
-		dispatch(filtersActions.changeState(checked))
+	function handleFilterChange(event: RadioChangeEvent) {
+		dispatch(filtersActions.changeState(event.target.value === "AND"))
 	}
-
 
 	function handleYearChange(value: any) {
 		const startYear = value[0]?.year()
@@ -63,7 +62,22 @@ function Filters(): JSX.Element {
 	}
 
 	return (
-		<Row gutter={4}>
+		<Row gutter={[4, 4]} justify="center">
+			<Col span={24}>
+				<Form.Item 
+					label="State of Filter" 
+					tooltip={{ 
+						title: "AND selects papers with all of the selected types, OR selects papers with any of the selected types",
+						icon: <InfoCircleOutlined/>
+					}}
+				>
+					<Radio.Group defaultValue={filters.filterStateAND ? "AND" : "OR"} onChange={handleFilterChange}>
+						<Radio.Button value="AND">AND</Radio.Button>
+						<Radio.Button value="OR">OR</Radio.Button>
+					</Radio.Group>
+				</Form.Item>
+			</Col>
+
 			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data}  span={8}/>
 			<Select placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} value={filters.problem}  span={8}/>
 			<Select placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} value={filters.model}  span={8}/>
@@ -71,6 +85,7 @@ function Filters(): JSX.Element {
 			<Select placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} value={filters.explanation}  span={8}/>
 			<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method}  span={8}/>
 			<Select placeholder="Venue" enumerator={Venue} handleChange={handleVenueChange} value={filters.venue}  span={8}/>
+
 			<Col span={8}>
 				<RangePicker 
 					picker="year" 
@@ -83,7 +98,7 @@ function Filters(): JSX.Element {
 				></RangePicker>
 			</Col>
 
-			<Col span={6}>
+			<Col span={8}>
 				<Search 
 					placeholder="Search titles, authors and venues" 
 					onSearch={handleSearch} 
@@ -95,8 +110,6 @@ function Filters(): JSX.Element {
 					}
 				/>
 			</Col>
-
-			<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
 		</Row>
 	)
 }
