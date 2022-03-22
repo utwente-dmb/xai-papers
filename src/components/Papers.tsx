@@ -88,8 +88,8 @@ function Papers(): JSX.Element {
 					expandRowByClick: true,
 					expandedRowRender: (record) => (
 						<>
-							<Row>
-							Authors: {printNames(record.Authors)}
+							<Row gutter={[0, 4]}>
+								Authors: {printNames(record.Authors)}
 							</Row>
 							<Row>
 								{typeArray.map((type) => (
