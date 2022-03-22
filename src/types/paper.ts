@@ -1,5 +1,4 @@
 export interface Paper {
-    "Paper-ID": string
     Title: string
     url: string
     Year: string
@@ -11,8 +10,6 @@ export interface Paper {
     "Type of Task": Array<Task>
     "Type of Explanation": Array<Explanation>
     "Method used to explain": Array<Method>
-    "Should the paper be included?": string
-    "Should the paper be included with filter?": string
 }
 
 export enum Data {
