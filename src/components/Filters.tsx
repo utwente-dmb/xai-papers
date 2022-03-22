@@ -1,10 +1,9 @@
-import React from "react"
-import { Col, Row, DatePicker, Input, Switch, Tag, Tooltip } from "antd"
+import { Col, Row, DatePicker, Input, Tooltip } from "antd"
 import { InfoCircleOutlined } from "@ant-design/icons"
-import { Data, Explanation, Method, Model, Paper, Problem, Task, FilterValue, Venue } from "../types"
+import { Data, Explanation, Method, Model, Problem, Task, FilterValue, Venue } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
-import { getColor, toFilterValue, fromFilterValue } from "../utils"
+import { fromFilterValue } from "../utils"
 import Select from "./Select"
 import Moment from "moment"
   

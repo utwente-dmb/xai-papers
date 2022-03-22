@@ -2,8 +2,7 @@ import { Table, Row } from "antd"
 import { useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
 import { Paper } from "../types"
-import { getColor, typeArray } from "../utils"
-import { printNames } from "../utils/utils"
+import { getColor, typeArray, printNames } from "../utils"
 
 type Column<T> = {
 	title: string, 
