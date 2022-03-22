@@ -66,16 +66,6 @@ function GenerateData(col: string) {
 	return dataFormated
 }
 
-function CustomTooltip(props: any) {
-	console.log(props)
-	return (
-		<BasicTooltip
-			id={props.tickValues}
-			value={props.value}
-			color={props.color}
-		/>
-	)
-}
 
 function GrowthLineChart() {
 	const [type, setType] = useState("Type of Data")
