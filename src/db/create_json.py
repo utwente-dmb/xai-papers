@@ -14,14 +14,19 @@ def import_csv(csv_loc):
         objs = []
         for row in rows:
             obj = {}
-            for k, v in row.items():
-                if k in array_columns:
-                    v = [x.strip() for x in v.split(',')]
-                obj[k] = v
+            for key, value in row.items():
+                if key in array_columns:
+                    value = [x.strip() for x in value.split(',')]
+                elif key == "Venue":
+                    obj[key] = {}
+                    obj[key]["isOld"] = True
+                    obj[key]["value"] = value
+                    continue
+                obj[key] = value
             objs.append(obj)
     return objs
 
 if __name__ == "__main__":
     data = import_csv("db.csv")
-    with open("db.json", "w") as file:
+    with open("db2.json", "w") as file:
         json.dump(data, file, indent=2)

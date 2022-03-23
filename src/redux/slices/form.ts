@@ -6,7 +6,10 @@ const initialState: Paper = {
 	Title: "",
 	url: "",
 	Year: "2020",
-	Venue: "",
+	Venue: {
+		isOld: true,
+		value: ""
+	},
 	Authors: [],
 	"Type of Data": [],
 	"Type of Problem": [],
@@ -33,7 +36,7 @@ const formSlice = createSlice({
 			state.Authors = action.payload
 		},
 		setVenue(state, action: PayloadAction<Venue>) {
-			state.Venue = action.payload
+			state.Venue.value = action.payload
 		},
 		setData(state, action: PayloadAction<Array<Data>>) {
 			state["Type of Data"] = action.payload

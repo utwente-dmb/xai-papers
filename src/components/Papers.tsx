@@ -34,7 +34,7 @@ const columns: Array<Column<Paper>> = [
 		key: "venue",
 		defaultSortOrder: "ascend",
 		sorter: {
-			compare: (a: Paper, b: Paper) => a.Venue.localeCompare(b.Venue),
+			compare: (a: Paper, b: Paper) => a.Venue.value.localeCompare(b.Venue.value),
 			multiple: 2
 		}
 	},

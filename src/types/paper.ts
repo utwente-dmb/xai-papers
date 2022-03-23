@@ -2,7 +2,7 @@ export interface Paper {
     Title: string
     url: string
     Year: string
-    Venue: string
+    Venue: VenueType
     Authors: Array<string>
     "Type of Data": Array<Data>
     "Type of Problem": Array<Problem>
@@ -11,7 +11,10 @@ export interface Paper {
     "Type of Explanation": Array<Explanation>
     "Method used to explain": Array<Method>
 }
-
+type VenueType = {
+    isOld: boolean,
+    value: string
+}
 export enum Data {
     GraphData = "Graph data",
     Images = "Images",

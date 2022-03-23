@@ -34,7 +34,7 @@ export function useFilteredPapers(): Array<Paper> {
 
 			const author = paper.Authors.some((author) => author.toLowerCase().includes(search))
 			const title = paper.Title.toLowerCase().includes(search)
-			const venue = paper.Venue.toLowerCase().includes(search)
+			const venue = paper.Venue.value.toLowerCase().includes(search)
 
 			if (searchAuthor) {
 				proceed = proceed || author

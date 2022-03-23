@@ -66,27 +66,15 @@ function GenerateData(col: string) {
 	return dataFormated
 }
 
+type LineChartProps = {
+	type: string
+}
 
-function GrowthLineChart() {
-	const [type, setType] = useState("Type of Data")
-
-	function handleChange(value: string) {
-		setType(value)
-	}
-
+function GrowthLineChart({ type }: LineChartProps) {
 	const data2: any = GenerateData(type)
 
 	return (
 		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
-			<Col offset={20}>
-				<Select defaultValue={type} style={{ width: 240 }} onChange={handleChange}>
-					{typeArray.map(elem =>
-						<Option key={elem} value={elem}>
-							{elem}
-						</Option>
-					)}
-				</Select>
-			</Col>
 			<ResponsiveLine
 				data={data2}
 				margin={{ top: 25, right: 200, bottom: 50, left: 60 }}
