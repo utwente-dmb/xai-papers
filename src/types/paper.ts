@@ -1,7 +1,5 @@
 import schema from "../db/schema.json"
 
-console.log("Schema", schema.items.properties["Type of Data"])
-
 const properties = schema.items.properties
 
 export let Data: any
@@ -62,7 +60,7 @@ export interface Paper {
 
 export type VenueType = {
     isOld: boolean,
-    value: string
+    value: Venue | string
 }
 
 export enum Venue {
