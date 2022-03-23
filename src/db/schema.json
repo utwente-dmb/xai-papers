@@ -13,7 +13,11 @@
                 "type": "string"
             },
             "Venue": {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                    "isOld": {"type": "boolean"},
+                    "value": {"type": "string"}
+                }
             },
             "Authors": {
                 "type": "array",

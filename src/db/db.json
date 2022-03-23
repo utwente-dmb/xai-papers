@@ -1,9 +1,13 @@
 [
   {
+    "Paper-ID": "ijcai/PanLLZ20",
     "Title": "Explainable Recommendation via Interpretable Feature Mapping and Evaluation of Explainability.",
     "url": "https://doi.org/10.24963/ijcai.2020/373",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Deng Pan",
       "Xiangrui Li",
@@ -29,13 +33,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/TuHW0HZ20",
     "Title": "Select, Answer and Explain - Interpretable Multi-Hop Reading Comprehension over Multiple Documents.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/6441",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Ming Tu",
       "Kevin Huang 0002",
@@ -62,13 +72,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/EsserRO20",
     "Title": "A Disentangling Invertible Interpretation Network for Explaining Latent Representations.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00924",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Patrick Esser",
       "Robin Rombach",
@@ -94,13 +110,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/LiuMWH0G20",
     "Title": "LP-Explain - Local Pictorial Explanation for Outliers.",
     "url": "https://doi.org/10.1109/ICDM50108.2020.00046",
     "Year": "2020",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Haoyu Liu",
       "Fenglong Ma",
@@ -126,13 +148,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/TsangCLFZL20",
     "Title": "Feature Interaction Interpretability - A Case for Explaining Ad-Recommendation Systems via Neural Interaction Detection.",
     "url": "https://openreview.net/forum?id=BkgnhTEtDS",
     "Year": "2020",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Michael Tsang",
       "Dehua Cheng",
@@ -163,13 +191,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/RiegerSMY20",
     "Title": "Interpretations are Useful - Penalizing Explanations to Align Neural Networks with Prior Knowledge.",
     "url": "http://proceedings.mlr.press/v119/rieger20a.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Laura Rieger",
       "Chandan Singh",
@@ -196,13 +230,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/PanHLZL20",
     "Title": "xGAIL - Explainable Generative Adversarial Imitation Learning for Explainable Human Decision Analysis.",
     "url": "https://doi.org/10.1145/3394486.3403186",
     "Year": "2020",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Menghai Pan",
       "Weixiao Huang",
@@ -227,13 +267,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/PalejaSCG20",
     "Title": "Interpretable and Personalized Apprenticeship Scheduling - Learning Interpretable Scheduling Policies from Heterogeneous User Demonstrations.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/477bdb55b231264bb53a7942fd84254d-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Rohan R. Paleja",
       "Andrew Silva",
@@ -258,13 +304,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/VuT20",
     "Title": "PGM-Explainer - Probabilistic Graphical Model Explanations for Graph Neural Networks.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/8fb134f258b1f7865a6ab2d935a897c9-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Minh N. Vu",
       "My T. Thai"
@@ -287,13 +339,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/ZhouHZLSXT20",
     "Title": "Towards Interpretable Natural Language Understanding with Explanations as Latent Variables.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/4be2c8f27b8a420492f2d44463933eb6-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Wangchunshu Zhou",
       "Jinyi Hu",
@@ -320,13 +378,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/SenGVJ20",
     "Title": "The Curious Case of IR Explainability - Explaining Document Scores within and across Ranking Models.",
     "url": "https://doi.org/10.1145/3397271.3401286",
     "Year": "2020",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Procheta Sen",
       "Debasis Ganguly",
@@ -352,13 +416,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/LiuYW19",
     "Title": "Towards Explainable NLP - A Generative Explanation Framework for Text Classification.",
     "url": "https://doi.org/10.18653/v1/p19-1560",
     "Year": "2019",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Hui Liu",
       "Qingyu Yin",
@@ -383,13 +453,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/WagnerKGHWB19",
     "Title": "Interpretable and Fine-Grained Visual Explanations for Convolutional Neural Networks.",
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Wagner_Interpretable_and_Fine-Grained_Visual_Explanations_for_Convolutional_Neural_Networks_CVPR_2019_paper.html",
     "Year": "2019",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "J\u00f6rg Wagner",
       "Jan Mathias K\u00f6hler",
@@ -416,13 +492,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/MWT19",
     "Title": "Visual Explanation by Interpretation - Improving Visual Feedback Capabilities of Deep Neural Networks.",
     "url": "https://openreview.net/forum?id=H1ziPjC5Fm",
     "Year": "2019",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Jos\u00e9 Oramas M.",
       "Kaili Wang",
@@ -447,13 +529,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/Wang19",
     "Title": "Gaining Free or Low-Cost Interpretability with Interpretable Partial Substitute.",
     "url": "http://proceedings.mlr.press/v97/wang19a.html",
     "Year": "2019",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Tong Wang"
     ],
@@ -479,13 +567,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/SchwabK19",
     "Title": "CXPlain - Causal Explanations for Model Interpretation under Uncertainty.",
     "url": "https://proceedings.neurips.cc/paper/2019/hash/3ab6be46e1d6b21d59a3c3a0b9d0f6ef-Abstract.html",
     "Year": "2019",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Patrick Schwab",
       "Walter Karlen"
@@ -510,13 +604,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/ChenCXZ0QZ19",
     "Title": "Personalized Fashion Recommendation with Visual Explanations based on Multimodal Attention Network - Towards Visually Explainable Recommendation.",
     "url": "https://doi.org/10.1145/3331184.3331254",
     "Year": "2019",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Xu Chen 0017",
       "Hanxiong Chen",
@@ -545,13 +645,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/VermaG19",
     "Title": "LIRME - Locally Interpretable Ranking Model Explanation.",
     "url": "https://doi.org/10.1145/3331184.3331377",
     "Year": "2019",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Manisha Verma",
       "Debasis Ganguly"
@@ -574,13 +680,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/ZhangCSWZ18",
     "Title": "Interpreting CNN Knowledge via an Explanatory Graph.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17354",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Quanshi Zhang",
       "Ruiming Cao",
@@ -608,13 +720,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/YangLWH18",
     "Title": "Towards Interpretation of Recommender Systems with Sorted Explanation Paths.",
     "url": "https://doi.org/10.1109/ICDM.2018.00082",
     "Year": "2018",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Fan Yang 0023",
       "Ninghao Liu",
@@ -639,13 +757,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/ChenSWJ18",
     "Title": "Learning to Explain - An Information-Theoretic Perspective on Model Interpretation.",
     "url": "http://proceedings.mlr.press/v80/chen18j.html",
     "Year": "2018",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Jianbo Chen",
       "Le Song",
@@ -672,13 +796,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/PeakeW18",
     "Title": "Explanation Mining - Post Hoc Interpretability of Latent Factor Models for Recommendation Systems.",
     "url": "https://doi.org/10.1145/3219819.3220072",
     "Year": "2018",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Georgina Peake",
       "Jun Wang"
@@ -700,13 +830,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/Alvarez-MelisJ18",
     "Title": "Towards Robust Interpretability with Self-Explaining Neural Networks.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/3e9f0fc9b2f89e043bc6233994dfcf76-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "David Alvarez-Melis",
       "Tommi S. Jaakkola"
@@ -729,13 +865,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/DhurandharCLTTS18",
     "Title": "Explanations based on the Missing - Towards Contrastive Explanations with Pertinent Negatives.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/c5ff2543b53f4cc0ad3819a36752467b-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Amit Dhurandhar",
       "Pin-Yu Chen",
@@ -763,13 +905,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/FongV17",
     "Title": "Interpretable Explanations of Black Boxes by Meaningful Perturbation.",
     "url": "https://doi.org/10.1109/ICCV.2017.371",
     "Year": "2017",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Ruth C. Fong",
       "Andrea Vedaldi"
@@ -792,13 +940,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/AkulaWZ20",
     "Title": "CoCoX - Generating Conceptual and Counterfactual Explanations via Fault-Lines.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5643",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Arjun R. Akula",
       "Shuai Wang",
@@ -821,13 +975,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/ChenJ20",
     "Title": "LS-Tree - Model Interpretation When the Data Are Linguistic.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5749",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Jianbo Chen",
       "Michael I. Jordan"
@@ -853,13 +1013,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/CiravegnaGMMG20",
     "Title": "A Constraint-Based Approach to Learning and Explanation.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5774",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Gabriele Ciravegna",
       "Francesco Giannini",
@@ -885,13 +1051,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/DalleigerV20",
     "Title": "Explainable Data Decompositions.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5780",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Sebastian Dalleiger",
       "Jilles Vreeken"
@@ -914,13 +1086,19 @@
     "Method used to explain": [
       "Interpretability built into the predictive model",
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/DongNCCZSLCM20",
     "Title": "Asymmetrical Hierarchical Networks with Attentive Interactions for Interpretable Review-Based Recommendation.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/6268",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Xin Dong 0010",
       "Jingchao Ni",
@@ -949,13 +1127,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/HarderBP20",
     "Title": "Interpretable and Differentially Private Predictions.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5827",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Frederik Harder",
       "Matthias Bauer",
@@ -980,13 +1164,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/HuaiWMZ20",
     "Title": "Towards Interpretation of Pairwise Learning.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5837",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Mengdi Huai",
       "Di Wang 0015",
@@ -1013,13 +1203,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/ItoTSYI20",
     "Title": "Word-Level Contextual Sentiment Analysis with Interpretability.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5845",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Tomoki Ito",
       "Kota Tsubouchi",
@@ -1044,13 +1240,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/LiFANZ20",
     "Title": "MRI Reconstruction with Interpretable Pixel-Wise Operations Using Reinforcement Learning.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5423",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Wentian Li",
       "Xidong Feng",
@@ -1075,13 +1277,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/Madumal0SV20",
     "Title": "Explainable Reinforcement Learning through a Causal Lens.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5631",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Prashan Madumal",
       "Tim Miller 0001",
@@ -1108,13 +1316,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/NamGCWL20",
     "Title": "Relative Attributing Propagation - Interpreting the Comparative Contributions of Individual Units in Deep Neural Networks.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5632",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Woo-Jeoung Nam",
       "Shir Gur",
@@ -1139,13 +1353,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/PathakLMP20",
     "Title": "Chemically Interpretable Graph Interaction Network for Prediction of Pharmacokinetic Properties of Drug-Like Molecules.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5433",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Yashaswi Pathak",
       "Siddhartha Laghuvarapu",
@@ -1169,13 +1389,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/PatroAN20",
     "Title": "Explanation vs Attention - A Two-Player Game to Obtain Attention for VQA.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/6858",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Badri N. Patro",
       "Anupriy",
@@ -1199,13 +1425,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/WangZHZS20",
     "Title": "Dynamic Network Pruning with Interpretable Layerwise Channel Selection.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/6098",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Yulong Wang",
       "Xiaolu Zhang",
@@ -1231,13 +1463,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/WuPHKCZ0D20",
     "Title": "Regional Tree Regularization for Interpretability in Deep Neural Networks.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/6112",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Mike Wu",
       "Sonali Parbhoo",
@@ -1265,13 +1503,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/ZhongWTZ0S20",
     "Title": "Iteratively Questioning and Answering for Interpretable Legal Judgment Prediction.",
     "url": "https://aaai.org/ojs/index.php/AAAI/article/view/5479",
     "Year": "2020",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Haoxi Zhong",
       "Yuzhong Wang",
@@ -1298,13 +1542,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/AtanasovaSLA20",
     "Title": "Generating Fact Checking Explanations.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.656",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Pepa Atanasova",
       "Jakob Grue Simonsen",
@@ -1329,13 +1579,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/ChenZJ20",
     "Title": "Generating Hierarchical Explanations on Text Classification via Feature Interaction Detection.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.494",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Hanjie Chen",
       "Guangtao Zheng",
@@ -1360,13 +1616,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/GonenJSG20",
     "Title": "Simple, Interpretable and Stable Method for Detecting Words with Usage Change across Corpora.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.51",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Hila Gonen",
       "Ganesh Jawahar",
@@ -1391,13 +1653,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/HanWT20",
     "Title": "Explaining Black Box Predictions and Unveiling Data Artifacts through Influence Functions.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.492",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Xiaochuang Han",
       "Byron C. Wallace",
@@ -1421,13 +1689,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/KumarT20",
     "Title": "NILE - Natural Language Inference with Faithful Natural Language Explanations.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.771",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Sawan Kumar",
       "Partha P. Talukdar"
@@ -1450,13 +1724,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/LuL20",
     "Title": "GCAN - Graph-aware Co-Attention Networks for Explainable Fake News Detection on Social Media.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.48",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Yi-Ju Lu",
       "Cheng-Te Li"
@@ -1479,13 +1759,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/MohankumarNNKSR20",
     "Title": "Towards Transparent and Explainable Attention Models.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.387",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Akash Kumar Mohankumar",
       "Preksha Nema",
@@ -1512,13 +1798,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/ShahbaziFGT20",
     "Title": "Relation Extraction with Explanation.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.579",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Hamed Shahbazi",
       "Xiaoli Z. Fern",
@@ -1543,13 +1835,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/SubramanianBGWS20",
     "Title": "Obtaining Faithful Interpretations from Compositional Neural Networks.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.495",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Sanjay Subramanian",
       "Ben Bogin",
@@ -1580,13 +1878,19 @@
     "Method used to explain": [
       "Interpretability built into the predictive model",
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/WuCKL20",
     "Title": "Perturbed Masking - Parameter-free Probing for Analyzing and Interpreting BERT.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.383",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Zhiyong Wu",
       "Yun Chen",
@@ -1613,13 +1917,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/WuRZLN20",
     "Title": "DTCA - Decision Tree-based Co-Attention Networks for Explainable Claim Verification.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.97",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Lianwei Wu",
       "Yuan Rao",
@@ -1646,13 +1956,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/ZhangSFL20",
     "Title": "Learning Interpretable Relationships between Entities, Relations and Concepts via Bayesian Structure Learning on Open Domain Facts.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.717",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Jingyuan Zhang",
       "Mingming Sun",
@@ -1676,13 +1992,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/ZhouZY20",
     "Title": "Interpretable Operational Risk Classification with Semi-Supervised Variational Autoencoder.",
     "url": "https://doi.org/10.18653/v1/2020.acl-main.78",
     "Year": "2020",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Fan Zhou",
       "Shengming Zhang",
@@ -1705,13 +2027,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/ChengRCZ20",
     "Title": "Explaining Knowledge Distillation by Quantifying the Knowledge.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.01294",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Xu Cheng",
       "Zhefan Rao",
@@ -1736,13 +2064,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/HuangL20",
     "Title": "Interpretable and Accurate Fine-grained Recognition via Region Grouping.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00869",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Zixuan Huang",
       "Yin Li"
@@ -1765,13 +2099,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/JakabGBV20",
     "Title": "Self-Supervised Learning of Interpretable Keypoints From Unlabelled Videos.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00881",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Tomas Jakab",
       "Ankush Gupta 0001",
@@ -1797,13 +2137,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/JalwanaABM20",
     "Title": "Attack to Explain Deep Representation.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00956",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Mohammad A. A. K. Jalwana",
       "Naveed Akhtar",
@@ -1827,13 +2173,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/KimGPS20",
     "Title": "A Programmatic and Semantic Approach to Explaining and Debugging Neural Network Based Object Detectors.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.01114",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Edward Kim",
       "Divya Gopinath",
@@ -1858,13 +2210,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/LiuLZKWBRC20",
     "Title": "Towards Visually Explaining Variational Autoencoders.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00867",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "WenQian Liu",
       "Runze Li",
@@ -1894,13 +2252,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/ShenGTZ20",
     "Title": "Interpreting the Latent Space of GANs for Semantic Face Editing.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00926",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Yujun Shen",
       "Jinjin Gu",
@@ -1924,13 +2288,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/WangV20",
     "Title": "SCOUT - Self-Aware Discriminant Counterfactual Explanations.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00900",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Pei Wang",
       "Nuno Vasconcelos"
@@ -1952,13 +2322,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/WuSCZKLT20a",
     "Title": "Towards Global Explanations of Convolutional Neural Networks With Concept Attribution.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00868",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Weibin Wu",
       "Yuxin Su",
@@ -1986,13 +2362,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/XuYGLWLV20",
     "Title": "Explainable Object-Induced Action Decision for Autonomous Vehicles.",
     "url": "https://doi.org/10.1109/CVPR42600.2020.00954",
     "Year": "2020",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Yiran Xu",
       "Xiaoyin Yang",
@@ -2020,13 +2402,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/JiWJMZ20",
     "Title": "Interpretable Spatiotemporal Deep Learning Model for Traffic Flow Prediction based on Potential Energy Fields.",
     "url": "https://doi.org/10.1109/ICDM50108.2020.00128",
     "Year": "2020",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Jiahao Ji",
       "Jingyuan Wang",
@@ -2051,13 +2439,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/JinWDXR20",
     "Title": "Towards Hierarchical Importance Attribution - Explaining Compositional Semantics for Neural Sequence Models.",
     "url": "https://openreview.net/forum?id=BkxRRkSKwr",
     "Year": "2020",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Xisen Jin",
       "Zhongyu Wei",
@@ -2084,13 +2478,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/MohanKSF20",
     "Title": "Robust And Interpretable Blind Image Denoising Via Bias-Free Convolutional Neural Networks.",
     "url": "https://openreview.net/forum?id=HJlSmC4FPS",
     "Year": "2020",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Sreyas Mohan",
       "Zahra Kadkhodaie",
@@ -2115,13 +2515,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/OreshkinCCB20",
     "Title": "N-BEATS - Neural basis expansion analysis for interpretable time series forecasting.",
     "url": "https://openreview.net/forum?id=r1ecqn4YwB",
     "Year": "2020",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Boris N. Oreshkin",
       "Dmitri Carpov",
@@ -2145,13 +2551,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/PuriVGKDK020",
     "Title": "Explain Your Move - Understanding Agent Actions Using Specific and Relevant Feature Attribution.",
     "url": "https://openreview.net/forum?id=SJgzLkBKPB",
     "Year": "2020",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Nikaash Puri",
       "Sukriti Verma",
@@ -2179,13 +2591,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/SinglaPCB20",
     "Title": "Explanation by Progressive Exaggeration.",
     "url": "https://openreview.net/forum?id=H1xFWgrFPS",
     "Year": "2020",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Sumedha Singla",
       "Brian Pollack",
@@ -2212,13 +2630,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/YangS20",
     "Title": "Learn to Explain Efficiently via Neural Logic Inductive Learning.",
     "url": "https://openreview.net/forum?id=SJlh8CEYDB",
     "Year": "2020",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Yuan Yang",
       "Le Song"
@@ -2243,13 +2667,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/AndersPDMK20",
     "Title": "Fairwashing explanations with off-manifold detergent.",
     "url": "http://proceedings.mlr.press/v119/anders20a.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Christopher J. Anders",
       "Plamen Pasliev",
@@ -2279,13 +2709,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/ChalasaniC00J20",
     "Title": "Concise Explanations of Neural Networks using Adversarial Training.",
     "url": "http://proceedings.mlr.press/v119/chalasani20a.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Prasad Chalasani",
       "Jiefeng Chen",
@@ -2312,13 +2748,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/ChaudharySG20",
     "Title": "Explainable and Discourse Topic-aware Neural Language Understanding.",
     "url": "http://proceedings.mlr.press/v119/chaudhary20a.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Yatin Chaudhary",
       "Hinrich Sch\u00fctze",
@@ -2342,13 +2784,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/JinBJ20a",
     "Title": "Multi-Objective Molecule Generation using Interpretable Substructures.",
     "url": "http://proceedings.mlr.press/v119/jin20b.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Wengong Jin",
       "Regina Barzilay",
@@ -2371,13 +2819,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/LakkarajuAB20",
     "Title": "Robust and Stable Black Box Explanations.",
     "url": "http://proceedings.mlr.press/v119/lakkaraju20a.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Himabindu Lakkaraju",
       "Nino Arsov",
@@ -2404,13 +2858,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/MoshkovitzDRF20",
     "Title": "Explainable k-Means and k-Medians Clustering.",
     "url": "http://proceedings.mlr.press/v119/moshkovitz20a.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Michal Moshkovitz",
       "Sanjoy Dasgupta",
@@ -2434,13 +2894,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/ParkCZYY20",
     "Title": "Multiresolution Tensor Learning for Efficient and Interpretable Spatial Analysis.",
     "url": "http://proceedings.mlr.press/v119/park20a.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Jung Yeon Park",
       "Kenneth Theo Carr",
@@ -2467,13 +2933,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/PlumbTST20",
     "Title": "Explaining Groups of Points in Low-Dimensional Representations.",
     "url": "http://proceedings.mlr.press/v119/plumb20a.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Gregory Plumb",
       "Jonathan Terhorst",
@@ -2498,13 +2970,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/QuinnNR0V20",
     "Title": "DeepCoDA - personalized interpretability for compositional health data.",
     "url": "http://proceedings.mlr.press/v119/quinn20a.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Thomas P. Quinn",
       "Dang Nguyen",
@@ -2529,13 +3007,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/ShiZM020",
     "Title": "Dispersed Exponential Family Mixture VAEs for Interpretable Text Generation.",
     "url": "http://proceedings.mlr.press/v119/shi20f.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Wenxian Shi",
       "Hao Zhou",
@@ -2559,13 +3043,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/VoynovB20",
     "Title": "Unsupervised Discovery of Interpretable Directions in the GAN Latent Space.",
     "url": "http://proceedings.mlr.press/v119/voynov20a.html",
     "Year": "2020",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Andrey Voynov",
       "Artem Babenko"
@@ -2587,13 +3077,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/AlbiniRBT20",
     "Title": "Relation-Based Counterfactual Explanations for Bayesian Network Classifiers.",
     "url": "https://doi.org/10.24963/ijcai.2020/63",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Emanuele Albini",
       "Antonio Rago 0001",
@@ -2617,13 +3113,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/BeyazitTYT020",
     "Title": "Learning Interpretable Representations with Informative Entanglements.",
     "url": "https://doi.org/10.24963/ijcai.2020/273",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Ege Beyazit",
       "Doruk Tuncel",
@@ -2650,13 +3152,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/ChenW0PSAC20",
     "Title": "Towards Explainable Conversational Recommendation.",
     "url": "https://doi.org/10.24963/ijcai.2020/414",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Zhongxia Chen",
       "Xiting Wang",
@@ -2684,13 +3192,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/CiravegnaGGMM20",
     "Title": "Human-Driven FOL Explanations of Deep Learning.",
     "url": "https://doi.org/10.24963/ijcai.2020/309",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Gabriele Ciravegna",
       "Francesco Giannini",
@@ -2716,13 +3230,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/KanamoriTKA20",
     "Title": "DACE - Distribution-Aware Counterfactual Explanation by Mixed-Integer Linear Optimization.",
     "url": "https://doi.org/10.24963/ijcai.2020/395",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Kentaro Kanamori",
       "Takuya Takagi",
@@ -2748,13 +3268,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/LeL20",
     "Title": "Synthesizing Aspect-Driven Recommendation Explanations from Reviews.",
     "url": "https://doi.org/10.24963/ijcai.2020/336",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Trung-Hoang Le",
       "Hady W. Lauw"
@@ -2777,13 +3303,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/LiFCLYS20",
     "Title": "Recurrent Dirichlet Belief Networks for interpretable Dynamic Relational Data Modelling.",
     "url": "https://doi.org/10.24963/ijcai.2020/342",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Yaqiong Li",
       "Xuhui Fan",
@@ -2809,13 +3341,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/RosaCN20",
     "Title": "Explainable Inference on Sequential Data via Memory-Tracking.",
     "url": "https://doi.org/10.24963/ijcai.2020/278",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Biagio La Rosa",
       "Roberto Capobianco",
@@ -2838,13 +3376,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/WangZ20a",
     "Title": "Interpretable Multimodal Learning for Intelligent Regulation in Online Payment Systems.",
     "url": "https://doi.org/10.24963/ijcai.2020/645",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Shuoyao Wang",
       "Diwei Zhu"
@@ -2869,13 +3413,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/WuRYWN20",
     "Title": "Evidence-Aware Hierarchical Interactive Attention Networks for Explainable Claim Verification.",
     "url": "https://doi.org/10.24963/ijcai.2020/193",
     "Year": "2020",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Lianwei Wu",
       "Yuan Rao",
@@ -2902,13 +3452,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/GuoZQWSY20",
     "Title": "Interpretable Deep Graph Generation with Node-edge Co-disentanglement.",
     "url": "https://doi.org/10.1145/3394486.3403221",
     "Year": "2020",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Xiaojie Guo",
       "Liang Zhao 0002",
@@ -2935,13 +3491,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/LancianoBG20",
     "Title": "Explainable Classification of Brain Networks via Contrast Subgraphs.",
     "url": "https://doi.org/10.1145/3394486.3403383",
     "Year": "2020",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Tommaso Lanciano",
       "Francesco Bonchi",
@@ -2967,13 +3529,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/LeW020",
     "Title": "GRACE - Generating Concise and Informative Contrastive Sample to Explain Neural Network Model's Prediction.",
     "url": "https://doi.org/10.1145/3394486.3403066",
     "Year": "2020",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Thai Le",
       "Suhang Wang",
@@ -2996,13 +3564,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/LiangBCBW20",
     "Title": "Adversarial Infidelity Learning for Model Interpretation.",
     "url": "https://doi.org/10.1145/3394486.3403071",
     "Year": "2020",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Jian Liang",
       "Bing Bai",
@@ -3031,13 +3605,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/TangLSSMW20",
     "Title": "Knowing your FATE - Friendship, Action and Temporal Explanations for User Engagement Prediction on Social Apps.",
     "url": "https://doi.org/10.1145/3394486.3403276",
     "Year": "2020",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Xianfeng Tang",
       "Yozen Liu",
@@ -3065,13 +3645,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/YuanTHJ20",
     "Title": "XGNN - Towards Model-Level Explanations of Graph Neural Networks.",
     "url": "https://doi.org/10.1145/3394486.3403085",
     "Year": "2020",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Hao Yuan",
       "Jiliang Tang",
@@ -3095,13 +3681,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/ZhangQ0LCZD20",
     "Title": "INPREM - An Interpretable and Trustworthy Predictive Model for Healthcare.",
     "url": "https://doi.org/10.1145/3394486.3403087",
     "Year": "2020",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Xianli Zhang",
       "Buyue Qian",
@@ -3129,13 +3721,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/0001GCIN20",
     "Title": "Explaining Naive Bayes and Other Linear Classifiers with Polynomial Time and Delay.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/eccd2a86bae4728b38627162ba297828-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Jo\u00e3o Marques-Silva 0001",
       "Thomas Gerspacher",
@@ -3161,13 +3759,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/ArikLYSELM0ZNSN20",
     "Title": "Interpretable Sequence Learning for Covid-19 Forecasting.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/d9dbc51dc534921589adf460c85cd824-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Sercan \u00d6mer Arik",
       "Chun-Liang Li",
@@ -3201,13 +3805,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/BassSSTSR20",
     "Title": "ICAM - Interpretable Classification via Disentangled Representations and Feature Attribution Mapping.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/56f9f88906aebf4ad985aaec7fa01313-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Cher Bass",
       "Mariana da Silva",
@@ -3235,13 +3845,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/CrabbeZZS20",
     "Title": "Learning outside the Black-Box - The pursuit of interpretable models.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/ce758408f6ef98d7c7a7b786eca7b3a8-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Jonathan Crabb\u00e9",
       "Yao Zhang",
@@ -3267,13 +3883,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/FryeRF20",
     "Title": "Asymmetric Shapley values - incorporating causal knowledge into model-agnostic explainability.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/0d770c496aa3da6d2c3f2bd19e7b9d6b-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Christopher Frye",
       "Colin Rowat",
@@ -3299,13 +3921,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/HarkonenHLP20",
     "Title": "GANSpace - Discovering Interpretable GAN Controls.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/6fe43269967adbb64ec6149852b5cc3e-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Erik H\u00e4rk\u00f6nen",
       "Aaron Hertzmann",
@@ -3330,13 +3958,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/HeskesSBC20",
     "Title": "Causal Shapley Values - Exploiting Causal Knowledge to Explain Individual Predictions of Complex Models.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/32e54441e6382a7fbacbbbaf3c450059-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Tom Heskes",
       "Evi Sijben",
@@ -3362,13 +3996,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/JainVMLTH20",
     "Title": "Interpretable multi-timescale models for predicting fMRI responses to continuous natural speech.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/9e9a30b74c49d07d8150c8c83b1ccf07-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Shailee Jain",
       "Vy A. Vo",
@@ -3395,13 +4035,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/LuoCXYZC020",
     "Title": "Parameterized Explainer for Graph Neural Network.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/e37b08dd3015330dcbb5d6663667b8b8-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Dongsheng Luo",
       "Wei Cheng 0002",
@@ -3430,13 +4076,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/MuA20",
     "Title": "Compositional Explanations of Neurons.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/c74956ffb38ba48ed6ce977af6727275-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Jesse Mu",
       "Jacob Andreas"
@@ -3460,13 +4112,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/OShaughnessyCCR20",
     "Title": "Generative causal explanations of black-box classifiers.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/3a93a609b97ec0ab0ff5539eb79ef33a-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "\"Matthew R. OShaughnessy\"",
       "Gregory Canal",
@@ -3495,13 +4153,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/PedapatiBSD20",
     "Title": "Learning Global Transparent Models consistent with Local Contrastive Explanations.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/24aef8cb3281a2422a59b51659f1ad2e-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Tejaswini Pedapati",
       "Avinash Balakrishnan",
@@ -3526,13 +4190,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/RamamurthyVZD20",
     "Title": "Model Agnostic Multilevel Explanations.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/426f990b332ef8193a61cc90516c1245-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Karthikeyan Natesan Ramamurthy",
       "Bhanukiran Vinzamuri",
@@ -3560,13 +4230,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/RawalL20",
     "Title": "Beyond Individualized Recourse - Interpretable and Interactive Summaries of Actionable Recourses.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/8ee7730e97c67473a424ccfeff49ab20-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Kaivalya Rawal",
       "Himabindu Lakkaraju"
@@ -3591,13 +4267,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/TsangR020",
     "Title": "How does This Interaction Affect Me? Interpretable Attribution for Feature Interactions.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/443dec3062d0286986e21dc0631734c9-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Michael Tsang",
       "Sirisha Rambhatla",
@@ -3622,13 +4304,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/TsengSK20",
     "Title": "Fourier-transform-based attribution priors improve the interpretability and stability of deep learning models for genomics.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/1487987e862c44b91a0296cf3866387e-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Alex Tseng",
       "Avanti Shrikumar",
@@ -3652,13 +4340,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/Yau0H20",
     "Title": "What Did You Think Would Happen? Explaining Agent Behaviour through Intended Outcomes.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/d5ab8dc7ef67ca92e41d730982c5c602-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Herman Yau",
       "Chris Russell 0001",
@@ -3681,13 +4375,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/YehKALPR20",
     "Title": "On Completeness-aware Concept-Based Explanations in Deep Neural Networks.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/ecb287ff763c169694f682af52c1f309-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Chih-Kuan Yeh",
       "Been Kim",
@@ -3716,13 +4416,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/ZhouW20",
     "Title": "Learning identifiable and interpretable latent models of high-dimensional neural activity using pi-VAE.",
     "url": "https://proceedings.neurips.cc/paper/2020/hash/510f2318f324cf07fce24c3a4b89c771-Abstract.html",
     "Year": "2020",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Ding Zhou",
       "Xue-Xin Wei"
@@ -3745,13 +4451,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/ChenYYH0020",
     "Title": "Try This Instead - Personalized and Interpretable Substitute Recommendation.",
     "url": "https://doi.org/10.1145/3397271.3401042",
     "Year": "2020",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Tong Chen 0005",
       "Hongzhi Yin",
@@ -3779,13 +4491,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/QuAW20",
     "Title": "Towards Explainable Retrieval Models for Precision Medicine Literature Search.",
     "url": "https://doi.org/10.1145/3397271.3401277",
     "Year": "2020",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Jiaming Qu",
       "Jaime Arguello",
@@ -3808,13 +4526,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/YangZWL020",
     "Title": "Neural Concept Map Generation for Effective Document Classification with Interpretable Structured Summarization.",
     "url": "https://doi.org/10.1145/3397271.3401312",
     "Year": "2020",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Carl Yang",
       "Jieyu Zhang",
@@ -3840,13 +4564,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/LiJC0WL20",
     "Title": "Directional and Explainable Serendipity Recommendation.",
     "url": "https://doi.org/10.1145/3366423.3380100",
     "Year": "2020",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Xueqi Li",
       "Wenjun Jiang",
@@ -3873,13 +4603,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/MathewSLS20",
     "Title": "The POLAR Framework - Polar Opposites Enable Interpretability of Pre-Trained Word Embeddings.",
     "url": "https://doi.org/10.1145/3366423.3380227",
     "Year": "2020",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Binny Mathew",
       "Sandipan Sikdar",
@@ -3904,13 +4640,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/NaumzikZF20",
     "Title": "Mining Points-of-Interest for Explaining Urban Phenomena - A Scalable Variational Inference Approach.",
     "url": "https://doi.org/10.1145/3366423.3380298",
     "Year": "2020",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Christof Naumzik",
       "Patrick Zoechbauer",
@@ -3935,13 +4677,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/PawelczykBK20",
     "Title": "Learning Model-Agnostic Counterfactual Explanations for Tabular Data.",
     "url": "https://doi.org/10.1145/3366423.3380087",
     "Year": "2020",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Martin Pawelczyk",
       "Klaus Broelemann",
@@ -3965,13 +4713,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/SunWZFHW20",
     "Title": "Dual Learning for Explainable Recommendation - Towards Unifying User Preference Prediction and Review Generation.",
     "url": "https://doi.org/10.1145/3366423.3380164",
     "Year": "2020",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Peijie Sun",
       "Le Wu",
@@ -3998,13 +4752,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/WangZZSP20",
     "Title": "DyCRS - Dynamic Interpretable Postoperative Complication Risk Scoring.",
     "url": "https://doi.org/10.1145/3366423.3380253",
     "Year": "2020",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Wen Wang",
       "Han Zhao 0002",
@@ -4030,13 +4790,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/ZhuXSZCGH20",
     "Title": "Modeling Users' Behavior Sequences with Hierarchical Explainable Network for Cross-domain Fraud Detection.",
     "url": "https://doi.org/10.1145/3366423.3380172",
     "Year": "2020",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Yongchun Zhu",
       "Dongbo Xi",
@@ -4063,13 +4829,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/AnnasamyS19",
     "Title": "Towards Better Interpretability in Deep Q-Networks.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33014561",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Raghuram Mandyam Annasamy",
       "Katia P. Sycara"
@@ -4094,13 +4866,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/ChenZQ19",
     "Title": "Dynamic Explainable Recommendation Based on Neural Attentive Models.",
     "url": "https://doi.org/10.1609/aaai.v33i01.330153",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Xu Chen 0017",
       "Yongfeng Zhang",
@@ -4124,13 +4902,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/GaoWW019",
     "Title": "Explainable Recommendation through Attentive Multi-View Learning.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33013622",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Jingyue Gao",
       "Xiting Wang",
@@ -4156,13 +4940,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/HeLSB19",
     "Title": "Interpretable Predictive Modeling for Climate Variables with Weighted Lasso.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33011385",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Sijie He",
       "Xinyan Li",
@@ -4186,13 +4976,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/IgnatievNM19",
     "Title": "Abduction-Based Explanations for Machine Learning Models.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33011511",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Alexey Ignatiev",
       "Nina Narodytska",
@@ -4217,13 +5013,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/LanG19",
     "Title": "Accurate and Interpretable Factorization Machines.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33014139",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Liang Lan",
       "Yu Geng 0002"
@@ -4247,13 +5049,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/LyuYLG19",
     "Title": "SDRL - Interpretable and Data-Efficient Deep Reinforcement Learning Leveraging Symbolic Planning.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33012970",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Daoming Lyu",
       "Fangkai Yang",
@@ -4277,13 +5085,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/PolatoA19",
     "Title": "Interpretable Preference Learning - A Game Theoretic Framework for Large Margin On-Line Feature and Rule Learning.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33014723",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Mirko Polato",
       "Fabio Aiolli"
@@ -4307,13 +5121,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/ShakerinG19",
     "Title": "Induction of Non-Monotonic Logic Programs to Explain Boosted Tree Models Using LIME.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33013052",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Farhad Shakerin",
       "Gopal Gupta"
@@ -4336,13 +5156,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/SilvaFH19",
     "Title": "Exploring Knowledge Graphs in an Interpretable Composite Approach for Text Entailment.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33017023",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Vivian Dos Santos Silva",
       "Andr\u00e9 Freitas",
@@ -4366,13 +5192,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/TopinV19",
     "Title": "Generation of Policy-Level Explanations for Reinforcement Learning.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33012514",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Nicholay Topin",
       "Manuela Veloso"
@@ -4395,13 +5227,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/WangWX00C19",
     "Title": "Explainable Reasoning over Knowledge Graphs for Recommendation.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33015329",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Xiang Wang 0010",
       "Dingxian Wang",
@@ -4429,13 +5267,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/WickramanayakeH19",
     "Title": "FLEX - Faithful Linguistic Explanations for Neural Net Based Model Decisions.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33012539",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Sandareka Wickramanayake",
       "Wynne Hsu",
@@ -4459,13 +5303,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/YuanCHJ19",
     "Title": "Interpreting Deep Models for Text Analysis via Optimization and Regularization Methods.",
     "url": "https://doi.org/10.1609/aaai.v33i01.33015717",
     "Year": "2019",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Hao Yuan",
       "Yongjun Chen",
@@ -4490,13 +5340,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/BastingsAT19",
     "Title": "Interpretable Neural Predictions with Differentiable Binary Variables.",
     "url": "https://doi.org/10.18653/v1/p19-1284",
     "Year": "2019",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Jasmijn Bastings",
       "Wilker Aziz",
@@ -4523,13 +5379,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/JiangJCB19",
     "Title": "Explore, Propose, and Assemble - An Interpretable Model for Multi-Hop Reading Comprehension.",
     "url": "https://doi.org/10.18653/v1/p19-1261",
     "Year": "2019",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Yichen Jiang",
       "Nitish Joshi",
@@ -4553,13 +5415,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/LuZXLZX19",
     "Title": "Constructing Interpretive Spatio-Temporal Features for Multi-Turn Responses Selection.",
     "url": "https://doi.org/10.18653/v1/p19-1006",
     "Year": "2019",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Junyu Lu",
       "Chenbin Zhang",
@@ -4585,13 +5453,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/MoonSKS19",
     "Title": "OpenDialKG - Explainable Conversational Reasoning with Attention-based Walks over Knowledge Graphs.",
     "url": "https://doi.org/10.18653/v1/p19-1081",
     "Year": "2019",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Seungwhan Moon",
       "Pararth Shah",
@@ -4615,13 +5489,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/PanigrahiSB19",
     "Title": "Word2Sense - Sparse Interpretable Word Embeddings.",
     "url": "https://doi.org/10.18653/v1/p19-1570",
     "Year": "2019",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Abhishek Panigrahi",
       "Harsha Vardhan Simhadri",
@@ -4649,13 +5529,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/RajaniMXS19",
     "Title": "Explain Yourself! Leveraging Language Models for Commonsense Reasoning.",
     "url": "https://doi.org/10.18653/v1/p19-1487",
     "Year": "2019",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Nazneen Fatema Rajani",
       "Bryan McCann",
@@ -4680,13 +5566,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/SydorovaPR19",
     "Title": "Interpretable Question Answering on Knowledge Bases and Text.",
     "url": "https://doi.org/10.18653/v1/p19-1488",
     "Year": "2019",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Alona Sydorova",
       "Nina P\u00f6rner",
@@ -4711,13 +5603,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/FukuiHYF19",
     "Title": "Attention Branch Network - Learning of Attention Mechanism for Visual Explanation.",
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Fukui_Attention_Branch_Network_Learning_of_Attention_Mechanism_for_Visual_Explanation_CVPR_2019_paper.html",
     "Year": "2019",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Hiroshi Fukui",
       "Tsubasa Hirakawa",
@@ -4741,13 +5639,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/KanehiraH19",
     "Title": "Learning to Explain With Complemental Examples.",
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Kanehira_Learning_to_Explain_With_Complemental_Examples_CVPR_2019_paper.html",
     "Year": "2019",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Atsushi Kanehira",
       "Tatsuya Harada"
@@ -4770,13 +5674,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/KanehiraTIH19",
     "Title": "Multimodal Explanations by Predicting Counterfactuality in Videos.",
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Kanehira_Multimodal_Explanations_by_Predicting_Counterfactuality_in_Videos_CVPR_2019_paper.html",
     "Year": "2019",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Atsushi Kanehira",
       "Kentaro Takemoto",
@@ -4801,13 +5711,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/PopeKRMH19",
     "Title": "Explainability Methods for Graph Convolutional Neural Networks.",
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Pope_Explainability_Methods_for_Graph_Convolutional_Neural_Networks_CVPR_2019_paper.html",
     "Year": "2019",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Phillip E. Pope",
       "Soheil Kolouri",
@@ -4832,13 +5748,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/ShiZL19",
     "Title": "Explainable and Explicit Visual Reasoning Over Scene Graphs.",
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Shi_Explainable_and_Explicit_Visual_Reasoning_Over_Scene_Graphs_CVPR_2019_paper.html",
     "Year": "2019",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Jiaxin Shi",
       "Hanwang Zhang",
@@ -4862,13 +5784,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/ZengLSSYCU19",
     "Title": "End-To-End Interpretable Neural Motion Planner.",
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Zeng_End-To-End_Interpretable_Neural_Motion_Planner_CVPR_2019_paper.html",
     "Year": "2019",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Wenyuan Zeng",
       "Wenjie Luo",
@@ -4896,13 +5824,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/ZhangYMW19",
     "Title": "Interpreting CNNs via Decision Trees.",
     "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Zhang_Interpreting_CNNs_via_Decision_Trees_CVPR_2019_paper.html",
     "Year": "2019",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Quanshi Zhang",
       "Yu Yang",
@@ -4929,13 +5863,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/ChenCHRZ19",
     "Title": "Explaining Neural Networks Semantically and Quantitatively.",
     "url": "https://doi.org/10.1109/ICCV.2019.00928",
     "Year": "2019",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Runjin Chen",
       "Hao Chen",
@@ -4960,13 +5900,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/ManhardtA0BBNT19",
     "Title": "Explaining the Ambiguity of Object Detection and 6D Pose From Visual Data.",
     "url": "https://doi.org/10.1109/ICCV.2019.00694",
     "Year": "2019",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Fabian Manhardt",
       "Diego Mart\u00edn Arroyo",
@@ -4993,13 +5939,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/MicheliniLLJ19",
     "Title": "A Tour of Convolutional Networks Guided by Linear Interpreters.",
     "url": "https://doi.org/10.1109/ICCV.2019.00485",
     "Year": "2019",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Pablo Navarrete Michelini",
       "Hanwen Liu",
@@ -5025,13 +5977,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/PatroLPN19",
     "Title": "U-CAM - Visual Explanation Using Uncertainty Based Class Activation Maps.",
     "url": "https://doi.org/10.1109/ICCV.2019.00754",
     "Year": "2019",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Badri N. Patro",
       "Mayank Lunayach",
@@ -5057,13 +6015,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/SelvarajuLSJGHB19",
     "Title": "Taking a HINT - Leveraging Explanations to Make Vision and Language Models More Grounded.",
     "url": "https://doi.org/10.1109/ICCV.2019.00268",
     "Year": "2019",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Ramprasaath Ramasamy Selvaraju",
       "Stefan Lee",
@@ -5093,13 +6057,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/SubramanyaPP19",
     "Title": "Fooling Network Interpretation in Image Classification.",
     "url": "https://doi.org/10.1109/ICCV.2019.00211",
     "Year": "2019",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Akshayvarun Subramanya",
       "Vipin Pillai",
@@ -5122,13 +6092,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/SunRS19",
     "Title": "Adaptive Activation Thresholding - Dynamic Routing Type Behavior for Interpretability in Convolutional Neural Networks.",
     "url": "https://doi.org/10.1109/ICCV.2019.00504",
     "Year": "2019",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Yiyou Sun",
       "Sathya N. Ravi",
@@ -5154,13 +6130,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/WuS19",
     "Title": "Towards Interpretable Object Detection by Unfolding Latent Structures.",
     "url": "https://doi.org/10.1109/ICCV.2019.00613",
     "Year": "2019",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Tianfu Wu 0001",
       "Xi Song"
@@ -5182,13 +6164,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/YinTLS019",
     "Title": "Towards Interpretable Face Recognition.",
     "url": "https://doi.org/10.1109/ICCV.2019.00944",
     "Year": "2019",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Bangjie Yin",
       "Luan Tran",
@@ -5214,13 +6202,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/AssafGBS19",
     "Title": "MTEX-CNN - Multivariate Time Series EXplanations for Predictions with Convolutional Neural Networks.",
     "url": "https://doi.org/10.1109/ICDM.2019.00106",
     "Year": "2019",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Roy Assaf",
       "Ioana Giurgiu",
@@ -5244,13 +6238,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/ChenL0X19",
     "Title": "Scalable Explanation of Inferences on Large Graphs.",
     "url": "https://doi.org/10.1109/ICDM.2019.00111",
     "Year": "2019",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Chao Chen",
       "Yifei Liu",
@@ -5274,13 +6274,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/HamdiA19",
     "Title": "Interpretable Feature Learning of Graphs using Tensor Decomposition.",
     "url": "https://doi.org/10.1109/ICDM.2019.00037",
     "Year": "2019",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Shah Muhammad Hamdi",
       "Rafal A. Angryk"
@@ -5303,13 +6309,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/YooS19",
     "Title": "EDiT - Interpreting Ensemble Models via Compact Soft Decision Trees.",
     "url": "https://doi.org/10.1109/ICDM.2019.00187",
     "Year": "2019",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Jaemin Yoo",
       "Lee Sael"
@@ -5331,13 +6343,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/ZhangQLYWZ19",
     "Title": "KnowRisk - An Interpretable Knowledge-Guided Model for Disease Risk Prediction.",
     "url": "https://doi.org/10.1109/ICDM.2019.00196",
     "Year": "2019",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Xianli Zhang",
       "Buyue Qian",
@@ -5364,13 +6382,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/ZhouSC19",
     "Title": "A Model-Agnostic Approach for Explaining the Predictions on Clustered Data.",
     "url": "https://doi.org/10.1109/ICDM.2019.00202",
     "Year": "2019",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Zihan Zhou 0003",
       "Mingxuan Sun",
@@ -5397,13 +6421,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/ChangCGD19",
     "Title": "Explaining Image Classifiers by Counterfactual Generation.",
     "url": "https://openreview.net/forum?id=B1MXz20cYQ",
     "Year": "2019",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Chun-Hao Chang",
       "Elliot Creager",
@@ -5428,13 +6458,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/ChenSWJ19",
     "Title": "L-Shapley and C-Shapley - Efficient Model Interpretation for Structured Data.",
     "url": "https://openreview.net/forum?id=S1E3Ko09F7",
     "Year": "2019",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Jianbo Chen",
       "Le Song",
@@ -5461,13 +6497,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/FortuinHLSR19",
     "Title": "SOM-VAE - Interpretable Discrete Representation Learning on Time Series.",
     "url": "https://openreview.net/forum?id=rygjcsR9Y7",
     "Year": "2019",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Vincent Fortuin",
       "Matthias H\u00fcser",
@@ -5495,13 +6537,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/SinghMY19",
     "Title": "Hierarchical interpretations for neural network predictions.",
     "url": "https://openreview.net/forum?id=SkEqro0ctQ",
     "Year": "2019",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Chandan Singh",
       "W. James Murdoch",
@@ -5526,13 +6574,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/ZhengPBH19",
     "Title": "Revealing interpretable object representations from human behavior.",
     "url": "https://openreview.net/forum?id=ryxSrhC9KX",
     "Year": "2019",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Charles Y. Zheng",
       "Francisco Pereira",
@@ -5557,13 +6611,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/0002LA19",
     "Title": "Exploring interpretable LSTM neural networks over multi-variable data.",
     "url": "http://proceedings.mlr.press/v97/guo19b.html",
     "Year": "2019",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Tian Guo 0002",
       "Tao Lin",
@@ -5587,13 +6647,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/AnconaOG19",
     "Title": "Explaining Deep Neural Networks with a Polynomial Time Algorithm for Shapley Value Approximation.",
     "url": "http://proceedings.mlr.press/v97/ancona19a.html",
     "Year": "2019",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Marco Ancona",
       "Cengiz \u00d6ztireli",
@@ -5619,13 +6685,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/DunckerBBS19",
     "Title": "Learning interpretable continuous-time models of latent stochastic dynamical systems.",
     "url": "http://proceedings.mlr.press/v97/duncker19a.html",
     "Year": "2019",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Lea Duncker",
       "Gergo Bohner",
@@ -5650,13 +6722,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/GoyalWEBPL19",
     "Title": "Counterfactual Visual Explanations.",
     "url": "http://proceedings.mlr.press/v97/goyal19a.html",
     "Year": "2019",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Yash Goyal",
       "Ziyan Wu",
@@ -5684,13 +6762,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/SinglaWFF19",
     "Title": "Understanding Impacts of High-Order Loss Approximations and Features in Deep Learning Interpretation.",
     "url": "http://proceedings.mlr.press/v97/singla19a.html",
     "Year": "2019",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Sahil Singla 0002",
       "Eric Wallace",
@@ -5715,13 +6799,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/VedantamDLRBP19",
     "Title": "Probabilistic Neural Symbolic Models for Interpretable Visual Question Answering.",
     "url": "http://proceedings.mlr.press/v97/vedantam19a.html",
     "Year": "2019",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Ramakrishna Vedantam",
       "Karan Desai",
@@ -5749,13 +6839,19 @@
     "Method used to explain": [
       "Interpretability built into the predictive model",
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/WangZB19",
     "Title": "Bias Also Matters - Bias Attribution for Deep Neural Network Explanation.",
     "url": "http://proceedings.mlr.press/v97/wang19p.html",
     "Year": "2019",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Shengjie Wang",
       "Tianyi Zhou",
@@ -5779,13 +6875,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/ChenW0WBWC19",
     "Title": "Co-Attentive Multi-Task Learning for Explainable Recommendation.",
     "url": "https://doi.org/10.24963/ijcai.2019/296",
     "Year": "2019",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Zhongxia Chen",
       "Xiting Wang",
@@ -5813,13 +6915,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/FuscoVVWS19",
     "Title": "RecoNet - An Interpretable Neural Architecture for Recommender Systems.",
     "url": "https://doi.org/10.24963/ijcai.2019/325",
     "Year": "2019",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Francesco Fusco",
       "Michalis Vlachos",
@@ -5845,13 +6953,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/HouWCLZL19",
     "Title": "Explainable Fashion Recommendation - A Semantic Attribute Region Guided Approach.",
     "url": "https://doi.org/10.24963/ijcai.2019/650",
     "Year": "2019",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Min Hou",
       "Le Wu",
@@ -5882,13 +6996,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/KennyK19",
     "Title": "Twin-Systems to Explain Artificial Neural Networks using Case-Based Reasoning - Comparative Tests of Feature-Weighting Methods in ANN-CBR Twins for XAI.",
     "url": "https://doi.org/10.24963/ijcai.2019/376",
     "Year": "2019",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Eoin M. Kenny",
       "Mark T. Keane"
@@ -5914,13 +7034,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/LiYYJ19",
     "Title": "Learning Interpretable Deep State Space Model for Probabilistic Time Series Forecasting.",
     "url": "https://doi.org/10.24963/ijcai.2019/402",
     "Year": "2019",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Longyuan Li",
       "Junchi Yan",
@@ -5944,13 +7070,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/ZhangR19",
     "Title": "Learning Interpretable Relational Structures of Hinge-loss Markov Random Fields.",
     "url": "https://doi.org/10.24963/ijcai.2019/838",
     "Year": "2019",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Yue Zhang",
       "Arti Ramesh"
@@ -5973,13 +7105,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/ChengSHZ19",
     "Title": "Incorporating Interpretability into Latent Factor Models via Fast Influence Analysis.",
     "url": "https://doi.org/10.1145/3292500.3330857",
     "Year": "2019",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Weiyu Cheng",
       "Yanyan Shen",
@@ -6003,13 +7141,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/Jia0RLH19",
     "Title": "Improving the Quality of Explanations with Local Embedding Perturbations.",
     "url": "https://doi.org/10.1145/3292500.3330930",
     "Year": "2019",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Yunzhe Jia",
       "James Bailey 0001",
@@ -6036,13 +7180,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/MingXQR19",
     "Title": "Interpretable and Steerable Sequence Learning via Prototypes.",
     "url": "https://doi.org/10.1145/3292500.3330908",
     "Year": "2019",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Yao Ming",
       "Panpan Xu",
@@ -6069,13 +7219,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/ShuCW0L19",
     "Title": "dEFEND - Explainable Fake News Detection.",
     "url": "https://doi.org/10.1145/3292500.3330935",
     "Year": "2019",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Kai Shu",
       "Limeng Cui",
@@ -6100,13 +7256,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/Tao0WFYZ019",
     "Title": "Log2Intent - Towards Interpretable User Modeling via Recurrent Semantics Memory Unit.",
     "url": "https://doi.org/10.1145/3292500.3330889",
     "Year": "2019",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Zhiqiang Tao",
       "Sheng Li 0001",
@@ -6134,13 +7296,19 @@
     "Method used to explain": [
       "Interpretability built into the predictive model",
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/YanZDSSK19",
     "Title": "GroupINN - Grouping-based Interpretable Neural Network for Classification of Limited, Noisy Brain Data.",
     "url": "https://doi.org/10.1145/3292500.3330921",
     "Year": "2019",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Yujun Yan",
       "Jiong Zhu",
@@ -6168,13 +7336,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/YoshidaTK19",
     "Title": "Learning Interpretable Metric between Graphs - Convex Formulation and Computation with Graph Mining.",
     "url": "https://doi.org/10.1145/3292500.3330845",
     "Year": "2019",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Tomoki Yoshida",
       "Ichiro Takeuchi",
@@ -6199,13 +7373,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/ZhangTKLCC19",
     "Title": "Axiomatic Interpretability for Multiclass Additive Models.",
     "url": "https://doi.org/10.1145/3292500.3330898",
     "Year": "2019",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Xuezhou Zhang",
       "Sarah Tan",
@@ -6231,13 +7411,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/ZhaoGS19",
     "Title": "Riker - Mining Rich Keyword Representations for Interpretable Product Question Answering.",
     "url": "https://doi.org/10.1145/3292500.3330985",
     "Year": "2019",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Jie Zhao",
       "Ziyu Guan",
@@ -6260,13 +7446,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/ChenLTBRS19",
     "Title": "This Looks Like That - Deep Learning for Interpretable Image Recognition.",
     "url": "https://proceedings.neurips.cc/paper/2019/hash/adf7ee2dcf142b0e11888e72b43fcb75-Abstract.html",
     "Year": "2019",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Chaofan Chen",
       "Oscar Li",
@@ -6292,13 +7484,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/GhorbaniWZK19",
     "Title": "Towards Automatic Concept-based Explanations.",
     "url": "https://proceedings.neurips.cc/paper/2019/hash/77d2afcb31f6493e350fca61764efb9a-Abstract.html",
     "Year": "2019",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Amirata Ghorbani",
       "James Wexler",
@@ -6324,13 +7522,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/HoyerMKKF19",
     "Title": "Grid Saliency for Context Explanations of Semantic Segmentation.",
     "url": "https://proceedings.neurips.cc/paper/2019/hash/6950aa02ae8613af620668146dd11840-Abstract.html",
     "Year": "2019",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Lukas Hoyer",
       "Mauricio Munoz",
@@ -6356,13 +7560,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/KimL19",
     "Title": "Learning Dynamics of Attention - Human Prior for Interpretable Machine Reasoning.",
     "url": "https://proceedings.neurips.cc/paper/2019/hash/ae3539867aaeec609a4260c6feb725f4-Abstract.html",
     "Year": "2019",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Wonjae Kim",
       "Yoonho Lee"
@@ -6386,13 +7596,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/WangN19",
     "Title": "Deliberative Explanations - visualizing network insecurities.",
     "url": "https://proceedings.neurips.cc/paper/2019/hash/68053af2923e00204c3ca7c6a3150cf7-Abstract.html",
     "Year": "2019",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Pei Wang",
       "Nuno Vasconcelos"
@@ -6415,13 +7631,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/YingBYZL19",
     "Title": "GNNExplainer - Generating Explanations for Graph Neural Networks.",
     "url": "https://proceedings.neurips.cc/paper/2019/hash/d80b7040b773199015de6d3b4293c8ff-Abstract.html",
     "Year": "2019",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Zhitao Ying",
       "Dylan Bourgeois",
@@ -6448,13 +7670,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/BalogRA19",
     "Title": "Transparent, Scrutable and Explainable User Models for Personalized Recommendation.",
     "url": "https://doi.org/10.1145/3331184.3331211",
     "Year": "2019",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Krisztian Balog",
       "Filip Radlinski",
@@ -6477,13 +7705,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/HanSYWN19",
     "Title": "Prototype-guided Attribute-wise Interpretable Scheme for Clothing Matching.",
     "url": "https://doi.org/10.1145/3331184.3331245",
     "Year": "2019",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Xianjing Han",
       "Xuemeng Song",
@@ -6511,13 +7745,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/LiQPQDW19",
     "Title": "A Capsule Network for Recommendation and Explaining What You Like and Dislike.",
     "url": "https://doi.org/10.1145/3331184.3331216",
     "Year": "2019",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Chenliang Li",
       "Cong Quan",
@@ -6545,13 +7785,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/TaoJWW19",
     "Title": "The FacT - Taming Latent Factor Models for Explainability with Factorization Trees.",
     "url": "https://doi.org/10.1145/3331184.3331244",
     "Year": "2019",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Yiyi Tao",
       "Yiling Jia",
@@ -6576,13 +7822,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/XianFMMZ19",
     "Title": "Reinforcement Knowledge Graph Reasoning for Explainable Recommendation.",
     "url": "https://doi.org/10.1145/3331184.3331203",
     "Year": "2019",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Yikun Xian",
       "Zuohui Fu",
@@ -6608,13 +7860,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/Yang0WMF0C19",
     "Title": "Interpretable Fashion Matching with Rich Attributes.",
     "url": "https://doi.org/10.1145/3331184.3331242",
     "Year": "2019",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Xun Yang",
       "Xiangnan He 0001",
@@ -6643,13 +7901,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/MaZCJWLMR19",
     "Title": "Jointly Learning Explainable Rules for Recommendation with Knowledge Graph.",
     "url": "https://doi.org/10.1145/3308558.3313607",
     "Year": "2019",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Weizhi Ma",
       "Min Zhang 0006",
@@ -6678,13 +7942,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/BiskSCM18",
     "Title": "Learning Interpretable Spatial Operations in a Rich 3D Blocks World.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17410",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Yonatan Bisk",
       "Kevin J. Shih",
@@ -6708,13 +7978,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/HsuM0S18",
     "Title": "An Interpretable Generative Adversarial Approach to Classification of Latent Entity Relations in Unstructured Sentences.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16629",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Shiou Tian Hsu",
       "Changsung Moon",
@@ -6738,13 +8014,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/LiLCR18",
     "Title": "Deep Learning for Case-Based Reasoning Through Prototypes - A Neural Network That Explains Its Predictions.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17082",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Oscar Li",
       "Hao Liu 0015",
@@ -6768,13 +8050,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/NguyenKLW18",
     "Title": "An Interpretable Joint Graphical Model for Fact-Checking From Crowds.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16673",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "An T. Nguyen 0001",
       "Aditya Kharosekar",
@@ -6798,13 +8086,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/PalangiSHD18",
     "Title": "Question-Answering with Grammatically-Interpretable Representations.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17090",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Hamid Palangi",
       "Paul Smolensky",
@@ -6830,13 +8124,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/Ribeiro0G18",
     "Title": "Anchors - High-Precision Model-Agnostic Explanations.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16982",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Marco T\u00falio Ribeiro",
       "Sameer Singh 0001",
@@ -6867,13 +8167,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/RossD18",
     "Title": "Improving the Adversarial Robustness and Interpretability of Deep Neural Networks by Regularizing Their Input Gradients.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17337",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Andrew Slavin Ross",
       "Finale Doshi-Velez"
@@ -6896,13 +8202,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/RustamovK18",
     "Title": "Interpretable Graph-Based Semi-Supervised Learning via Flows.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16396",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Raif M. Rustamov",
       "James T. Klosowski"
@@ -6927,13 +8239,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/SubramanianPJBH18",
     "Title": "SPINE - SParse Interpretable Neural Embeddings.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17433",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Anant Subramanian",
       "Danish Pruthi",
@@ -6964,13 +8282,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/WuHPZ0D18",
     "Title": "Beyond Sparsity - Tree Regularization of Deep Models for Interpretability.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16285",
     "Year": "2018",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Mike Wu",
       "Michael C. Hughes",
@@ -6998,13 +8322,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/EskenaziLZ18",
     "Title": "Unsupervised Discrete Sentence Representation Learning for Interpretable Neural Dialog Generation.",
     "url": "https://www.aclweb.org/anthology/P18-1101/",
     "Year": "2018",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Tiancheng Zhao",
       "Kyusong Lee",
@@ -7028,13 +8358,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/InuiTT18",
     "Title": "Interpretable and Compositional Relation Learning by Joint Training with an Autoencoder.",
     "url": "https://www.aclweb.org/anthology/P18-1200/",
     "Year": "2018",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Ryo Takahashi",
       "Ran Tian",
@@ -7059,13 +8395,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/MorencyCPLZ18",
     "Title": "Multimodal Language Analysis in the Wild - CMU-MOSEI Dataset and Interpretable Dynamic Fusion Graph.",
     "url": "https://www.aclweb.org/anthology/P18-1208/",
     "Year": "2018",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Amir Zadeh 0001",
       "Paul Pu Liang",
@@ -7093,13 +8435,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/SchutzeRP18",
     "Title": "Evaluating neural network explanation methods using hybrid documents and morphosyntactic agreement.",
     "url": "https://www.aclweb.org/anthology/P18-1032/",
     "Year": "2018",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Nina P\u00f6rner",
       "Hinrich Sch\u00fctze",
@@ -7122,13 +8470,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/ChuangL0F18",
     "Title": "Learning to Act Properly - Predicting and Explaining Affordances From Images.",
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Chuang_Learning_to_Act_CVPR_2018_paper.html",
     "Year": "2018",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Ching-Yao Chuang",
       "Jiaman Li",
@@ -7154,13 +8508,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/FongV18",
     "Title": "Net2Vec - Quantifying and Explaining How Concepts Are Encoded by Filters in Deep Neural Networks.",
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Fong_Net2Vec_Quantifying_and_CVPR_2018_paper.html",
     "Year": "2018",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Ruth Fong",
       "Andrea Vedaldi"
@@ -7183,13 +8543,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/MascharkaTSM18",
     "Title": "Transparency by Design - Closing the Gap Between Performance and Interpretability in Visual Reasoning.",
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Mascharka_Transparency_by_Design_CVPR_2018_paper.html",
     "Year": "2018",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "David Mascharka",
       "Philip Tran",
@@ -7214,13 +8580,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/ParkHARSDR18",
     "Title": "Multimodal Explanations - Justifying Decisions and Pointing to the Evidence.",
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Park_Multimodal_Explanations_Justifying_CVPR_2018_paper.html",
     "Year": "2018",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Dong Huk Park",
       "Lisa Anne Hendricks",
@@ -7250,13 +8622,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/WangS0H18",
     "Title": "Interpret Neural Networks by Identifying Critical Data Routing Paths.",
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Wang_Interpret_Neural_Networks_CVPR_2018_paper.html",
     "Year": "2018",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Yulong Wang",
       "Hang Su 0006",
@@ -7280,13 +8658,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/WuLCJL18",
     "Title": "Interpretable Video Captioning via Trajectory Structured Localization.",
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Wu_Interpretable_Video_Captioning_CVPR_2018_paper.html",
     "Year": "2018",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Xian Wu",
       "Guanbin Li",
@@ -7311,13 +8695,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/ZhangWZ18a",
     "Title": "Interpretable Convolutional Neural Networks.",
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_Interpretable_Convolutional_Neural_CVPR_2018_paper.html",
     "Year": "2018",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Quanshi Zhang",
       "Ying Nian Wu",
@@ -7342,13 +8732,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/ZhangXWXY18",
     "Title": "DeepVoting - A Robust and Explainable Deep Network for Semantic Part Detection Under Partial Occlusion.",
     "url": "http://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_DeepVoting_A_Robust_CVPR_2018_paper.html",
     "Year": "2018",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Zhishuai Zhang",
       "Cihang Xie",
@@ -7375,13 +8771,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/JhaWXZ18",
     "Title": "Interpretable Word Embeddings for Medical Domain.",
     "url": "https://doi.org/10.1109/ICDM.2018.00135",
     "Year": "2018",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Kishlay Jha",
       "Yaqing Wang",
@@ -7405,13 +8807,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/KarlssonRPG18",
     "Title": "Explainable Time Series Tweaking via Irreversible and Reversible Temporal Transformations.",
     "url": "https://doi.org/10.1109/ICDM.2018.00036",
     "Year": "2018",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Isak Karlsson",
       "Jonathan Rebane",
@@ -7435,13 +8843,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/WangCYWW018",
     "Title": "A Reinforcement Learning Framework for Explainable Recommendation.",
     "url": "https://doi.org/10.1109/ICDM.2018.00074",
     "Year": "2018",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Xiting Wang",
       "Yiru Chen",
@@ -7468,13 +8882,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/KindermansSAMEK18",
     "Title": "Learning how to explain neural networks - PatternNet and PatternAttribution.",
     "url": "https://openreview.net/forum?id=Hkn7CBaTW",
     "Year": "2018",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Pieter-Jan Kindermans",
       "Kristof T. Sch\u00fctt",
@@ -7502,13 +8922,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/ShuXS18",
     "Title": "Hierarchical and Interpretable Skill Acquisition in Multi-task Reinforcement Learning.",
     "url": "https://openreview.net/forum?id=SJJQVZW0b",
     "Year": "2018",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Tianmin Shu",
       "Caiming Xiong",
@@ -7532,13 +8958,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/TrottXS18",
     "Title": "Interpretable Counting for Visual Question Answering.",
     "url": "https://openreview.net/forum?id=S1J2ZyZ0Z",
     "Year": "2018",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Alexander Trott",
       "Caiming Xiong",
@@ -7562,13 +8994,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/AdelGW18",
     "Title": "Discovering Interpretable Representations for Both Deep Generative and Discriminative Models.",
     "url": "http://proceedings.mlr.press/v80/adel18a.html",
     "Year": "2018",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Tameem Adel",
       "Zoubin Ghahramani",
@@ -7592,13 +9030,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/AinsworthFLF18",
     "Title": "oi-VAE - Output Interpretable VAEs for Nonlinear Group Factor Analysis.",
     "url": "http://proceedings.mlr.press/v80/ainsworth18a.html",
     "Year": "2018",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Samuel K. Ainsworth",
       "Nicholas J. Foti",
@@ -7624,13 +9068,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/KimWGCWVS18",
     "Title": "Interpretability Beyond Feature Attribution - Quantitative Testing with Concept Activation Vectors (TCAV).",
     "url": "http://proceedings.mlr.press/v80/kim18d.html",
     "Year": "2018",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Been Kim",
       "Martin Wattenberg",
@@ -7660,13 +9110,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/VermaMSKC18",
     "Title": "Programmatically Interpretable Reinforcement Learning.",
     "url": "http://proceedings.mlr.press/v80/verma18a.html",
     "Year": "2018",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Abhinav Verma",
       "Vijayaraghavan Murali",
@@ -7691,13 +9147,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/HuJCC18",
     "Title": "Interpretable Recommendation via Attraction Modeling - Learning Multilevel Attractiveness over Multimodal Movie Contents.",
     "url": "https://doi.org/10.24963/ijcai.2018/472",
     "Year": "2018",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Liang Hu 0004",
       "Songlei Jian",
@@ -7723,13 +9185,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/LabreucheF18",
     "Title": "Explaining Multi-Criteria Decision Aiding Models with an Extended Shapley Value.",
     "url": "https://doi.org/10.24963/ijcai.2018/46",
     "Year": "2018",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Christophe Labreuche",
       "Simon Fossier"
@@ -7752,13 +9220,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/LiuSH18",
     "Title": "Contextual Outlier Interpretation.",
     "url": "https://doi.org/10.24963/ijcai.2018/341",
     "Year": "2018",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Ninghao Liu",
       "Donghwa Shin",
@@ -7786,13 +9260,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/LuoAPWZYH18",
     "Title": "Beyond Polarity - Interpretable Financial Sentiment Analysis with Hierarchical Query-driven Attention.",
     "url": "https://doi.org/10.24963/ijcai.2018/590",
     "Year": "2018",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Ling Luo",
       "Xiang Ao",
@@ -7819,13 +9299,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/RagoCT18",
     "Title": "Argumentation-Based Recommendations - Fantastic Explanations and How to Find Them.",
     "url": "https://doi.org/10.24963/ijcai.2018/269",
     "Year": "2018",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Antonio Rago 0001",
       "Oana Cocarascu",
@@ -7849,13 +9335,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/SatoSS018",
     "Title": "Interpretable Adversarial Perturbation in Input Embedding Space for Text.",
     "url": "https://doi.org/10.24963/ijcai.2018/601",
     "Year": "2018",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Motoki Sato",
       "Jun Suzuki",
@@ -7880,13 +9372,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/ShihCD18",
     "Title": "A Symbolic Approach to Explaining Bayesian Network Classifiers.",
     "url": "https://doi.org/10.24963/ijcai.2018/708",
     "Year": "2018",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Andy Shih",
       "Arthur Choi",
@@ -7911,13 +9409,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/BaiZEV18",
     "Title": "Interpretable Representation Learning for Healthcare via Capturing Disease Progression through Time.",
     "url": "https://doi.org/10.1145/3219819.3219904",
     "Year": "2018",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Tian Bai",
       "Shanshan Zhang",
@@ -7943,13 +9447,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/ChuHHWP18",
     "Title": "Exact and Consistent Interpretation for Piecewise Linear Neural Networks - A Closed Form Solution.",
     "url": "https://doi.org/10.1145/3219819.3220063",
     "Year": "2018",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Lingyang Chu",
       "Xia Hu",
@@ -7976,13 +9486,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/DuLSH18",
     "Title": "Towards Explanation of DNN-based Prediction with Guided Feature Inversion.",
     "url": "https://doi.org/10.1145/3219819.3220099",
     "Year": "2018",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Mengnan Du",
       "Ninghao Liu",
@@ -8006,13 +9522,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/Janakiraman18",
     "Title": "Explaining Aviation Safety Incidents Using Deep Temporal Multiple Instance Learning.",
     "url": "https://doi.org/10.1145/3219819.3219871",
     "Year": "2018",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Vijay Manikandan Janakiraman"
     ],
@@ -8034,13 +9556,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/LiuHLH18",
     "Title": "On Interpretation of Network Embedding via Taxonomy Induction.",
     "url": "https://doi.org/10.1145/3219819.3220001",
     "Year": "2018",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Ninghao Liu",
       "Xiao Huang 0001",
@@ -8068,13 +9596,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/LiuYH18",
     "Title": "Adversarial Detection with Model Interpretation.",
     "url": "https://doi.org/10.1145/3219819.3220027",
     "Year": "2018",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Ninghao Liu",
       "Hongxia Yang",
@@ -8102,13 +9636,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/WangWLW18",
     "Title": "Multilevel Wavelet Decomposition Network for Interpretable Time Series Analysis.",
     "url": "https://doi.org/10.1145/3219819.3220060",
     "Year": "2018",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Jingyuan Wang",
       "Ze Wang",
@@ -8133,13 +9673,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/YangSJ018",
     "Title": "I Know You'll Be Back - Interpretable New User Clustering and Churn Prediction on a Mobile Social Application.",
     "url": "https://doi.org/10.1145/3219819.3219821",
     "Year": "2018",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Carl Yang",
       "Xiaolin Shi",
@@ -8166,13 +9712,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/ZangC018",
     "Title": "Learning and Interpreting Complex Distributions in Empirical Data.",
     "url": "https://doi.org/10.1145/3219819.3220073",
     "Year": "2018",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Chengxi Zang",
       "Peng Cui 0001",
@@ -8196,13 +9748,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/CamburuRLB18",
     "Title": "e-SNLI - Natural Language Inference with Natural Language Explanations.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/4c7a167bb329bd92580a99ce422d6fa6-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Oana-Maria Camburu",
       "Tim Rockt\u00e4schel",
@@ -8226,13 +9784,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/GuoHTXL18",
     "Title": "Explaining Deep Learning Models - A Bayesian Non-parametric Approach.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/4b4edc2630fe75800ddc29a7b4070add-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Wenbo Guo 0002",
       "Sui Huang",
@@ -8259,13 +9823,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/GuptaBCC18",
     "Title": "Diminishing Returns Shape Constraints for Interpretability and Regularization.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/caa202034f268232c26fac9435f54e15-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Maya R. Gupta",
       "Dara Bahri",
@@ -8290,13 +9860,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/HeoLKLKYH18",
     "Title": "Uncertainty-Aware Attention for Reliable Interpretation and Prediction.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/285e19f20beded7d215102b49d5c09a0-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Jay Heo",
       "Haebeom Lee",
@@ -8323,13 +9899,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/Norcliffe-Brown18",
     "Title": "Learning Conditioned Graph Structures for Interpretable Visual Question Answering.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/4aeae10ea1c6433c926cdfa558d31134-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Will Norcliffe-Brown",
       "Stathis Vafeias",
@@ -8355,13 +9937,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/PlumbMT18",
     "Title": "Model Agnostic Supervised Local Explanations.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/b495ce63ede0f4efc9eec62cb947c162-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Gregory Plumb",
       "Denali Molitor",
@@ -8389,13 +9977,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/TsangLPML18",
     "Title": "Neural Interaction Transparency (NIT) - Disentangling Learned Interactions for Improved Interpretability.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/74378afe5e8b20910cf1f939e57f0480-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Michael Tsang",
       "Hanpeng Liu",
@@ -8426,13 +10020,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/Wang18",
     "Title": "Multi-value Rule Sets for Interpretable Classification with Feature-Efficient Representations.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/32bbf7b2bc4ed14eb1e9c2580056a989-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Tong Wang"
     ],
@@ -8453,13 +10053,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/YehKYR18",
     "Title": "Representer Point Selection for Explaining Deep Neural Networks.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/8a7129b8f3edd95b7d969dfc2c8e9d9d-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Chih-Kuan Yeh",
       "Joon Sik Kim",
@@ -8484,13 +10090,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/ZhangSS18",
     "Title": "Interpreting Neural Network Judgments via Minimal, Stable, and Symbolic Corrections.",
     "url": "https://proceedings.neurips.cc/paper/2018/hash/300891a62162b960cf02ce3827bb363c-Abstract.html",
     "Year": "2018",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Xin Zhang 0035",
       "Armando Solar-Lezama",
@@ -8513,13 +10125,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/WangWJY18",
     "Title": "Explainable Recommendation via Multi-Task Learning in Opinionated Text Data.",
     "url": "https://doi.org/10.1145/3209978.3210010",
     "Year": "2018",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Nan Wang",
       "Hongning Wang",
@@ -8545,13 +10163,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/ChenZLM18",
     "Title": "Neural Attentional Rating Regression with Review-level Explanations.",
     "url": "https://doi.org/10.1145/3178876.3186070",
     "Year": "2018",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Chong Chen",
       "Min Zhang 0006",
@@ -8577,13 +10201,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/Wang0FNC18",
     "Title": "TEM - Tree-enhanced Embedding Model for Explainable Recommendation.",
     "url": "https://doi.org/10.1145/3178876.3186066",
     "Year": "2018",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Xiang Wang 0010",
       "Xiangnan He 0001",
@@ -8609,13 +10239,19 @@
     "Method used to explain": [
       "Post-hoc explanation method",
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "www/WuWYLZ18",
     "Title": "Sharing Deep Neural Network Models with Interpretation.",
     "url": "https://doi.org/10.1145/3178876.3185995",
     "Year": "2018",
-    "Venue": "WWW",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
     "Authors": [
       "Huijun Wu 0001",
       "Chen Wang 0008",
@@ -8642,13 +10278,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/ZhangCWZ17",
     "Title": "Growing Interpretable Part Graphs on ConvNets via Multi-Shot Learning.",
     "url": "http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14909",
     "Year": "2017",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Quanshi Zhang",
       "Ruiming Cao",
@@ -8674,13 +10316,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/XieMDH17",
     "Title": "An Interpretable Knowledge Transfer Model for Knowledge Base Completion.",
     "url": "https://doi.org/10.18653/v1/P17-1088",
     "Year": "2017",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Qizhe Xie",
       "Xuezhe Ma",
@@ -8704,13 +10352,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/BauZKO017",
     "Title": "Network Dissection - Quantifying Interpretability of Deep Visual Representations.",
     "url": "https://doi.org/10.1109/CVPR.2017.354",
     "Year": "2017",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "David Bau",
       "Bolei Zhou",
@@ -8737,13 +10391,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/DongSZZ17",
     "Title": "Improving Interpretability of Deep Neural Networks with Semantic Information.",
     "url": "https://doi.org/10.1109/CVPR.2017.110",
     "Year": "2017",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Yinpeng Dong",
       "Hang Su 0006",
@@ -8768,13 +10428,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "cvpr/LiangLSFYX17",
     "Title": "Interpretable Structure-Evolving LSTM.",
     "url": "https://doi.org/10.1109/CVPR.2017.234",
     "Year": "2017",
-    "Venue": "CVPR",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
     "Authors": [
       "Xiaodan Liang",
       "Liang Lin",
@@ -8800,13 +10466,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/KimC17",
     "Title": "Interpretable Learning for Self-Driving Cars by Visualizing Causal Attention.",
     "url": "https://doi.org/10.1109/ICCV.2017.320",
     "Year": "2017",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Jinkyu Kim",
       "John F. Canny"
@@ -8829,13 +10501,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/SelvarajuCDVPB17",
     "Title": "Grad-CAM - Visual Explanations from Deep Networks via Gradient-Based Localization.",
     "url": "https://doi.org/10.1109/ICCV.2017.74",
     "Year": "2017",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Ramprasaath R. Selvaraju",
       "Michael Cogswell",
@@ -8863,13 +10541,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iccv/WorrallGTB17",
     "Title": "Interpretable Transformations with Encoder-Decoder Networks.",
     "url": "https://doi.org/10.1109/ICCV.2017.611",
     "Year": "2017",
-    "Venue": "ICCV",
+    "Venue": {
+      "isOld": true,
+      "value": "ICCV"
+    },
     "Authors": [
       "Daniel E. Worrall",
       "Stephan J. Garbin",
@@ -8895,13 +10579,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/OyamadaN17",
     "Title": "Relational Mixture of Experts - Explainable Demographics Prediction with Behavioral Data.",
     "url": "https://doi.org/10.1109/ICDM.2017.45",
     "Year": "2017",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Masafumi Oyamada",
       "Shinji Nakadai"
@@ -8925,13 +10615,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "iclr/YuV17",
     "Title": "Towards Deep Interpretability (MUS-ROVER II) - Learning Hierarchical Representations of Tonal Music.",
     "url": "https://openreview.net/forum?id=ryhqQFKgl",
     "Year": "2017",
-    "Venue": "ICLR",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
     "Authors": [
       "Haizi Yu",
       "Lav R. Varshney"
@@ -8954,13 +10650,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/DempseyMSDGMR17",
     "Title": "iSurvive - An Interpretable, Event-time Prediction Model for mHealth.",
     "url": "http://proceedings.mlr.press/v70/dempsey17a.html",
     "Year": "2017",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Walter H. Dempsey",
       "Alexander Moreno",
@@ -8988,13 +10690,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icml/FoersterGSCS17",
     "Title": "Input Switched Affine Networks - An RNN Architecture Designed for Interpretability.",
     "url": "http://proceedings.mlr.press/v70/foerster17a.html",
     "Year": "2017",
-    "Venue": "ICML",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
     "Authors": [
       "Jakob N. Foerster",
       "Justin Gilmer",
@@ -9021,13 +10729,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "ijcai/RossHD17",
     "Title": "Right for the Right Reasons - Training Differentiable Models by Constraining their Explanations.",
     "url": "https://doi.org/10.24963/ijcai.2017/371",
     "Year": "2017",
-    "Venue": "IJCAI",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
     "Authors": [
       "Andrew Slavin Ross",
       "Michael C. Hughes",
@@ -9053,13 +10767,19 @@
     ],
     "Method used to explain": [
       "Supervised explanation training"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/TolomeiSHL17",
     "Title": "Interpretable Predictions of Tree-based Ensembles via Actionable Feature Tweaking.",
     "url": "https://doi.org/10.1145/3097983.3098039",
     "Year": "2017",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Gabriele Tolomei",
       "Fabrizio Silvestri",
@@ -9083,13 +10803,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/ElenbergDFK17",
     "Title": "Streaming Weak Submodularity - Interpreting Neural Networks on the Fly.",
     "url": "https://proceedings.neurips.cc/paper/2017/hash/c182f930a06317057d31c73bb2fedd4f-Abstract.html",
     "Year": "2017",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Ethan R. Elenberg",
       "Alexandros G. Dimakis",
@@ -9113,13 +10839,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/HsuZG17",
     "Title": "Unsupervised Learning of Disentangled and Interpretable Representations from Sequential Data.",
     "url": "https://proceedings.neurips.cc/paper/2017/hash/0a0a0c8aaa00ade50f74a3f0ca981ed7-Abstract.html",
     "Year": "2017",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Wei-Ning Hsu",
       "Yu Zhang 0033",
@@ -9143,13 +10875,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/LiSE17",
     "Title": "InfoGAIL - Interpretable Imitation Learning from Visual Demonstrations.",
     "url": "https://proceedings.neurips.cc/paper/2017/hash/2cd4e8a2ce081c3d7c32c3cde4312ef7-Abstract.html",
     "Year": "2017",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Yunzhu Li",
       "Jiaming Song",
@@ -9172,13 +10910,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/LundbergL17",
     "Title": "A Unified Approach to Interpreting Model Predictions.",
     "url": "https://proceedings.neurips.cc/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html",
     "Year": "2017",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Scott M. Lundberg",
       "Su-In Lee"
@@ -9205,13 +10949,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/RaghuGYS17",
     "Title": "SVCCA - Singular Vector Canonical Correlation Analysis for Deep Learning Dynamics and Interpretability.",
     "url": "https://proceedings.neurips.cc/paper/2017/hash/dc6a7e655d7e5840e66733e9ee67cc69-Abstract.html",
     "Year": "2017",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Maithra Raghu",
       "Justin Gilmer",
@@ -9237,13 +10987,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/ChenCHCCSD16",
     "Title": "Interpretable Clustering via Discriminative Rectangle Mixture Model.",
     "url": "https://doi.org/10.1109/ICDM.2016.0097",
     "Year": "2016",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Junxiang Chen",
       "Yale Chang",
@@ -9271,13 +11027,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/DangSSSB16",
     "Title": "Outlier Detection from Network Data with Subnetwork Interpretation.",
     "url": "https://doi.org/10.1109/ICDM.2016.0101",
     "Year": "2016",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Xuan-Hong Dang",
       "Arlei Silva",
@@ -9302,13 +11064,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/WangRDLKM16",
     "Title": "Bayesian Rule Sets for Interpretable Classification.",
     "url": "https://doi.org/10.1109/ICDM.2016.0171",
     "Year": "2016",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Tong Wang 0011",
       "Cynthia Rudin",
@@ -9334,13 +11102,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/LakkarajuBL16",
     "Title": "Interpretable Decision Sets - A Joint Framework for Description and Prediction.",
     "url": "https://doi.org/10.1145/2939672.2939874",
     "Year": "2016",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Himabindu Lakkaraju",
       "Stephen H. Bach",
@@ -9363,13 +11137,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/Ribeiro0G16",
     "Title": "\"Why Should I Trust You?\" - Explaining the Predictions of Any Classifier.",
     "url": "https://doi.org/10.1145/2939672.2939778",
     "Year": "2016",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Marco T\u00falio Ribeiro",
       "Sameer Singh 0001",
@@ -9402,13 +11182,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/ChenCDHSSA16",
     "Title": "InfoGAN - Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets.",
     "url": "https://proceedings.neurips.cc/paper/2016/hash/7c9d0b1f96aebd7b5eca8c3edaa19ebb-Abstract.html",
     "Year": "2016",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Xi Chen 0022",
       "Yan Duan",
@@ -9434,13 +11220,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/ChoiBSKSS16",
     "Title": "RETAIN - An Interpretable Predictive Model for Healthcare using Reverse Time Attention Mechanism.",
     "url": "https://proceedings.neurips.cc/paper/2016/hash/231141b34c82aa95e48810a9d1b33a79-Abstract.html",
     "Year": "2016",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Edward Choi",
       "Mohammad Taha Bahadori",
@@ -9466,13 +11258,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/Jitkrittum0CG16",
     "Title": "Interpretable Distribution Features with Maximum Testing Power.",
     "url": "https://proceedings.neurips.cc/paper/2016/hash/0a09c8844ba8f0936c20bd791130d6b6-Abstract.html",
     "Year": "2016",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Wittawat Jitkrittum",
       "Zolt\u00e1n Szab\u00f3 0001",
@@ -9500,13 +11298,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/KimKK16",
     "Title": "Examples are not enough, learn to criticize! Criticism for Interpretability.",
     "url": "https://proceedings.neurips.cc/paper/2016/hash/5680522b8e2bb01943234bce7bf84534-Abstract.html",
     "Year": "2016",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Been Kim",
       "Oluwasanmi Koyejo",
@@ -9530,13 +11334,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/LakkarajuL16",
     "Title": "Confusions over Time - An Interpretable Bayesian Model to Characterize Trends in Decision Making.",
     "url": "https://proceedings.neurips.cc/paper/2016/hash/97d0145823aeb8ed80617be62e08bdcc-Abstract.html",
     "Year": "2016",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Himabindu Lakkaraju",
       "Jure Leskovec"
@@ -9561,13 +11371,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/ZhaoP16",
     "Title": "Interpretable Nonlinear Dynamic Modeling of Neural Trajectories.",
     "url": "https://proceedings.neurips.cc/paper/2016/hash/b2531e7bb29bf22e1daae486fae3417a-Abstract.html",
     "Year": "2016",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Yuan Zhao 0004",
       "Il Memming Park"
@@ -9589,13 +11405,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/ZhaoLRMYR16",
     "Title": "Explainable User Clustering in Short Text Streams.",
     "url": "https://doi.org/10.1145/2911451.2911522",
     "Year": "2016",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Yukun Zhao",
       "Shangsong Liang",
@@ -9624,13 +11446,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "aaai/KimPRS15",
     "Title": "Scalable and Interpretable Data Representation for High-Dimensional, Complex Data.",
     "url": "http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9738",
     "Year": "2015",
-    "Venue": "AAAI",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
     "Authors": [
       "Been Kim",
       "Kayur Patel",
@@ -9654,13 +11482,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/WangFM15",
     "Title": "Trading Interpretability for Accuracy - Oblique Treed Sparse Additive Models.",
     "url": "https://doi.org/10.1145/2783258.2783407",
     "Year": "2015",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Jialei Wang",
       "Ryohei Fujimaki",
@@ -9685,13 +11519,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "nips/KimSD15",
     "Title": "Mind the Gap - A Generative Approach to Interpretable Feature Selection and Extraction.",
     "url": "https://proceedings.neurips.cc/paper/2015/hash/82965d4ed8150294d4330ace00821d77-Abstract.html",
     "Year": "2015",
-    "Venue": "NeurIPS",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
     "Authors": [
       "Been Kim",
       "Julie A. Shah",
@@ -9714,13 +11554,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "acl/FysheTMM14",
     "Title": "Interpretable Semantic Vectors from a Joint Model of Brain- and Text- Based Meaning.",
     "url": "https://doi.org/10.3115/v1/p14-1046",
     "Year": "2014",
-    "Venue": "ACL",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
     "Authors": [
       "Alona Fyshe",
       "Partha Pratim Talukdar",
@@ -9747,13 +11593,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "icdm/ChanLBR14",
     "Title": "TRIBAC - Discovering Interpretable Clusters and Latent Structures in Graphs.",
     "url": "https://doi.org/10.1109/ICDM.2014.118",
     "Year": "2014",
-    "Venue": "ICDM",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
     "Authors": [
       "Jeffrey Chan",
       "Christopher Leckie",
@@ -9777,13 +11629,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/BarbieriBM14",
     "Title": "Who to follow and why - link prediction with explanations.",
     "url": "https://doi.org/10.1145/2623330.2623733",
     "Year": "2014",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Nicola Barbieri",
       "Francesco Bonchi",
@@ -9807,13 +11665,19 @@
     ],
     "Method used to explain": [
       "Post-hoc explanation method"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "kdd/GhalwashRO14",
     "Title": "Utilizing temporal patterns for estimating uncertainty in interpretable early decision making.",
     "url": "https://doi.org/10.1145/2623330.2623694",
     "Year": "2014",
-    "Venue": "KDD",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
     "Authors": [
       "Mohamed F. Ghalwash",
       "Vladan Radosavljevic",
@@ -9837,13 +11701,19 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   },
   {
+    "Paper-ID": "sigir/ZhangL0ZLM14",
     "Title": "Explicit factor models for explainable recommendation based on phrase-level sentiment analysis.",
     "url": "https://doi.org/10.1145/2600428.2609579",
     "Year": "2014",
-    "Venue": "SIGIR",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
     "Authors": [
       "Yongfeng Zhang",
       "Guokun Lai",
@@ -9871,6 +11741,8 @@
     ],
     "Method used to explain": [
       "Interpretability built into the predictive model"
-    ]
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes"
   }
 ]
