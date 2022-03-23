@@ -77,7 +77,7 @@ function Papers(): JSX.Element {
 
 	return (
 		<>
-			<Button className="expand-all" style={{marginTop: 12}}>
+			<Button className="expand-all">
 				Expand All Rows
 			</Button>
 			<Table
