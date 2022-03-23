@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
 import { store } from "./redux"
-import { BrowserRouter } from "react-router-dom"
+import { HashRouter } from "react-router-dom"
 import { Provider } from "react-redux"
 import { Layout } from "./pages"
 import reportWebVitals from "./reportWebVitals"
@@ -10,9 +10,9 @@ import reportWebVitals from "./reportWebVitals"
 ReactDOM.render(
 	// <React.StrictMode>
 	<Provider store={store}>
-		<BrowserRouter>
+		<HashRouter>
 			<Layout />
-		</BrowserRouter>
+		</HashRouter>
 	</Provider>
 	// </React.StrictMode>
 	,
