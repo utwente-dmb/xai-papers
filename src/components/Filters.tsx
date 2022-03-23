@@ -1,4 +1,5 @@
-import { Col, Row, DatePicker, Input, Tooltip, Switch, Form } from "antd"
+import React from "react"
+import { Col, Row, DatePicker, Input, Tooltip, Form, Radio, RadioChangeEvent } from "antd"
 import { InfoCircleOutlined } from "@ant-design/icons"
 import { Data, Explanation, Method, Model, Problem, Task, FilterValue, Venue } from "../types"
 import { filtersActions } from "../redux"
@@ -44,10 +45,9 @@ function Filters(): JSX.Element {
 		dispatch(filtersActions.setVenue(fromFilterValue(value)))
 	}
 
-	function handleFilterSwitch(checked: boolean) {
-		dispatch(filtersActions.changeState(checked))
+	function handleFilterChange(event: RadioChangeEvent) {
+		dispatch(filtersActions.changeState(event.target.value === "AND"))
 	}
-
 
 	function handleYearChange(value: any) {
 		const startYear = value[0]?.year()
@@ -71,7 +71,10 @@ function Filters(): JSX.Element {
 						icon: <InfoCircleOutlined/>
 					}}
 				>
-					<Switch checkedChildren="AND" unCheckedChildren="OR" defaultChecked onChange={handleFilterSwitch}/>
+					<Radio.Group defaultValue={filters.filterStateAND ? "AND" : "OR"} onChange={handleFilterChange}>
+						<Radio.Button value="AND">AND</Radio.Button>
+						<Radio.Button value="OR">OR</Radio.Button>
+					</Radio.Group>
 				</Form.Item>
 			</Col>
 
