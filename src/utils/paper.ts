@@ -6,7 +6,7 @@ export function isPaper(paper: any): paper is Paper {
         && "Title" in paper 
         && "Year" in paper 
         && "Venue" in paper 
-		&& isSomeEnum(Venue)(paper["Venue"])
+		&& (paper["Venue"]["isOld"] && isSomeEnum(Venue)(paper["Venue"]["value"]) || !paper["Venue"]["isOld"])
         && "Authors" in paper 
         && "Type of Data" in paper
         && isEnumArray(Data)(paper["Type of Data"])
