@@ -26,7 +26,7 @@ const theme = {
 }
 
 function GenerateData(col: string) {
-	const papers: any = useFilteredPapers().reverse()
+	const papers: any = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
 
 	const dataRaw: any = {}
 
@@ -112,6 +112,7 @@ function GrowthLineChart({ type }: LineChartProps) {
 					[
 						{
 							anchor: "top-right",
+							toggleSerie: true,
 							direction: "column",
 							justify: false,
 							translateX: 100,
