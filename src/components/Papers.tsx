@@ -7,6 +7,7 @@ import { getColor, typeArray, printNames } from "../utils"
 
 type Column<T> = {
 	title: string | JSX.Element, 
+	width?: number
 	dataIndex?: string, 
 	render?: (text: string, row: T) => React.ReactNode, 
 	key?: string, 
@@ -41,9 +42,10 @@ function Papers(): JSX.Element {
 	const columns: Array<Column<Paper>> = [
 		{
 			title: 
-			<Button className="expand-all">
+			(<Button className="expand-all">
 				{expandController.isAllExpanded() ? <MinusOutlined/> : <PlusOutlined />}
-			</Button>
+			</Button>),
+			width: 1
 		},
 		{
 			title: "Title",
