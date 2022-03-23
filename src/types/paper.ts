@@ -1,3 +1,19 @@
+import schema from "../db/schema.json"
+
+console.log("Schema", schema.items.properties["Type of Data"])
+
+const properties = schema.items.properties
+
+export let DataType: any
+(function (DataType) {
+	console.log(properties["Type of Data"].items.enum)
+	properties["Type of Data"].items.enum.forEach((val) => {
+		DataType[val] = val
+	})
+})(DataType || (DataType = {}))
+
+
+
 export interface Paper {
     Title: string
     url: string
