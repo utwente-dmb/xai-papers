@@ -1,5 +1,5 @@
 import { Form, Input, InputNumber, Button, Col, Row } from "antd"
-import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Paper } from "../types"
+import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Paper, Venue } from "../types"
 import Select from "./Select"
 import { fromFilterValue } from "../utils"
 import { useAppDispatch, useAppSelector } from "../hooks"
@@ -46,6 +46,10 @@ function AddPaperForm() {
 		dispatch(formActions.setAuthors(authors))
 	}
 
+	function handleChangeVenue(value: Array<FilterValue<Venue>>) {
+		dispatch(formActions.setVenue(fromFilterValue(value)[0]))
+	}
+
 	function handleChangeData(value: Array<FilterValue<Data>>) {
 		dispatch(formActions.setData(fromFilterValue(value)))
 	}
@@ -88,6 +92,10 @@ function AddPaperForm() {
 
 					<Item label="Authors" >
 						<Input defaultValue={printNames(form.Authors)} onChange={handleChangeAuthors} />
+					</Item>
+
+					<Item label="Venue">
+						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenue} value={[form.Venue as Venue]} maxTags={1} />
 					</Item>
 
 					<Item label="Type of Data">
