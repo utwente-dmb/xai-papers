@@ -31,6 +31,7 @@ const columns: Array<Column<Paper>> = [
 	{
 		title: "Venue",
 		dataIndex: "Venue",
+		render: (_, row: Paper) => <>{row.Venue.value}</>,
 		key: "venue",
 		defaultSortOrder: "ascend",
 		sorter: {

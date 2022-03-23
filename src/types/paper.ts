@@ -11,10 +11,12 @@ export interface Paper {
     "Type of Explanation": Array<Explanation>
     "Method used to explain": Array<Method>
 }
-type VenueType = {
+
+export type VenueType = {
     isOld: boolean,
     value: string
 }
+
 export enum Data {
     GraphData = "Graph data",
     Images = "Images",

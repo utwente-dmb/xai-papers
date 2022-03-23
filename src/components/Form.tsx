@@ -95,7 +95,7 @@ function AddPaperForm() {
 					</Item>
 
 					<Item label="Venue">
-						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenue} value={[form.Venue as Venue]} maxTags={1} />
+						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenue} value={[form.Venue.value as Venue]} maxTags={1} />
 					</Item>
 
 					<Item label="Type of Data">
