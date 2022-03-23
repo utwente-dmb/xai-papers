@@ -56,7 +56,6 @@ const columns: Array<Column<Paper>> = [
 ]
 
 function Tag({ record, type }: { record: Paper, type: keyof Paper}) {
-
 	return (
 		<TagList TagData={record[type] as string[]} Color={getColor(type)}></TagList>
 	)
