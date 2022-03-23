@@ -68,26 +68,15 @@ function GenerateData(columnValue: string) {
 	return data
 }
 
+type LineChartProps = {
+	type: string
+}
 
-function CirclePackingChart() {
-	const [type, setType] = useState("Type of Data")
 
-	function handleChange(value: string) {
-		setType(value)
-	}
-
+function CirclePackingChart({ type }: LineChartProps) {
 	data = GenerateData(type)
 	return (
 		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
-			<Col offset={20}>
-				<Select defaultValue={type} style={{ width: 240 }} onChange={handleChange}>
-					{typeArray.map(elem =>
-						<Option key={elem} value={elem}>
-							{elem}
-						</Option>
-					)}
-				</Select>
-			</Col>
 			<ResponsiveCirclePackingCanvas
 				data={data}
 				margin={{ top: 20, right: 20, bottom: 20, left: 20 }}

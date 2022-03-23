@@ -1,22 +1,59 @@
-import { Row, Col, Radio } from "antd"
+import { Row, Select, Col, Radio } from "antd"
 import { ConnectedChart, CirclePackingChart, GrowthLineChart } from "./charts"
 import { useState } from "react"
+import { typeArray } from "../utils"
 
+const { Option } = Select
 const { Button, Group } = Radio
 
-const graphMap: { [key: string]: JSX.Element} = {
-	"Connected Graph": (<ConnectedChart />),
-	"Tableau": (<CirclePackingChart />),
-	"LineChart": (<GrowthLineChart />)
-}
+
+
 
 function Chart(): JSX.Element {
+
 	const [chart, setChart] = useState("Connected Graph")
 
 	function HandleChartChange(e: any) {
 		setChart(e.target.value)
 	}
 
+	const [type, setType] = useState("Type of Data")
+
+	function handleChange(value: string) {
+		setType(value)
+	}
+
+	const graphMap: { [key: string]: JSX.Element } = {
+		"Connected Graph": (<ConnectedChart />),
+		"Tableau": (
+			<>
+				<Col offset={20}>
+					<Select defaultValue={type} style={{ width: 240 }} onChange={handleChange}>
+						{typeArray.map((elem: any) =>
+							<Option key={elem} value={elem}>
+								{elem}
+							</Option>
+						)}
+					</Select>
+				</Col>
+				<CirclePackingChart type={type} />
+			</>
+		),
+		"LineChart": (
+			<>
+				<Col offset={20}>
+					<Select defaultValue={type} style={{ width: 240 }} onChange={handleChange}>
+						{typeArray.map((elem: any) =>
+							<Option key={elem} value={elem}>
+								{elem}
+							</Option>
+						)}
+					</Select>
+				</Col>
+				<GrowthLineChart type={type} />
+			</>
+		)
+	}
 	return (
 		<>
 			<Row gutter={10}>
@@ -30,6 +67,7 @@ function Chart(): JSX.Element {
 				</Col>
 			</Row>
 			<Row gutter={10}>
+
 				<Col span={24}>
 					{graphMap[chart]}
 				</Col>
