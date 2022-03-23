@@ -71,7 +71,7 @@ function Filters(): JSX.Element {
 						icon: <InfoCircleOutlined/>
 					}}
 				>
-					<Radio.Group defaultValue={filters.filterStateAND ? "AND" : "OR"} onChange={handleFilterChange}>
+					<Radio.Group buttonStyle="solid" defaultValue={filters.filterStateAND ? "AND" : "OR"} onChange={handleFilterChange}>
 						<Radio.Button value="AND">AND</Radio.Button>
 						<Radio.Button value="OR">OR</Radio.Button>
 					</Radio.Group>
