@@ -1,5 +1,5 @@
 import { Form, Input, InputNumber, Button, Col, Row } from "antd"
-import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Paper } from "../types"
+import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Paper, Venue } from "../types"
 import Select from "./Select"
 import { fromFilterValue } from "../utils"
 import { useAppDispatch, useAppSelector } from "../hooks"
@@ -46,27 +46,31 @@ function AddPaperForm() {
 		dispatch(formActions.setAuthors(authors))
 	}
 
-	function handleChangeData(value: Array<FilterValue<Data>>) {
+	function handleChangeVenue(value: Array<FilterValue<Venue>>) {
+		dispatch(formActions.setVenue(fromFilterValue(value)[0]))
+	}
+
+	function handleChangeData(value: Array<FilterValue<typeof Data>>) {
 		dispatch(formActions.setData(fromFilterValue(value)))
 	}
 
-	function handleChangeProblem(value: Array<FilterValue<Problem>>) {
+	function handleChangeProblem(value: Array<FilterValue<typeof Problem>>) {
 		dispatch(formActions.setProblem(fromFilterValue(value)))
 	}
 
-	function handleChangeModel(value: Array<FilterValue<Model>>) {
+	function handleChangeModel(value: Array<FilterValue<typeof Model>>) {
 		dispatch(formActions.setModel(fromFilterValue(value)))
 	}
 
-	function handleChangeTask(value: Array<FilterValue<Task>>) {
+	function handleChangeTask(value: Array<FilterValue<typeof Task>>) {
 		dispatch(formActions.setTask(fromFilterValue(value)))
 	}
 
-	function handleChangeExplanation(value: Array<FilterValue<Explanation>>) {
+	function handleChangeExplanation(value: Array<FilterValue<typeof Explanation>>) {
 		dispatch(formActions.setExplanation(fromFilterValue(value)))
 	}
 
-	function handleChangeMethod(value: Array<FilterValue<Method>>) {
+	function handleChangeMethod(value: Array<FilterValue<typeof Method>>) {
 		dispatch(formActions.setMethod(fromFilterValue(value)))
 	}
 
@@ -88,6 +92,10 @@ function AddPaperForm() {
 
 					<Item label="Authors" >
 						<Input defaultValue={printNames(form.Authors)} onChange={handleChangeAuthors} />
+					</Item>
+
+					<Item label="Venue">
+						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenue} value={[form.Venue.value as Venue]} maxTags={1} />
 					</Item>
 
 					<Item label="Type of Data">

@@ -1,86 +1,66 @@
+import schema from "../db/schema.json"
+
+const properties = schema.items.properties
+
+export let Data: any
+(function (Data) {
+	properties["Type of Data"].items.enum.forEach((val) => {
+		Data[val] = val
+	})
+})(Data || (Data = {}))
+
+export let Explanation: any
+(function (Explanation) {
+	properties["Type of Explanation"].items.enum.forEach((val) => {
+		Explanation[val] = val
+	})
+})(Explanation || (Explanation = {}))
+
+export let Problem: any
+(function (Problem) {
+	properties["Type of Problem"].items.enum.forEach((val) => {
+		Problem[val] = val
+	})
+})(Problem || (Problem = {}))
+
+export let Model: any
+(function (Model) {
+	properties["Type of Model to be Explained"].items.enum.forEach((val) => {
+		Model[val] = val
+	})
+})(Model || (Model = {}))
+
+export let Task: any 
+(function (Task) {
+	properties["Type of Task"].items.enum.forEach((val) => {
+		Task[val] = val
+	})
+})(Task || (Task = {}))
+
+export let Method: any 
+(function (Method) {
+	properties["Method used to explain"].items.enum.forEach((val) => {
+		Method[val] = val
+	})
+})(Method || (Method = {}))
+
 export interface Paper {
     Title: string
     url: string
     Year: string
     Venue: VenueType
     Authors: Array<string>
-    "Type of Data": Array<Data>
-    "Type of Problem": Array<Problem>
-    "Type of Model to be Explained": Array<Model>
-    "Type of Task": Array<Task>
-    "Type of Explanation": Array<Explanation>
-    "Method used to explain": Array<Method>
+    "Type of Data": Array<typeof Data>
+    "Type of Problem": Array<typeof Problem>
+    "Type of Model to be Explained": Array<typeof Model>
+    "Type of Task": Array<typeof Task>
+    "Type of Explanation": Array<typeof Explanation>
+    "Method used to explain": Array<typeof Method>
 }
-type VenueType = {
+
+export type VenueType = {
     isOld: boolean,
-    value: string
-}
-export enum Data {
-    GraphData = "Graph data",
-    Images = "Images",
-    Other = "Other",
-    TabularStructured = "Tabular / structured",
-    Text = "Text",
-    TimeSeries = "Time series",
-    UserItemMatrix = "User-item matrix",
-    Video = "Video",
-    Any = "Any"
-}
-
-export enum Explanation {
-    DecisionRules = "Decision Rules",
-    DecisionTree = "Decision Tree",
-    Disentanglement = "Disentanglement",
-    FeatureImportance = "Feature Importance",
-    FeaturePlot = "Feature plot",
-    Graph = "Graph",
-    Heatmap = "Heatmap",
-    Localization = "Localization",
-    Other = "Other",
-    Prototypes = "Prototypes",
-    RepresentationSynthesis = "Representation Synthesis",
-    RepresentationVisualization = "Representation Visualization",
-    Text = "Text",
-    TimeSeries = "Time series",
-    UserItemMatrix = "User-item matrix",
-    WhiteBoxModel = "White-box model"
-}
-
-export enum Problem {
-    ModelExplanation = "Model Explanation",
-    ModelInspection = "Model Inspection",
-    OutcomeExplanation = "Outcome Explanation",
-    TransparentBoxDesign = "Transparent Box Design"
-}
-
-export enum Model {
-    NeuralNetwork = "(Deep) Neural Network",
-    ModelAgnostic = "Any (for a specific task); model-agnostic",
-    Bayesian = "Bayesian or Hierarchical Network",
-    LogisticRegression = "Logistic Regression",
-    Other = "Other",
-    SupportVectorMachine = "Support Vector Machine",
-    TreeEnsemble = "Tree Ensemble"
-}
-
-export enum Task {
-    AnomalyDetections = "Anomaly detection",
-    Classification = "Classification",
-    Clustering = "Clustering",
-    Generation = "Generation",
-    Other = "Other",
-    PolicyLearning = "Policy learning",
-    QuestionAnswering = "Question Answering",
-    Recommendation = "Recommendation",
-    Regression = "Regression",
-    RepresntationLearning = "Representation learning",
-    Retrieval = "Retrieval"
-}
-
-export enum Method {
-    InterpretabilityPredictiveModel = "Interpretability built into the predictive model",
-    PostHocExplanation = "Post-hoc explanation method",
-    SupervisedExplanationTraining = "Supervised explanation training",
+    value: Venue | string
 }
 
 export enum Venue {

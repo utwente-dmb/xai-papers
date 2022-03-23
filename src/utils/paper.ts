@@ -26,6 +26,7 @@ export const isEnumArray = <T>(e: T) => (data: Array<T>): data is Array<T> => {
 	let isTrue = true
 	data.forEach((d) => {
 		if (!isSomeEnum(e)(d)) {
+			console.log(`${d} is not part of given enum`)
 			isTrue = false
 		}
 	})

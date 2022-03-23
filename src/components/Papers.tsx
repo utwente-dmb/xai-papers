@@ -31,6 +31,7 @@ const columns: Array<Column<Paper>> = [
 	{
 		title: "Venue",
 		dataIndex: "Venue",
+		render: (_, row: Paper) => <>{row.Venue.value}</>,
 		key: "venue",
 		defaultSortOrder: "ascend",
 		sorter: {
@@ -56,7 +57,6 @@ const columns: Array<Column<Paper>> = [
 ]
 
 function Tag({ record, type }: { record: Paper, type: keyof Paper}) {
-
 	return (
 		<TagList TagData={record[type] as string[]} Color={getColor(type)}></TagList>
 	)

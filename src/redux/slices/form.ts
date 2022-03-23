@@ -38,22 +38,22 @@ const formSlice = createSlice({
 		setVenue(state, action: PayloadAction<Venue>) {
 			state.Venue.value = action.payload
 		},
-		setData(state, action: PayloadAction<Array<Data>>) {
+		setData(state, action: PayloadAction<Array<typeof Data>>) {
 			state["Type of Data"] = action.payload
 		},
-		setProblem(state, action: PayloadAction<Array<Problem>>) {
+		setProblem(state, action: PayloadAction<Array<typeof Problem>>) {
 			state["Type of Problem"] = action.payload
 		},
-		setModel(state, action: PayloadAction<Array<Model>>) {
+		setModel(state, action: PayloadAction<Array<typeof Model>>) {
 			state["Type of Model to be Explained"] = action.payload
 		},
-		setTask(state, action: PayloadAction<Array<Task>>) {
+		setTask(state, action: PayloadAction<Array<typeof Task>>) {
 			state["Type of Task"] = action.payload
 		},
-		setExplanation(state, action: PayloadAction<Array<Explanation>>) {
+		setExplanation(state, action: PayloadAction<Array<typeof Explanation>>) {
 			state["Type of Explanation"] = action.payload
 		},
-		setMethod(state, action: PayloadAction<Array<Method>>) {
+		setMethod(state, action: PayloadAction<Array<typeof Method>>) {
 			state["Method used to explain"] = action.payload
 		},
 	}

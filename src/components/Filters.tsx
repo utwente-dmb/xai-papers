@@ -17,27 +17,27 @@ function Filters(): JSX.Element {
 	const filters = useAppSelector((state) => state.filters)
 	const dispatch = useAppDispatch()
 
-	function handleDataChange(value: Array<FilterValue<Data>>) { 
+	function handleDataChange(value: Array<FilterValue<typeof Data>>) { 
 		dispatch(filtersActions.setData(fromFilterValue(value)))
 	}
 
-	function handleProblemChange(value: Array<FilterValue<Problem>>) { 
+	function handleProblemChange(value: Array<FilterValue<typeof Problem>>) { 
 		dispatch(filtersActions.setProblem(fromFilterValue(value)))
 	}
   
-	function handleModelChange(value: Array<FilterValue<Model>>) { 
+	function handleModelChange(value: Array<FilterValue<typeof Model>>) { 
 		dispatch(filtersActions.setModel(fromFilterValue(value)))
 	}
 
-	function handleTaskChange(value: Array<FilterValue<Task>>) {
+	function handleTaskChange(value: Array<FilterValue<typeof Task>>) {
 		dispatch(filtersActions.setTask(fromFilterValue(value)))
 	}
 
-	function handleExplanationChange(value: Array<FilterValue<Explanation>>) {
+	function handleExplanationChange(value: Array<FilterValue<typeof Explanation>>) {
 		dispatch(filtersActions.setExplanation(fromFilterValue(value)))
 	}
 
-	function handleMethodChange(value: Array<FilterValue<Method>>) {
+	function handleMethodChange(value: Array<FilterValue<typeof Method>>) {
 		dispatch(filtersActions.setMethod(fromFilterValue(value)))
 	}
 

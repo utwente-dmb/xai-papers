@@ -1,6 +1,6 @@
 import { useAppSelector } from "./redux"
 import { Filters } from "../redux/slices/filters"
-import { Paper } from "../types"
+import { Paper, VenueType } from "../types"
 import { enumKeyMap } from "../utils"
 
 export function useFilteredPapers(): Array<Paper> {
@@ -65,7 +65,7 @@ export function useFilteredPapers(): Array<Paper> {
 			if (!Array.isArray(filtersForKey)) continue
 
 			if (filterKey === "venue" ) {
-				if (filtersForKey.length > 0 && !filtersForKey.some((el) => el === paperTypes)) {
+				if (filtersForKey.length > 0 && !filtersForKey.some((el) => el === (paperTypes as VenueType).value)) {
 					return false
 				} else {
 					continue
