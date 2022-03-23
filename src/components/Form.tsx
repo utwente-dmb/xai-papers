@@ -50,27 +50,27 @@ function AddPaperForm() {
 		dispatch(formActions.setVenue(fromFilterValue(value)[0]))
 	}
 
-	function handleChangeData(value: Array<FilterValue<Data>>) {
+	function handleChangeData(value: Array<FilterValue<typeof Data>>) {
 		dispatch(formActions.setData(fromFilterValue(value)))
 	}
 
-	function handleChangeProblem(value: Array<FilterValue<Problem>>) {
+	function handleChangeProblem(value: Array<FilterValue<typeof Problem>>) {
 		dispatch(formActions.setProblem(fromFilterValue(value)))
 	}
 
-	function handleChangeModel(value: Array<FilterValue<Model>>) {
+	function handleChangeModel(value: Array<FilterValue<typeof Model>>) {
 		dispatch(formActions.setModel(fromFilterValue(value)))
 	}
 
-	function handleChangeTask(value: Array<FilterValue<Task>>) {
+	function handleChangeTask(value: Array<FilterValue<typeof Task>>) {
 		dispatch(formActions.setTask(fromFilterValue(value)))
 	}
 
-	function handleChangeExplanation(value: Array<FilterValue<Explanation>>) {
+	function handleChangeExplanation(value: Array<FilterValue<typeof Explanation>>) {
 		dispatch(formActions.setExplanation(fromFilterValue(value)))
 	}
 
-	function handleChangeMethod(value: Array<FilterValue<Method>>) {
+	function handleChangeMethod(value: Array<FilterValue<typeof Method>>) {
 		dispatch(formActions.setMethod(fromFilterValue(value)))
 	}
 
