@@ -38,7 +38,8 @@ def import_csv(csv_loc):
                 url = f"https://api.semanticscholar.org/graph/v1/paper/DOI:{doi}?fields=abstract"
                 with urlopen(url) as response:
                     response_json = json.loads(response.read())
-                    abstract = response_json["abstract"]
+                    if response_json["abstract"] is not None:
+                        abstract = response_json["abstract"]
                 time.sleep(3)
             obj["Abstract"] = abstract
             objs.append(obj)
