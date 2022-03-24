@@ -35,7 +35,10 @@ const formSlice = createSlice({
 		setAuthors(state, action: PayloadAction<Array<string>>) {
 			state.Authors = action.payload
 		},
-		setVenue(state, action: PayloadAction<Venue>) {
+		setIsOldVenue(state, action: PayloadAction<boolean>) {
+			state.Venue.isOld = action.payload
+		},
+		setVenue(state, action: PayloadAction<Venue | string>) {
 			state.Venue.value = action.payload
 		},
 		setData(state, action: PayloadAction<Array<typeof Data>>) {
