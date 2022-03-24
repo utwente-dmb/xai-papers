@@ -75,6 +75,7 @@ export enum Venue {
     WWW = "WWW",
     IJCAI = "IJCAI",
     ICML = "ICML",
-    CVPR = "CVPR"
+    CVPR = "CVPR",
+    Other = "Other"
 }
 
