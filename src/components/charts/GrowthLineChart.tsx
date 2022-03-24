@@ -31,15 +31,17 @@ function GenerateData(col: string) {
 	const dataRaw: any = {}
 
 	papers.forEach(function (value: any) {
-		if (!dataRaw["Papers"]) {
+		if (dataRaw["Papers"]) {
+			if (value["Year"] > dataRaw["Papers"][dataRaw["Papers"].length - 1]["x"]) {
+				dataRaw["Papers"].push({ x: value["Year"], y: dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] + 1 })
+			}
+			else if (dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"]) {
+				dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] += 1
+			}
+		}
+		else {
 			dataRaw["Papers"] = []
 			dataRaw["Papers"].push({ x: value["Year"], y: 1 })
-		}
-		if (value["Year"] > dataRaw["Papers"][dataRaw["Papers"].length - 1]["x"]) {
-			dataRaw["Papers"].push({ x: value["Year"], y: dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] + 1 })
-		}
-		else if (dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"]) {
-			dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] += 1
 		}
 
 		for (const elem of value[col]) {
