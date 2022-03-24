@@ -50,8 +50,8 @@ function Filters(): JSX.Element {
 	}
 
 	function handleYearChange(value: any) {
-		const startYear = value[0]?.year()
-		const endYear = value[1]?.year()
+		const startYear = value?.[0]?.year()
+		const endYear = value?.[1]?.year()
 
 		dispatch(filtersActions.setStartYear(startYear))
 		dispatch(filtersActions.setEndYear(endYear))
@@ -89,7 +89,7 @@ function Filters(): JSX.Element {
 			<Col span={8}>
 				<RangePicker 
 					picker="year" 
-					onPanelChange={handleYearChange} 
+					onChange={handleYearChange} 
 					allowEmpty={[true, true]}
 					defaultValue={[
 						filters.startYear ? Moment([filters.startYear]) : null, 
