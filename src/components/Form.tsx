@@ -46,7 +46,7 @@ function AddPaperForm() {
 		dispatch(formActions.setAuthors(authors))
 	}
 
-	function handleChangeVenueDropdown(value: Array<FilterValue<Venue | "Other">>) {
+	function handleChangeVenueDropdown(value: Array<FilterValue<Venue>>) {
 		const newVenue = fromFilterValue(value)[0]
 		if (newVenue === "Other") {
 			dispatch(formActions.setIsOldVenue(false))
@@ -106,7 +106,7 @@ function AddPaperForm() {
 					</Item>
 
 					<Item label="Venue">
-						<Select placeholder="Venue" enumerator={[...Object.values(Venue), "Other"]} handleChange={handleChangeVenueDropdown} value={form.Venue.value ? [form.Venue.value as Venue] : []} maxTags={1} />
+						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenueDropdown} value={form.Venue.value ? [form.Venue.value as Venue] : []} maxTags={1} />
 					</Item>
 					{!form.Venue.isOld 
 						? <Item label="Venue" >
