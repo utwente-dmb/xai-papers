@@ -16,7 +16,8 @@ const initialState: Paper = {
 	"Type of Model to be Explained": [],
 	"Type of Task": [],
 	"Type of Explanation": [],
-	"Method used to explain": []
+	"Method used to explain": [],
+	"Abstract": ""
 }
 
 const formSlice = createSlice({
