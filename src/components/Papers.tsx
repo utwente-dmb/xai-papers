@@ -1,4 +1,4 @@
-import { Table, Row, Button } from "antd"
+import { Table, Row, Button, Col } from "antd"
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons"
 import { useExpandingAllInTable, useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
@@ -97,12 +97,20 @@ function Papers(): JSX.Element {
 					expandedRowRender: (record) => (
 						<>
 							<Row gutter={[0, 4]}>
-								Authors: {printNames(record.Authors)}
-							</Row>
-							<Row>
-								{typeArray.map((type) => (
-									<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
-								))}
+								{record.Abstract.length > 0 
+									? <Col span={24}>
+										{record.Abstract}
+									</Col> 
+									: null}
+							
+								<Col span={24}>
+									Authors: {printNames(record.Authors)}
+								</Col>
+								<Col span={24}>
+									{typeArray.map((type) => (
+										<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
+									))}
+								</Col>
 							</Row>
 						</>
 					),

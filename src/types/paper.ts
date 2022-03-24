@@ -56,6 +56,7 @@ export interface Paper {
     "Type of Task": Array<typeof Task>
     "Type of Explanation": Array<typeof Explanation>
     "Method used to explain": Array<typeof Method>
+    Abstract: string
 }
 
 export type VenueType = {
