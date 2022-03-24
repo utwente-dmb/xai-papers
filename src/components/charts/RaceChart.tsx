@@ -43,7 +43,10 @@ type LineChartProps = {
 	type: string
 }
 
-const dataOld: any = {}
+let dataOld: any = {}
+export function ResetData(){
+	dataOld = {}
+}
 
 function RaceChart({ type }: LineChartProps) {
 	const [current, setCurrent] = useState(0)
