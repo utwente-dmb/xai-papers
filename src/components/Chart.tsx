@@ -1,5 +1,5 @@
 import { Row, Select, Col, Radio } from "antd"
-import { ConnectedChart, CirclePackingChart, GrowthLineChart, RaceChart } from "./charts"
+import { ConnectedChart, CirclePackingChart, GrowthLineChart, RaceChart, ResetData } from "./charts"
 import { useState } from "react"
 import { typeArray } from "../utils"
 
@@ -11,12 +11,14 @@ function Chart(): JSX.Element {
 
 	function HandleChartChange(e: any) {
 		setChart(e.target.value)
+		ResetData()
 	}
 
 	const [type, setType] = useState("Type of Data")
 
 	function handleChange(value: string) {
 		setType(value)
+		ResetData()
 	}
 
 	const graphMap: { [key: string]: JSX.Element } = {
