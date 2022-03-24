@@ -65,7 +65,16 @@ export function useFilteredPapers(): Array<Paper> {
 			if (!Array.isArray(filtersForKey)) continue
 
 			if (filterKey === "venue" ) {
-				if (filtersForKey.length > 0 && !filtersForKey.some((el) => el === (paperTypes as VenueType).value)) {
+				if (filtersForKey.length > 0 
+					&& !filtersForKey.some((el) => {
+						const venueType = paperTypes as VenueType
+						if (el === "Other") {
+							return !venueType.isOld
+						} else {
+							return el === venueType.value
+						}
+					})
+				) {
 					return false
 				} else {
 					continue
