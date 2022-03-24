@@ -46,8 +46,19 @@ function AddPaperForm() {
 		dispatch(formActions.setAuthors(authors))
 	}
 
-	function handleChangeVenue(value: Array<FilterValue<Venue>>) {
-		dispatch(formActions.setVenue(fromFilterValue(value)[0]))
+	function handleChangeVenueDropdown(value: Array<FilterValue<Venue>>) {
+		const newVenue = fromFilterValue(value)[0]
+		if (newVenue === "Other") {
+			dispatch(formActions.setIsOldVenue(false))
+		} else {
+			dispatch(formActions.setIsOldVenue(true))
+			dispatch(formActions.setVenue(newVenue))
+		}
+	}
+
+	function handleChangeVenueInput(event: React.FormEvent<HTMLInputElement>) {
+		const venue = event.currentTarget.value
+		dispatch(formActions.setVenue(venue))
 	}
 
 	function handleChangeData(value: Array<FilterValue<typeof Data>>) {
@@ -95,8 +106,14 @@ function AddPaperForm() {
 					</Item>
 
 					<Item label="Venue">
-						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenue} value={[form.Venue.value as Venue]} maxTags={1} />
+						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenueDropdown} value={form.Venue.value ? [form.Venue.value as Venue] : []} maxTags={1} />
 					</Item>
+					{!form.Venue.isOld 
+						? <Item label="Venue" >
+							<Input placeholder="Venue" onChange={handleChangeVenueInput} value={form.Venue.value} /> 
+						</Item>
+						: null
+					}
 
 					<Item label="Type of Data">
 						<Select placeholder="Type of Data" enumerator={Data} handleChange={handleChangeData} value={form["Type of Data"]} />
