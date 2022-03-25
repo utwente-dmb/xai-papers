@@ -12,31 +12,27 @@ function Chart(): JSX.Element {
 	const [type, setType] = useState("Type of Data")
 
 	const [current, setCurrent] = useState(0)
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			if (current < lastYear - firstYear) {
-				setCurrent(current + 1)
-			}
-		}, 1000)
-		return () => clearTimeout(timer)
-	}, [current, setCurrent])
+	const timer = setTimeout(() => {
+		if (current < lastYear - firstYear) {
+			setCurrent(current + 1)
+		}
+	}, 1000)
 
 	function HandleChartChange(e: any) {
 		setChart(e.target.value)
 		ResetData()
 		setCurrent(0)
+		clearTimeout(timer)
 	}
 
 	function HandleChange(value: string) {
 		setType(value)
+		ResetData()
+		setCurrent(0)
+		clearTimeout(timer)
 	}
 	console.log(current, firstYear, lastYear)
 
-	function HandleRaceChartChange(value: string) {
-		setType(value)
-		ResetData()
-		setCurrent(0)
-	}
 	const graphMap: { [key: string]: JSX.Element } = {
 		"Connected Graph": (<ConnectedChart />),
 		"Tableau": (
@@ -70,7 +66,7 @@ function Chart(): JSX.Element {
 		"RaceChart": (
 			<>
 				<Col offset={20}>
-					<Select defaultValue={type} style={{ width: 240 }} onChange={HandleRaceChartChange}>
+					<Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
 						{typeArray.map((elem: any) =>
 							<Option key={elem} value={elem}>
 								{elem}
