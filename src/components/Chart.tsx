@@ -1,22 +1,36 @@
-import { Row, Select, Col, Radio } from "antd"
-import { ConnectedChart, CirclePackingChart, GrowthLineChart, RaceChart, ResetData, firstYear, lastYear } from "./charts"
+import { Row, Select, Col, Radio, Slider, InputNumber } from "antd"
+import { ConnectedChart, CirclePackingChart, GrowthLineChart, RaceChart, ResetData, Year } from "./charts"
 import { useEffect, useState } from "react"
 import { typeArray } from "../utils"
 
 const { Option } = Select
 const { Button, Group } = Radio
 
+let firstYear: number
+let lastYear: number
+
+let sliderYear = 99999999999
+
 function Chart(): JSX.Element {
+	[firstYear, lastYear] = Year()
+
 	const [chart, setChart] = useState("Connected Graph")
 
 	const [type, setType] = useState("Type of Data")
 
 	const [current, setCurrent] = useState(0)
+	
 	const timer = setTimeout(() => {
-		if (current < lastYear - firstYear) {
+		console.log(current, sliderYear, firstYear)
+		if (current < lastYear - firstYear && current < sliderYear - firstYear) {
 			setCurrent(current + 1)
 		}
 	}, 1000)
+
+	if (sliderYear == 99999999999) {
+		sliderYear = lastYear
+		clearTimeout(timer)
+	}
 
 	function HandleChartChange(e: any) {
 		setChart(e.target.value)
@@ -31,7 +45,16 @@ function Chart(): JSX.Element {
 		setCurrent(0)
 		clearTimeout(timer)
 	}
-	console.log(current, firstYear, lastYear)
+
+	function HandleSlider(sliderValue: number) {
+		sliderYear = sliderValue
+		ResetData()
+		setCurrent(0)
+		clearTimeout(timer)
+		console.log(sliderValue, sliderYear, firstYear, lastYear, current, sliderYear - firstYear)
+	}
+
+	// console.log(current, firstYear, lastYear)
 
 	const graphMap: { [key: string]: JSX.Element } = {
 		"Connected Graph": (<ConnectedChart />),
@@ -65,15 +88,26 @@ function Chart(): JSX.Element {
 		),
 		"RaceChart": (
 			<>
-				<Col offset={20}>
-					<Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
-						{typeArray.map((elem: any) =>
-							<Option key={elem} value={elem}>
-								{elem}
-							</Option>
-						)}
-					</Select>
-				</Col>
+				<Row>
+					<Col span={12}>
+						<Slider
+							min={firstYear}
+							max={lastYear}
+							onChange={HandleSlider}
+							tooltipVisible={true}
+							defaultValue={sliderYear}
+						/>
+					</Col>
+					<Col offset={8}>
+						<Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
+							{typeArray.map((elem: any) =>
+								<Option key={elem} value={elem}>
+									{elem}
+								</Option>
+							)}
+						</Select>
+					</Col>
+				</Row>
 				<RaceChart type={type} current={current} />
 			</>
 		)
