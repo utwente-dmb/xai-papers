@@ -100,11 +100,11 @@ function Filters(): JSX.Element {
 
 			<Col span={8}>
 				<Search 
-					placeholder="Search titles, authors and venues" 
+					placeholder="Search titles, venues, authors and abstracts" 
 					onSearch={handleSearch} 
 					defaultValue={filters.search} 
 					suffix={
-						<Tooltip title="Prefix with 'author:', 'venue:' or 'title:' to only search in the respective field">
+						<Tooltip title="Prefix with 'title:', 'venue:', 'author:' or 'abstract:' to only search in the respective field">
 							<InfoCircleOutlined />
 						</Tooltip>
 					}
