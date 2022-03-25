@@ -8,21 +8,8 @@ import { Select, Col } from "antd"
 const { Option } = Select
 
 const theme = {
-	"background": "#000000",
 	"textColor": "#ffffff",
-	"fontSize": 14,
-	"tooltip": {
-		"container": {
-			"background": "#000000",
-			"color": "#f4ebeb",
-			"fontSize": 12
-		},
-		"basic": {},
-		"chip": {},
-		"table": {},
-		"tableCell": {},
-		"tableCellValue": {}
-	}
+	"fontSize": 16,
 }
 
 let data: {
@@ -76,12 +63,12 @@ type LineChartProps = {
 function CirclePackingChart({ type }: LineChartProps) {
 	data = GenerateData(type)
 	return (
-		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
+		<div style={{ height: "600px", width: "100%", marginTop: "20px" }}>
 			<ResponsiveCirclePackingCanvas
 				data={data}
 				margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
 				id="name"
-				colors={{ scheme: "spectral" }}
+				colors={{ scheme: "pastel1" }}
 				colorBy="id"
 				childColor={{
 					from: "color",
@@ -92,6 +79,8 @@ function CirclePackingChart({ type }: LineChartProps) {
 						]
 					]
 				}}
+				labelsSkipRadius={40}
+				labelsFilter={label =>  ((label.label.toString().length /label.node.radius) < 0.35)}
 				padding={1}
 				leavesOnly={true}
 				enableLabels={true}
@@ -115,6 +104,7 @@ function CirclePackingChart({ type }: LineChartProps) {
 					]
 				}}
 				animate={false}
+				theme={theme}
 			/>
 		</div>
 	)
