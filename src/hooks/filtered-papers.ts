@@ -14,36 +14,39 @@ export function useFilteredPapers(): Array<Paper> {
 		let search = filters.search.toLowerCase().trim()
 		if (search.length > 0) {
 			let proceed = false
-			let searchAuthor = true
-			let searchTitle = true
-			let searchVenue = true
+			const [searchAuthor, searchTitle, searchVenue, searchAbstract] = [0, 1, 2, 3]
+			let searches = [true, true, true, true]
 
 			if (search.startsWith("author:")) {
 				search = search.substring(7).trim()
-				searchTitle = false
-				searchVenue = false
+				searches = [true, false, false, false]
 			} else if (search.startsWith("title:")) {
 				search = search.substring(6).trim()
-				searchAuthor = false
-				searchVenue = false
+				searches = [false, true, false, false]
 			} else if (search.startsWith("venue:")) {
 				search = search.substring(6).trim()
-				searchAuthor = false
-				searchTitle = false
+				searches = [false, false, true, false]
+			} else if (search.startsWith("abstract:")) {
+				search = search.substring(9).trim()
+				searches = [false, false, false, true]
 			}
 
 			const author = paper.Authors.some((author) => author.toLowerCase().includes(search))
 			const title = paper.Title.toLowerCase().includes(search)
 			const venue = paper.Venue.value.toLowerCase().includes(search)
+			const abstract = paper.Abstract.toLowerCase().includes(search)
 
-			if (searchAuthor) {
+			if (searches[searchAuthor]) {
 				proceed = proceed || author
 			}
-			if (searchTitle) {
+			if (searches[searchTitle]) {
 				proceed = proceed || title
 			}
-			if (searchVenue) {
+			if (searches[searchVenue]) {
 				proceed = proceed || venue
+			}
+			if (searches[searchAbstract]) {
+				proceed = proceed || abstract
 			}
 
 			if (!proceed) return false
