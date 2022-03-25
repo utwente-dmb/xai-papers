@@ -1,7 +1,9 @@
 import { Row, Select, Col, Radio, Slider, InputNumber } from "antd"
-import { ConnectedChart, CirclePackingChart, GrowthLineChart, RaceChart, ResetData, Year } from "./charts"
+import { ConnectedChart, CirclePackingChart, GrowthLineChart, RaceChart, ResetData } from "./charts"
 import { useEffect, useState } from "react"
 import { typeArray } from "../utils"
+import { useFilteredPapers } from "../hooks"
+import { Paper } from "../types"
 
 const { Option } = Select
 const { Button, Group } = Radio
@@ -12,6 +14,12 @@ let lastYear: number
 let sliderYear = 99999999999
 let chartUpdateSpeed = 1
 function Chart(): JSX.Element {
+	function Year() {
+		const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
+		firstYear = parseInt(papers[0]["Year"])
+		lastYear = parseInt(papers[papers.length - 1]["Year"])
+		return [firstYear, lastYear]
+	} 
 	[firstYear, lastYear] = Year()
 
 	const [chart, setChart] = useState("Connected Graph")
@@ -77,8 +85,7 @@ function Chart(): JSX.Element {
 		},
 		"Tableau": {
 			withSelect: true,
-			element: 
-					<CirclePackingChart type={type} />
+			element: <CirclePackingChart type={type} />
 		},
 		"LineChart": {
 			withSelect: true,
