@@ -64,7 +64,7 @@ function AddPaper() {
 			<h3>Venue</h3>
 			<p>The venue this paper was published at. (e.g. Nature, Science)</p>
 			<h3>Authors</h3>
-			<p>Names of the researchers. Format: [ &ldquo;First1 Sur1&rdquo;, &ldquo;First2, Sur2&rdquo;]</p>
+			<p>Names of the researchers.</p>
 			<h3>Type of Data</h3>
 			<p>What Datatypes the model in the paper uses. Include at least one of the following flags. <br/>
 				<i>Graph</i>,<br/>
@@ -77,7 +77,7 @@ function AddPaper() {
 				<i>Other</i>,<br/>
 				<i>Any</i>,<br/></p>
 			<h3>Type of Problem</h3>
-			<p>What type of problems a XAI method can solve are solved in the paper. Format: [&ldquo;Flag1&rdquo;,&rdquo;Flag2&rdquo;]. With at least one of the following flags. These four problem types are based on the taxonomy of Guidotti et. al.[8]</p>
+			<p>What type of problems a XAI method can solve are solved in the paper. With at least one of the following flags. These four problem types are based on the taxonomy of Guidotti et. al.[8]</p>
 
 			<p><i>Model Explanation</i>, globally explaining model &#55349;&#56403; through an interpretable, predictive model.</p>
 

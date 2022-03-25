@@ -85,24 +85,28 @@ function AddPaperForm() {
 		dispatch(formActions.setMethod(fromFilterValue(value)))
 	}
 
+	function handleChangeAbstract(event: React.FormEvent<HTMLInputElement>) {
+		dispatch(formActions.setAbstract(event.currentTarget.value))
+	}
 
 	return (
 		<Row>
 			<Col span={12}>
 				<Form {...layout} name="nest-messages">
-					<Item label="Title"
-					>
-						<Input defaultValue={form.Title} onChange={handleChangeTitle} />
+					<Item label="Title">
+						<Input placeholder="Title" defaultValue={form.Title} onChange={handleChangeTitle} />
 					</Item>
+
 					<Item label="Doi">
-						<Input defaultValue={form.url} onChange={handleChangeDoi} />
+						<Input placeholder="Doi" defaultValue={form.url} onChange={handleChangeDoi} />
 					</Item>
+
 					<Item label="Year of Publication">
 						<InputNumber defaultValue={parseInt(form.Year)} onChange={handleChangeYear} />
 					</Item>
 
 					<Item label="Authors" >
-						<Input defaultValue={printNames(form.Authors)} onChange={handleChangeAuthors} />
+						<Input placeholder="Authors" defaultValue={printNames(form.Authors)} onChange={handleChangeAuthors} />
 					</Item>
 
 					<Item label="Venue">
@@ -137,6 +141,10 @@ function AddPaperForm() {
 
 					<Item label="Method used to explain">
 						<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleChangeMethod} value={form["Method used to explain"]} />
+					</Item>
+
+					<Item label="Abstract">
+						<Input placeholder="Abstract" defaultValue={form["Abstract"]} onChange={handleChangeAbstract} />
 					</Item>
 				</Form>
 			</Col>
