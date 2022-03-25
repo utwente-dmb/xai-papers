@@ -11,7 +11,6 @@ import Moment from "moment"
 const { RangePicker } = DatePicker
 const { Search } = Input
 
-
 function Filters(): JSX.Element {
 
 	const filters = useAppSelector((state) => state.filters)

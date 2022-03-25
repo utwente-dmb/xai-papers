@@ -67,61 +67,41 @@ function Chart(): JSX.Element {
 
 	// console.log(current, firstYear, lastYear)
 
-	const graphMap: { [key: string]: JSX.Element } = {
-		"Connected Graph": (<ConnectedChart />),
-		"Tableau": (
-			<>
-				<Col offset={20}>
-					<Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
-						{typeArray.map((elem: any) =>
-							<Option key={elem} value={elem}>
-								{elem}
-							</Option>
-						)}
-					</Select>
-				</Col>
-				<CirclePackingChart type={type} />
-			</>
-		),
-		"LineChart": (
-			<>
-				<Col offset={20}>
-					<Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
-						{typeArray.map((elem: any) =>
-							<Option key={elem} value={elem}>
-								{elem}
-							</Option>
-						)}
-					</Select>
-				</Col>
-				<GrowthLineChart type={type} />
-			</>
-		),
-		"RaceChart": (
-			<>
-				<Row>
-					<Col span={12}>
-						<Slider
-							min={firstYear}
-							max={lastYear}
-							onChange={HandleSlider}
-							tooltipVisible={true}
-							defaultValue={sliderYear}
-						/>
-					</Col>
-					<Col offset={8}>
-						<Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
-							{typeArray.map((elem: any) =>
-								<Option key={elem} value={elem}>
-									{elem}
-								</Option>
-							)}
-						</Select>
-					</Col>
-				</Row>
-				<RaceChart type={type} current={current} />
-			</>
-		)
+	const graphMap: { [key: string]: {
+		withSelect: boolean,
+		element: JSX.Element
+	} } = {
+		"Connected Graph": {
+			withSelect: false,
+			element: (<ConnectedChart />)
+		},
+		"Tableau": {
+			withSelect: true,
+			element: 
+					<CirclePackingChart type={type} />
+		},
+		"LineChart": {
+			withSelect: true,
+			element: <GrowthLineChart type={type} />
+		},
+		"RaceChart": {
+			withSelect: true,
+			element: (
+				<>
+					<Row>
+						<Col span={12}>
+							<Slider
+								min={firstYear}
+								max={lastYear}
+								onChange={HandleSlider}
+								tooltipVisible={true}
+								defaultValue={sliderYear}
+							/>
+						</Col>
+					</Row>
+					<RaceChart type={type} current={current} />
+				</>
+			)}
 	}
 	return (
 		<>
@@ -137,7 +117,18 @@ function Chart(): JSX.Element {
 			</Row>
 			<Row gutter={10}>
 				<Col span={24}>
-					{graphMap[chart]}
+					{graphMap[chart].withSelect 
+						? <Col offset={20}>
+							<Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
+								{typeArray.map((elem: any) =>
+									<Option key={elem} value={elem}>
+										{elem}
+									</Option>
+								)}
+							</Select>
+						</Col> 
+						: null}
+					{graphMap[chart].element}
 				</Col>
 			</Row>
 		</>

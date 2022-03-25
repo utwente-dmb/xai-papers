@@ -13,7 +13,7 @@ export function Year() {
 	firstYear = parseInt(papers[0]["Year"])
 	lastYear = parseInt(papers[papers.length - 1]["Year"])
 	return [firstYear, lastYear]
-}
+} 
 
 function GenerateData(col: keyof Paper, year: number) {
 	const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
