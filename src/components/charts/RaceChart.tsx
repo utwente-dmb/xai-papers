@@ -5,8 +5,8 @@ import { Bar } from "@nivo/bar"
 import { useEffect, useState } from "react"
 import { Paper } from "../../types"
 
-let firstYear: number
-let lastYear: number
+export let firstYear: number
+export let lastYear: number
 
 function GenerateData(col: keyof Paper, year: number) {
 	const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
@@ -41,6 +41,7 @@ function GenerateData(col: keyof Paper, year: number) {
 
 type LineChartProps = {
 	type: string
+	current: number
 }
 
 let dataOld: any = {}
@@ -50,18 +51,7 @@ export function ResetData() {
 	year = 0
 }
 
-function RaceChart({ type }: LineChartProps) {
-	const [current, setCurrent] = useState(year)
-
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			if (current < lastYear - firstYear) {
-				setCurrent(current + 1)
-			}
-		}, 1000)
-		return () => clearTimeout(timer)
-	}, [current, setCurrent])
-
+function RaceChart({ type,current }: LineChartProps) {
 	const dataCurrent: any = GenerateData(type as keyof Paper, current)
 
 	for (const [key, value] of Object.entries(dataCurrent)) {
