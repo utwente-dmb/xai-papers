@@ -13,7 +13,11 @@
                 "type": "string"
             },
             "Venue": {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                    "isOld": {"type": "boolean"},
+                    "value": {"type": "string"}
+                }
             },
             "Authors": {
                 "type": "array",
@@ -62,6 +66,9 @@
                     "type": "string",
                     "enum": ["Interpretability built into the predictive model", "Supervised explanation training", "Post-hoc explanation method"]
                 }
+            },
+            "Abstract": {
+                "type": "string"
             }
         },
         "required": [
@@ -75,7 +82,8 @@
             "Type of Model to be Explained",
             "Type of Task",
             "Type of Explanation",
-            "Method used to explain"
+            "Method used to explain",
+            "Abstract"
         ]
     }
 }

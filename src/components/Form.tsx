@@ -1,5 +1,5 @@
 import { Form, Input, InputNumber, Button, Col, Row } from "antd"
-import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Paper } from "../types"
+import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Paper, Venue } from "../types"
 import Select from "./Select"
 import { fromFilterValue } from "../utils"
 import { useAppDispatch, useAppSelector } from "../hooks"
@@ -46,49 +46,78 @@ function AddPaperForm() {
 		dispatch(formActions.setAuthors(authors))
 	}
 
-	function handleChangeData(value: Array<FilterValue<Data>>) {
+	function handleChangeVenueDropdown(value: Array<FilterValue<Venue>>) {
+		const newVenue = fromFilterValue(value)[0]
+		if (newVenue === "Other") {
+			dispatch(formActions.setIsOldVenue(false))
+		} else {
+			dispatch(formActions.setIsOldVenue(true))
+			dispatch(formActions.setVenue(newVenue))
+		}
+	}
+
+	function handleChangeVenueInput(event: React.FormEvent<HTMLInputElement>) {
+		const venue = event.currentTarget.value
+		dispatch(formActions.setVenue(venue))
+	}
+
+	function handleChangeData(value: Array<FilterValue<typeof Data>>) {
 		dispatch(formActions.setData(fromFilterValue(value)))
 	}
 
-	function handleChangeProblem(value: Array<FilterValue<Problem>>) {
+	function handleChangeProblem(value: Array<FilterValue<typeof Problem>>) {
 		dispatch(formActions.setProblem(fromFilterValue(value)))
 	}
 
-	function handleChangeModel(value: Array<FilterValue<Model>>) {
+	function handleChangeModel(value: Array<FilterValue<typeof Model>>) {
 		dispatch(formActions.setModel(fromFilterValue(value)))
 	}
 
-	function handleChangeTask(value: Array<FilterValue<Task>>) {
+	function handleChangeTask(value: Array<FilterValue<typeof Task>>) {
 		dispatch(formActions.setTask(fromFilterValue(value)))
 	}
 
-	function handleChangeExplanation(value: Array<FilterValue<Explanation>>) {
+	function handleChangeExplanation(value: Array<FilterValue<typeof Explanation>>) {
 		dispatch(formActions.setExplanation(fromFilterValue(value)))
 	}
 
-	function handleChangeMethod(value: Array<FilterValue<Method>>) {
+	function handleChangeMethod(value: Array<FilterValue<typeof Method>>) {
 		dispatch(formActions.setMethod(fromFilterValue(value)))
 	}
 
+	function handleChangeAbstract(event: React.FormEvent<HTMLInputElement>) {
+		dispatch(formActions.setAbstract(event.currentTarget.value))
+	}
 
 	return (
 		<Row>
 			<Col span={12}>
 				<Form {...layout} name="nest-messages">
-					<Item label="Title"
-					>
-						<Input defaultValue={form.Title} onChange={handleChangeTitle} />
+					<Item label="Title">
+						<Input placeholder="Title" defaultValue={form.Title} onChange={handleChangeTitle} />
 					</Item>
+
 					<Item label="Doi">
-						<Input defaultValue={form.url} onChange={handleChangeDoi} />
+						<Input placeholder="Doi" defaultValue={form.url} onChange={handleChangeDoi} />
 					</Item>
+
 					<Item label="Year of Publication">
 						<InputNumber defaultValue={parseInt(form.Year)} onChange={handleChangeYear} />
 					</Item>
 
 					<Item label="Authors" >
-						<Input defaultValue={printNames(form.Authors)} onChange={handleChangeAuthors} />
+						<Input placeholder="Authors" defaultValue={printNames(form.Authors)} onChange={handleChangeAuthors} />
 					</Item>
+
+					<Item label="Venue">
+						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenueDropdown} value={form.Venue.value ? [form.Venue.value as Venue] : []} maxTags={1} />
+					</Item>
+					{!form.Venue.isOld 
+						? <Item label="Venue" >
+							<Input placeholder="Venue" onChange={handleChangeVenueInput} value={form.Venue.value} /> 
+						</Item>
+						: null
+					}
 
 					<Item label="Type of Data">
 						<Select placeholder="Type of Data" enumerator={Data} handleChange={handleChangeData} value={form["Type of Data"]} />
@@ -112,6 +141,10 @@ function AddPaperForm() {
 
 					<Item label="Method used to explain">
 						<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleChangeMethod} value={form["Method used to explain"]} />
+					</Item>
+
+					<Item label="Abstract">
+						<Input placeholder="Abstract" defaultValue={form["Abstract"]} onChange={handleChangeAbstract} />
 					</Item>
 				</Form>
 			</Col>

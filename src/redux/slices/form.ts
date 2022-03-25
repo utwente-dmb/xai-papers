@@ -6,14 +6,18 @@ const initialState: Paper = {
 	Title: "",
 	url: "",
 	Year: "2020",
-	Venue: "",
+	Venue: {
+		isOld: true,
+		value: ""
+	},
 	Authors: [],
 	"Type of Data": [],
 	"Type of Problem": [],
 	"Type of Model to be Explained": [],
 	"Type of Task": [],
 	"Type of Explanation": [],
-	"Method used to explain": []
+	"Method used to explain": [],
+	"Abstract": ""
 }
 
 const formSlice = createSlice({
@@ -32,27 +36,33 @@ const formSlice = createSlice({
 		setAuthors(state, action: PayloadAction<Array<string>>) {
 			state.Authors = action.payload
 		},
-		setVenue(state, action: PayloadAction<Venue>) {
-			state.Venue = action.payload
+		setIsOldVenue(state, action: PayloadAction<boolean>) {
+			state.Venue.isOld = action.payload
 		},
-		setData(state, action: PayloadAction<Array<Data>>) {
+		setVenue(state, action: PayloadAction<Venue | string>) {
+			state.Venue.value = action.payload
+		},
+		setData(state, action: PayloadAction<Array<typeof Data>>) {
 			state["Type of Data"] = action.payload
 		},
-		setProblem(state, action: PayloadAction<Array<Problem>>) {
+		setProblem(state, action: PayloadAction<Array<typeof Problem>>) {
 			state["Type of Problem"] = action.payload
 		},
-		setModel(state, action: PayloadAction<Array<Model>>) {
+		setModel(state, action: PayloadAction<Array<typeof Model>>) {
 			state["Type of Model to be Explained"] = action.payload
 		},
-		setTask(state, action: PayloadAction<Array<Task>>) {
+		setTask(state, action: PayloadAction<Array<typeof Task>>) {
 			state["Type of Task"] = action.payload
 		},
-		setExplanation(state, action: PayloadAction<Array<Explanation>>) {
+		setExplanation(state, action: PayloadAction<Array<typeof Explanation>>) {
 			state["Type of Explanation"] = action.payload
 		},
-		setMethod(state, action: PayloadAction<Array<Method>>) {
+		setMethod(state, action: PayloadAction<Array<typeof Method>>) {
 			state["Method used to explain"] = action.payload
 		},
+		setAbstract(state, action: PayloadAction<string>) {
+			state["Abstract"] = action.payload
+		}
 	}
 })
 

@@ -1,6 +1,7 @@
+import { useState } from "react"
 import { Select, Col, Tag } from "antd"
 import { Paper, FilterValue } from "../types"
-import { getColor, toFilterValue } from "../utils"
+import { fromFilterValue, getColor, toFilterValue } from "../utils"
 
 const { Option } = Select
 
@@ -31,12 +32,20 @@ type FilterProps<T> = {
 	enumerator: Record<number, string>,
 	handleChange: (val: Array<FilterValue<T>>) => void,
 	value: Array<T>
-    span?: number
+    span?: number,
+	maxTags?: number
   }
 
-function Filter<T>({ placeholder, enumerator, handleChange, value, span }: FilterProps<T> ): JSX.Element {
+function Filter<T>({ placeholder, enumerator, handleChange, value, span, maxTags }: FilterProps<T> ): JSX.Element {
 
 	const defaultValue = toFilterValue(value, placeholder)
+
+	const [optionsSelected, setOptionsSelected] = useState<Array<T>>([])
+
+	const onChange = (value: Array<FilterValue<T>>) => {
+		handleChange(value)
+		setOptionsSelected(fromFilterValue(value))
+	}
 
 	return (
 		<Col span={span ?? 24}>
@@ -45,14 +54,26 @@ function Filter<T>({ placeholder, enumerator, handleChange, value, span }: Filte
 				style={{ width: "100%" }}
 				placeholder={placeholder}
 				defaultValue={defaultValue}
-				onChange={handleChange}
+				onChange={onChange}
 				labelInValue={true}
 				tagRender={tagRender}
 				allowClear
 			>
-				{Object.values(enumerator).map((item: string) => (
-					<Option value={`${placeholder}+${item}`} key={item}>{item}</Option>
-				))}
+				{Object.values(enumerator).map((item: string) => {
+					maxTags = maxTags || 1000
+					const isFull = optionsSelected.length >= maxTags
+					const disabled = isFull && !optionsSelected.includes(item as unknown as T)
+
+					return (
+						<Option 
+							value={`${placeholder}+${item}`} 
+							key={item}
+							disabled={disabled}
+						>
+							{item}
+						</Option>
+					)}
+				)}
 			</Select>
 		</Col>
 	)

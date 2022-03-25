@@ -17,27 +17,27 @@ function Filters(): JSX.Element {
 	const filters = useAppSelector((state) => state.filters)
 	const dispatch = useAppDispatch()
 
-	function handleDataChange(value: Array<FilterValue<Data>>) { 
+	function handleDataChange(value: Array<FilterValue<typeof Data>>) { 
 		dispatch(filtersActions.setData(fromFilterValue(value)))
 	}
 
-	function handleProblemChange(value: Array<FilterValue<Problem>>) { 
+	function handleProblemChange(value: Array<FilterValue<typeof Problem>>) { 
 		dispatch(filtersActions.setProblem(fromFilterValue(value)))
 	}
   
-	function handleModelChange(value: Array<FilterValue<Model>>) { 
+	function handleModelChange(value: Array<FilterValue<typeof Model>>) { 
 		dispatch(filtersActions.setModel(fromFilterValue(value)))
 	}
 
-	function handleTaskChange(value: Array<FilterValue<Task>>) {
+	function handleTaskChange(value: Array<FilterValue<typeof Task>>) {
 		dispatch(filtersActions.setTask(fromFilterValue(value)))
 	}
 
-	function handleExplanationChange(value: Array<FilterValue<Explanation>>) {
+	function handleExplanationChange(value: Array<FilterValue<typeof Explanation>>) {
 		dispatch(filtersActions.setExplanation(fromFilterValue(value)))
 	}
 
-	function handleMethodChange(value: Array<FilterValue<Method>>) {
+	function handleMethodChange(value: Array<FilterValue<typeof Method>>) {
 		dispatch(filtersActions.setMethod(fromFilterValue(value)))
 	}
 
@@ -50,8 +50,8 @@ function Filters(): JSX.Element {
 	}
 
 	function handleYearChange(value: any) {
-		const startYear = value[0]?.year()
-		const endYear = value[1]?.year()
+		const startYear = value?.[0]?.year()
+		const endYear = value?.[1]?.year()
 
 		dispatch(filtersActions.setStartYear(startYear))
 		dispatch(filtersActions.setEndYear(endYear))
@@ -62,7 +62,7 @@ function Filters(): JSX.Element {
 	}
 
 	return (
-		<Row gutter={[4, 4]} justify="center">
+		<Row gutter={[4, 4]} justify="center" style={{marginBottom: 12}}>
 			<Col span={24}>
 				<Form.Item 
 					label="State of Filter" 
@@ -71,7 +71,7 @@ function Filters(): JSX.Element {
 						icon: <InfoCircleOutlined/>
 					}}
 				>
-					<Radio.Group defaultValue={filters.filterStateAND ? "AND" : "OR"} onChange={handleFilterChange}>
+					<Radio.Group buttonStyle="solid" defaultValue={filters.filterStateAND ? "AND" : "OR"} onChange={handleFilterChange}>
 						<Radio.Button value="AND">AND</Radio.Button>
 						<Radio.Button value="OR">OR</Radio.Button>
 					</Radio.Group>
@@ -89,7 +89,7 @@ function Filters(): JSX.Element {
 			<Col span={8}>
 				<RangePicker 
 					picker="year" 
-					onPanelChange={handleYearChange} 
+					onChange={handleYearChange} 
 					allowEmpty={[true, true]}
 					defaultValue={[
 						filters.startYear ? Moment([filters.startYear]) : null, 
@@ -100,11 +100,11 @@ function Filters(): JSX.Element {
 
 			<Col span={8}>
 				<Search 
-					placeholder="Search titles, authors and venues" 
+					placeholder="Search titles, venues, authors and abstracts" 
 					onSearch={handleSearch} 
 					defaultValue={filters.search} 
 					suffix={
-						<Tooltip title="Prefix with 'author:', 'venue:' or 'title:' to only search in the respective field">
+						<Tooltip title="Prefix with 'title:', 'venue:', 'author:' or 'abstract:' to only search in the respective field">
 							<InfoCircleOutlined />
 						</Tooltip>
 					}

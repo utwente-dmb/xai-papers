@@ -26,20 +26,22 @@ const theme = {
 }
 
 function GenerateData(col: string) {
-	const papers: any = useFilteredPapers().reverse()
+	const papers: any = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
 
 	const dataRaw: any = {}
 
 	papers.forEach(function (value: any) {
-		if (!dataRaw["Papers"]) {
+		if (dataRaw["Papers"]) {
+			if (value["Year"] > dataRaw["Papers"][dataRaw["Papers"].length - 1]["x"]) {
+				dataRaw["Papers"].push({ x: value["Year"], y: dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] + 1 })
+			}
+			else if (dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"]) {
+				dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] += 1
+			}
+		}
+		else {
 			dataRaw["Papers"] = []
 			dataRaw["Papers"].push({ x: value["Year"], y: 1 })
-		}
-		if (value["Year"] > dataRaw["Papers"][dataRaw["Papers"].length - 1]["x"]) {
-			dataRaw["Papers"].push({ x: value["Year"], y: dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] + 1 })
-		}
-		else if (dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"]) {
-			dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] += 1
 		}
 
 		for (const elem of value[col]) {
@@ -66,27 +68,15 @@ function GenerateData(col: string) {
 	return dataFormated
 }
 
+type LineChartProps = {
+	type: string
+}
 
-function GrowthLineChart() {
-	const [type, setType] = useState("Type of Data")
-
-	function handleChange(value: string) {
-		setType(value)
-	}
-
+function GrowthLineChart({ type }: LineChartProps) {
 	const data2: any = GenerateData(type)
 
 	return (
 		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
-			<Col offset={20}>
-				<Select defaultValue={type} style={{ width: 240 }} onChange={handleChange}>
-					{typeArray.map(elem =>
-						<Option key={elem} value={elem}>
-							{elem}
-						</Option>
-					)}
-				</Select>
-			</Col>
 			<ResponsiveLine
 				data={data2}
 				margin={{ top: 25, right: 200, bottom: 50, left: 60 }}
@@ -124,6 +114,7 @@ function GrowthLineChart() {
 					[
 						{
 							anchor: "top-right",
+							toggleSerie: true,
 							direction: "column",
 							justify: false,
 							translateX: 100,
