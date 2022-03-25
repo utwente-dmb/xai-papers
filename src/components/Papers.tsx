@@ -73,7 +73,7 @@ function Papers(): JSX.Element {
 			title: "Year",
 			dataIndex: "Year",
 			key: "year",
-			defaultSortOrder: "ascend",
+			defaultSortOrder: "descend",
 			sorter: {
 				compare: (a: Paper, b: Paper) => a.Year.localeCompare(b.Year),
 				multiple: 3
