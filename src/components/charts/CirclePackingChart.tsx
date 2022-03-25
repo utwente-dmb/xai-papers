@@ -68,7 +68,7 @@ function CirclePackingChart({ type }: LineChartProps) {
 				data={data}
 				margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
 				id="name"
-				colors={{ scheme: "pastel2" }}
+				colors={{ scheme: "pastel1" }}
 				colorBy="id"
 				childColor={{
 					from: "color",
