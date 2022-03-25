@@ -5,8 +5,8 @@ import { Bar } from "@nivo/bar"
 import { useEffect, useState } from "react"
 import { Paper } from "../../types"
 
-let firstYear: number
-let lastYear: number
+export let firstYear: number
+export let lastYear: number
 
 function GenerateData(col: keyof Paper, year: number) {
 	const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
@@ -41,25 +41,17 @@ function GenerateData(col: keyof Paper, year: number) {
 
 type LineChartProps = {
 	type: string
+	current: number
 }
 
 let dataOld: any = {}
-export function ResetData(){
+let year = 0
+export function ResetData() {
 	dataOld = {}
+	year = 0
 }
 
-function RaceChart({ type }: LineChartProps) {
-	const [current, setCurrent] = useState(0)
-
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			if (current < lastYear) {
-				setCurrent(current + 1)
-			}
-		}, 4000)
-		return () => clearTimeout(timer)
-	}, [current, setCurrent])
-
+function RaceChart({ type,current }: LineChartProps) {
 	const dataCurrent: any = GenerateData(type as keyof Paper, current)
 
 	for (const [key, value] of Object.entries(dataCurrent)) {
@@ -79,12 +71,15 @@ function RaceChart({ type }: LineChartProps) {
 
 	return (
 		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
+			<h2 style={{ marginLeft: 60, fontWeight: 400, color: "#555" }}>
+				Year{" "}
+				<strong style={{ color: "black", fontWeight: 900 }}>{current + firstYear}</strong>
+			</h2>
 			<ResponsiveBar
 				data={dataFormated}
 				layout="horizontal"
 				margin={{ top: 26, right: 120, bottom: 26, left: 60 }}
 				indexBy="id"
-				keys={["value"]}
 				colors={{ scheme: "spectral" }}
 				colorBy="indexValue"
 				borderColor={{ from: "color", modifiers: [["darker", 2.6]] }}
