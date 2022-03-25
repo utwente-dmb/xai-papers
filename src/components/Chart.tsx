@@ -10,7 +10,7 @@ let firstYear: number
 let lastYear: number
 
 let sliderYear = 99999999999
-
+let chartUpdateSpeed = 1
 function Chart(): JSX.Element {
 	[firstYear, lastYear] = Year()
 
@@ -19,13 +19,24 @@ function Chart(): JSX.Element {
 	const [type, setType] = useState("Type of Data")
 
 	const [current, setCurrent] = useState(0)
-	
+
 	const timer = setTimeout(() => {
-		console.log(current, sliderYear, firstYear)
-		if (current < lastYear - firstYear && current < sliderYear - firstYear) {
+		console.log(current, sliderYear, firstYear, lastYear)
+		if (current < (sliderYear - firstYear) - 1 && sliderYear != lastYear) {
 			setCurrent(current + 1)
+			chartUpdateSpeed = 1000
 		}
-	}, 1000)
+		else if (current < (sliderYear - firstYear) && sliderYear != lastYear) {
+			setCurrent(current + 1)
+			chartUpdateSpeed = 1000
+		}
+
+		else if (current < (sliderYear - firstYear) && sliderYear === lastYear) {
+			setCurrent(current + 1)
+			chartUpdateSpeed = 1000
+		}
+		console.log(chartUpdateSpeed)
+	}, chartUpdateSpeed)
 
 	if (sliderYear == 99999999999) {
 		sliderYear = lastYear
