@@ -9872,5 +9872,39 @@
     "Method used to explain": [
       "Interpretability built into the predictive model"
     ]
+  },
+  {
+    "Title": "Congratulations with your award",
+    "url": "Yes.nl",
+    "Year": "2022",
+    "Venue": {
+      "isOld": false,
+      "value": "Uni Twente"
+    },
+    "Authors": [
+      "Meike",
+      "Gies",
+      "Ramish",
+      "Boris"
+    ],
+    "Type of Data": [
+      "Any"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "Other"
+    ],
+    "Type of Task": [
+      "Other"
+    ],
+    "Type of Explanation": [
+      "Other"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Abstract": "Awards are there to be won"
   }
 ]
