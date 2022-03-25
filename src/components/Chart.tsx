@@ -13,13 +13,16 @@ let lastYear: number
 
 let sliderYear = 99999999999
 let chartUpdateSpeed = 1
+
+function Year() {
+	const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
+	firstYear = parseInt(papers[0]["Year"])
+	lastYear = parseInt(papers[papers.length - 1]["Year"])
+	return [firstYear, lastYear]
+}
+
 function Chart(): JSX.Element {
-	function Year() {
-		const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
-		firstYear = parseInt(papers[0]["Year"])
-		lastYear = parseInt(papers[papers.length - 1]["Year"])
-		return [firstYear, lastYear]
-	} 
+ 
 	[firstYear, lastYear] = Year()
 
 	const [chart, setChart] = useState("Connected Graph")
@@ -30,16 +33,14 @@ function Chart(): JSX.Element {
 
 	const timer = setTimeout(() => {
 		console.log(current, sliderYear, firstYear, lastYear)
-		if (current < (sliderYear - firstYear) - 1 && sliderYear != lastYear) {
+		const diff = sliderYear - firstYear
+		if (current < diff - 1 && sliderYear != lastYear) {
 			setCurrent(current + 1)
-			chartUpdateSpeed = 1000
-		}
-		else if (current < (sliderYear - firstYear) && sliderYear != lastYear) {
+			chartUpdateSpeed = 1
+		} else if (current < diff && sliderYear != lastYear) {
 			setCurrent(current + 1)
-			chartUpdateSpeed = 1000
-		}
-
-		else if (current < (sliderYear - firstYear) && sliderYear === lastYear) {
+			chartUpdateSpeed = 1
+		} else if (current < diff && sliderYear === lastYear) {
 			setCurrent(current + 1)
 			chartUpdateSpeed = 1000
 		}
@@ -72,8 +73,6 @@ function Chart(): JSX.Element {
 		clearTimeout(timer)
 		console.log(sliderValue, sliderYear, firstYear, lastYear, current, sliderYear - firstYear)
 	}
-
-	// console.log(current, firstYear, lastYear)
 
 	const graphMap: { [key: string]: {
 		withSelect: boolean,

@@ -1,8 +1,5 @@
 import { ResponsiveBar } from "@nivo/bar"
-import { typeArray } from "../../utils"
 import { useFilteredPapers } from "../../hooks"
-import { Bar } from "@nivo/bar"
-import { useEffect, useState } from "react"
 import { Paper } from "../../types"
 
 let firstYear: number
