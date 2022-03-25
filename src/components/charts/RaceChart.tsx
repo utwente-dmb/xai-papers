@@ -44,19 +44,21 @@ type LineChartProps = {
 }
 
 let dataOld: any = {}
-export function ResetData(){
+let year = 0
+export function ResetData() {
 	dataOld = {}
+	year = 0
 }
 
 function RaceChart({ type }: LineChartProps) {
-	const [current, setCurrent] = useState(0)
+	const [current, setCurrent] = useState(year)
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
-			if (current < lastYear) {
+			if (current < lastYear - firstYear) {
 				setCurrent(current + 1)
 			}
-		}, 4000)
+		}, 1000)
 		return () => clearTimeout(timer)
 	}, [current, setCurrent])
 
@@ -79,12 +81,15 @@ function RaceChart({ type }: LineChartProps) {
 
 	return (
 		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
+			<h2 style={{ marginLeft: 60, fontWeight: 400, color: "#555" }}>
+				Year{" "}
+				<strong style={{ color: "black", fontWeight: 900 }}>{current + firstYear}</strong>
+			</h2>
 			<ResponsiveBar
 				data={dataFormated}
 				layout="horizontal"
 				margin={{ top: 26, right: 120, bottom: 26, left: 60 }}
 				indexBy="id"
-				keys={["value"]}
 				colors={{ scheme: "spectral" }}
 				colorBy="indexValue"
 				borderColor={{ from: "color", modifiers: [["darker", 2.6]] }}
