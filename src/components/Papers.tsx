@@ -104,7 +104,9 @@ function Papers(): JSX.Element {
 									: null}
 							
 								<Col span={24}>
-									Authors: {printNames(record.Authors)}
+									<b>
+										Authors: {printNames(record.Authors)}
+									</b>
 								</Col>
 								<Col span={24}>
 									{typeArray.map((type) => (
