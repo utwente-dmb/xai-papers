@@ -5,8 +5,15 @@ import { Bar } from "@nivo/bar"
 import { useEffect, useState } from "react"
 import { Paper } from "../../types"
 
-export let firstYear: number
-export let lastYear: number
+let firstYear: number
+let lastYear: number
+
+export function Year() {
+	const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
+	firstYear = parseInt(papers[0]["Year"])
+	lastYear = parseInt(papers[papers.length - 1]["Year"])
+	return [firstYear, lastYear]
+}
 
 function GenerateData(col: keyof Paper, year: number) {
 	const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
@@ -51,7 +58,7 @@ export function ResetData() {
 	year = 0
 }
 
-function RaceChart({ type,current }: LineChartProps) {
+function RaceChart({ type, current }: LineChartProps) {
 	const dataCurrent: any = GenerateData(type as keyof Paper, current)
 
 	for (const [key, value] of Object.entries(dataCurrent)) {
