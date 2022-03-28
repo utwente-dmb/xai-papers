@@ -1,5 +1,5 @@
 import React from "react"
-import { Col, Row, DatePicker, Input, Tooltip, Form, Radio, RadioChangeEvent } from "antd"
+import { Col, Row, DatePicker, Input, Tooltip, Form, Radio, RadioChangeEvent, Button } from "antd"
 import { InfoCircleOutlined } from "@ant-design/icons"
 import { Data, Explanation, Method, Model, Problem, Task, FilterValue, Venue } from "../types"
 import { filtersActions } from "../redux"
@@ -60,9 +60,13 @@ function Filters(): JSX.Element {
 		dispatch(filtersActions.setSearch(value))
 	}
 
+	function handleReset() {
+		dispatch(filtersActions.reset())
+	}
+
 	return (
 		<Row gutter={[4, 4]} justify="center" style={{marginBottom: 12}}>
-			<Col span={24}>
+			<Col span={4}>
 				<Form.Item 
 					label="State of Filter" 
 					tooltip={{ 
@@ -75,6 +79,9 @@ function Filters(): JSX.Element {
 						<Radio.Button value="OR">OR</Radio.Button>
 					</Radio.Group>
 				</Form.Item>
+			</Col>
+			<Col span={20}>
+				<Button onClick={handleReset}>Reset Filters</Button>
 			</Col>
 
 			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data}  span={8}/>
