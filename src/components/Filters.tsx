@@ -56,8 +56,8 @@ function Filters(): JSX.Element {
 		dispatch(filtersActions.setEndYear(endYear))
 	}
 
-	function handleSearch(value: string) {
-		dispatch(filtersActions.setSearch(value))
+	function handleSearch(value: React.ChangeEvent<HTMLInputElement>) {
+		dispatch(filtersActions.setSearch(value.currentTarget.value))
 	}
 
 	function handleReset() {
@@ -107,7 +107,7 @@ function Filters(): JSX.Element {
 			<Col span={8}>
 				<Search 
 					placeholder="Search titles, venues, authors and abstracts" 
-					onSearch={handleSearch} 
+					onChange={handleSearch} 
 					defaultValue={filters.search} 
 					suffix={
 						<Tooltip title="Prefix with 'title:', 'venue:', 'author:' or 'abstract:' to only search in the respective field">
