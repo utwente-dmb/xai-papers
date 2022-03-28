@@ -52,7 +52,7 @@ function AddPaper() {
 				] <br/>
 				&#125;</p> */}
 
-			<p>For an overview of the Options and formatting of the above fields please see the documentation below. Make sure when replacing the fields to maintain the quotation marks.</p>
+			<p>For an explanation of the datafields please see the documentation below.</p>
 
 			<h2>Properties</h2>
 			<h3>Title</h3>
@@ -66,16 +66,7 @@ function AddPaper() {
 			<h3>Authors</h3>
 			<p>Names of the researchers.</p>
 			<h3>Type of Data</h3>
-			<p>What Datatypes the model in the paper uses. Include at least one of the following flags. <br/>
-				<i>Graph</i>,<br/>
-				<i>Text</i>,<br/>
-				<i>Image</i>,<br/>
-				<i>Time Series</i>,<br/>
-				<i>Tabular/Structured</i>,<br/>
-				<i>User-Item Matrix</i>,<br/>
-				<i>Video</i>,<br/>
-				<i>Other</i>,<br/>
-				<i>Any</i>,<br/></p>
+			<p>What Datatypes the model in the paper uses. A combination of multiple flags is possible.</p>
 			<h3>Type of Problem</h3>
 			<p>What type of problems a XAI method can solve are solved in the paper. With at least one of the following flags. These four problem types are based on the taxonomy of Guidotti et. al.[8]</p>
 
@@ -88,22 +79,14 @@ function AddPaper() {
 			<p><i>Transparent Box Design</i>, the explanation method is an interpretable model (i.e., &#55349;&#56402; = &#55349;&#56403; ) also making the predictions.</p>
 
 			<h3>Type of Model to be Explained</h3>
-			<p>	What type of AI model is used in the paper. Choose at least one of the following flags. <br/>
-				<i>(Deep) Neural Network</i>,<br/>
-				<i>Bayesian or Hierarchical Network</i>,<br/>
-				<i>Support Vector Machine</i>,<br/>
-				<i>Tree Ensemble</i>,<br/>
-				<i>Other</i>,<br/>
-				<i>Any</i>,<br/></p>
+			<p>	What type of AI model is used in the paper. A combination of multiple flags is possible.</p>
+
 			<h3>Type of Task</h3>
-			<p>What is the task of the AI model in the paper. Choose at least one of the following flags.<br/>
-				<i>Classification</i>,<br/>
-				<i>Regression</i>,<br/>
-				<i>Policy Learning</i>,<br/>
-				<i>Other</i>,</p>
+			<p>What is the task of the AI model in the paper. A combination of multiple flags is possible.</p>
+
 
 			<h3>Type of Explanation</h3>
-			<p>What type of explanation is used to explain the AI model. Choose at least one of the following flags.</p>
+			<p>What type of explanation is used to explain the AI model. A combination of multiple flags is possible.</p>
 
 			<p><i>Decision Rules</i>, Logical rules, including decision sets[16], anchors[24], decision tables[13] and programs[31].</p>
 

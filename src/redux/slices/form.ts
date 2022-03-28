@@ -60,6 +60,9 @@ const formSlice = createSlice({
 		setMethod(state, action: PayloadAction<Array<typeof Method>>) {
 			state["Method used to explain"] = action.payload
 		},
+		setAbstract(state, action: PayloadAction<string>) {
+			state["Abstract"] = action.payload
+		}
 	}
 })
 
