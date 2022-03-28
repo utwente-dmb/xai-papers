@@ -66,7 +66,7 @@ function Filters(): JSX.Element {
 
 	return (
 		<Row gutter={[4, 4]} justify="center" style={{marginBottom: 12}}>
-			<Col span={4}>
+			<Col span={5}>
 				<Form.Item 
 					label="State of Filter" 
 					tooltip={{ 
@@ -80,9 +80,12 @@ function Filters(): JSX.Element {
 					</Radio.Group>
 				</Form.Item>
 			</Col>
-			<Col span={20}>
+			<Col span={16}>
 				<Button onClick={handleReset}>Reset Filters</Button>
 			</Col>
+			{/* <Col span={3}>
+				<a href="%PUBLIC_URL%/list.json" target="_blank" download="FilteredList.json">Download Filtered List</a>
+			</Col> */}
 
 			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data}  span={8}/>
 			<Select placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} value={filters.problem}  span={8}/>
@@ -101,6 +104,10 @@ function Filters(): JSX.Element {
 						filters.startYear ? Moment([filters.startYear]) : null, 
 						filters.endYear ? Moment([filters.endYear]) : null
 					]}
+					value={[
+						filters.startYear ? Moment([filters.startYear]) : null, 
+						filters.endYear ? Moment([filters.endYear]) : null
+					]}
 					defaultPickerValue={[
 						Moment([2010]),
 						Moment([2020])
@@ -113,6 +120,7 @@ function Filters(): JSX.Element {
 					placeholder="Search titles, venues, authors and abstracts" 
 					onChange={handleSearch} 
 					defaultValue={filters.search} 
+					value={filters.search}
 					suffix={
 						<Tooltip title="Prefix with 'title:', 'venue:', 'author:' or 'abstract:' to only search in the respective field">
 							<InfoCircleOutlined />
