@@ -9,15 +9,12 @@ const { Option } = Select
 
 const theme = {
 	"textColor": "#ffffff",
-	"fontSize": 16,
+	"fontSize": 20,
 }
 
 let data: {
 	name: string,
-	children: Array<{
-		name: string,
-		value: number
-	}>
+	children: any
 } = {
 	name: "root",
 	children: [
@@ -27,7 +24,7 @@ let data: {
 
 function GenerateData(columnValue: string) {
 	const papers: Paper[] = useFilteredPapers()
-	const count: { [key: string]: { [key: string]: number } } = {
+	const dataRaw: { [key: string]: { [key: string]: any } } = {
 		"Type of Data": {},
 		"Type of Problem": {},
 		"Type of Model to be Explained": {},
@@ -36,21 +33,26 @@ function GenerateData(columnValue: string) {
 		"Method used to explain": {}
 	}
 
-	papers.forEach(function (value: any) {
+	papers.forEach(function (paper: any) {
 		for (const col of typeArray) {
-			for (const elem of value[col]) {
-				if (count[col][elem]) {
-					count[col][elem] += 1
+			for (const elem of paper[col]) {
+				if (dataRaw[col][elem]) {
+					dataRaw[col][elem].push({ name: paper.Title, value: 1, url: paper.url })
 				} else {
-					count[col][elem] = 1
+					dataRaw[col][elem] = []
+					dataRaw[col][elem].push({ name: paper.Title, value: 1, url: paper.url })
+
 				}
 			}
 		}
 	})
+
 	data["children"] = []
-	for (const [key, value] of Object.entries(count[columnValue])) {
-		data["children"].push({ name: key, value: value })
+	for (const [key, value] of Object.entries(dataRaw[columnValue])) {
+		data["children"].push({ name: key, children: value })
 	}
+	console.log(data)
+	console.log(dataRaw)
 
 	return data
 }
@@ -61,16 +63,35 @@ type LineChartProps = {
 
 
 function CirclePackingChart({ type }: LineChartProps) {
+	function HandleClick(e: any) {
+		console.log(e)
+		window.open(e.data.url, "_blank")
+	}
+
 	data = GenerateData(type)
 	return (
-		<div style={{ height: "600px", width: "100%", marginTop: "20px" }}>
+		<div style={{ height: "900px", width: "100%", marginTop: "20px" }}>
 			<ResponsiveCirclePackingCanvas
 				data={data}
 				margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
 				id="name"
-				colors={{ scheme: "pastel2" }}
-				colorBy="id"
+				colors={{ scheme: "nivo" }}
 				childColor={{
+					from: "color",
+					modifiers: [
+						[
+							"brighter",
+							3
+						]
+					]
+				}}
+				labelsSkipRadius={40}
+				labelsFilter={label => ((label.label.toString().length / label.node.radius) < 0.35) && !(label.label === "root")}
+				padding={5}
+				leavesOnly={false}
+				enableLabels={true}
+				label="id"
+				labelTextColor={{
 					from: "color",
 					modifiers: [
 						[
@@ -79,31 +100,17 @@ function CirclePackingChart({ type }: LineChartProps) {
 						]
 					]
 				}}
-				labelsSkipRadius={40}
-				labelsFilter={label =>  ((label.label.toString().length /label.node.radius) < 0.35)}
-				padding={1}
-				leavesOnly={true}
-				enableLabels={true}
-				label="id"
-				labelTextColor={{
-					from: "color",
-					modifiers: [
-						[
-							"darker",
-							2.4
-						]
-					]
-				}}
 				borderColor={{
 					from: "color",
 					modifiers: [
 						[
 							"darker",
-							0.3
+							3
 						]
 					]
 				}}
 				animate={false}
+				onClick={HandleClick}
 				theme={theme}
 			/>
 		</div>
