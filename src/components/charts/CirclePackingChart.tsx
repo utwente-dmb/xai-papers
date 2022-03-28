@@ -65,7 +65,9 @@ type LineChartProps = {
 function CirclePackingChart({ type }: LineChartProps) {
 	function HandleClick(e: any) {
 		console.log(e)
-		window.open(e.data.url, "_blank")
+		if ("url" in e.data) {
+			window.open(e.data.url, "_blank")
+		}
 	}
 
 	data = GenerateData(type)
