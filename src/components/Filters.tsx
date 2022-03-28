@@ -101,6 +101,10 @@ function Filters(): JSX.Element {
 						filters.startYear ? Moment([filters.startYear]) : null, 
 						filters.endYear ? Moment([filters.endYear]) : null
 					]}
+					defaultPickerValue={[
+						Moment([2010]),
+						Moment([2020])
+					]}
 				></RangePicker>
 			</Col>
 
