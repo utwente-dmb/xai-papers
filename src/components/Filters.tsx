@@ -84,7 +84,7 @@ function Filters(): JSX.Element {
 				<Button onClick={handleReset}>Reset Filters</Button>
 			</Col>
 			{/* <Col span={3}>
-				<a href="%PUBLIC_URL%/list.json" target="_blank" download="FilteredList.json">Download Filtered List</a>
+				<a href="/list.txt" download="FilteredList.txt">Download Filtered List</a>
 			</Col> */}
 
 			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data}  span={8}/>
@@ -100,10 +100,6 @@ function Filters(): JSX.Element {
 					picker="year" 
 					onChange={handleYearChange} 
 					allowEmpty={[true, true]}
-					defaultValue={[
-						filters.startYear ? Moment([filters.startYear]) : null, 
-						filters.endYear ? Moment([filters.endYear]) : null
-					]}
 					value={[
 						filters.startYear ? Moment([filters.startYear]) : null, 
 						filters.endYear ? Moment([filters.endYear]) : null
@@ -119,7 +115,6 @@ function Filters(): JSX.Element {
 				<Search 
 					placeholder="Search titles, venues, authors and abstracts" 
 					onChange={handleSearch} 
-					defaultValue={filters.search} 
 					value={filters.search}
 					suffix={
 						<Tooltip title="Prefix with 'title:', 'venue:', 'author:' or 'abstract:' to only search in the respective field">

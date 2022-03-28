@@ -53,7 +53,6 @@ function Filter<T>({ placeholder, enumerator, handleChange, value, span, maxTags
 				mode="multiple"
 				style={{ width: "100%" }}
 				placeholder={placeholder}
-				defaultValue={defaultValue}
 				value={defaultValue}
 				onChange={onChange}
 				labelInValue={true}
