@@ -5,10 +5,10 @@ import { fromFilterValue } from "../utils"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { formActions } from "../redux"
 import { printNames } from "../utils/utils"
-import TextArea from "antd/lib/input/TextArea"
-import { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 
 const { Item } = Form
+const { TextArea } = Input
 
 const layout = {
 	labelCol: {
@@ -85,8 +85,8 @@ function AddPaperForm() {
 		dispatch(formActions.setMethod(fromFilterValue(value)))
 	}
 
-	function handleChangeAbstract(event: React.FormEvent<HTMLInputElement>) {
-		dispatch(formActions.setAbstract(event.currentTarget.value))
+	function handleChangeAbstract(value: React.ChangeEvent<HTMLTextAreaElement>) {
+		dispatch(formActions.setAbstract(value.currentTarget.value))
 	}
 
 	return (
@@ -144,7 +144,7 @@ function AddPaperForm() {
 					</Item>
 
 					<Item label="Abstract">
-						<Input placeholder="Abstract" defaultValue={form["Abstract"]} onChange={handleChangeAbstract} />
+						<TextArea placeholder="Abstract" defaultValue={form["Abstract"]} onChange={handleChangeAbstract} autoSize />
 					</Item>
 				</Form>
 			</Col>
