@@ -16,6 +16,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16.14'
+          
+      - name: NPM install cache
+        uses: c-hive/gha-npm-cache@v1
+
       - run: npm install
       - run: npm run build
         env:
