@@ -23,10 +23,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16.14'
-          
-      - name: NPM install cache
-        uses: c-hive/gha-npm-cache@v1
-
       - run: npm install eslint
       - run: npm install @typescript-eslint/eslint-plugin
       - run: npm install @typescript-eslint/parser
