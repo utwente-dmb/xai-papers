@@ -7,7 +7,9 @@ function AddPaper() {
 			<p>The original paper already includes classification of over 300 research papers.Of course this list is not exhaustive and therefore we would like to ask the wider research community to aid in extending the original research.</p>
 
 			<p>You can contribute to this project by going to the project&rsquo;s GitHub (https://github.com/BorisGerretzen/DMBLiteratureWebsite/blob/master/src/db/db.json). This page shows the current contents of the database. To add a new entry simply fork the project and append the db.json file using the following template.</p>
+			
 			<AddPaperForm />
+			
 			{/* <h2>Template</h2>
 			<p>&#123;<br/>
 				&quot;Title&quot;: &quot;Title here&quot;,<br/>
@@ -52,7 +54,7 @@ function AddPaper() {
 				] <br/>
 				&#125;</p> */}
 
-			<p>For an explanation of the datafields please see the documentation below.</p>
+			{/* <p>For an explanation of the datafields please see the documentation below.</p>
 
 			<h2>Properties</h2>
 			<h3>Title</h3>
@@ -122,7 +124,7 @@ function AddPaper() {
 
 			<p><i>Built-in Interpretability</i>, Interpretability built into the predictive model, such as white-box models, attention mechanisms or interpretability constraints (e.g. sparsity) included in the training process of the predictive model.</p>
 
-			<p><i>Supervised Explanation Training</i>, where a ground-truth explanation is provided in order to train the model to output an explanation.</p>
+			<p><i>Supervised Explanation Training</i>, where a ground-truth explanation is provided in order to train the model to output an explanation.</p> */}
 
 			<h2>References</h2>
 
