@@ -11,7 +11,7 @@
     "Authors": [
       "Deng Pan",
       "Xiangrui Li",
-      "Xin Li 0081",
+      "Xin Li",
       "Dongxiao Zhu"
     ],
     "Type of Data": [
@@ -49,10 +49,10 @@
     },
     "Authors": [
       "Ming Tu",
-      "Kevin Huang 0002",
+      "Kevin Huang",
       "Guangtao Wang",
-      "Jing Huang 0019",
-      "Xiaodong He 0002",
+      "Jing Huang",
+      "Xiaodong He",
       "Bowen Zhou"
     ],
     "Type of Data": [
@@ -131,7 +131,7 @@
       "Fenglong Ma",
       "Yaqing Wang",
       "Shibo He",
-      "Jiming Chen 0001",
+      "Jiming Chen",
       "Jing Gao"
     ],
     "Type of Data": [
@@ -171,7 +171,7 @@
       "Hanpeng Liu",
       "Xue Feng",
       "Eric Zhou",
-      "Yan Liu 0002"
+      "Yan Liu"
     ],
     "Type of Data": [
       "Images",
@@ -254,7 +254,7 @@
       "Weixiao Huang",
       "Yanhua Li",
       "Xun Zhou",
-      "Jun Luo 0007"
+      "Jun Luo"
     ],
     "Type of Data": [
       "Other"
@@ -634,11 +634,11 @@
       "value": "SIGIR"
     },
     "Authors": [
-      "Xu Chen 0017",
+      "Xu Chen",
       "Hanxiong Chen",
       "Hongteng Xu",
       "Yongfeng Zhang",
-      "Yixin Cao 0002",
+      "Yixin Cao",
       "Zheng Qin",
       "Hongyuan Zha"
     ],
@@ -753,7 +753,7 @@
       "value": "ICDM"
     },
     "Authors": [
-      "Fan Yang 0023",
+      "Fan Yang",
       "Ninghao Liu",
       "Suhang Wang",
       "Xia Hu"
@@ -1129,9 +1129,9 @@
       "value": "AAAI"
     },
     "Authors": [
-      "Xin Dong 0010",
+      "Xin Dong",
       "Jingchao Ni",
-      "Wei Cheng 0002",
+      "Wei Cheng",
       "Zhengzhang Chen",
       "Bo Zong",
       "Dongjin Song",
@@ -1210,7 +1210,7 @@
     },
     "Authors": [
       "Mengdi Huai",
-      "Di Wang 0015",
+      "Di Wang",
       "Chenglin Miao",
       "Aidong Zhang"
     ],
@@ -1326,7 +1326,7 @@
     },
     "Authors": [
       "Prashan Madumal",
-      "Tim Miller 0001",
+      "Tim Miller",
       "Liz Sonenberg",
       "Frank Vetere"
     ],
@@ -1481,7 +1481,7 @@
       "Xiaolu Zhang",
       "Xiaolin Hu",
       "Bo Zhang",
-      "Hang Su 0006"
+      "Hang Su"
     ],
     "Type of Data": [
       "Images"
@@ -1522,7 +1522,7 @@
       "Ryan Kindle",
       "Leo A. Celi",
       "Maurizio Zazzi",
-      "Volker Roth 0001",
+      "Volker Roth",
       "Finale Doshi-Velez"
     ],
     "Type of Data": [
@@ -1561,7 +1561,7 @@
       "Yuzhong Wang",
       "Cunchao Tu",
       "Tianyang Zhang",
-      "Zhiyuan Liu 0001",
+      "Zhiyuan Liu",
       "Maosong Sun"
     ],
     "Type of Data": [
@@ -1902,9 +1902,9 @@
       "Ben Bogin",
       "Nitish Gupta",
       "Tomer Wolfson",
-      "Sameer Singh 0001",
+      "Sameer Singh",
       "Jonathan Berant",
-      "Matt Gardner 0001"
+      "Matt Gardner"
     ],
     "Type of Data": [
       "Images",
@@ -2025,7 +2025,7 @@
       "Jingyuan Zhang",
       "Mingming Sun",
       "Yue Feng",
-      "Ping Li 0001"
+      "Ping Li"
     ],
     "Type of Data": [
       "Graph data"
@@ -2170,7 +2170,7 @@
     },
     "Authors": [
       "Tomas Jakab",
-      "Ankush Gupta 0001",
+      "Ankush Gupta",
       "Hakan Bilen",
       "Andrea Vedaldi"
     ],
@@ -2482,7 +2482,7 @@
     "Authors": [
       "Jiahao Ji",
       "Jingyuan Wang",
-      "Zhe Jiang 0001",
+      "Zhe Jiang",
       "Jingtian Ma",
       "Hu Zhang"
     ],
@@ -2522,7 +2522,7 @@
       "Zhongyu Wei",
       "Junyi Du",
       "Xiangyang Xue",
-      "Xiang Ren 0001"
+      "Xiang Ren"
     ],
     "Type of Data": [
       "Text"
@@ -2639,7 +2639,7 @@
       "Dhruv Kayastha",
       "Shripad Deshmukh",
       "Balaji Krishnamurthy",
-      "Sameer Singh 0001"
+      "Sameer Singh"
     ],
     "Type of Data": [
       "Images",
@@ -2797,8 +2797,8 @@
     "Authors": [
       "Prasad Chalasani",
       "Jiefeng Chen",
-      "Amrita Roy Chowdhury 0001",
-      "Xi Wu 0001",
+      "Amrita Roy Chowdhury",
+      "Xi Wu",
       "Somesh Jha"
     ],
     "Type of Data": [
@@ -3066,7 +3066,7 @@
       "Thomas P. Quinn",
       "Dang Nguyen",
       "Santu Rana",
-      "Sunil Gupta 0001",
+      "Sunil Gupta",
       "Svetha Venkatesh"
     ],
     "Type of Data": [
@@ -3104,7 +3104,7 @@
       "Wenxian Shi",
       "Hao Zhou",
       "Ning Miao",
-      "Lei Li 0005"
+      "Lei Li"
     ],
     "Type of Data": [
       "Text"
@@ -3174,7 +3174,7 @@
     },
     "Authors": [
       "Emanuele Albini",
-      "Antonio Rago 0001",
+      "Antonio Rago",
       "Pietro Baroni",
       "Francesca Toni"
     ],
@@ -3214,7 +3214,7 @@
       "Doruk Tuncel",
       "Xu Yuan",
       "Nian-Feng Tzeng",
-      "Xindong Wu 0001"
+      "Xindong Wu"
     ],
     "Type of Data": [
       "Images"
@@ -3252,7 +3252,7 @@
     "Authors": [
       "Zhongxia Chen",
       "Xiting Wang",
-      "Xing Xie 0001",
+      "Xing Xie",
       "Mehul Parsana",
       "Akshay Soni",
       "Xiang Ao",
@@ -3559,7 +3559,7 @@
     },
     "Authors": [
       "Xiaojie Guo",
-      "Liang Zhao 0002",
+      "Liang Zhao",
       "Zhao Qin",
       "Lingfei Wu",
       "Amarda Shehu",
@@ -3639,7 +3639,7 @@
     "Authors": [
       "Thai Le",
       "Suhang Wang",
-      "Dongwon Lee 0001"
+      "Dongwon Lee"
     ],
     "Type of Data": [
       "Tabular / structured"
@@ -3795,7 +3795,7 @@
     "Authors": [
       "Xianli Zhang",
       "Buyue Qian",
-      "Shilei Cao 0001",
+      "Shilei Cao",
       "Yang Li",
       "Hang Chen",
       "Yefeng Zheng",
@@ -3880,7 +3880,7 @@
       "Arkady Epshteyn",
       "Long T. Le",
       "Vikas Menon",
-      "Shashank Singh 0005",
+      "Shashank Singh",
       "Leyou Zhang",
       "Martin Nikoltchev",
       "Yash Sonthalia",
@@ -4157,12 +4157,12 @@
     },
     "Authors": [
       "Dongsheng Luo",
-      "Wei Cheng 0002",
+      "Wei Cheng",
       "Dongkuan Xu",
       "Wenchao Yu",
       "Bo Zong",
       "Haifeng Chen",
-      "Xiang Zhang 0001"
+      "Xiang Zhang"
     ],
     "Type of Data": [
       "Graph data"
@@ -4396,7 +4396,7 @@
     "Authors": [
       "Michael Tsang",
       "Sirisha Rambhatla",
-      "Yan Liu 0002"
+      "0002"
     ],
     "Type of Data": [
       "Images",
@@ -4470,7 +4470,7 @@
     },
     "Authors": [
       "Herman Yau",
-      "Chris Russell 0001",
+      "Chris Russell",
       "Simon Hadfield"
     ],
     "Type of Data": [
@@ -4583,12 +4583,12 @@
       "value": "SIGIR"
     },
     "Authors": [
-      "Tong Chen 0005",
+      "Tong Chen",
       "Hongzhi Yin",
       "Guanhua Ye",
       "Zi Huang",
-      "Yang Wang 0023",
-      "Meng Wang 0001"
+      "Yang Wang",
+      "Meng Wang"
     ],
     "Type of Data": [
       "Text",
@@ -4626,7 +4626,7 @@
     "Authors": [
       "Jiaming Qu",
       "Jaime Arguello",
-      "Yue Wang 0035"
+      "Yue Wang"
     ],
     "Type of Data": [
       "Text"
@@ -4664,7 +4664,7 @@
       "Jieyu Zhang",
       "Haonan Wang",
       "Bangzheng Li",
-      "Jiawei Han 0001"
+      "Jiawei Han"
     ],
     "Type of Data": [
       "Text"
@@ -4702,9 +4702,9 @@
       "Xueqi Li",
       "Wenjun Jiang",
       "Weiguang Chen",
-      "Jie Wu 0001",
-      "Guojun Wang 0001",
-      "Kenli Li 0001"
+      "Jie Wu",
+      "Guojun Wang",
+      "Kenli Li"
     ],
     "Type of Data": [
       "User-item matrix"
@@ -4857,7 +4857,7 @@
       "Kun Zhang",
       "Yanjie Fu",
       "Richang Hong",
-      "Meng Wang 0001"
+      "Meng Wang"
     ],
     "Type of Data": [
       "Text",
@@ -4893,7 +4893,7 @@
     },
     "Authors": [
       "Wen Wang",
-      "Han Zhao 0002",
+      "Han Zhao",
       "Honglei Zhuang",
       "Nirav Shah",
       "Rema Padman"
@@ -4937,7 +4937,7 @@
       "Fuzhen Zhuang",
       "Shuai Chen",
       "Xi Gu",
-      "Qing He 0003"
+      "Qing He"
     ],
     "Type of Data": [
       "Other"
@@ -5009,7 +5009,7 @@
       "value": "AAAI"
     },
     "Authors": [
-      "Xu Chen 0017",
+      "Xu Chen",
       "Yongfeng Zhang",
       "Zheng Qin"
     ],
@@ -5049,7 +5049,7 @@
       "Jingyue Gao",
       "Xiting Wang",
       "Yasha Wang",
-      "Xing Xie 0001"
+      "Xing Xie"
     ],
     "Type of Data": [
       "Text",
@@ -5088,7 +5088,7 @@
       "Sijie He",
       "Xinyan Li",
       "Vidyashankar Sivakumar",
-      "Arindam Banerjee 0001"
+      "Arindam Banerjee"
     ],
     "Type of Data": [
       "Time series"
@@ -5161,7 +5161,7 @@
     },
     "Authors": [
       "Liang Lan",
-      "Yu Geng 0002"
+      "Yu Geng"
     ],
     "Type of Data": [
       "Tabular / structured",
@@ -5380,11 +5380,11 @@
       "value": "AAAI"
     },
     "Authors": [
-      "Xiang Wang 0010",
+      "Xiang Wang",
       "Dingxian Wang",
       "Canran Xu",
-      "Xiangnan He 0001",
-      "Yixin Cao 0002",
+      "Xiangnan He",
+      "Yixin Cao",
       "Tat-Seng Chua"
     ],
     "Type of Data": [
@@ -5730,7 +5730,7 @@
     "Authors": [
       "Alona Sydorova",
       "Nina P\u00f6rner",
-      "Benjamin Roth 0001"
+      "Benjamin Roth"
     ],
     "Type of Data": [
       "Tabular / structured",
@@ -5956,8 +5956,8 @@
       "Wenjie Luo",
       "Simon Suo",
       "Abbas Sadat",
-      "Bin Yang 0021",
-      "Sergio Casas 0002",
+      "Bin Yang",
+      "Sergio Casas",
       "Raquel Urtasun"
     ],
     "Type of Data": [
@@ -6063,7 +6063,7 @@
   },
   {
     "Paper-ID": "iccv/ManhardtA0BBNT19",
-    "Title": "Explaining the Ambiguity of Object Detection and 6D Pose From Visual Data.",
+    "Title": "Explaining the Ambiguity of Object Detection andD Pose From Visual Data.",
     "url": "https://doi.org/10.1109/ICCV.2019.00694",
     "Year": "2019",
     "Venue": {
@@ -6073,7 +6073,7 @@
     "Authors": [
       "Fabian Manhardt",
       "Diego Mart\u00edn Arroyo",
-      "Christian Rupprecht 0001",
+      "Christian Rupprecht",
       "Benjamin Busam",
       "Tolga Birdal",
       "Nassir Navab",
@@ -6307,7 +6307,7 @@
       "value": "ICCV"
     },
     "Authors": [
-      "Tianfu Wu 0001",
+      "Tianfu Wu",
       "Xi Song"
     ],
     "Type of Data": [
@@ -6346,7 +6346,7 @@
       "Luan Tran",
       "Haoxiang Li",
       "Xiaohui Shen",
-      "Xiaoming Liu 0002"
+      "Xiaoming Liu"
     ],
     "Type of Data": [
       "Images"
@@ -6420,7 +6420,7 @@
     "Authors": [
       "Chao Chen",
       "Yifei Liu",
-      "Xi Zhang 0008",
+      "Xi Zhang",
       "Sihong Xie"
     ],
     "Type of Data": [
@@ -6566,9 +6566,9 @@
       "value": "ICDM"
     },
     "Authors": [
-      "Zihan Zhou 0003",
+      "Zihan Zhou",
       "Mingxuan Sun",
-      "Jianhua Chen 0003"
+      "Jianhua Chen"
     ],
     "Type of Data": [
       "User-item matrix",
@@ -6801,7 +6801,7 @@
       "value": "ICML"
     },
     "Authors": [
-      "Tian Guo 0002",
+      "Tian Guo",
       "Tao Lin",
       "Nino Antulov-Fantulin"
     ],
@@ -6956,7 +6956,7 @@
       "value": "ICML"
     },
     "Authors": [
-      "Sahil Singla 0002",
+      "Sahil Singla",
       "Eric Wallace",
       "Shi Feng",
       "Soheil Feizi"
@@ -7074,7 +7074,7 @@
     "Authors": [
       "Zhongxia Chen",
       "Xiting Wang",
-      "Xing Xie 0001",
+      "Xing Xie",
       "Tong Wu",
       "Guoqing Bu",
       "Yining Wang",
@@ -7157,7 +7157,7 @@
       "Enhong Chen",
       "Zhi Li",
       "Vincent W. Zheng",
-      "Qi Liu 0003"
+      "Qi Liu"
     ],
     "Type of Data": [
       "Images"
@@ -7346,7 +7346,7 @@
     },
     "Authors": [
       "Yunzhe Jia",
-      "James Bailey 0001",
+      "James Bailey",
       "Kotagiri Ramamohanarao",
       "Christopher Leckie",
       "Michael E. Houle"
@@ -7428,8 +7428,8 @@
       "Kai Shu",
       "Limeng Cui",
       "Suhang Wang",
-      "Dongwon Lee 0001",
-      "Huan Liu 0001"
+      "Dongwon Lee",
+      "Huan Liu"
     ],
     "Type of Data": [
       "Text"
@@ -7464,12 +7464,12 @@
     },
     "Authors": [
       "Zhiqiang Tao",
-      "Sheng Li 0001",
+      "Sheng Li",
       "Zhaowen Wang",
       "Chen Fang",
       "Longqi Yang",
       "Handong Zhao",
-      "Yun Fu 0001"
+      "Yun Fu"
     ],
     "Type of Data": [
       "Time series"
@@ -7740,7 +7740,7 @@
       "Mauricio Munoz",
       "Prateek Katiyar",
       "Anna Khoreva",
-      "Volker Fischer 0003"
+      "Volker Fischer"
     ],
     "Type of Data": [
       "Images"
@@ -7927,7 +7927,7 @@
       "Xianjing Han",
       "Xuemeng Song",
       "Jianhua Yin",
-      "Yinglong Wang 0001",
+      "Yinglong Wang",
       "Liqiang Nie"
     ],
     "Type of Data": [
@@ -8084,11 +8084,11 @@
     },
     "Authors": [
       "Xun Yang",
-      "Xiangnan He 0001",
-      "Xiang Wang 0010",
+      "Xiangnan He",
+      "Xiang Wang",
       "Yunshan Ma",
       "Fuli Feng",
-      "Meng Wang 0001",
+      "Meng Wang",
       "Tat-Seng Chua"
     ],
     "Type of Data": [
@@ -8126,13 +8126,13 @@
     },
     "Authors": [
       "Weizhi Ma",
-      "Min Zhang 0006",
+      "Min Zhang",
       "Yue Cao",
       "Woojeong Jin",
       "Chenyang Wang",
-      "Yiqun Liu 0001",
+      "Yiqun Liu",
       "Shaoping Ma",
-      "Xiang Ren 0001"
+      "Xiang Ren"
     ],
     "Type of Data": [
       "Graph data",
@@ -8159,7 +8159,7 @@
   },
   {
     "Paper-ID": "aaai/BiskSCM18",
-    "Title": "Learning Interpretable Spatial Operations in a Rich 3D Blocks World.",
+    "Title": "Learning Interpretable Spatial Operations in a RichD Blocks World.",
     "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17410",
     "Year": "2018",
     "Venue": {
@@ -8206,7 +8206,7 @@
     "Authors": [
       "Shiou Tian Hsu",
       "Changsung Moon",
-      "Paul Jones 0001",
+      "Paul Jones",
       "Nagiza F. Samatova"
     ],
     "Type of Data": [
@@ -8242,7 +8242,7 @@
     },
     "Authors": [
       "Oscar Li",
-      "Hao Liu 0015",
+      "Hao Liu",
       "Chaofan Chen",
       "Cynthia Rudin"
     ],
@@ -8317,8 +8317,8 @@
     "Authors": [
       "Hamid Palangi",
       "Paul Smolensky",
-      "Xiaodong He 0001",
-      "Li Deng 0001"
+      "Xiaodong He",
+      "Li Deng"
     ],
     "Type of Data": [
       "Text"
@@ -8355,7 +8355,7 @@
     },
     "Authors": [
       "Marco T\u00falio Ribeiro",
-      "Sameer Singh 0001",
+      "Sameer Singh",
       "Carlos Guestrin"
     ],
     "Type of Data": [
@@ -8520,7 +8520,7 @@
       "Michael C. Hughes",
       "Sonali Parbhoo",
       "Maurizio Zazzi",
-      "Volker Roth 0001",
+      "Volker Roth",
       "Finale Doshi-Velez"
     ],
     "Type of Data": [
@@ -8632,7 +8632,7 @@
       "value": "ACL"
     },
     "Authors": [
-      "Amir Zadeh 0001",
+      "Amir Zadeh",
       "Paul Pu Liang",
       "Soujanya Poria",
       "Erik Cambria",
@@ -8675,7 +8675,7 @@
     "Authors": [
       "Nina P\u00f6rner",
       "Hinrich Sch\u00fctze",
-      "Benjamin Roth 0001"
+      "Benjamin Roth"
     ],
     "Type of Data": [
       "Text"
@@ -8711,7 +8711,7 @@
     "Authors": [
       "Ching-Yao Chuang",
       "Jiaman Li",
-      "Antonio Torralba 0001",
+      "Antonio Torralba",
       "Sanja Fidler"
     ],
     "Type of Data": [
@@ -8866,9 +8866,9 @@
     },
     "Authors": [
       "Yulong Wang",
-      "Hang Su 0006",
-      "Bo Zhang 0010",
-      "Xiaolin Hu 0001"
+      "Hang Su",
+      "Bo Zhang",
+      "Xiaolin Hu"
     ],
     "Type of Data": [
       "Images"
@@ -9097,7 +9097,7 @@
       "Jie Yang",
       "Le Wu",
       "Zhengtao Wu",
-      "Xing Xie 0001"
+      "Xing Xie"
     ],
     "Type of Data": [
       "User-item matrix"
@@ -9404,7 +9404,7 @@
       "value": "IJCAI"
     },
     "Authors": [
-      "Liang Hu 0004",
+      "Liang Hu",
       "Songlei Jian",
       "Longbing Cao",
       "Qingkui Chen"
@@ -9523,10 +9523,10 @@
       "Ling Luo",
       "Xiang Ao",
       "Feiyang Pan",
-      "Jin Wang 0007",
+      "Jin Wang",
       "Tong Zhao",
       "Ningzi Yu",
-      "Qing He 0003"
+      "Qing He"
     ],
     "Type of Data": [
       "Text"
@@ -9560,7 +9560,7 @@
       "value": "IJCAI"
     },
     "Authors": [
-      "Antonio Rago 0001",
+      "Antonio Rago",
       "Oana Cocarascu",
       "Francesca Toni"
     ],
@@ -9600,7 +9600,7 @@
       "Motoki Sato",
       "Jun Suzuki",
       "Hiroyuki Shindo",
-      "Yuji Matsumoto 0001"
+      "Yuji Matsumoto"
     ],
     "Type of Data": [
       "Text"
@@ -9825,7 +9825,7 @@
     },
     "Authors": [
       "Ninghao Liu",
-      "Xiao Huang 0001",
+      "Xiao Huang",
       "Jundong Li",
       "Xia Hu"
     ],
@@ -9909,7 +9909,7 @@
       "Jingyuan Wang",
       "Ze Wang",
       "Jianfeng Li",
-      "Junjie Wu 0001"
+      "Junjie Wu"
     ],
     "Type of Data": [
       "Time series"
@@ -9947,7 +9947,7 @@
       "Carl Yang",
       "Xiaolin Shi",
       "Luo Jie",
-      "Jiawei Han 0001"
+      "Jiawei Han"
     ],
     "Type of Data": [
       "Time series",
@@ -9985,8 +9985,8 @@
     },
     "Authors": [
       "Chengxi Zang",
-      "Peng Cui 0001",
-      "Wenwu Zhu 0001"
+      "Peng Cui",
+      "Wenwu Zhu"
     ],
     "Type of Data": [
       "Tabular / structured",
@@ -10058,7 +10058,7 @@
       "value": "NeurIPS"
     },
     "Authors": [
-      "Wenbo Guo 0002",
+      "Wenbo Guo",
       "Sui Huang",
       "Yunzhe Tao",
       "Xinyu Xing",
@@ -10260,7 +10260,7 @@
       "Hanpeng Liu",
       "Sanjay Purushotham",
       "Pavankumar Murali",
-      "Yan Liu 0002"
+      "Yan Liu"
     ],
     "Type of Data": [
       "Tabular / structured",
@@ -10372,7 +10372,7 @@
       "value": "NeurIPS"
     },
     "Authors": [
-      "Xin Zhang 0035",
+      "Xin Zhang",
       "Armando Solar-Lezama",
       "Rishabh Singh"
     ],
@@ -10448,8 +10448,8 @@
     },
     "Authors": [
       "Chong Chen",
-      "Min Zhang 0006",
-      "Yiqun Liu 0001",
+      "Min Zhang",
+      "Yiqun Liu",
       "Shaoping Ma"
     ],
     "Type of Data": [
@@ -10486,8 +10486,8 @@
       "value": "WWW"
     },
     "Authors": [
-      "Xiang Wang 0010",
-      "Xiangnan He 0001",
+      "Xiang Wang",
+      "Xiangnan He",
       "Fuli Feng",
       "Liqiang Nie",
       "Tat-Seng Chua"
@@ -10525,8 +10525,8 @@
       "value": "WWW"
     },
     "Authors": [
-      "Huijun Wu 0001",
-      "Chen Wang 0008",
+      "Huijun Wu",
+      "Chen Wang",
       "Jie Yin",
       "Kai Lu",
       "Liming Zhu"
@@ -10645,7 +10645,7 @@
       "Bolei Zhou",
       "Aditya Khosla",
       "Aude Oliva",
-      "Antonio Torralba 0001"
+      "Antonio Torralba"
     ],
     "Type of Data": [
       "Images"
@@ -10682,9 +10682,9 @@
     },
     "Authors": [
       "Yinpeng Dong",
-      "Hang Su 0006",
-      "Jun Zhu 0001",
-      "Bo Zhang 0010"
+      "Hang Su",
+      "Jun Zhu",
+      "Bo Zhang"
     ],
     "Type of Data": [
       "Video"
@@ -11142,7 +11142,7 @@
     },
     "Authors": [
       "Wei-Ning Hsu",
-      "Yu Zhang 0033",
+      "Yu Zhang",
       "James R. Glass"
     ],
     "Type of Data": [
@@ -11372,7 +11372,7 @@
       "value": "ICDM"
     },
     "Authors": [
-      "Tong Wang 0011",
+      "Tong Wang",
       "Cynthia Rudin",
       "Finale Doshi-Velez",
       "Yimin Liu",
@@ -11448,7 +11448,7 @@
     },
     "Authors": [
       "Marco T\u00falio Ribeiro",
-      "Sameer Singh 0001",
+      "Sameer Singh",
       "Carlos Guestrin"
     ],
     "Type of Data": [
@@ -11493,7 +11493,7 @@
       "value": "NeurIPS"
     },
     "Authors": [
-      "Xi Chen 0022",
+      "Xi Chen",
       "Yan Duan",
       "Rein Houthooft",
       "John Schulman",
@@ -11687,7 +11687,7 @@
       "value": "NeurIPS"
     },
     "Authors": [
-      "Yuan Zhao 0004",
+      "Yuan Zhao",
       "Il Memming Park"
     ],
     "Type of Data": [
@@ -11725,7 +11725,7 @@
       "Yukun Zhao",
       "Shangsong Liang",
       "Zhaochun Ren",
-      "Jun Ma 0001",
+      "Jun Ma",
       "Emine Yilmaz",
       "Maarten de Rijke"
     ],
@@ -11917,7 +11917,7 @@
     "Authors": [
       "Jeffrey Chan",
       "Christopher Leckie",
-      "James Bailey 0001",
+      "James Bailey",
       "Kotagiri Ramamohanarao"
     ],
     "Type of Data": [
@@ -11954,7 +11954,7 @@
     "Authors": [
       "Nicola Barbieri",
       "Francesco Bonchi",
-      "Giuseppe Manco 0001"
+      "Giuseppe Manco"
     ],
     "Type of Data": [
       "Graph data"
@@ -12028,9 +12028,9 @@
     "Authors": [
       "Yongfeng Zhang",
       "Guokun Lai",
-      "Min Zhang 0006",
+      "Min Zhang",
       "Yi Zhang",
-      "Yiqun Liu 0001",
+      "Yiqun Liu",
       "Shaoping Ma"
     ],
     "Type of Data": [

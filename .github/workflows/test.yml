@@ -1,31 +1,30 @@
-name: Deploy
+name: Test
 
 on:
   push:
     branches: [ master ]
     paths-ignore:
+    - 'src/db/*'
+    - '**.md'
+  pull_request:
+    branches: [ master ]
+    paths-ignore:
+    - 'src/db/*'
     - '**.md'
 
   workflow_dispatch:
 
 jobs:
-  Deploy:
+  Test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: '16.14'
-          
+
       - name: NPM install cache
         uses: c-hive/gha-npm-cache@v1
-
+        
       - run: npm install
-      - run: npm run build
-        env:
-          CI: false
-
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./build
+      - run: npm run test
