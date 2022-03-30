@@ -83,7 +83,7 @@ function Chart(): JSX.Element {
 		"Connected Graph": {
 			withSelect: false,
 			element: (<ConnectedChart />),
-			description: "Connected Graph Description"
+			description: "The connected graph below displays all the papers in the research as nodes. The thickness of the edges is dependent upon the number of tag links that two papers have. Filtering options can be applied and the nodes can be clicked to reveal a link to the particular paper."
 		},
 		"Circle Packing": {
 			withSelect: true,
@@ -137,7 +137,7 @@ function Chart(): JSX.Element {
 					: null}
 			</Row>
 			
-			<Row justify="center">
+			<Row justify="center" style={{ marginBottom: 8}}>
 				<Col span={12}>
 					{graphMap[chart].description}
 				</Col>
