@@ -7,6 +7,7 @@ import { getColor, typeArray, printNames } from "../utils"
 
 type Column<T> = {
 	title: string | JSX.Element, 
+	className?: string
 	width?: number
 	dataIndex?: string, 
 	render?: (text: string, row: T) => React.ReactNode, 
@@ -15,7 +16,11 @@ type Column<T> = {
 		compare: (a: T, b: T) => number,
 		multiple: number
 	},
-	defaultSortOrder?: "ascend" | "descend"
+	defaultSortOrder?: "ascend" | "descend",
+	RC_TABLE_INTERNAL_COL_DEFINE?: {
+		className: string
+		columnType: string
+	}
 }
 
 
@@ -40,13 +45,6 @@ function Papers(): JSX.Element {
 	const expandController = useExpandingAllInTable(allKeys, "key", false)
 
 	const columns: Array<Column<Paper>> = [
-		{
-			title: 
-			(<Button className="expand-all">
-				{expandController.isAllExpanded() ? <MinusOutlined/> : <PlusOutlined />}
-			</Button>),
-			width: 1
-		},
 		{
 			title: "Title",
 			dataIndex: "Title",
@@ -73,7 +71,7 @@ function Papers(): JSX.Element {
 			title: "Year",
 			dataIndex: "Year",
 			key: "year",
-			defaultSortOrder: "ascend",
+			defaultSortOrder: "descend",
 			sorter: {
 				compare: (a: Paper, b: Paper) => a.Year.localeCompare(b.Year),
 				multiple: 3
@@ -87,46 +85,55 @@ function Papers(): JSX.Element {
 	]
 
 	return (
-		<>
-			<Table
-				style={{ marginTop: 10 }}
-				columns={columns}
-				dataSource={papersData}
-				expandable={{ 
-					expandRowByClick: true,
-					expandedRowRender: (record) => (
-						<>
-							<Row gutter={[0, 4]}>
-								{record.Abstract.length > 0 
-									? <Col span={24}>
-										{record.Abstract}
-									</Col> 
-									: null}
+		<Row>
+			<Col span={1}>
+				<Button className="expand-all" style={{ marginTop: 25 }}>
+					{expandController.isAllExpanded() ? <MinusOutlined/> : <PlusOutlined />}
+				</Button>
+			</Col>
+			<Col span={23}>
+				<Table
+					style={{ marginTop: 10 }}
+					columns={columns}
+					dataSource={papersData}
+					expandable={{ 
+						expandRowByClick: true,
+						expandedRowRender: (record) => (
+							<>
+								<Row gutter={[0, 4]}>
+									{record.Abstract.length > 0 
+										? <Col span={24}>
+											{record.Abstract}
+										</Col> 
+										: null}
 							
-								<Col span={24}>
-									Authors: {printNames(record.Authors)}
-								</Col>
-								<Col span={24}>
-									{typeArray.map((type) => (
-										<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
-									))}
-								</Col>
-							</Row>
-						</>
-					),
-				}}
-				className={
-					expandController.isAllExpanded() ? "table-expanding-all" : ""
-				}
-				expandedRowKeys={expandController.expandedRowKeys}
-				onExpand={expandController.onExpand}
-				rowKey={expandController.rowKey}
-				pagination={{
-					defaultPageSize: 25, 
-					position: ["bottomCenter"]
-				}}
-			></Table>
-		</>
+									<Col span={24}>
+										<b>
+										Authors: {printNames(record.Authors)}
+										</b>
+									</Col>
+									<Col span={24}>
+										{typeArray.map((type) => (
+											<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
+										))}
+									</Col>
+								</Row>
+							</>
+						),
+					}}
+					className={
+						expandController.isAllExpanded() ? "table-expanding-all" : ""
+					}
+					expandedRowKeys={expandController.expandedRowKeys}
+					onExpand={expandController.onExpand}
+					rowKey={expandController.rowKey}
+					pagination={{
+						defaultPageSize: 25, 
+						position: ["bottomCenter"]
+					}}
+				></Table>
+			</Col>
+		</Row>
 	)
 }
 

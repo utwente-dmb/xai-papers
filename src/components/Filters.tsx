@@ -1,5 +1,5 @@
 import React from "react"
-import { Col, Row, DatePicker, Input, Tooltip, Form, Radio, RadioChangeEvent } from "antd"
+import { Col, Row, DatePicker, Input, Tooltip, Form, Radio, RadioChangeEvent, Button } from "antd"
 import { InfoCircleOutlined } from "@ant-design/icons"
 import { Data, Explanation, Method, Model, Problem, Task, FilterValue, Venue } from "../types"
 import { filtersActions } from "../redux"
@@ -10,7 +10,6 @@ import Moment from "moment"
   
 const { RangePicker } = DatePicker
 const { Search } = Input
-
 
 function Filters(): JSX.Element {
 
@@ -57,13 +56,17 @@ function Filters(): JSX.Element {
 		dispatch(filtersActions.setEndYear(endYear))
 	}
 
-	function handleSearch(value: string) {
-		dispatch(filtersActions.setSearch(value))
+	function handleSearch(value: React.ChangeEvent<HTMLInputElement>) {
+		dispatch(filtersActions.setSearch(value.currentTarget.value))
+	}
+
+	function handleReset() {
+		dispatch(filtersActions.reset())
 	}
 
 	return (
 		<Row gutter={[4, 4]} justify="center" style={{marginBottom: 12}}>
-			<Col span={24}>
+			<Col span={5}>
 				<Form.Item 
 					label="State of Filter" 
 					tooltip={{ 
@@ -77,6 +80,12 @@ function Filters(): JSX.Element {
 					</Radio.Group>
 				</Form.Item>
 			</Col>
+			<Col span={16}>
+				<Button onClick={handleReset}>Reset Filters</Button>
+			</Col>
+			{/* <Col span={3}>
+				<a href="/list.txt" download="FilteredList.txt">Download Filtered List</a>
+			</Col> */}
 
 			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data}  span={8}/>
 			<Select placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} value={filters.problem}  span={8}/>
@@ -91,9 +100,13 @@ function Filters(): JSX.Element {
 					picker="year" 
 					onChange={handleYearChange} 
 					allowEmpty={[true, true]}
-					defaultValue={[
+					value={[
 						filters.startYear ? Moment([filters.startYear]) : null, 
 						filters.endYear ? Moment([filters.endYear]) : null
+					]}
+					defaultPickerValue={[
+						Moment([2010]),
+						Moment([2020])
 					]}
 				></RangePicker>
 			</Col>
@@ -101,8 +114,8 @@ function Filters(): JSX.Element {
 			<Col span={8}>
 				<Search 
 					placeholder="Search titles, venues, authors and abstracts" 
-					onSearch={handleSearch} 
-					defaultValue={filters.search} 
+					onChange={handleSearch} 
+					value={filters.search}
 					suffix={
 						<Tooltip title="Prefix with 'title:', 'venue:', 'author:' or 'abstract:' to only search in the respective field">
 							<InfoCircleOutlined />

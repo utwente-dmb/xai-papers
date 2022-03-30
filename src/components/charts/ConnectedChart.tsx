@@ -1,4 +1,3 @@
-import React from "react"
 import Graphin, { GraphinData, IG6GraphEvent } from "@antv/graphin"
 import { useFilteredPapers } from "../../hooks"
 import { INode, NodeConfig } from "@antv/g6"

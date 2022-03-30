@@ -3,7 +3,8 @@ import "antd/dist/antd.css"
 import {
 	Layout,
 	Menu,
-	PageHeader
+	PageHeader,
+	Button
 } from "antd"
 import {
 	PlusCircleOutlined,
@@ -42,9 +43,6 @@ function DefaultLayout() {
 			<Sider
 				collapsible
 				collapsed={sideBarCollapsed}
-				onCollapse={(collapsed) => {
-					setSideBarCollapsed(collapsed)
-				}}
 				style={{
 					overflow: "auto",
 					height: "100vh",
@@ -52,8 +50,14 @@ function DefaultLayout() {
 					top: 0,
 					left: 0,
 				}}
-				trigger={sideBarCollapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+				trigger={null}
+				theme="light"
 			>
+				<Button 
+					onClick={() => setSideBarCollapsed(!sideBarCollapsed)} 
+					style={{width: "100%", height: 50}}
+					icon={sideBarCollapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}	
+				/>
 				<Menu 
 					mode="inline" 
 					onClick={onItemClick}

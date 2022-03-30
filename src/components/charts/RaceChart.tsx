@@ -1,19 +1,9 @@
 import { ResponsiveBar } from "@nivo/bar"
-import { typeArray } from "../../utils"
 import { useFilteredPapers } from "../../hooks"
-import { Bar } from "@nivo/bar"
-import { useEffect, useState } from "react"
 import { Paper } from "../../types"
 
 let firstYear: number
 let lastYear: number
-
-export function Year() {
-	const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
-	firstYear = parseInt(papers[0]["Year"])
-	lastYear = parseInt(papers[papers.length - 1]["Year"])
-	return [firstYear, lastYear]
-}
 
 function GenerateData(col: keyof Paper, year: number) {
 	const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
