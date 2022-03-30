@@ -66,7 +66,7 @@ function Filters(): JSX.Element {
 
 	return (
 		<Row gutter={[4, 4]} justify="center" style={{marginBottom: 12}}>
-			<Col span={5}>
+			<Col span={8}>
 				<Form.Item 
 					label="State of Filter" 
 					tooltip={{ 

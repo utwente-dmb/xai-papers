@@ -9,13 +9,12 @@ import {
 import {
 	PlusCircleOutlined,
 	DotChartOutlined,
-	InfoCircleOutlined,
-	MenuFoldOutlined,
-	MenuUnfoldOutlined,
-	UnorderedListOutlined
+	UnorderedListOutlined,
+	LeftOutlined,
+	RightOutlined
 } from "@ant-design/icons"
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
-import { Papers, About, AddPaper, Charts } from "../pages"
+import { Papers, AddPaper, Charts } from "../pages"
 import { pathToPage, pageToPath, baseUrl } from "../utils"
 
 const { Content, Sider } = Layout
@@ -56,7 +55,7 @@ function DefaultLayout() {
 				<Button 
 					onClick={() => setSideBarCollapsed(!sideBarCollapsed)} 
 					style={{width: "100%", height: 50}}
-					icon={sideBarCollapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}	
+					icon={sideBarCollapsed ? <RightOutlined /> : <LeftOutlined />}	
 				/>
 				<Menu 
 					mode="inline" 
@@ -66,7 +65,6 @@ function DefaultLayout() {
 					<Menu.Item key="papers" icon={<UnorderedListOutlined />}>Papers</Menu.Item>
 					<Menu.Item key="charts" icon={<DotChartOutlined />}>Chart</Menu.Item>
 					<Menu.Item key="add-paper" icon={<PlusCircleOutlined />}>Add Paper</Menu.Item>
-					<Menu.Item key="about" icon= {<InfoCircleOutlined/>}>About</Menu.Item>
 				</Menu>
 			</Sider>
 
@@ -97,7 +95,6 @@ function DefaultLayout() {
 						<Route path={`${baseUrl}`} element={<Papers />}/>
 						<Route path={`${baseUrl}charts`} element={<Charts />}/>
 						<Route path={`${baseUrl}add-paper`} element={<AddPaper />}/>
-						<Route path={`${baseUrl}about`} element={<About />}/>
 					</Routes>
 				</Content>
 			</Layout>
