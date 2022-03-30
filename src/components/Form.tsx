@@ -89,6 +89,10 @@ function AddPaperForm() {
 		dispatch(formActions.setAbstract(value.currentTarget.value))
 	}
 
+	function handleChangeComment(value: React.ChangeEvent<HTMLTextAreaElement>) {
+		dispatch(formActions.setComment(value.currentTarget.value))
+	}
+
 	return (
 		<Row>
 			<Col span={12}>
@@ -145,6 +149,10 @@ function AddPaperForm() {
 
 					<Item label="Abstract">
 						<TextArea placeholder="Abstract" defaultValue={form["Abstract"]} onChange={handleChangeAbstract} autoSize />
+					</Item>
+
+					<Item label="Comment">
+						<TextArea placeholder="Comment" defaultValue={form?.Comment} onChange={handleChangeComment} autoSize />
 					</Item>
 				</Form>
 			</Col>

@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 import { Problem, Method, Data, Task, Explanation, Model, Paper, FilterValue, Venue } from "../../types"
 
 
-const initialState: Paper = {
+const initialState: Paper & { Comment?: string } = {
 	Title: "",
 	url: "",
 	Year: "2020",
@@ -17,7 +17,7 @@ const initialState: Paper = {
 	"Type of Task": [],
 	"Type of Explanation": [],
 	"Method used to explain": [],
-	"Abstract": ""
+	"Abstract": "",
 }
 
 const formSlice = createSlice({
@@ -62,6 +62,13 @@ const formSlice = createSlice({
 		},
 		setAbstract(state, action: PayloadAction<string>) {
 			state["Abstract"] = action.payload
+		},
+		setComment(state, action: PayloadAction<string>) {
+			if (action.payload) {
+				state.Comment = action.payload
+			} else {
+				delete state.Comment
+			}
 		}
 	}
 })
