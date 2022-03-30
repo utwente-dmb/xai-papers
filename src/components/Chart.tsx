@@ -87,7 +87,7 @@ function Chart(): JSX.Element {
 		"Circle Packing": {
 			withSelect: true,
 			element: <CirclePackingChart type={type} />,
-			description: "Tableau Description"
+			description: "Circle Packing Description"
 		},
 		"Line Chart": {
 			withSelect: true,
@@ -116,7 +116,7 @@ function Chart(): JSX.Element {
 	}
 	return (
 		<>
-			<Row gutter={10} justify="space-between">
+			<Row justify="space-between" style={{marginBottom: 12}}>
 				<Col span={12}>
 					<Group defaultValue={"Connected Graph"} buttonStyle="solid" onChange={HandleChartChange}>
 						{Object.keys(graphMap).map(elem =>
