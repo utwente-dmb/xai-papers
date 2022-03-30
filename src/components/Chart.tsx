@@ -8,16 +8,18 @@ import { Paper } from "../types"
 const { Option } = Select
 const { Button, Group } = Radio
 
-let firstYear: number
-let lastYear: number
+let firstYear = 0
+let lastYear = 0
 
 let sliderYear = 99999999999
 let chartUpdateSpeed = 1
 
 function Year() {
 	const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
-	firstYear = parseInt(papers[0]["Year"])
-	lastYear = parseInt(papers[papers.length - 1]["Year"])
+	if (papers.length > 0) {
+		firstYear = parseInt(papers[0]["Year"])
+		lastYear = parseInt(papers[papers.length - 1]["Year"])
+	}
 	return [firstYear, lastYear]
 }
 
@@ -71,7 +73,6 @@ function Chart(): JSX.Element {
 		ResetData()
 		setCurrent(0)
 		clearTimeout(timer)
-		console.log(sliderValue, sliderYear, firstYear, lastYear, current, sliderYear - firstYear)
 	}
 
 	const graphMap: { [key: string]: {
@@ -87,7 +88,7 @@ function Chart(): JSX.Element {
 		"Circle Packing": {
 			withSelect: true,
 			element: <CirclePackingChart type={type} />,
-			description: "Circle Packing Description"
+			description: "The circle packing chart below displays the hierarchic organization which exists within the papers on Explainable AI. A specific tag can be selected to show the distribution that occurs for that tag. Each of the circles can be hovered over and clicked on to display more information"
 		},
 		"Line Chart": {
 			withSelect: true,
