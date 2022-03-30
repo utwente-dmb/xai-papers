@@ -76,43 +76,48 @@ function Chart(): JSX.Element {
 
 	const graphMap: { [key: string]: {
 		withSelect: boolean,
-		element: JSX.Element
+		element: JSX.Element,
+		description: string,
 	} } = {
 		"Connected Graph": {
 			withSelect: false,
-			element: (<ConnectedChart />)
+			element: (<ConnectedChart />),
+			description: "Connected Graph Description"
 		},
-		"Tableau": {
+		"Circle Packing": {
 			withSelect: true,
-			element: <CirclePackingChart type={type} />
+			element: <CirclePackingChart type={type} />,
+			description: "Tableau Description"
 		},
-		"LineChart": {
+		"Line Chart": {
 			withSelect: true,
-			element: <GrowthLineChart type={type} />
+			element: <GrowthLineChart type={type} />,
+			description: "The line chart below displays the increase in the number of papers on the subject of Explainable AI over time. The filtering option on the right allows you to select a particular tag and see the developments over time associated with that specific tag.",
 		},
-		"RaceChart": {
+		"Race Chart": {
 			withSelect: true,
 			element: (
 				<>
-					<Row>
-						<Col span={12}>
-							<Slider
-								min={firstYear}
-								max={lastYear}
-								onChange={HandleSlider}
-								tooltipVisible={true}
-								defaultValue={sliderYear}
-							/>
-						</Col>
-					</Row>
+					<Col span={12}>
+						<Slider
+							min={firstYear}
+							max={lastYear}
+							onChange={HandleSlider}
+							tooltipVisible={true}
+							tooltipPlacement="bottom"
+							defaultValue={sliderYear}
+						/>
+					</Col>
 					<RaceChart type={type} current={current} />
 				</>
-			)}
+			),
+			description: "The race chart below is an interactive graph which shows the the increase in the number of papers over time. A specific tag can be selected on the right along with using the slider on the left to get insight on a particular year"
+		}
 	}
 	return (
 		<>
-			<Row gutter={10}>
-				<Col span={24}>
+			<Row gutter={10} justify="space-between">
+				<Col span={12}>
 					<Group defaultValue={"Connected Graph"} buttonStyle="solid" onChange={HandleChartChange}>
 						{Object.keys(graphMap).map(elem =>
 							<Button key={elem} value={elem}>
@@ -120,23 +125,25 @@ function Chart(): JSX.Element {
 							</Button>)}
 					</Group>
 				</Col>
+				{graphMap[chart].withSelect 
+					? <Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
+						{typeArray.map((elem: any) =>
+							<Option key={elem} value={elem}>
+								{elem}
+							</Option>
+						)}
+					</Select>
+					: null}
 			</Row>
-			<Row gutter={10}>
-				<Col span={24}>
-					{graphMap[chart].withSelect 
-						? <Col offset={20}>
-							<Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
-								{typeArray.map((elem: any) =>
-									<Option key={elem} value={elem}>
-										{elem}
-									</Option>
-								)}
-							</Select>
-						</Col> 
-						: null}
-					{graphMap[chart].element}
+			
+			<Row justify="center">
+				<Col span={12}>
+					{graphMap[chart].description}
 				</Col>
 			</Row>
+			{graphMap[chart].element}
+
+
 		</>
 	)
 }
