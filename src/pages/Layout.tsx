@@ -9,9 +9,9 @@ import {
 import {
 	PlusCircleOutlined,
 	DotChartOutlined,
-	MenuFoldOutlined,
-	MenuUnfoldOutlined,
-	UnorderedListOutlined
+	UnorderedListOutlined,
+	LeftOutlined,
+	RightOutlined
 } from "@ant-design/icons"
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
 import { Papers, AddPaper, Charts } from "../pages"
@@ -55,7 +55,7 @@ function DefaultLayout() {
 				<Button 
 					onClick={() => setSideBarCollapsed(!sideBarCollapsed)} 
 					style={{width: "100%", height: 50}}
-					icon={sideBarCollapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}	
+					icon={sideBarCollapsed ? <RightOutlined /> : <LeftOutlined />}	
 				/>
 				<Menu 
 					mode="inline" 
