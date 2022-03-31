@@ -42,7 +42,7 @@ function DefaultLayout() {
 		if (!sideBarCollapsed) {
 			setTimeout(() => {
 				setShowExplainableAIText(!showExplainableAIText)
-			}, 200)
+			}, 100)
 		} else {
 			setShowExplainableAIText(!showExplainableAIText)
 		}
@@ -66,7 +66,7 @@ function DefaultLayout() {
 			>
 				<Button 
 					onClick={() => setSideBarCollapsed(!sideBarCollapsed)} 
-					style={{width: "100%", height: 50}}
+					style={{width: "100%", height: 40}}
 					icon={sideBarCollapsed ? <RightOutlined /> : <LeftOutlined />}	
 				/>
 				<Menu 
