@@ -80,11 +80,16 @@ function Papers(): JSX.Element {
 		},
 	]
 
-	function writeFilteredListToFile() { 
-		console.log("yes")
-		// fs.writeFile(__dirname + "../../public/list.txt", "Text", (err: any) => {
-		// 	console.log("Error", err)
-		// })
+	async function downloadFilteredList() { 
+		const json = JSON.stringify(filteredPapers)
+		const blob = new Blob([json], { type: "application/json" })
+		const href = await URL.createObjectURL(blob)
+		const link = document.createElement("a")
+		link.href = href
+		link.download = "FilteredList.json"
+		document.body.appendChild(link)
+		link.click()
+		document.body.removeChild(link)
 	}
 
 	return (
@@ -93,8 +98,8 @@ function Papers(): JSX.Element {
 				<Button className="expand-all" >
 					{expandController.isAllExpanded() ? <MinusOutlined/> : <PlusOutlined />}
 				</Button>
-				<Button onClick={writeFilteredListToFile}>
-					<a href={process.env.PUBLIC_URL + "/list.txt"} download="FilteredList.txt">Export list as JSON</a>
+				<Button onClick={downloadFilteredList}>
+					Export List as JSON
 				</Button>
 			</Row>
 			<Table
