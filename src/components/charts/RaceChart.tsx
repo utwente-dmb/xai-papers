@@ -76,6 +76,7 @@ function RaceChart({ type }: BarChartProps) {
 				}}
 				padding={0.3}
 				labelTextColor={{ from: "color", modifiers: [["darker", 3]] }}
+				isInteractive={false}
 			/>
 		</div>
 	)
