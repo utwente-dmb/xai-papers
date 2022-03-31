@@ -42,7 +42,7 @@ function DefaultLayout() {
 		if (!sideBarCollapsed) {
 			setTimeout(() => {
 				setShowExplainableAIText(!showExplainableAIText)
-			}, 250)
+			}, 200)
 		} else {
 			setShowExplainableAIText(!showExplainableAIText)
 		}
