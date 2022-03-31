@@ -99,7 +99,7 @@ function Papers(): JSX.Element {
 					{expandController.isAllExpanded() ? <MinusOutlined/> : <PlusOutlined />}
 				</Button>
 				<Button onClick={downloadFilteredList}>
-					Export List as JSON
+					Export Filtered List as JSON
 				</Button>
 			</Row>
 			<Table
