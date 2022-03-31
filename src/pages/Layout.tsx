@@ -86,7 +86,7 @@ function DefaultLayout() {
 				<PageHeader style={{ top: 0, width: "100%", zIndex: 1}}>
 					<div>
 						<Row>
-							<img src={process.env.PUBLIC_URL + "/UT_Logo.png"}/>
+							<img src={process.env.PUBLIC_URL + "/UT_Logo_Horizontal_Black.png"}/>
 							<img src={process.env.PUBLIC_URL + "/IKIM_Logo.png"}/>
 						</Row>
 						<p>

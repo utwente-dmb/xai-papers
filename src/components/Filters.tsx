@@ -103,7 +103,7 @@ function Filters(): JSX.Element {
 					]}
 					defaultPickerValue={[
 						Moment([2010]),
-						Moment([2020])
+						Moment([2010])
 					]}
 				></RangePicker>
 			</Col>
