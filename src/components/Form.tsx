@@ -200,7 +200,7 @@ function AddPaperForm() {
 						</Collapse>
 					</Item>
 
-					<Item label="Method used to explain" >
+					<Item label="Method used to explain" required >
 						<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleChangeMethod} value={form["Method used to explain"]} />
 						<Collapse>
 							<Panel header="Info" key="1">
