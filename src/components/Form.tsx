@@ -102,29 +102,29 @@ function AddPaperForm() {
 					<Item label="Title" tooltip={{ 
 						title: "Title of the paper in English",
 						icon: <InfoCircleOutlined/>
-					}} >
+					}} required >
 						<Input placeholder="Title" defaultValue={form.Title} onChange={handleChangeTitle} />
 					</Item>
-
-					<Item label="Doi-url">
+ 
+					<Item label="Doi-url" required>
 						<Input placeholder="Doi-url" defaultValue={form.url} onChange={handleChangeDoi} />
 					</Item>
 
-					<Item label="Year of Publication">
+					<Item label="Year of Publication" required >
 						<InputNumber defaultValue={parseInt(form.Year)} onChange={handleChangeYear} />
 					</Item>
 
 					<Item label="Authors" tooltip={{ 
 						title: "Firstname Lastname, all names should be separated by a comma",
 						icon: <InfoCircleOutlined/>
-					}} >
+					}} required >
 						<Input placeholder="Authors" defaultValue={printNames(form.Authors)} onChange={handleChangeAuthors} />
 					</Item>
 
 					<Item label="Venue" tooltip={{ 
 						title: "If selecting Other, please use an abbreviation of the complete Venue name similar to the predefined venues.",
 						icon: <InfoCircleOutlined/>
-					}}>
+					}} required >
 						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenueDropdown} value={form.Venue.value ? [form.Venue.value as Venue] : []} maxTags={1} />
 					</Item>
 					{!form.Venue.isOld 
@@ -137,12 +137,12 @@ function AddPaperForm() {
 					<Item label="Type of Data" tooltip={{
 						title: "What Datatypes the model in the paper uses. A combination of multiple flags is possible.",
 						icon: <InfoCircleOutlined/>
-					}}>
+					}} required >
 						<Select placeholder="Type of Data" enumerator={Data} handleChange={handleChangeData} value={form["Type of Data"]} />
 
 					</Item>
 
-					<Item label="Type of Problem">
+					<Item label="Type of Problem" required >
 						<Select placeholder="Type of Problem" enumerator={Problem} handleChange={handleChangeProblem} value={form["Type of Problem"]} />
 						<Collapse>
 							<Panel header="Info" key="1">
@@ -162,18 +162,18 @@ function AddPaperForm() {
 					<Item label="Type of Model to be Explained" tooltip={{
 						title: "What type of AI model is used in the paper. A combination of multiple flags is possible.",
 						icon: <InfoCircleOutlined/>
-					}}>
+					}} required >
 						<Select placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleChangeModel} value={form["Type of Model to be Explained"]} />
 					</Item>
 
 					<Item label="Type of Task" tooltip={{
 						title: "What is the task of the AI model in the paper. A combination of multiple flags is possible.",
 						icon: <InfoCircleOutlined/>
-					}}>
+					}} required >
 						<Select placeholder="Type of Task" enumerator={Task} handleChange={handleChangeTask} value={form["Type of Task"]} />
 					</Item>
 
-					<Item label="Type of Explanation">
+					<Item label="Type of Explanation" required >
 						<Select placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleChangeExplanation} value={form["Type of Explanation"]} />
 						<Collapse>
 							<Panel header="Info" key="1">
@@ -210,7 +210,7 @@ function AddPaperForm() {
 						</Collapse>
 					</Item>
 
-					<Item label="Method used to explain">
+					<Item label="Method used to explain" required >
 						<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleChangeMethod} value={form["Method used to explain"]} />
 						<Collapse>
 							<Panel header="Info" key="1">
@@ -226,15 +226,13 @@ function AddPaperForm() {
 					</Item>
 
 					<Item label="Abstract" tooltip={{ 
-						title: "Abstract is optional, but highly recommended",
-						icon: <InfoCircleOutlined/>
+						title: "Abstract is optional, but highly recommended"
 					}}>
 						<TextArea placeholder="Abstract" defaultValue={form["Abstract"]} onChange={handleChangeAbstract} autoSize />
 					</Item>
 
 					<Item label="Comment" tooltip={{ 
-						title: "Used to indicate that your paper needs to have a new tag for example",
-						icon: <InfoCircleOutlined/>
+						title: "Used to indicate that your paper needs to have a new tag for example"
 					}}>
 						<TextArea placeholder="Comment" defaultValue={form?.Comment} onChange={handleChangeComment} autoSize />
 					</Item>
