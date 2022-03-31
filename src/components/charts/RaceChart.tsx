@@ -1,44 +1,47 @@
 import { ResponsiveBar } from "@nivo/bar"
 import { useFilteredPapers } from "../../hooks"
 import { Paper } from "../../types"
+import { typeArray } from "../../utils"
 
-let firstYear: number
-let lastYear: number
 
-function GenerateData(col: keyof Paper, year: number) {
-	const papers: Array<Paper> = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
-	firstYear = parseInt(papers[0]["Year"])
-	lastYear = parseInt(papers[papers.length - 1]["Year"])
-	year = firstYear + year
-	const data: any = {}
+function GenerateData(columnValue: string) {
+	let textSize = 0
 
-	papers.forEach((paper: Paper) => {
-		const paperYear = parseInt(paper["Year"])
-		if (!("Papers" in data) && paperYear === year) {
-			data["Papers"] = 1
-		}
-		else if (paperYear == year) {
-			data["Papers"] = data["Papers"] + 1
-		}
+	const data: Array<{ id: string, value: number }> = []
 
-		if (Array.isArray(paper[col])) {
-			for (const elem of paper[col] as any[]) {
-				if (!(elem in data) && paperYear == year) {
-					data[elem] = 1
+	const papers: Paper[] = useFilteredPapers()
+	const count: { [key: string]: { [key: string]: number } } = {
+		"Type of Data": {},
+		"Type of Problem": {},
+		"Type of Model to be Explained": {},
+		"Type of Task": {},
+		"Type of Explanation": {},
+		"Method used to explain": {}
+	}
+
+	papers.forEach(function (value: any) {
+		for (const col of typeArray) {
+			for (const elem of value[col]) {
+				if (count[col][elem]) {
+					count[col][elem] += 1
+				} else {
+					count[col][elem] = 1
 				}
-				else if (paperYear == year) {
-					data[elem] = data[elem] + 1
-				}
+
 			}
 		}
-
 	})
-	return data
+	for (const [key, value] of Object.entries(count[columnValue])) {
+		data.push({ id: key, value: value })
+		if (key.length > textSize) {
+			textSize = key.length
+		}
+	}
+	return [data, textSize]
 }
 
-type LineChartProps = {
+type BarChartProps = {
 	type: string
-	current: number
 }
 
 let dataOld: any = {}
@@ -48,73 +51,31 @@ export function ResetData() {
 	year = 0
 }
 
-function RaceChart({ type, current }: LineChartProps) {
-	const dataCurrent: any = GenerateData(type as keyof Paper, current)
-
-	for (const [key, value] of Object.entries(dataCurrent)) {
-		if (dataOld[key]) {
-			dataOld[key] = dataOld[key] + dataCurrent[key]
-		} else {
-			dataOld[key] = dataCurrent[key]
-		}
-	}
-
-	let dataFormated: any = []
-	for (const [key, value] of Object.entries(dataOld)) {
-		dataFormated.push({ "id": key, "value": value })
-	}
-
-	dataFormated = dataFormated.sort((a: any, b: any) => a.value - b.value)
+function RaceChart({ type }: BarChartProps) {
+	const data: any = GenerateData(type as keyof Paper)
+	console.log(data)
 
 	return (
-		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
-			<h2 style={{ marginLeft: 60, fontWeight: 400, color: "#555" }}>
-				Year{" "}
-				<strong style={{ color: "black", fontWeight: 900 }}>{current + firstYear}</strong>
-			</h2>
+		<div style={{ height: "545px", width: "100%", marginTop: "30px" }}>
 			<ResponsiveBar
-				data={dataFormated}
+				data={data[0]}
 				layout="horizontal"
-				margin={{ top: 26, right: 120, bottom: 26, left: 60 }}
+				margin={{ top: 26, right: 30, bottom: 36, left: data[1] * 5.8 }}
 				indexBy="id"
+				label={d => `${d.value}`}
 				colors={{ scheme: "spectral" }}
 				colorBy="indexValue"
 				borderColor={{ from: "color", modifiers: [["darker", 2.6]] }}
 				enableGridX
 				enableGridY={false}
-				axisTop={{
-					format: "~s",
-				}}
 				axisBottom={{
-					format: "~s",
+					legend: "Papers",
+					legendPosition: "middle",
+					legendOffset: 30,
+					tickSize: 0
 				}}
-				axisLeft={null}
 				padding={0.3}
-				labelTextColor={{ from: "color", modifiers: [["darker", 1.4]] }}
-				legends={[
-					{
-						dataFrom: "indexes",
-						anchor: "bottom-right",
-						direction: "column",
-						justify: false,
-						translateX: 120,
-						translateY: 0,
-						itemsSpacing: 2,
-						itemWidth: 100,
-						itemHeight: 20,
-						itemDirection: "left-to-right",
-						itemOpacity: 0.85,
-						symbolSize: 20,
-						effects: [
-							{
-								on: "hover",
-								style: {
-									itemOpacity: 1
-								}
-							}
-						]
-					}
-				]}
+				labelTextColor={{ from: "color", modifiers: [["darker", 3]] }}
 			/>
 		</div>
 	)
