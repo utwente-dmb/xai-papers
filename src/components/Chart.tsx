@@ -39,6 +39,16 @@ function Chart(): JSX.Element {
 			description: string,
 		}
 	} = {
+		"Line Chart": {
+			withSelect: true,
+			element: <GrowthLineChart type={type} />,
+			description: "The line chart below displays the increase in the number of papers on the subject of Explainable AI over time. The filtering option on the right allows you to select a particular tag and see the developments over time associated with that specific tag.",
+		},
+		"Bar Chart": {
+			withSelect: true,
+			element: <RaceChart type={type} />,
+			description: "The bar chart shows the distribution of tags"
+		},
 		"Connected Graph": {
 			withSelect: false,
 			element: (<ConnectedChart />),
@@ -49,20 +59,6 @@ function Chart(): JSX.Element {
 			element: <CirclePackingChart type={type} />,
 			description: "The circle packing chart below displays the hierarchic organization which exists within the papers on Explainable AI. A specific tag can be selected to show the distribution that occurs for that tag. Each of the circles can be hovered over and clicked on to display more information"
 		},
-		"Line Chart": {
-			withSelect: true,
-			element: <GrowthLineChart type={type} />,
-			description: "The line chart below displays the increase in the number of papers on the subject of Explainable AI over time. The filtering option on the right allows you to select a particular tag and see the developments over time associated with that specific tag.",
-		},
-		"Bar Chart": {
-			withSelect: true,
-			element: (
-				<>
-					<RaceChart type={type} />
-				</>
-			),
-			description: "The bar chart shows the distribution of tags"
-		}
 	}
 	return (
 		<>

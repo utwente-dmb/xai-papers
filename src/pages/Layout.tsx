@@ -4,7 +4,8 @@ import {
 	Layout,
 	Menu,
 	PageHeader,
-	Button
+	Button,
+	Row
 } from "antd"
 import {
 	PlusCircleOutlined,
@@ -18,7 +19,6 @@ import { Papers, AddPaper, Charts } from "../pages"
 import { pathToPage, pageToPath, baseUrl } from "../utils"
 
 const { Content, Sider } = Layout
-
 function DefaultLayout() {
 
 	const location = useLocation()
@@ -35,6 +35,18 @@ function DefaultLayout() {
 		navigate(pageToPath(key))
 		setSelectedKeys([key])
 	}
+
+	const [showExplainableAIText, setShowExplainableAIText] = useState(false)
+
+	useEffect(() => {
+		if (!sideBarCollapsed) {
+			setTimeout(() => {
+				setShowExplainableAIText(!showExplainableAIText)
+			}, 200)
+		} else {
+			setShowExplainableAIText(!showExplainableAIText)
+		}
+	}, [sideBarCollapsed])
 
 	return (
 		<Layout>
@@ -66,12 +78,17 @@ function DefaultLayout() {
 					<Menu.Item key="charts" icon={<DotChartOutlined />}>Chart</Menu.Item>
 					<Menu.Item key="add-paper" icon={<PlusCircleOutlined />}>Add Paper</Menu.Item>
 				</Menu>
+				{showExplainableAIText ? <div style={{marginTop: 12, marginLeft: 15}}>Overview of Methods on Explainable AI</div> : null}
 			</Sider>
 
 			<Layout>
 				{/* Header */}
 				<PageHeader style={{ top: 0, width: "100%", zIndex: 1}}>
 					<div>
+						<Row>
+							<img src={process.env.PUBLIC_URL + "/UT_Logo.png"}/>
+							<img src={process.env.PUBLIC_URL + "/IKIM_Logo.png"}/>
+						</Row>
 						<p>
 							Dataset collected by Nauta et al. as described in
 							<br/>
