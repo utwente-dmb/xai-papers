@@ -12,16 +12,6 @@ const { Item } = Form
 const { TextArea } = Input
 const { Panel } = Collapse
 
-const layout = {
-	labelCol: {
-		span: 6,
-	},
-	wrapperCol: {
-		span: 16,
-	},
-}
-
-
 function AddPaperForm() {
 
 	const dispatch = useAppDispatch()
@@ -98,7 +88,7 @@ function AddPaperForm() {
 	return (
 		<Row>
 			<Col span={16}>
-				<Form {...layout} name="nest-messages" >
+				<Form labelCol={{span: 6}} wrapperCol={{span: 16}}>
 					<Item label="Title" tooltip={{ 
 						title: "Title of the paper in English",
 						icon: <InfoCircleOutlined/>
@@ -210,7 +200,7 @@ function AddPaperForm() {
 						</Collapse>
 					</Item>
 
-					<Item label="Method used to explain" required >
+					<Item label="Method used to explain" >
 						<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleChangeMethod} value={form["Method used to explain"]} />
 						<Collapse>
 							<Panel header="Info" key="1">
@@ -226,13 +216,15 @@ function AddPaperForm() {
 					</Item>
 
 					<Item label="Abstract" tooltip={{ 
-						title: "Abstract is optional, but highly recommended"
+						title: "Abstract is optional, but highly recommended",
+						icon: <InfoCircleOutlined/>
 					}}>
 						<TextArea placeholder="Abstract" defaultValue={form["Abstract"]} onChange={handleChangeAbstract} autoSize />
 					</Item>
 
 					<Item label="Comment" tooltip={{ 
-						title: "Used to indicate that your paper needs to have a new tag for example"
+						title: "Used to indicate that your paper needs to have a new tag for example",
+						icon: <InfoCircleOutlined/>
 					}}>
 						<TextArea placeholder="Comment" defaultValue={form?.Comment} onChange={handleChangeComment} autoSize />
 					</Item>
