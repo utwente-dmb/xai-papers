@@ -80,21 +80,18 @@ function Papers(): JSX.Element {
 		},
 	]
 
-	function writeFilteredListToFile() { 
-		console.log("yes")
-		// fs.writeFile(__dirname + "../../public/list.txt", "Text", (err: any) => {
-		// 	console.log("Error", err)
-		// })
-	}
-
 	return (
 		<>
 			<Row justify="space-between">
 				<Button className="expand-all" >
 					{expandController.isAllExpanded() ? <MinusOutlined/> : <PlusOutlined />}
 				</Button>
-				<Button onClick={writeFilteredListToFile}>
-					<a href={process.env.PUBLIC_URL + "/list.txt"} download="FilteredList.txt">Export list as JSON</a>
+				<Button>
+					<a href={`data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(filteredPapers))}`} 
+						download="FilteredList.json"
+					>
+						Export Filtered List as JSON
+					</a>
 				</Button>
 			</Row>
 			<Table

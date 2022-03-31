@@ -1,15 +1,10 @@
-import { Row, Select, Col, Radio, Slider, InputNumber } from "antd"
+import { Row, Select, Col, Radio } from "antd"
 import { ConnectedChart, CirclePackingChart, GrowthLineChart, RaceChart, ResetData } from "./charts"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { typeArray } from "../utils"
-import { useFilteredPapers } from "../hooks"
-import { Paper } from "../types"
 
 const { Option } = Select
 const { Button, Group } = Radio
-
-
-
 
 function Chart(): JSX.Element {
 
@@ -25,10 +20,6 @@ function Chart(): JSX.Element {
 
 	function HandleChange(value: string) {
 		setType(value)
-		ResetData()
-	}
-
-	function HandleSlider(sliderValue: number) {
 		ResetData()
 	}
 
