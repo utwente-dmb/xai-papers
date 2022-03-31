@@ -14,10 +14,10 @@ const { Panel } = Collapse
 
 const layout = {
 	labelCol: {
-		span: 8,
+		span: 6,
 	},
 	wrapperCol: {
-		span: 14,
+		span: 16,
 	},
 }
 
@@ -97,7 +97,7 @@ function AddPaperForm() {
 
 	return (
 		<Row>
-			<Col span={12}>
+			<Col span={16}>
 				<Form {...layout} name="nest-messages" >
 					<Item label="Title" tooltip={{ 
 						title: "Title of the paper in English",
@@ -240,7 +240,7 @@ function AddPaperForm() {
 					</Item>
 				</Form>
 			</Col>
-			<Col span={12}>
+			<Col span={8}>
 				<Item label="Your JSON">
 					<TextArea value={json} autoSize />
 				</Item>

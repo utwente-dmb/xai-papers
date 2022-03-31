@@ -83,9 +83,6 @@ function Filters(): JSX.Element {
 			<Col span={16}>
 				<Button onClick={handleReset}>Reset Filters</Button>
 			</Col>
-			{/* <Col span={3}>
-				<a href="/list.txt" download="FilteredList.txt">Download Filtered List</a>
-			</Col> */}
 
 			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data}  span={8}/>
 			<Select placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} value={filters.problem}  span={8}/>

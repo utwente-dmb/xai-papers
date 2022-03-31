@@ -5,9 +5,9 @@ import {TagList} from "../components"
 import { Paper } from "../types"
 import { getColor, typeArray, printNames } from "../utils"
 
+
 type Column<T> = {
 	title: string | JSX.Element, 
-	className?: string
 	width?: number
 	dataIndex?: string, 
 	render?: (text: string, row: T) => React.ReactNode, 
@@ -16,11 +16,7 @@ type Column<T> = {
 		compare: (a: T, b: T) => number,
 		multiple: number
 	},
-	defaultSortOrder?: "ascend" | "descend",
-	RC_TABLE_INTERNAL_COL_DEFINE?: {
-		className: string
-		columnType: string
-	}
+	defaultSortOrder?: "ascend" | "descend"
 }
 
 
@@ -84,56 +80,65 @@ function Papers(): JSX.Element {
 		},
 	]
 
+	function writeFilteredListToFile() { 
+		console.log("yes")
+		// fs.writeFile(__dirname + "../../public/list.txt", "Text", (err: any) => {
+		// 	console.log("Error", err)
+		// })
+	}
+
 	return (
-		<Row>
-			<Col span={1}>
-				<Button className="expand-all" style={{ marginTop: 25 }}>
+		<>
+			<Row justify="space-between">
+				<Button className="expand-all" >
 					{expandController.isAllExpanded() ? <MinusOutlined/> : <PlusOutlined />}
 				</Button>
-			</Col>
-			<Col span={23}>
-				<Table
-					style={{ marginTop: 10 }}
-					columns={columns}
-					dataSource={papersData}
-					expandable={{ 
-						expandRowByClick: true,
-						expandedRowRender: (record) => (
-							<>
-								<Row gutter={[0, 4]}>
-									{record.Abstract.length > 0 
-										? <Col span={24}>
-											{record.Abstract}
-										</Col> 
-										: null}
+				<Button onClick={writeFilteredListToFile}>
+					<a href={process.env.PUBLIC_URL + "/list.txt"} download="FilteredList.txt">Export list as JSON</a>
+				</Button>
+			</Row>
+			<Table
+				style={{ marginTop: 10 }}
+				columns={columns}
+				dataSource={papersData}
+				expandable={{ 
+					expandRowByClick: true,
+					expandedRowRender: (record) => (
+						<>
+							<Row gutter={[0, 4]}>
+								{record.Abstract.length > 0 
+									? <Col span={24}>
+										{record.Abstract}
+									</Col> 
+									: null}
 							
-									<Col span={24}>
-										<b>
+								<Col span={24}>
+									<b>
 										Authors: {printNames(record.Authors)}
-										</b>
-									</Col>
-									<Col span={24}>
-										{typeArray.map((type) => (
-											<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
-										))}
-									</Col>
-								</Row>
-							</>
-						),
-					}}
-					className={
-						expandController.isAllExpanded() ? "table-expanding-all" : ""
-					}
-					expandedRowKeys={expandController.expandedRowKeys}
-					onExpand={expandController.onExpand}
-					rowKey={expandController.rowKey}
-					pagination={{
-						defaultPageSize: 25, 
-						position: ["bottomCenter"]
-					}}
-				></Table>
-			</Col>
-		</Row>
+									</b>
+								</Col>
+								<Col span={24}>
+									{typeArray.map((type) => (
+										<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
+									))}
+								</Col>
+							</Row>
+						</>
+					),
+				}}
+				className={
+					expandController.isAllExpanded() ? "table-expanding-all" : ""
+				}
+				expandedRowKeys={expandController.expandedRowKeys}
+				onExpand={expandController.onExpand}
+				rowKey={expandController.rowKey}
+				pagination={{
+					defaultPageSize: 25, 
+					position: ["bottomCenter"]
+				}}
+			></Table>
+
+		</>
 	)
 }
 
