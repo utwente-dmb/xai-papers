@@ -80,26 +80,18 @@ function Papers(): JSX.Element {
 		},
 	]
 
-	async function downloadFilteredList() { 
-		const json = JSON.stringify(filteredPapers)
-		const blob = new Blob([json], { type: "application/json" })
-		const href = await URL.createObjectURL(blob)
-		const link = document.createElement("a")
-		link.href = href
-		link.download = "FilteredList.json"
-		document.body.appendChild(link)
-		link.click()
-		document.body.removeChild(link)
-	}
-
 	return (
 		<>
 			<Row justify="space-between">
 				<Button className="expand-all" >
 					{expandController.isAllExpanded() ? <MinusOutlined/> : <PlusOutlined />}
 				</Button>
-				<Button onClick={downloadFilteredList}>
-					Export Filtered List as JSON
+				<Button>
+					<a href={`data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(filteredPapers))}`} 
+						download="FilteredList.json"
+					>
+						Export Filtered List as JSON
+					</a>
 				</Button>
 			</Row>
 			<Table
