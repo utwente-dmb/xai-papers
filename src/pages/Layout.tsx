@@ -75,7 +75,7 @@ function DefaultLayout() {
 					selectedKeys={selectedKeys}
 				>
 					<Menu.Item key="papers" icon={<UnorderedListOutlined />}>Papers</Menu.Item>
-					<Menu.Item key="charts" icon={<DotChartOutlined />}>Chart</Menu.Item>
+					<Menu.Item key="charts" icon={<DotChartOutlined />}>Charts</Menu.Item>
 					<Menu.Item key="add-paper" icon={<PlusCircleOutlined />}>Add Paper</Menu.Item>
 				</Menu>
 				{showExplainableAIText ? <div style={{marginTop: 12, marginLeft: 15}}>Overview of Methods on Explainable AI</div> : null}
