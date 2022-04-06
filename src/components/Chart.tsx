@@ -55,7 +55,7 @@ function Chart(): JSX.Element {
 		<>
 			<Row justify="space-between" style={{ marginBottom: 12 }}>
 				<Col span={12}>
-					<Group defaultValue={"Connected Graph"} buttonStyle="solid" onChange={HandleChartChange}>
+					<Group defaultValue={"Line Chart"} buttonStyle="solid" onChange={HandleChartChange}>
 						{Object.keys(graphMap).map(elem =>
 							<Button key={elem} value={elem}>
 								{elem}
