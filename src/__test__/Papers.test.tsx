@@ -63,7 +63,7 @@ describe("Test", () => {
 
 			// Check all expanded rows if the tags match the clicked tags
 			document.querySelectorAll(".ant-table-expanded-row").forEach(expandedRow => {
-				const paperTags = Array.from(expandedRow.querySelectorAll(".ant-tag")).map(tag => tag.innerHTML)
+				const paperTags = Array.from(expandedRow.querySelectorAll(".ant-tag")).map(tag => tag.innerHTML.includes(":") ? tag.innerHTML.split(": ")[1] : tag.innerHTML)
 				const contained = allTags.every(tag => (tag !== null) ? paperTags.includes(tag) : false)
 				expect(contained).toBeTruthy()
 			})
