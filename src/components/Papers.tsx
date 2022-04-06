@@ -3,8 +3,9 @@ import { MinusOutlined, PlusOutlined } from "@ant-design/icons"
 import { useExpandingAllInTable, useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
 import { Paper } from "../types"
-import { getColor, typeArray, printNames } from "../utils"
+import { getColor, typeArray, printNames, enumKeyMap, capitalize, reverseObject } from "../utils"
 
+const reverseEnumKeyMap = reverseObject(enumKeyMap)
 
 type Column<T> = {
 	title: string | JSX.Element, 
@@ -19,11 +20,12 @@ type Column<T> = {
 	defaultSortOrder?: "ascend" | "descend"
 }
 
-
-
 function Tag({ record, type }: { record: Paper, type: keyof Paper}) {
+	const tagType = reverseEnumKeyMap[type]
+	const data = (record[type] as string[]).map((item: string) => `${capitalize(tagType)} : ${item}`)
+
 	return (
-		<TagList TagData={record[type] as string[]} Color={getColor(type)}></TagList>
+		<TagList TagData={data} Color={getColor(type)}></TagList>
 	)
 }
 
