@@ -58,7 +58,7 @@ export const getColor = (type: keyof Paper) => {
 		return "green"
 
 	case "Type of Model to be Explained":
-		return "blue"
+		return "geekblue"
 
 	case "Type of Task": 
 		return "orange"
@@ -68,6 +68,9 @@ export const getColor = (type: keyof Paper) => {
 
 	case "Method used to explain": 
 		return "purple"
+
+	case "Venue": 
+		return "cyan"
                 
 	default:
 		return "gold"
