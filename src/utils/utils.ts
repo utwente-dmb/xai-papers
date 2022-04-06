@@ -7,3 +7,12 @@ export function printNames(names: string[]): string {
 	})
 	return string
 }
+
+export function reverseObject(object: any) : any {
+	return Object.fromEntries(Object.entries(object).map(a => a.reverse()))
+}
+
+export function capitalize(str: string): string {
+	return str.charAt(0).toUpperCase() + str.slice(1)
+}
+
