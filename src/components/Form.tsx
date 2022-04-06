@@ -1,5 +1,5 @@
-import { Form, Input, InputNumber, Button, Col, Row, Collapse } from "antd"
-import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Paper, Venue } from "../types"
+import { Form, Input, InputNumber, Button, Col, Row, Collapse, notification } from "antd"
+import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Venue } from "../types"
 import Select from "./Select"
 import { fromFilterValue } from "../utils"
 import { useAppDispatch, useAppSelector } from "../hooks"
@@ -83,6 +83,14 @@ function AddPaperForm() {
 
 	function handleChangeComment(value: React.ChangeEvent<HTMLTextAreaElement>) {
 		dispatch(formActions.setComment(value.currentTarget.value))
+	}
+
+	function copyJsonToClipboard() {
+		navigator.clipboard.writeText(json)
+		notification.open({
+			message: "Successfully copied JSON to clipboard",
+			duration: 1.5
+		})
 	}
 
 	return (
@@ -233,6 +241,7 @@ function AddPaperForm() {
 			<Col span={8}>
 				<Item label="Your JSON">
 					<TextArea value={json} autoSize />
+					<Button onClick={copyJsonToClipboard}>Copy To Clipboard</Button>
 				</Item>
 			</Col>
 		</Row>
