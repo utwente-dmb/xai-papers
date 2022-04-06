@@ -1,11 +1,7 @@
-import { useState } from "react"
 import { ResponsiveCirclePackingCanvas } from "@nivo/circle-packing"
 import { useFilteredPapers } from "../../hooks"
 import { Paper } from "../../types"
 import { typeArray } from "../../utils"
-import { Select, Col } from "antd"
-
-const { Option } = Select
 
 const theme = {
 	"textColor": "#ffffff",
@@ -16,7 +12,7 @@ let data: {
 	name: string,
 	children: any
 } = {
-	name: "root",
+	name: "all",
 	children: [
 
 	]
@@ -77,7 +73,7 @@ function CirclePackingChart({ type }: LineChartProps) {
 				data={data}
 				margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
 				id="name"
-				colors={{ scheme: "nivo" }}
+				colors={{ scheme: "set1" }}
 				childColor={{
 					from: "color",
 					modifiers: [
