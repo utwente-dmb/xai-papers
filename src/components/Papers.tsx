@@ -49,14 +49,14 @@ function Papers(): JSX.Element {
 			render: (text: string, row: Paper) => {
 				console.log("Row", row.IsOld)
 				return (
-					<>
+					<Row justify="space-between">
 						<a href={row.url} target="_blank" rel="noreferrer">
 							{text}
 						</a>
 						{row.IsOld 
 							? <Tag style={{marginLeft: 5}} color="blue">Original</Tag> 
 							: null}
-					</>
+					</Row>
 				)},
 			key: "title",
 			defaultSortOrder: "ascend",
