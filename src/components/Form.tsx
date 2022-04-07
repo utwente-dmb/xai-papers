@@ -38,10 +38,11 @@ function AddPaperForm() {
 		dispatch(formActions.setAuthors(authors))
 	}
 
-	function handleChangeVenueDropdown(value: Array<FilterValue<Venue>>) {
-		const newVenue = fromFilterValue(value)[0]
+	function handleChangeVenueDropdown(value?: FilterValue<Venue>) {
+		const newVenue = value?.label ?? ""
 		if (newVenue === "Other") {
 			dispatch(formActions.setIsOldVenue(false))
+			dispatch(formActions.setVenue(""))
 		} else {
 			dispatch(formActions.setIsOldVenue(true))
 			dispatch(formActions.setVenue(newVenue))
@@ -93,6 +94,9 @@ function AddPaperForm() {
 		})
 	}
 
+	const venueValue = form.Venue.value as Venue
+	const venue = venueValue ? [venueValue] : []
+
 	return (
 		<Row>
 			<Col span={16}>
@@ -119,14 +123,14 @@ function AddPaperForm() {
 						<Input placeholder="Authors" defaultValue={printNames(form.Authors)} onChange={handleChangeAuthors} />
 					</Item>
 
-					<Item label="Venue" tooltip={{ 
-						title: "If selecting Other, please use an abbreviation of the complete Venue name similar to the predefined venues.",
-						icon: <InfoCircleOutlined/>
-					}} required >
-						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenueDropdown} value={form.Venue.value ? [form.Venue.value as Venue] : []} maxTags={1} />
+					<Item label="Venue"  required >
+						<Select placeholder="Venue" enumerator={Venue} handleChange={handleChangeVenueDropdown} value={venue} single />
 					</Item>
 					{!form.Venue.isOld 
-						? <Item label="Venue" >
+						? <Item label="Venue" tooltip={{ 
+							title: "Please use an abbreviation of the complete Venue name similar to the predefined venues.",
+							icon: <InfoCircleOutlined/>
+						}}>
 							<Input placeholder="Venue" onChange={handleChangeVenueInput} value={form.Venue.value} /> 
 						</Item>
 						: null
