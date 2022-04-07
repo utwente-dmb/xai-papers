@@ -12,7 +12,7 @@ let data: {
 	name: string,
 	children: any
 } = {
-	name: "all",
+	name: "",
 	children: [
 
 	]
@@ -73,7 +73,7 @@ function CirclePackingChart({ type }: LineChartProps) {
 				data={data}
 				margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
 				id="name"
-				colors={{ scheme: "set1" }}
+				colors={["#f0f2f5", "#1890ff","#d8e6f3"]} //Change colors of the graph from here, order is parent to children
 				childColor={{
 					from: "color",
 					modifiers: [

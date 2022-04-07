@@ -1,18 +1,18 @@
 import { Table, Row, Button, Col, Tag } from "antd"
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons"
 import { useExpandingAllInTable, useFilteredPapers } from "../hooks"
-import {TagList} from "../components"
+import { TagList } from "../components"
 import { Paper } from "../types"
 import { getColor, typeArray, printNames, enumKeyMap, capitalize, reverseObject } from "../utils"
 
 const reverseEnumKeyMap = reverseObject(enumKeyMap)
 
 type Column<T> = {
-	title: string | JSX.Element, 
+	title: string | JSX.Element,
 	width?: number
-	dataIndex?: string, 
-	render?: (text: string, row: T) => React.ReactNode, 
-	key?: string, 
+	dataIndex?: string,
+	render?: (text: string, row: T) => React.ReactNode,
+	key?: string,
 	sorter?: {
 		compare: (a: T, b: T) => number,
 		multiple: number
@@ -32,13 +32,13 @@ function CustomTag({ record, type }: { record: Paper, type: keyof Paper}) {
 function Papers(): JSX.Element {
 
 	const filteredPapers = useFilteredPapers()
-	
+
 	const papersData = filteredPapers.map((paper) => ({
 		...paper,
 		key: filteredPapers.indexOf(paper),
 		Author: [paper.Authors[0] + " et al."],
 	}))
-	
+
 	const allKeys = papersData.map((paper) => paper.key)
 	const expandController = useExpandingAllInTable(allKeys, "key", false)
 
@@ -71,6 +71,7 @@ function Papers(): JSX.Element {
 			render: (_, row: Paper) => <>{row.Venue.value}</>,
 			key: "venue",
 			defaultSortOrder: "ascend",
+			width: 100,
 			sorter: {
 				compare: (a: Paper, b: Paper) => a.Venue.value.localeCompare(b.Venue.value),
 				multiple: 2
@@ -81,6 +82,7 @@ function Papers(): JSX.Element {
 			dataIndex: "Year",
 			key: "year",
 			defaultSortOrder: "descend",
+			width: 100,
 			sorter: {
 				compare: (a: Paper, b: Paper) => a.Year.localeCompare(b.Year),
 				multiple: 3
@@ -90,6 +92,7 @@ function Papers(): JSX.Element {
 			title: "Author",
 			key: "author",
 			dataIndex: "Author",
+			width: 250,
 		},
 	]
 
@@ -97,10 +100,10 @@ function Papers(): JSX.Element {
 		<>
 			<Row justify="space-between">
 				<Button className="expand-all" >
-					{expandController.isAllExpanded() ? <MinusOutlined/> : <PlusOutlined />}
+					{expandController.isAllExpanded() ? <MinusOutlined /> : <PlusOutlined />}
 				</Button>
 				<Button>
-					<a href={`data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(filteredPapers))}`} 
+					<a href={`data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(filteredPapers))}`}
 						download="FilteredList.json"
 					>
 						Export Filtered List as JSON
@@ -111,17 +114,17 @@ function Papers(): JSX.Element {
 				style={{ marginTop: 10 }}
 				columns={columns}
 				dataSource={papersData}
-				expandable={{ 
+				expandable={{
 					expandRowByClick: true,
 					expandedRowRender: (record) => (
 						<>
 							<Row gutter={[0, 4]}>
-								{record.Abstract.length > 0 
+								{record.Abstract.length > 0
 									? <Col span={24}>
 										{record.Abstract}
-									</Col> 
+									</Col>
 									: null}
-							
+
 								<Col span={24}>
 									<b>
 										Authors: {printNames(record.Authors)}
@@ -143,7 +146,7 @@ function Papers(): JSX.Element {
 				onExpand={expandController.onExpand}
 				rowKey={expandController.rowKey}
 				pagination={{
-					defaultPageSize: 25, 
+					defaultPageSize: 25,
 					position: ["bottomCenter"]
 				}}
 			></Table>
