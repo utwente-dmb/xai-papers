@@ -9,7 +9,7 @@ const { Button, Group } = Radio
 function Chart(): JSX.Element {
 
 
-	const [chart, setChart] = useState("Connected Graph")
+	const [chart, setChart] = useState("Line Chart")
 
 	const [type, setType] = useState("Type of Data")
 
@@ -55,7 +55,7 @@ function Chart(): JSX.Element {
 		<>
 			<Row justify="space-between" style={{ marginBottom: 12 }}>
 				<Col span={12}>
-					<Group defaultValue={"Line Chart"} buttonStyle="solid" onChange={HandleChartChange}>
+					<Group defaultValue={chart} buttonStyle="solid" onChange={HandleChartChange}>
 						{Object.keys(graphMap).map(elem =>
 							<Button key={elem} value={elem}>
 								{elem}
