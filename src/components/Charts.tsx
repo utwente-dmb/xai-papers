@@ -1,5 +1,5 @@
 import { Row, Select, Col, Radio } from "antd"
-import { ConnectedChart, CirclePackingChart, GrowthLineChart, RaceChart, ResetData } from "./charts"
+import { ConnectedChart, CirclePackingChart, GrowthLineChart, RaceChart, ResetData } from "./chart"
 import { useState } from "react"
 import { typeArray } from "../utils"
 

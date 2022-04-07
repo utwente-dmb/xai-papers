@@ -57,6 +57,9 @@ export interface Paper {
     "Type of Explanation": Array<typeof Explanation>
     "Method used to explain": Array<typeof Method>
     Abstract: string
+    Comment?: string
+    Date?: Date,
+    IsOld?: boolean
 }
 
 export type VenueType = {

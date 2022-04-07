@@ -1,7 +1,6 @@
-import { useState } from "react"
 import { Select, Col, Tag } from "antd"
 import { Paper, FilterValue } from "../types"
-import { fromFilterValue, getColor, toFilterValue } from "../utils"
+import { getColor, toFilterValue } from "../utils"
 
 const { Option } = Select
 
@@ -30,45 +29,32 @@ function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
 type FilterProps<T> = {
 	placeholder: string, 
 	enumerator: Record<number, string>,
-	handleChange: (val: Array<FilterValue<T>>) => void,
+	handleChange: ((val: Array<FilterValue<T>>) => void) | ((val?: FilterValue<T>) => void),
 	value: Array<T>
     span?: number,
-	maxTags?: number
+	single?: boolean
   }
 
-function Filter<T>({ placeholder, enumerator, handleChange, value, span, maxTags }: FilterProps<T> ): JSX.Element {
-
+function Filter<T>({ placeholder, enumerator, handleChange, value, span, single }: FilterProps<T> ): JSX.Element {
 	const defaultValue = toFilterValue(value, placeholder)
-
-	const [optionsSelected, setOptionsSelected] = useState<Array<T>>([])
-
-	const onChange = (value: Array<FilterValue<T>>) => {
-		handleChange(value)
-		setOptionsSelected(fromFilterValue(value))
-	}
 
 	return (
 		<Col span={span ?? 24}>
 			<Select
-				mode="multiple"
+				mode={single ? undefined : "multiple"}
 				style={{ width: "100%" }}
 				placeholder={placeholder}
 				value={defaultValue}
-				onChange={onChange}
+				onChange={handleChange as any}
 				labelInValue={true}
 				tagRender={tagRender}
 				allowClear
 			>
 				{Object.values(enumerator).map((item: string) => {
-					maxTags = maxTags || 1000
-					const isFull = optionsSelected.length >= maxTags
-					const disabled = isFull && !optionsSelected.includes(item as unknown as T)
-
 					return (
 						<Option 
 							value={`${placeholder}+${item}`} 
 							key={item}
-							disabled={disabled}
 						>
 							{item}
 						</Option>
