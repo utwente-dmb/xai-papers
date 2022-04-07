@@ -1,4 +1,4 @@
-import { Table, Row, Button, Col } from "antd"
+import { Table, Row, Button, Col, Tag } from "antd"
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons"
 import { useExpandingAllInTable, useFilteredPapers } from "../hooks"
 import {TagList} from "../components"
@@ -20,7 +20,7 @@ type Column<T> = {
 	defaultSortOrder?: "ascend" | "descend"
 }
 
-function Tag({ record, type }: { record: Paper, type: keyof Paper}) {
+function CustomTag({ record, type }: { record: Paper, type: keyof Paper}) {
 	const tagType = reverseEnumKeyMap[type]
 	const data = (record[type] as string[]).map((item: string) => `${capitalize(tagType)} : ${item}`)
 
@@ -46,7 +46,18 @@ function Papers(): JSX.Element {
 		{
 			title: "Title",
 			dataIndex: "Title",
-			render: (text: string, row: Paper) => <a href={row.url} target="_blank" rel="noreferrer">{text}</a>,
+			render: (text: string, row: Paper) => {
+				console.log("Row", row.IsOld)
+				return (
+					<>
+						<a href={row.url} target="_blank" rel="noreferrer">
+							{text}
+						</a>
+						{row.IsOld 
+							? <Tag style={{marginLeft: 5}} color="blue">Original</Tag> 
+							: null}
+					</>
+				)},
 			key: "title",
 			defaultSortOrder: "ascend",
 			sorter: {
@@ -118,7 +129,7 @@ function Papers(): JSX.Element {
 								</Col>
 								<Col span={24}>
 									{typeArray.map((type) => (
-										<Tag record={record} type={type} key={typeArray.indexOf(type)}/>
+										<CustomTag record={record} type={type} key={typeArray.indexOf(type)}/>
 									))}
 								</Col>
 							</Row>
