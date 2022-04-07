@@ -18,6 +18,7 @@ const initialState: Paper & { Comment?: string } = {
 	"Type of Explanation": [],
 	"Method used to explain": [],
 	"Abstract": "",
+	Date: new Date()
 }
 
 const formSlice = createSlice({
