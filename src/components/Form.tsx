@@ -12,6 +12,28 @@ const { Item } = Form
 const { TextArea } = Input
 const { Panel } = Collapse
 
+const explanationPictureUrl = process.env.PUBLIC_URL + "/explanation_types_examples/"
+
+type TypeOfExplanationProps = {
+	name: string,
+	description: string,
+	imageUrl?: string
+}
+
+function TypeOfExplanation({ name, description, imageUrl }: TypeOfExplanationProps) {
+	return (
+		<>
+			<p style={{margin: 0}}><i>{name}</i>, {description}</p>
+			{imageUrl ? <Collapse style={{marginBottom: 10}}>
+				<Panel header="Picture" key="1">
+					<img src={`${explanationPictureUrl}${imageUrl}`} style={{width: "100%"}}/>
+				</Panel>
+			</Collapse> : null}
+			
+		</>
+	)
+}
+
 function AddPaperForm() {
 
 	const dispatch = useAppDispatch()
@@ -180,34 +202,89 @@ function AddPaperForm() {
 						<Collapse>
 							<Panel header="Info" key="1">
 								<p>What type of explanation is used to explain the AI model. A combination of multiple flags is possible.</p>
+								<TypeOfExplanation 
+									name="Decision Rules"
+									description="Logical rules, including decision sets[16], anchors[24], decision tables[13] and programs[31]."
+									imageUrl="decision_rules_139.PNG"
+								/>
 
-								<p><i>Decision Rules</i>, Logical rules, including decision sets[16], anchors[24], decision tables[13] and programs[31].</p>
+								<TypeOfExplanation 
+									name="Decision Tree"
+									description="Rooted graph with conditional statement at each node, e.g. ProtoTree [19]."
+									imageUrl="decision_tree_179.PNG"
+								/>
 
-								<p><i>Decision Tree</i>, Rooted graph with conditional statement at each node, e.g. ProtoTree [19].</p>
+								<TypeOfExplanation 
+									name="Disentanglement"
+									description="Disentangled representation, where each disjoint feature might have a semantic meaning. E.g. InfoGAN [5]."
+									imageUrl="disentanglement_44.PNG"
+								/>
 
-								<p><i>Disentanglement</i>, Disentangled representation, where each disjoint feature might have a semantic meaning. E.g. InfoGAN [5].</p>
+								<TypeOfExplanation 
+									name="Feature Importance"
+									description="Set of 1-dimensional non-binary values/scores to indicate feature relevance, feature contribution or attribution. A feature is not necessarily an input feature to predictive model &#55349;&#56403; , but it should be a feature in the explanation. Examples include SHAP[18] and importance scores by LIME[23]."
+									imageUrl="feature_importance_212.PNG"
+								/>
 
-								<p><i>Feature Importance</i>, Set of 1-dimensional non-binary values/scores to indicate feature relevance, feature contribution or attribution. A feature is not necessarily an input feature to predictive model &#55349;&#56403; , but it should be a feature in the explanation. Examples include SHAP[18] and importance scores by LIME[23].</p>
+								<TypeOfExplanation 
+									name="Feature Plot"
+									description="Plot or figure showing relations or interactions between features or between feature(s) and outcome. Examples include Partial Dependence Plot[7], Individual Conditional Expectation plot[9] and Feature Auditing[1]."
+									imageUrl="feature_plot_82.PNG"
+								/>
+					
+								<TypeOfExplanation 
+									name="Graph"
+									description="Graphical network structure with nodes and edges, e.g. Abstract Policy Graph[28], Knowledge Graph[32], Flow Graph[25] and Finite State Automata[11]."
+									imageUrl="graph_252.PNG"
+								/>
 
-								<p><i>Feature Plot</i>, Plot or figure showing relations or interactions between features or between feature(s) and outcome. Examples include Partial Dependence Plot[7], Individual Conditional Expectation plot[9] and Feature Auditing[1].</p>
+								<TypeOfExplanation 
+									name="Heatmap"
+									description="Map with at least 2 dimensions visually highlighting non-binary feature attribution, activation, sensitivity, attention or saliency. Includes attention maps[26], perturbation masks [6] and Layer-Wise Relevance Propagation [2]."
+									imageUrl="heatmap_222.PNG"
+								/>
 
-								<p><i>Graph</i>, Graphical network structure with nodes and edges, e.g. Abstract Policy Graph[28], Knowledge Graph[32], Flow Graph[25] and Finite State Automata[11].</p>
+								<TypeOfExplanation 
+									name="Localization"
+									description="Binary feature importance. Features can be any type of covariate used in the explanation, such as words, tabular features, or bounding boxes. Examples include binary maps with image patches[23], segmentation[12] and bounding boxes[33]."
+									imageUrl="Localization_212.PNG"
+								/>
 
-								<p><i>Heatmap</i>, Map with at least 2 dimensions visually highlighting non-binary feature attribution, activation, sensitivity, attention or saliency. Includes attention maps[26], perturbation masks [6] and Layer-Wise Relevance Propagation [2].</p>
+								<TypeOfExplanation 
+									name="Prototypes"
+									description="(Parts of) Representative examples, including concepts[15], influential training instances[10], prototypical parts [4, 19], nearest neighbors and criticisms[14]."
+									imageUrl="prototypes_125.PNG"
+								/>
 
-								<p><i>Localization</i>, Binary feature importance. Features can be any type of covariate used in the explanation, such as words, tabular features, or bounding boxes. Examples include binary maps with image patches[23], segmentation[12] and bounding boxes[33].</p>
+								<TypeOfExplanation 
+									name="Representation Synthesis"
+									description="Artificially produced visualization to explain representations of the predictive model. Examples include generated data samples[27], Activation Maximization[20] and feature visualization[21]."
+									imageUrl="representation_synthesis_180.PNG"
+								/>
 
-								<p><i>Prototypes</i>, (Parts of) Representative examples, including concepts[15], influential training instances[10], prototypical parts [4, 19], nearest neighbors and criticisms[14].</p>
+								<TypeOfExplanation 
+									name="Representation Visualization"
+									description="Charts or plots to visualize representations of the predictive model, including visualizations of dimensionality reduction with scatter plots[30], visual cluster analysis[17] and Principal Component Analysis."
+									imageUrl="representation_visualization_259.PNG"
+								/>
 
-								<p><i>Representation Synthesis</i>, Artificially produced visualization to explain representations of the predictive model. Examples include generated data samples[27], Activation Maximization[20] and feature visualization[21].</p>
+								<TypeOfExplanation 
+									name="Text"
+									description="Textual explanation via natural language [3, 22]."
+									imageUrl="text_208.PNG"
+								/>
 
-								<p><i>Representation Visualization</i>, Charts or plots to visualize representations of the predictive model, including visualizations of dimensionality reduction with scatter plots[30], visual cluster analysis[17] and Principal Component Analysis.</p>
+								<TypeOfExplanation 
+									name="White-box Model"
+									description="Intrinsically interpretable models (excluding decision rules). Predictive model &#55349;&#56403; is interpretable and therefore acts as explanation. Examples include a scoring sheet[29] and linear regression. Decision Rules and Decision Trees do not fall into this category, since they are categories on their own."
+									imageUrl="white_box_model_258.PNG"
+								/>
 
-								<p><i>Text</i>, Textual explanation via natural language [3, 22]</p>
+								<TypeOfExplanation 
+									name="Other"
+									description="Explanation that do not fit any other category."
+								/>
 
-								<p><i>White-box Model</i>, Intrinsically interpretable models (excluding decision rules). Predictive model &#55349;&#56403; is interpretable and therefore acts as explanation. Examples include a scoring sheet[29] and linear regression. Decision Rules and Decision Trees do not fall into this category, since they are categories on their own.</p>
-
-								<p><i>Other</i>, Explanation that do not fit any other category.</p>
 							</Panel>
 						</Collapse>
 					</Item>

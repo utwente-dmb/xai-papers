@@ -1,7 +1,6 @@
-import { useState } from "react"
 import { Select, Col, Tag } from "antd"
 import { Paper, FilterValue } from "../types"
-import { fromFilterValue, getColor, toFilterValue } from "../utils"
+import { getColor, toFilterValue } from "../utils"
 
 const { Option } = Select
 
@@ -37,7 +36,6 @@ type FilterProps<T> = {
   }
 
 function Filter<T>({ placeholder, enumerator, handleChange, value, span, single }: FilterProps<T> ): JSX.Element {
-	console.log("Value", value)
 	const defaultValue = toFilterValue(value, placeholder)
 
 	return (
