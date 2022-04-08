@@ -197,6 +197,21 @@ function AddPaperForm() {
 						<Select placeholder="Type of Task" enumerator={Task} handleChange={handleChangeTask} value={form["Type of Task"]} />
 					</Item>
 
+					<Item label="Method used to explain" required >
+						<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleChangeMethod} value={form["Method used to explain"]} />
+						<Collapse>
+							<Panel header="Info" key="1">
+								<p>What method is used to explain the AI model. <br/>
+									<i>Post-hoc Explanation Method</i>, Post-hoc explanation methods (also called reverse engineering): explain an already trained predictive model.</p>
+
+								<p><i>Built-in Interpretability</i>, Interpretability built into the predictive model, such as white-box models, attention mechanisms or interpretability constraints (e.g. sparsity) included in the training process of the predictive model.</p>
+
+								<p><i>Supervised Explanation Training</i>, where a ground-truth explanation is provided in order to train the model to output an explanation.</p>
+
+							</Panel>
+						</Collapse>
+					</Item>
+
 					<Item label="Type of Explanation" required >
 						<Select placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleChangeExplanation} value={form["Type of Explanation"]} />
 						<Collapse>
@@ -284,21 +299,6 @@ function AddPaperForm() {
 									name="Other"
 									description="Explanation that do not fit any other category."
 								/>
-
-							</Panel>
-						</Collapse>
-					</Item>
-
-					<Item label="Method used to explain" required >
-						<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleChangeMethod} value={form["Method used to explain"]} />
-						<Collapse>
-							<Panel header="Info" key="1">
-								<p>What method is used to explain the AI model. <br/>
-									<i>Post-hoc Explanation Method</i>, Post-hoc explanation methods (also called reverse engineering): explain an already trained predictive model.</p>
-
-								<p><i>Built-in Interpretability</i>, Interpretability built into the predictive model, such as white-box models, attention mechanisms or interpretability constraints (e.g. sparsity) included in the training process of the predictive model.</p>
-
-								<p><i>Supervised Explanation Training</i>, where a ground-truth explanation is provided in order to train the model to output an explanation.</p>
 
 							</Panel>
 						</Collapse>
