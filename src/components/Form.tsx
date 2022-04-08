@@ -25,7 +25,7 @@ function TypeOfExplanation({ name, description, imageUrl }: TypeOfExplanationPro
 		<>
 			<p style={{margin: 0}}><i>{name}</i>, {description}</p>
 			{imageUrl ? <Collapse style={{marginBottom: 10}}>
-				<Panel header="Picture" key="1">
+				<Panel header="Example" key="1">
 					<img src={`${explanationPictureUrl}${imageUrl}`} style={{width: "100%"}}/>
 				</Panel>
 			</Collapse> : null}
@@ -211,7 +211,7 @@ function AddPaperForm() {
 								<TypeOfExplanation 
 									name="Decision Tree"
 									description="Rooted graph with conditional statement at each node, e.g. ProtoTree [19]."
-									imageUrl="decision_tree_179.PNG"
+									imageUrl="decision_tree_179.png"
 								/>
 
 								<TypeOfExplanation 
