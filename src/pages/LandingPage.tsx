@@ -13,7 +13,7 @@ const citation = ` @article{nauta2022anecdotal,
 	} `
 
 type TextIconProps = {
-	Icon: any
+	Icon: (props: any) => JSX.Element | null
 	text: string
 	description: JSX.Element
 }
@@ -81,18 +81,16 @@ function LandingPage() {
 	return (
 		<>
 			<Row justify="center" style={{marginBottom: 50}}>
-				<Title>
+				<Title style={{fontSize: 40}}>
 					A Living and Curated Collection of Explainable AI Methods
 				</Title>
-				<Text>
-				Interactively browse and contribute to a curated
-				categorization of papers on explainable AI. The initial dataset was
-				collected and labelled by 
+				<Text style={{fontSize: 18}}>
+					<b>
+					Interactively browse and contribute to a curated categorization of papers on explainable AI.
+					</b> The initial dataset was collected and labelled by 
 					<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
 						&nbsp;Nauta et al. (2022)
-					</a> 
-					, but we invite
-				the community to keep this a living and curated collection of explainable AI methods. Contribute by adding papers and reviewing suggestions from others!
+					</a> as part of a large-scale literature review on the evaluation of Explainable Artificial Intelligence. This website provides an interactive way to explore the dataset, and we invite the community to extend the XAI dataset in order to make this a living and curated collection of explainable AI methods. Contribute by adding papers following our categorization scheme, and reviewing suggestions from others.
 				</Text>
 			</Row>
 			<Row style={{marginBottom: 50}} justify="space-between">
