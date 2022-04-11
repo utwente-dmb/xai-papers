@@ -4,13 +4,13 @@ import { githubUrl } from "../utils"
 
 const { Title, Text } = Typography
 
-type IconStuffProps = {
+type TextIconProps = {
 	Icon: any
 	text: string
 	description: JSX.Element
 }
 
-function IconStuff({ Icon, text, description }: IconStuffProps) {
+function TextIcon({ Icon, text, description }: TextIconProps) {
 
 	return (
 		<Col span={8} style={{ alignContent: "center" }}>
@@ -29,8 +29,48 @@ function IconStuff({ Icon, text, description }: IconStuffProps) {
 	)
 }
 
-function LandingPage() {
+type TextImageProps = {
+	textAlignment?: "left" | "right"
+	text: string
+	description: JSX.Element | string
+	imageUrl: string
+} 
 
+function TextWithImage({ textAlignment = "left", text, description, imageUrl }: TextImageProps) {
+	const imagePart = (
+		<Col span={10}>
+			<Row justify="center">
+				<img src={`${process.env.PUBLIC_URL}${imageUrl}`} height="250"/>
+			</Row>
+		</Col>
+	)
+
+	const textPart = (
+		<Col span={10} >
+			<Row justify="center" align="middle">
+				<>
+					<Title style={{fontSize: 30}}>
+						{text}
+					</Title>
+					<Text>
+						{description}
+					</Text>
+				</>
+			</Row>
+		</Col>
+	)
+	
+	return (
+		<Row justify="center" style={{width: "100%", marginTop: 50}}>
+			{textAlignment === "left" ? textPart : imagePart}
+			{textAlignment === "left" ? imagePart : textPart}
+		</Row>
+	)
+}
+
+function LandingPage() {
+	const x = window.location.href
+	console.log("poage", x)
 	return (
 		<>
 			<Row justify="center" style={{marginBottom: 20}}>
@@ -49,7 +89,7 @@ function LandingPage() {
 				</Text>
 			</Row>
 			<Row>
-				<IconStuff 
+				<TextIcon 
 					Icon={FilterOutlined} 
 					text="Browse and Explore" 
 					description={
@@ -66,7 +106,7 @@ function LandingPage() {
 						</>
 					}
 				/>
-				<IconStuff 
+				<TextIcon 
 					Icon={FileAddOutlined} 
 					text="Contribute and Categorize" 
 					description={
@@ -84,7 +124,7 @@ function LandingPage() {
 						</>
 					}
 				/>
-				<IconStuff 
+				<TextIcon 
 					Icon={CheckCircleOutlined} 
 					text="Review and Verify" 
 					description={
@@ -98,8 +138,57 @@ function LandingPage() {
 						</>
 					}
 				/>
-
 			</Row>
+			<TextWithImage 
+				text="Initial Collection and Categorization"
+				description={
+					<>
+					All papers in this collection are categorized along the scheme as presented by
+						<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
+						&nbsp;Nauta et al. (2022)
+						</a>. 
+					The initial collection contains categorization of papers on explainable AI published in 2014-2020 at conferences AAAI,
+					IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR.
+					</>
+				}
+				imageUrl="/protocol_categories.png"
+			/>
+			<TextWithImage 
+				textAlignment="right"
+				text="A Living Collection"
+				description={
+					<> 
+					We invite the community to extend the initial paper collection by adding new papers. Anyone can contribute by adding a new paper as follows: Categorize the paper
+					and use our 
+						<a href="">
+								&nbsp;website&nbsp;
+						</a>
+					to generate a database entry. Create a pull request on our project’s 
+						<a href={githubUrl} target="_blank" rel="noreferrer">
+							&nbsp;Github page
+						</a> and append the generated entry to our
+					database. Some automated tests check whether the new database entry is in the right format, but that shouldn’t be any problem with our 
+						<a href="">
+								&nbsp;generation tool
+						</a>.
+					</>
+				}
+				imageUrl="/protocol_categories.png"
+			/>
+			<TextWithImage 
+				text="A Curated Collection"
+				description={
+					<> 
+					To maintain a certain degree of quality, we invite the XAI community to review pull requests of others. Is the suggested paper indeed on explainable AI and is the
+					categorization correct? Leave a review on our project’s 
+						<a href={githubUrl} target="_blank" rel="noreferrer">
+							&nbsp;Github page
+						</a>. With three positive reviews (or one positive review of an admin), the pull request is
+					automatically merged and the paper is added to the collection! 
+					</>
+				}
+				imageUrl="/protocol_categories.png"
+			/>
 		</>
 	)
 }

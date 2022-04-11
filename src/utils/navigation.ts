@@ -1,4 +1,4 @@
-export const baseUrl = "/DMBLiteratureWebsite/"
+export const baseUrl = "/"
 
 export const pathMap: { [key: string]: string } = {
 	[`${baseUrl}`]: "landing",

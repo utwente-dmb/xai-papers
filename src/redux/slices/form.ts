@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
-import { Problem, Method, Data, Task, Explanation, Model, Paper, FilterValue, Venue } from "../../types"
+import { Problem, Method, Data, Task, Explanation, Model, Paper, Venue } from "../../types"
 
 
 const initialState: Paper & { Comment?: string } = {
