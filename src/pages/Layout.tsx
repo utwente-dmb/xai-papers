@@ -3,9 +3,7 @@ import "antd/dist/antd.css"
 import {
 	Layout,
 	Menu,
-	PageHeader,
 	Button,
-	Row
 } from "antd"
 import {
 	PlusCircleOutlined,
@@ -84,30 +82,6 @@ function DefaultLayout() {
 			</Sider>
 
 			<Layout>
-				{/* Header
-				<PageHeader style={{ top: 0, width: "100%", zIndex: 1}}>
-					<div>
-						<Row>
-							<img src={process.env.PUBLIC_URL + "/UT_Logo_Horizontal_Black.png"}/>
-							<img src={process.env.PUBLIC_URL + "/IKIM_Logo.png"}/>
-						</Row>
-						<p>
-							Dataset collected by Nauta et al. as described in
-							<br/>
-							<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
-								&quot;From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI&quot;
-							</a>
-							<small>
-								&ensp;(preprint, 2022)
-							</small>
-							<br/>
-							<small>
-								This dataset contains papers on explainable AI published in 2014-2020 at conferences AAAI, IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR
-							</small>
-						</p>
-					</div>
-				</PageHeader> */}
-
 				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
