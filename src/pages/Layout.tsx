@@ -111,7 +111,7 @@ function DefaultLayout() {
 				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
-						<Route path={`${baseUrl}`} element={<LandingPage/>}/>
+						<Route path={`${baseUrl}`} element={<LandingPage />}/>
 						<Route path={`${baseUrl}papers`} element={<Papers />}/>
 						<Route path={`${baseUrl}charts`} element={<Charts />}/>
 						<Route path={`${baseUrl}add-paper`} element={<AddPaper />}/>

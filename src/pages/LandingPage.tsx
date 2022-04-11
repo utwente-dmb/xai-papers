@@ -102,11 +102,11 @@ function LandingPage() {
 					description={
 						<>
 						Quickly find relevant XAI papers by 
-							<a href={`/#${pageToPath("papers")}`}>
+							<a href={`#${pageToPath("papers")}`}>
 							&nbsp;filtering and searching&nbsp;
 							</a>
 							in the dataset, using our categorization scheme. Prefer visuals? Use our 
-							<a href={`/#${pageToPath("charts")}`}>
+							<a href={`#${pageToPath("charts")}`}>
 								&nbsp;charts page&nbsp;
 							</a>
 							for interactive graphs.
@@ -119,7 +119,7 @@ function LandingPage() {
 					description={
 						<>
 							Make this a living collection by 
-							<a href={`/#${pageToPath("add-paper")}`}>
+							<a href={`#${pageToPath("add-paper")}`}>
 								&nbsp;adding papers&nbsp;
 							</a>
 							to this collection! Label the paper using our categorization
@@ -171,7 +171,7 @@ function LandingPage() {
 							&nbsp;Github page
 						</a> and append the generated entry to our
 					database. Some automated tests check whether the new database entry is in the right format, but that shouldn’t be any problem with our 
-						<a href={`/#${pageToPath("add-paper")}`}>
+						<a href={`#${pageToPath("add-paper")}`}>
 								&nbsp;generation tool
 						</a>.
 					</>
@@ -210,7 +210,6 @@ function LandingPage() {
 			</Title>
 			<Text>
 				If you found this resource helpful, please cite our work:
-				
 				<pre>{citation}</pre>
 			</Text>
 			<Row justify="center">
