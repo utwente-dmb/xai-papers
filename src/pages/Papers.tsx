@@ -1,18 +1,4 @@
-import { Typography } from "antd"
-const { Paragraph } = Typography
-import {
-	MailOutlined
-} from "@ant-design/icons"
 import { Filters, Papers } from "../components"
-
-const citation = ` @article{nauta2022anecdotal,
-	title = { From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI },
-		author = { Nauta, Meike and Trienes, Jan and Pathak, Shreyasi and Nguyen, Elisa and Peters, Michelle and Schmitt, Yasmin and Schl{
-	\\"o}tterer, J{\\"o}rg and van Keulen, Maurice and Seifert, Christin},
-		journal = { arXiv preprint arXiv: 2201.08164 },
-			year = { 2022}
-	} `
-	
 
 function App() {
 
@@ -22,7 +8,6 @@ function App() {
 				<div className="row align-items-center my-5">
 					
 					<div className="col-lg-7">
-						{/* <img src="images/logo-university-of-twente.png" width="50" height="50"> </img> */}
 
 						<h1> Purpose </h1>
 						<p>
@@ -66,42 +51,8 @@ function App() {
 
 					<Filters/>
 					<Papers />
-
-					<div className="col-lg-5">
-						<h1 className="font-weight-light">Contributions</h1>
-						<p> Do you want to get involved in the research or have any questions? Please feel free to email us here <a href="mailto:m.nauta@utwente.nl">
-							{<MailOutlined />}  </a>
-						</p>
-
-					</div>
-					<div className="col-lg-5">
-						<h1 className="font-weight-light">Citation</h1>
-						<p> If you found this resource helpful, please cite our work:</p>
-					</div>
-					<Paragraph>
-						<pre>{citation}</pre>
-					</Paragraph>
 				</div>
 			</div>
-			{/* <div className="site-card-wrapper">
-				<Row gutter={16}>
-					<Col span={8}>
-						<Card title="Card title" bordered={true}>
-							Card content
-						</Card>
-					</Col>
-					<Col span={8}>
-						<Card title="Card title" bordered={true}>
-							Get in Touch
-						</Card>
-					</Col>
-					<Col span={8}>
-						<Card title="Card title" bordered={true}>
-							Card content
-						</Card>
-					</Col>
-				</Row>
-			</div> */}
 		</div>
 	)
 }

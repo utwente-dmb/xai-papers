@@ -144,7 +144,7 @@ function Papers(): JSX.Element {
 				onExpand={expandController.onExpand}
 				rowKey={expandController.rowKey}
 				pagination={{
-					defaultPageSize: 25,
+					defaultPageSize: 20,
 					position: ["bottomCenter"]
 				}}
 			></Table>

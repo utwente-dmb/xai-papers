@@ -12,8 +12,6 @@ const { Item } = Form
 const { TextArea } = Input
 const { Panel } = Collapse
 
-const explanationPictureUrl = process.env.PUBLIC_URL + "/explanation_types_examples/"
-
 type TypeOfExplanationProps = {
 	name: string,
 	description: string,
@@ -26,7 +24,7 @@ function TypeOfExplanation({ name, description, imageUrl }: TypeOfExplanationPro
 			<p style={{margin: 0}}><i>{name}</i>, {description}</p>
 			{imageUrl ? <Collapse style={{marginBottom: 10}}>
 				<Panel header="Example" key="1">
-					<img src={`${explanationPictureUrl}${imageUrl}`} style={{width: "100%"}}/>
+					<img src={`${process.env.PUBLIC_URL + "/explanation_types_examples/"}${imageUrl}`} style={{width: "100%"}}/>
 				</Panel>
 			</Collapse> : null}
 			
@@ -40,7 +38,7 @@ function AddPaperForm() {
 	const form = useAppSelector((state) => state.form)
 	const [json, setJson] = useState("")
 	useEffect(() => {
-		setJson(JSON.stringify(form, null, 2) + ",")
+		setJson("," + JSON.stringify(form, null, 2))
 	}, [form])
 
 	function handleChangeTitle(event: React.FormEvent<HTMLInputElement>) {

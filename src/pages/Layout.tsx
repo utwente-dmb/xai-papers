@@ -84,7 +84,7 @@ function DefaultLayout() {
 			</Sider>
 
 			<Layout>
-				{/* Header */}
+				{/* Header
 				<PageHeader style={{ top: 0, width: "100%", zIndex: 1}}>
 					<div>
 						<Row>
@@ -106,7 +106,7 @@ function DefaultLayout() {
 							</small>
 						</p>
 					</div>
-				</PageHeader>
+				</PageHeader> */}
 
 				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
