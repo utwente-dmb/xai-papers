@@ -12,10 +12,11 @@ import {
 	DotChartOutlined,
 	UnorderedListOutlined,
 	LeftOutlined,
-	RightOutlined
+	RightOutlined,
+	HomeOutlined
 } from "@ant-design/icons"
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
-import { Papers, AddPaper, Charts } from "../pages"
+import { Papers, AddPaper, Charts, LandingPage } from "../pages"
 import { pathToPage, pageToPath, baseUrl } from "../utils"
 
 const { Content, Sider } = Layout
@@ -74,6 +75,7 @@ function DefaultLayout() {
 					onClick={onItemClick}
 					selectedKeys={selectedKeys}
 				>
+					<Menu.Item key="landing" icon={<HomeOutlined />}>Landing Page</Menu.Item>
 					<Menu.Item key="papers" icon={<UnorderedListOutlined />}>Papers</Menu.Item>
 					<Menu.Item key="charts" icon={<DotChartOutlined />}>Charts</Menu.Item>
 					<Menu.Item key="add-paper" icon={<PlusCircleOutlined />}>Add Paper</Menu.Item>
@@ -109,7 +111,8 @@ function DefaultLayout() {
 				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
-						<Route path={`${baseUrl}`} element={<Papers />}/>
+						<Route path={`${baseUrl}`} element={<LandingPage/>}/>
+						<Route path={`${baseUrl}papers`} element={<Papers />}/>
 						<Route path={`${baseUrl}charts`} element={<Charts />}/>
 						<Route path={`${baseUrl}add-paper`} element={<AddPaper />}/>
 					</Routes>
