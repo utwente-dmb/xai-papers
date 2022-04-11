@@ -48,7 +48,7 @@ function TextWithImage({ textAlignment = "left", text, description, imageUrl }: 
 	const imagePart = (
 		<Col span={10}>
 			<Row justify="center">
-				<img src={`${process.env.PUBLIC_URL}${imageUrl}`} height="250"/>
+				<img src={`${process.env.PUBLIC_URL}${imageUrl}`} height="320"/>
 			</Row>
 		</Col>
 	)
