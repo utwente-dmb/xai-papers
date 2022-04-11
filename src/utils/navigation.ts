@@ -1,17 +1,17 @@
-export const baseUrl = "/DMBLiteratureWebsite/"
+export const baseUrl = "/"
 
 export const pathMap: { [key: string]: string } = {
-	[`${baseUrl}`]: "papers",
+	[`${baseUrl}`]: "landing",
+	[`${baseUrl}papers`]: "papers",
 	[`${baseUrl}charts`]: "charts",
 	[`${baseUrl}add-paper`]: "add-paper",
-	[`${baseUrl}about`]: "about"
 }
 
 export const pathToPage = (path: string): string => {
 	if (path in pathMap) {
 		return pathMap[path]
 	}
-	return "papers"
+	return "landing"
 }
 
 export const pageToPath = (page: string): string => {
@@ -22,3 +22,5 @@ export const pageToPath = (page: string): string => {
 	}
 	return baseUrl
 }
+
+export const githubUrl = "https://www.github.com/BorisGerretzen/DMBLiteratureWebsite"

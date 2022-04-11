@@ -117,7 +117,7 @@ function AddPaperForm() {
 	}
 
 	const venueValue = form.Venue.value as Venue
-	const venue = venueValue ? [venueValue] : []
+	const venue = form.Venue.isOld ? [venueValue] : ["Other" as Venue]
 
 	return (
 		<Row>
