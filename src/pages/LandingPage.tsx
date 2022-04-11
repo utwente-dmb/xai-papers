@@ -21,7 +21,7 @@ type TextIconProps = {
 function TextIcon({ Icon, text, description }: TextIconProps) {
 
 	return (
-		<Col span={8} style={{ alignContent: "center" }}>
+		<Col span={7} style={{ alignContent: "center" }}>
 			<Row justify="center">
 				<Icon style={{fontSize: 50, color: "blue"}}/>
 			</Row>
@@ -95,7 +95,7 @@ function LandingPage() {
 				the community to keep this a living and curated collection of explainable AI methods. Contribute by adding papers and reviewing suggestions from others!
 				</Text>
 			</Row>
-			<Row style={{marginBottom: 50}}>
+			<Row style={{marginBottom: 50}} justify="space-between">
 				<TextIcon 
 					Icon={FilterOutlined} 
 					text="Browse and Explore" 
