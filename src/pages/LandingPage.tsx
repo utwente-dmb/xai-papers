@@ -1,6 +1,6 @@
 import { Row, Col, Typography } from "antd"
 import { FilterOutlined, FileAddOutlined, CheckCircleOutlined } from "@ant-design/icons"
-import { githubUrl, pageToPath } from "../utils"
+import { githubUrl } from "../utils"
 
 const { Title, Text } = Typography
 
@@ -76,7 +76,13 @@ function TextWithImage({ textAlignment = "left", text, description, imageUrl }: 
 	)
 }
 
-function LandingPage() {
+type LandingPageProps = {
+	customNavigate: ({ key }: {
+		key: string;
+	}) => void
+}
+
+function LandingPage( {customNavigate }: LandingPageProps) {
 
 	return (
 		<>
@@ -88,7 +94,7 @@ function LandingPage() {
 					<b>
 					Interactively browse and contribute to a curated categorization of papers on explainable AI.
 					</b> The initial dataset was collected and labelled by 
-					<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
+					<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer" >
 						&nbsp;Nauta et al. (2022)
 					</a> as part of a large-scale literature review on the evaluation of Explainable Artificial Intelligence. This website provides an interactive way to explore the dataset, and we invite the community to extend the XAI dataset in order to make this a living and curated collection of explainable AI methods. Contribute by adding papers following our categorization scheme, and reviewing suggestions from others.
 				</Text>
@@ -100,11 +106,11 @@ function LandingPage() {
 					description={
 						<>
 						Quickly find relevant XAI papers by 
-							<a href={`#${pageToPath("papers")}`}>
+							<a onClick={() => customNavigate({key: "papers"})}>
 							&nbsp;filtering and searching&nbsp;
 							</a>
 							in the dataset, using our categorization scheme. Prefer visuals? Use our 
-							<a href={`#${pageToPath("charts")}`}>
+							<a onClick={() => customNavigate({key: "charts"})}>
 								&nbsp;charts page&nbsp;
 							</a>
 							for interactive graphs.
@@ -117,7 +123,7 @@ function LandingPage() {
 					description={
 						<>
 							Make this a living collection by 
-							<a href={`#${pageToPath("add-paper")}`}>
+							<a onClick={() => customNavigate({key: "add-paper"})}>
 								&nbsp;adding papers&nbsp;
 							</a>
 							to this collection! Label the paper using our categorization
@@ -169,7 +175,7 @@ function LandingPage() {
 							&nbsp;Github page
 						</a> and append the generated entry to our
 					database. Some automated tests check whether the new database entry is in the right format, but that shouldn’t be any problem with our 
-						<a href={`#${pageToPath("add-paper")}`}>
+						<a onClick={() => customNavigate({key: "add-paper"})}>
 								&nbsp;generation tool
 						</a>.
 					</>

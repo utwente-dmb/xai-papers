@@ -15,7 +15,7 @@ import {
 } from "@ant-design/icons"
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
 import { Papers, AddPaper, Charts, LandingPage } from "../pages"
-import { pathToPage, pageToPath, baseUrl } from "../utils"
+import { pathToPage, pageToPath, Page, Path } from "../utils"
 
 const { Content, Sider } = Layout
 function DefaultLayout() {
@@ -27,11 +27,12 @@ function DefaultLayout() {
 	const [selectedKeys, setSelectedKeys] = useState<string[]>()
 
 	useEffect(() => {
-		setSelectedKeys([pathToPage(location.pathname)])
+		setSelectedKeys([pathToPage(location.pathname as Path)])
 	}, [])
 
-	const onItemClick = ({ key }: { key: string }) => {
-		navigate(pageToPath(key))
+	const customNavigate = ({ key }: { key: string }) => {
+		window.scrollTo(0, 0)
+		navigate(pageToPath(key as Page))
 		setSelectedKeys([key])
 	}
 
@@ -70,7 +71,7 @@ function DefaultLayout() {
 				/>
 				<Menu 
 					mode="inline" 
-					onClick={onItemClick}
+					onClick={customNavigate}
 					selectedKeys={selectedKeys}
 				>
 					<Menu.Item key="landing" icon={<HomeOutlined />}>Landing Page</Menu.Item>
@@ -85,10 +86,10 @@ function DefaultLayout() {
 				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
-						<Route path={`${baseUrl}`} element={<LandingPage />}/>
-						<Route path={`${baseUrl}papers`} element={<Papers />}/>
-						<Route path={`${baseUrl}charts`} element={<Charts />}/>
-						<Route path={`${baseUrl}add-paper`} element={<AddPaper />}/>
+						<Route path={"/"} element={<LandingPage customNavigate={customNavigate} />}/>
+						<Route path={"/papers"} element={<Papers />}/>
+						<Route path={"/charts"} element={<Charts />}/>
+						<Route path={"/add-paper"} element={<AddPaper />}/>
 					</Routes>
 				</Content>
 			</Layout>
