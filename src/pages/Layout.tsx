@@ -4,6 +4,8 @@ import {
 	Layout,
 	Menu,
 	Button,
+	Typography,
+	Row
 } from "antd"
 import {
 	PlusCircleOutlined,
@@ -18,6 +20,8 @@ import { Papers, AddPaper, Charts, LandingPage } from "../pages"
 import { pathToPage, pageToPath, Page, Path } from "../utils"
 
 const { Content, Sider } = Layout
+const { Text } = Typography
+
 function DefaultLayout() {
 
 	const location = useLocation()
@@ -79,7 +83,12 @@ function DefaultLayout() {
 					<Menu.Item key="charts" icon={<DotChartOutlined />}>Charts</Menu.Item>
 					<Menu.Item key="add-paper" icon={<PlusCircleOutlined />}>Add Paper</Menu.Item>
 				</Menu>
-				{showExplainableAIText ? <div style={{marginTop: 12, marginLeft: 15}}>Overview of Methods on Explainable AI</div> : null}
+					
+				{showExplainableAIText 
+					? <Row align="bottom" style={{height: "100%"}}>
+						<Text style={{marginBottom: 10, marginLeft: 15, color: "blue"}}>Overview of Methods on Explainable AI</Text> 
+					</Row>
+					: null}
 			</Sider>
 
 			<Layout>
