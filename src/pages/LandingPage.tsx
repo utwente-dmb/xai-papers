@@ -174,7 +174,7 @@ function LandingPage() {
 						</a>.
 					</>
 				}
-				imageUrl="/protocol_categories.png"
+				imageUrl="/add_paper_form.png"
 			/>
 			<TextWithImage 
 				text="A Curated Collection"
