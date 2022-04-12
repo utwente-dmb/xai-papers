@@ -3,6 +3,7 @@ import { useFilteredPapers } from "../../hooks"
 import { INode, NodeConfig } from "@antv/g6"
 import { message } from "antd"
 import { Paper } from "../../types"
+import { typeArray } from "../../utils"
 
 function CreateGraphData() {
 	const papers = useFilteredPapers()
@@ -10,7 +11,7 @@ function CreateGraphData() {
 	const edges: any = []
 	// const requiredNodes: Array<Paper> = []
 	const minimumSimilarityForEdge = 5
-	const similarityColumns: Array<keyof Paper> = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
+	const similarityColumns: Array<keyof Paper> = typeArray
 
 	// Get all pairs of papers
 	const pairs: Array<Array<number>> = []
@@ -27,7 +28,7 @@ function CreateGraphData() {
 		for (const col of similarityColumns) {
 			const paperVal = paper1[col]
 			if (!Array.isArray(paperVal)) continue
-			
+
 			similarity += paperVal.filter((v1) => {
 				const paper2Val = paper2[col]
 				return Array.isArray(paper2Val) && paper2Val.some((el) => el === v1)
@@ -38,6 +39,7 @@ function CreateGraphData() {
 			// Add either paper to node list, if it doesnt exist already
 
 			// Create edge and add to edge list
+			console.log(similarity, (0.5 * similarity ^ 2))
 			const edge = {
 				source: paper1.url,
 				target: paper2.url,
@@ -46,8 +48,12 @@ function CreateGraphData() {
 						endArrow: false,
 						type: "line",
 						poly: {
-							distance: 600-5*similarity,
+							distance: 600 - 5 * similarity,
 						},
+						lineWidth: 1 + similarity * 0.5,
+						opacity: (1 + similarity) / 50,
+						stroke: 1,
+						fill: "#ffffff"
 					}
 				}
 			}

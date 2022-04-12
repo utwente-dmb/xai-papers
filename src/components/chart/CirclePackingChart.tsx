@@ -10,7 +10,7 @@ const theme = {
 
 let data: {
 	name: string,
-	children: any
+	children: Array<Record<string, unknown>>
 } = {
 	name: "",
 	children: [
@@ -20,26 +20,25 @@ let data: {
 
 function GenerateData(columnValue: string) {
 	const papers: Paper[] = useFilteredPapers()
-	const dataRaw: { [key: string]: { [key: string]: any } } = {
-		"Type of Data": {},
-		"Type of Problem": {},
-		"Type of Model to be Explained": {},
-		"Type of Task": {},
-		"Type of Explanation": {},
-		"Method used to explain": {}
-	}
+	const dataRaw: any = {}
 
 	papers.forEach(function (paper: any) {
 		for (const col of typeArray) {
-			for (const elem of paper[col]) {
-				if (dataRaw[col][elem]) {
-					dataRaw[col][elem].push({ name: paper.Title, value: 1, url: paper.url })
-				} else {
-					dataRaw[col][elem] = []
-					dataRaw[col][elem].push({ name: paper.Title, value: 1, url: paper.url })
+			if (!(col in dataRaw)) {
+				dataRaw[col] = {}
+			}
+			if (Array.isArray(paper[col])) {
+				for (const elem of paper[col]) {
+					if (dataRaw[col][elem]) {
+						dataRaw[col][elem].push({ name: paper.Title, value: 1, url: paper.url })
+					} else {
+						dataRaw[col][elem] = []
+						dataRaw[col][elem].push({ name: paper.Title, value: 1, url: paper.url })
 
+					}
 				}
 			}
+
 		}
 	})
 
@@ -59,6 +58,7 @@ type LineChartProps = {
 
 
 function CirclePackingChart({ type }: LineChartProps) {
+
 	function HandleClick(e: any) {
 		console.log(e)
 		if ("url" in e.data) {
@@ -73,7 +73,7 @@ function CirclePackingChart({ type }: LineChartProps) {
 				data={data}
 				margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
 				id="name"
-				colors={["#f0f2f5", "#1890ff","#d8e6f3"]} //Change colors of the graph from here, order is parent to children
+				colors={["#f0f2f5", "#1890ff", "#d8e6f3"]} //Change colors of the graph from here, order is parent to children
 				childColor={{
 					from: "color",
 					modifiers: [
@@ -107,6 +107,19 @@ function CirclePackingChart({ type }: LineChartProps) {
 						]
 					]
 				}}
+				tooltip={({ id }) => (id.length > 1) ? (
+					<div
+						style={{
+							padding: 5,
+							background: "#ffffff",
+						}}
+					>
+						<strong>
+							{id}
+						</strong>
+					</div>
+				) : <></>
+				}
 				animate={false}
 				onClick={HandleClick}
 				theme={theme}
