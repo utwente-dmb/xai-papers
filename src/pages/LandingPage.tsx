@@ -1,6 +1,7 @@
-import { Row, Col, Typography } from "antd"
+import { Row, Col, Typography, Image } from "antd"
 import { FilterOutlined, FileAddOutlined, CheckCircleOutlined } from "@ant-design/icons"
 import { githubUrl } from "../utils"
+import { useEffect, useState } from "react"
 
 const { Title, Text } = Typography
 
@@ -21,18 +22,21 @@ type TextIconProps = {
 function TextIcon({ Icon, text, description }: TextIconProps) {
 
 	return (
-		<Col span={7} style={{ alignContent: "center" }}>
-			<Row justify="center">
-				<Icon style={{fontSize: 50, color: "blue"}}/>
+		<Col md={24} lg={7} style={{ paddingTop: 20 }}>
+			<Row justify="center" align="middle">
+				<Icon style={{ fontSize: 50, color: "blue" }} />
 			</Row>
-			<Row justify="center">
-				<Title style={{fontSize: 30 }}>
+			<Row justify="center" align="middle">
+				<Title style={{ fontSize: 30 }}>
 					{text}
 				</Title>
 			</Row>
-			<Text>
-				{description}
-			</Text>
+			<Row justify="center" align="middle">
+				<Text>
+					{description}
+				</Text>
+			</Row>
+
 		</Col>
 	)
 }
@@ -45,33 +49,46 @@ type TextImageProps = {
 } 
 
 function TextWithImage({ textAlignment = "left", text, description, imageUrl }: TextImageProps) {
+	const [width, setWidth] = useState(window.innerWidth)
+	const breakpoint = 992 // Same breakpoint as "lg" from antd
+
+	useEffect(() => {
+		window.addEventListener("resize", () => setWidth(window.innerWidth))
+	}, [])
+
 	const imagePart = (
-		<Col span={10}>
+		<Col md={22} lg={10}>
 			<Row justify="center">
-				<img src={`${process.env.PUBLIC_URL}${imageUrl}`} height="300"/>
+				<Image src={`${process.env.PUBLIC_URL}${imageUrl}`} width={1/3 * width}/>
 			</Row>
 		</Col>
 	)
 
 	const textPart = (
-		<Col span={10} >
+		<Col md={22} lg={10} >
 			<Row justify="center" align="middle">
-				<>
-					<Title style={{fontSize: 30}}>
-						{text}
-					</Title>
-					<Text>
-						{description}
-					</Text>
-				</>
+				<Title style={{fontSize: 30}}>
+					{text}
+				</Title>
+				<Text>
+					{description}
+				</Text>
 			</Row>
 		</Col>
 	)
 	
 	return (
-		<Row justify="center" style={{width: "100%", marginTop: 50}}>
-			{textAlignment === "left" ? textPart : imagePart}
-			{textAlignment === "left" ? imagePart : textPart}
+		<Row justify="center" style={{width: "100%", marginTop: 50}} gutter={[30, 20]}>
+			{ width <= breakpoint ?
+				<>
+					{textPart}
+					{imagePart}
+				</>
+				: <>
+					{textAlignment === "left" ? textPart : imagePart}
+					{textAlignment === "left" ? imagePart : textPart}
+				</>
+			}
 		</Row>
 	)
 }
@@ -82,18 +99,21 @@ type LandingPageProps = {
 	}) => void
 }
 
-function LandingPage( {customNavigate }: LandingPageProps) {
+function LandingPage( { customNavigate }: LandingPageProps) {
 
 	return (
 		<>
 			<Row justify="center" style={{marginBottom: 50}}>
-				<Title style={{fontSize: 40}}>
+				<Title style={{fontSize: 40, color: "blue"}}>
 					A Living and Curated Collection of Explainable AI Methods
 				</Title>
-				<Text style={{fontSize: 18}}>
+				<Text style={{fontSize: 20}}>
 					<b>
 					Interactively browse and contribute to a curated categorization of papers on explainable AI.
-					</b> The initial dataset was collected and labelled by 
+					</b>
+				</Text>
+				<Text style={{fontSize: 18}}>
+					The initial dataset was collected and labelled by 
 					<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer" >
 						&nbsp;Nauta et al. (2022)
 					</a> as part of a large-scale literature review on the evaluation of Explainable Artificial Intelligence. This website provides an interactive way to explore the dataset, and we invite the community to extend the XAI dataset in order to make this a living and curated collection of explainable AI methods. Contribute by adding papers following our categorization scheme, and reviewing suggestions from others.
