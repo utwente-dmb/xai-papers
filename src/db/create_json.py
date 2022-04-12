@@ -3,7 +3,8 @@ import json
 from urllib.parse import urlparse
 from urllib.request import urlopen
 import time
-array_columns = {"Authors", "Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"}
+import re
+array_columns = {"Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"}
 
 def import_csv(csv_loc):
     with open(csv_loc, "r", encoding='utf-8-sig') as file:
@@ -34,6 +35,8 @@ def import_csv(csv_loc):
                     obj[key]["isOld"] = True
                     obj[key]["value"] = value
                     continue
+                elif key == "Authors":
+                    value = [re.sub(r'\d+', '', x).strip() for x in value.split(',')]
                 obj[key] = value
 
             # Get DOI
