@@ -24,7 +24,7 @@ function TextIcon({ Icon, text, description }: TextIconProps) {
 	return (
 		<Col md={24} lg={7} style={{ paddingTop: 20 }}>
 			<Row justify="center" align="middle">
-				<Icon style={{ fontSize: 50, color: "blue" }} />
+				<Icon style={{ fontSize: 50, color: "dodgerblue" }} />
 			</Row>
 			<Row justify="center" align="middle">
 				<Title style={{ fontSize: 30 }}>
@@ -104,7 +104,7 @@ function LandingPage( { customNavigate }: LandingPageProps) {
 	return (
 		<>
 			<Row justify="center" style={{marginBottom: 50}}>
-				<Title style={{fontSize: 40, color: "blue"}}>
+				<Title style={{fontSize: 40, color: "dodgerblue"}}>
 					A Living and Curated Collection of Explainable AI Methods
 				</Title>
 				<Text style={{fontSize: 20}}>

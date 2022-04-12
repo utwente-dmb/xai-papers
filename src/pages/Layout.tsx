@@ -78,17 +78,16 @@ function DefaultLayout() {
 					onClick={customNavigate}
 					selectedKeys={selectedKeys}
 				>
-					<Menu.Item key="landing" icon={<HomeOutlined />}>Landing Page</Menu.Item>
+					<Menu.Item key="landing" icon={<HomeOutlined />}>Home</Menu.Item>
 					<Menu.Item key="papers" icon={<UnorderedListOutlined />}>Papers</Menu.Item>
 					<Menu.Item key="charts" icon={<DotChartOutlined />}>Charts</Menu.Item>
 					<Menu.Item key="add-paper" icon={<PlusCircleOutlined />}>Add Paper</Menu.Item>
 				</Menu>
 					
 				{showExplainableAIText 
-					? <Row align="bottom" style={{height: "100%"}}>
-						<Text style={{marginBottom: 10, marginLeft: 15, color: "blue"}}>Overview of Methods on Explainable AI</Text> 
-					</Row>
+					? <Text style={{ left: 15, color: "dodgerblue", position: "absolute", bottom: 15}}>Overview of Methods on Explainable AI</Text> 
 					: null}
+
 			</Sider>
 
 			<Layout>
