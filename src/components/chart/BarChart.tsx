@@ -3,6 +3,23 @@ import { useFilteredPapers } from "../../hooks"
 import { Paper } from "../../types"
 import { typeArray } from "../../utils"
 
+const theme = {
+	"axis": {
+		"legend": {
+			"text": {
+				"fontSize": 18,
+				"fill": "#333333",
+			}
+		},
+		"ticks": {
+			"text": {
+				"fontSize": 17,
+				"fill": "#333333"
+			}
+		}
+	},
+
+}
 
 function GenerateData(columnValue: string) {
 	let textSize = 0
@@ -10,17 +27,13 @@ function GenerateData(columnValue: string) {
 	const data: Array<{ id: string, value: number }> = []
 
 	const papers: Paper[] = useFilteredPapers()
-	const count: { [key: string]: { [key: string]: number } } = {
-		"Type of Data": {},
-		"Type of Problem": {},
-		"Type of Model to be Explained": {},
-		"Type of Task": {},
-		"Type of Explanation": {},
-		"Method used to explain": {}
-	}
+	const count: { [key: string]: { [key: string]: number } } = {}
 
 	papers.forEach(function (value: any) {
 		for (const col of typeArray) {
+			if (!(col in count)) {
+				count[col] = {}
+			}
 			for (const elem of value[col]) {
 				if (count[col][elem]) {
 					count[col][elem] += 1
@@ -51,7 +64,7 @@ export function ResetData() {
 	year = 0
 }
 
-function RaceChart({ type }: BarChartProps) {
+function BarChart({ type }: BarChartProps) {
 	const data: any = GenerateData(type as keyof Paper)
 	console.log(data)
 
@@ -60,7 +73,7 @@ function RaceChart({ type }: BarChartProps) {
 			<ResponsiveBar
 				data={data[0]}
 				layout="horizontal"
-				margin={{ top: 26, right: 30, bottom: 36, left: data[1] * 5.8 }}
+				margin={{ top: 26, right: 30, bottom: 50, left: data[1] * 9 }}
 				indexBy="id"
 				label={d => `${d.value}`}
 				colors={{ scheme: "spectral" }}
@@ -71,14 +84,15 @@ function RaceChart({ type }: BarChartProps) {
 				axisBottom={{
 					legend: "Papers",
 					legendPosition: "middle",
-					legendOffset: 30,
+					legendOffset: 40,
 					tickSize: 0
 				}}
 				padding={0.3}
 				labelTextColor={{ from: "color", modifiers: [["darker", 3]] }}
+				theme={theme}
 			/>
 		</div>
 	)
 }
 
-export default RaceChart
+export default BarChart
