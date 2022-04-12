@@ -7,7 +7,7 @@ import { useAppDispatch, useAppSelector } from "../hooks"
 import { fromFilterValue } from "../utils"
 import Select from "./Select"
 import Moment from "moment"
-  
+
 const { RangePicker } = DatePicker
 const { Search } = Input
 
@@ -16,15 +16,15 @@ function Filters(): JSX.Element {
 	const filters = useAppSelector((state) => state.filters)
 	const dispatch = useAppDispatch()
 
-	function handleDataChange(value: Array<FilterValue<typeof Data>>) { 
+	function handleDataChange(value: Array<FilterValue<typeof Data>>) {
 		dispatch(filtersActions.setData(fromFilterValue(value)))
 	}
 
-	function handleProblemChange(value: Array<FilterValue<typeof Problem>>) { 
+	function handleProblemChange(value: Array<FilterValue<typeof Problem>>) {
 		dispatch(filtersActions.setProblem(fromFilterValue(value)))
 	}
-  
-	function handleModelChange(value: Array<FilterValue<typeof Model>>) { 
+
+	function handleModelChange(value: Array<FilterValue<typeof Model>>) {
 		dispatch(filtersActions.setModel(fromFilterValue(value)))
 	}
 
@@ -65,13 +65,13 @@ function Filters(): JSX.Element {
 	}
 
 	return (
-		<Row gutter={[4, 4]} justify="center" style={{marginBottom: 12}}>
+		<Row gutter={[4, 4]} justify="center" style={{ marginBottom: 12 }}>
 			<Col span={8}>
-				<Form.Item 
-					label="State of Filter" 
-					tooltip={{ 
+				<Form.Item
+					label="State of Filter"
+					tooltip={{
 						title: "AND selects papers with all of the selected types, OR selects papers with any of the selected types",
-						icon: <InfoCircleOutlined/>
+						icon: <InfoCircleOutlined />
 					}}
 				>
 					<Radio.Group buttonStyle="solid" defaultValue={filters.filterStateAND ? "AND" : "OR"} onChange={handleFilterChange}>
@@ -84,34 +84,37 @@ function Filters(): JSX.Element {
 				<Button onClick={handleReset}>Reset Filters</Button>
 			</Col>
 
-			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data}  span={8}/>
-			<Select placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} value={filters.problem}  span={8}/>
-			<Select placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} value={filters.model}  span={8}/>
-			<Select placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} value={filters.task}  span={8}/>
-			<Select placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} value={filters.explanation}  span={8}/>
-			<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method}  span={8}/>
-			<Select placeholder="Venue" enumerator={Venue} handleChange={handleVenueChange} value={filters.venue}  span={8}/>
+			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data} span={8} />
+			<Select placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} value={filters.problem} span={8} />
+			<Select placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} value={filters.model} span={8} />
+			<Select placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} value={filters.task} span={8} />
+			<Select placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} value={filters.explanation} span={8} />
+			<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method} span={8} />
+			<Select placeholder="Venue" enumerator={Venue} handleChange={handleVenueChange} value={filters.venue} span={8} />
 
 			<Col span={8}>
-				<RangePicker 
-					picker="year" 
-					onChange={handleYearChange} 
+				<RangePicker
+					picker="year"
+					onChange={handleYearChange}
 					allowEmpty={[true, true]}
 					value={[
-						filters.startYear ? Moment([filters.startYear]) : null, 
+						filters.startYear ? Moment([filters.startYear]) : null,
 						filters.endYear ? Moment([filters.endYear]) : null
 					]}
 					defaultPickerValue={[
 						Moment([2010]),
 						Moment([2010])
 					]}
+					style={{
+						width: "100%",
+					}}
 				></RangePicker>
 			</Col>
 
 			<Col span={8}>
-				<Search 
-					placeholder="Search titles, venues, authors and abstracts" 
-					onChange={handleSearch} 
+				<Search
+					placeholder="Search titles, venues, authors and abstracts"
+					onChange={handleSearch}
 					value={filters.search}
 					suffix={
 						<Tooltip title="Prefix with 'title:', 'venue:', 'author:' or 'abstract:' to only search in the respective field">

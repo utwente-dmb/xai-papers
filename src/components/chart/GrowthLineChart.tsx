@@ -1,33 +1,22 @@
 import { useFilteredPapers } from "../../hooks"
 import { ResponsiveLine } from "@nivo/line"
-import { BasicTooltip } from "@nivo/tooltip"
-import { useState } from "react"
-import { Select, Col } from "antd"
-import { typeArray } from "../../utils"
+import { Paper } from "../../types"
 
-const { Option } = Select
 
 const theme = {
-	"background": "#000000",
-	"textColor": "#ffffff",
-	"fontSize": 14,
-	"tooltip": {
-		"container": {
-			"background": "#000000",
-			"color": "#f4ebeb",
-			"fontSize": 12
-		},
-		"basic": {},
-		"chip": {},
-		"table": {},
-		"tableCell": {},
-		"tableCellValue": {}
-	}
+	"axis": {
+		"ticks": {
+			"text": {
+				"fontSize": 16,
+				"fill": "#333333"
+			}
+		}
+	},
+	
 }
 
 function GenerateData(col: string) {
-	const papers: any = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
-
+	const papers: Paper[] = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
 	const dataRaw: any = {}
 
 	papers.forEach(function (value: any) {
@@ -110,6 +99,7 @@ function GrowthLineChart({ type }: LineChartProps) {
 				useMesh={true}
 				enableSlices="x"
 				pointLabelYOffset={-12}
+				theme={theme}
 				legends={
 					[
 						{

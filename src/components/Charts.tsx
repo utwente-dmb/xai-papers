@@ -1,5 +1,5 @@
 import { Row, Select, Col, Radio } from "antd"
-import { ConnectedChart, CirclePackingChart, GrowthLineChart, RaceChart, ResetData } from "./chart"
+import { ConnectedChart, CirclePackingChart, GrowthLineChart, BarChart } from "./chart"
 import { useState } from "react"
 import { typeArray } from "../utils"
 
@@ -15,12 +15,10 @@ function Chart(): JSX.Element {
 
 	function HandleChartChange(e: any) {
 		setChart(e.target.value)
-		ResetData()
 	}
 
 	function HandleChange(value: string) {
 		setType(value)
-		ResetData()
 	}
 
 	const graphMap: {
@@ -37,7 +35,7 @@ function Chart(): JSX.Element {
 		},
 		"Bar Chart": {
 			withSelect: true,
-			element: <RaceChart type={type} />,
+			element: <BarChart type={type} />,
 			description: "The bar chart shows the distribution of tags"
 		},
 		"Connected Graph": {
