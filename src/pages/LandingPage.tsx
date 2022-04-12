@@ -48,7 +48,7 @@ function TextWithImage({ textAlignment = "left", text, description, imageUrl }: 
 	const imagePart = (
 		<Col span={10}>
 			<Row justify="center">
-				<img src={`${process.env.PUBLIC_URL}${imageUrl}`} height="320"/>
+				<img src={`${process.env.PUBLIC_URL}${imageUrl}`} height="300"/>
 			</Row>
 		</Col>
 	)
@@ -174,7 +174,7 @@ function LandingPage() {
 						</a>.
 					</>
 				}
-				imageUrl="/protocol_categories.png"
+				imageUrl="/add_paper_form.png"
 			/>
 			<TextWithImage 
 				text="A Curated Collection"
@@ -188,7 +188,7 @@ function LandingPage() {
 					automatically merged and the paper is added to the collection! 
 					</>
 				}
-				imageUrl="/protocol_categories.png"
+				imageUrl="/pull_request_unreviewed.png"
 			/>
 			<Row style={{marginTop: 35}}>
 				This website is based on the data collected by Meike Nauta, Jan Trienes, Shreyasi Pathak, Elisa Nguyen, Michelle Peters, Yasmin Schmitt, Jörg Schlötterer, Maurice van Keulen, Christin Seifert as described in
