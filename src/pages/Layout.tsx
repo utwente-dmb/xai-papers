@@ -15,7 +15,7 @@ import {
 	HomeOutlined
 } from "@ant-design/icons"
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
-import { Papers, AddPaper, Charts, LandingPage } from "../pages"
+import { Papers, AddPaper, Charts, Home } from "../pages"
 import { pathToPage, pageToPath, Page, Path } from "../utils"
 
 const { Content, Sider } = Layout
@@ -92,7 +92,7 @@ function DefaultLayout() {
 				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
-						<Route path={"/"} element={<LandingPage />}/>
+						<Route path={"/"} element={<Home />}/>
 						<Route path={"/papers"} element={<Papers />}/>
 						<Route path={"/charts"} element={<Charts />}/>
 						<Route path={"/add-paper"} element={<AddPaper />}/>
