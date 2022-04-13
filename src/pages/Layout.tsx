@@ -4,6 +4,8 @@ import {
 	Layout,
 	Menu,
 	Button,
+	Typography,
+	Row
 } from "antd"
 import {
 	PlusCircleOutlined,
@@ -15,9 +17,11 @@ import {
 } from "@ant-design/icons"
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
 import { Papers, AddPaper, Charts, LandingPage } from "../pages"
-import { pathToPage, pageToPath, baseUrl } from "../utils"
+import { pathToPage, pageToPath, Page, Path } from "../utils"
 
 const { Content, Sider } = Layout
+const { Text } = Typography
+
 function DefaultLayout() {
 
 	const location = useLocation()
@@ -27,11 +31,12 @@ function DefaultLayout() {
 	const [selectedKeys, setSelectedKeys] = useState<string[]>()
 
 	useEffect(() => {
-		setSelectedKeys([pathToPage(location.pathname)])
+		setSelectedKeys([pathToPage(location.pathname as Path)])
 	}, [])
 
-	const onItemClick = ({ key }: { key: string }) => {
-		navigate(pageToPath(key))
+	const customNavigate = ({ key }: { key: string }) => {
+		window.scrollTo(0, 0)
+		navigate(pageToPath(key as Page))
 		setSelectedKeys([key])
 	}
 
@@ -70,25 +75,29 @@ function DefaultLayout() {
 				/>
 				<Menu 
 					mode="inline" 
-					onClick={onItemClick}
+					onClick={customNavigate}
 					selectedKeys={selectedKeys}
 				>
-					<Menu.Item key="landing" icon={<HomeOutlined />}>Landing Page</Menu.Item>
+					<Menu.Item key="landing" icon={<HomeOutlined />}>Home</Menu.Item>
 					<Menu.Item key="papers" icon={<UnorderedListOutlined />}>Papers</Menu.Item>
 					<Menu.Item key="charts" icon={<DotChartOutlined />}>Charts</Menu.Item>
 					<Menu.Item key="add-paper" icon={<PlusCircleOutlined />}>Add Paper</Menu.Item>
 				</Menu>
-				{showExplainableAIText ? <div style={{marginTop: 12, marginLeft: 15}}>Overview of Methods on Explainable AI</div> : null}
+					
+				{showExplainableAIText 
+					? <Text style={{ left: 15, color: "dodgerblue", position: "absolute", bottom: 15}}>Overview of Methods on Explainable AI</Text> 
+					: null}
+
 			</Sider>
 
 			<Layout>
 				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
-						<Route path={`${baseUrl}`} element={<LandingPage />}/>
-						<Route path={`${baseUrl}papers`} element={<Papers />}/>
-						<Route path={`${baseUrl}charts`} element={<Charts />}/>
-						<Route path={`${baseUrl}add-paper`} element={<AddPaper />}/>
+						<Route path={"/"} element={<LandingPage customNavigate={customNavigate} />}/>
+						<Route path={"/papers"} element={<Papers />}/>
+						<Route path={"/charts"} element={<Charts />}/>
+						<Route path={"/add-paper"} element={<AddPaper />}/>
 					</Routes>
 				</Content>
 			</Layout>
