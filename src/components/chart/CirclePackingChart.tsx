@@ -2,6 +2,7 @@ import { ResponsiveCirclePackingCanvas, ComputedDatum } from "@nivo/circle-packi
 import React from "react"
 import { useFilteredPapers } from "../../hooks"
 import { Paper } from "../../types"
+import { NoDataChartText } from "./index"
 
 const theme = {
 	"textColor": "#ffffff",
@@ -20,8 +21,8 @@ let data: {
 
 function GenerateData(columnValue: keyof Paper) {
 	const papers: Paper[] = useFilteredPapers()
-	const dataRaw: { 
-		[key: string]: Array<{name: string, value: number, url: string}>
+	const dataRaw: {
+		[key: string]: Array<{ name: string, value: number, url: string }>
 	} = {}
 
 	papers.forEach(function (paper: Paper) {
@@ -66,6 +67,12 @@ function CirclePackingChart({ type }: LineChartProps) {
 	}
 
 	data = GenerateData(type)
+
+	if (data["children"].length < 1) {
+		return (
+			<NoDataChartText />
+		)
+	}
 	return (
 		<div style={{ height: "900px", width: "100%", marginTop: "20px" }}>
 			<ResponsiveCirclePackingCanvas
