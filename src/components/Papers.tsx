@@ -114,33 +114,36 @@ function Papers(): JSX.Element {
 				dataSource={papersData}
 				expandable={{
 					expandRowByClick: true,
-					expandedRowRender: (record) => (
-						<Row gutter={[0, 4]}>
-							{record.Abstract.length > 0
-								? <Col span={24}>
-									{record.Abstract}
-								</Col>
-								: null}
+					expandedRowRender: (record) => {
+						console.log("record", record.Date, typeof record.Date, new Date(record.Date as any).toLocaleDateString("en-UK"))
+						return (
+							<Row gutter={[0, 4]}>
+								{record.Abstract.length > 0
+									? <Col span={24}>
+										{record.Abstract}
+									</Col>
+									: null}
 
-							<Col span={24}>
-								<b>
-									Authors: {printNames(record.Authors)}
-								</b>
-							</Col>
-
-							<Col span={24}>
-								{typeArray.map((type) => (
-									<CustomTag record={record} type={type} key={typeArray.indexOf(type)}/>
-								))}
-							</Col>
-							{typeof record.Date !== "undefined" 
-								? 
 								<Col span={24}>
-									Submitted on: {record.Date.toLocaleDateString("en-UK")}
-								</Col> 
-								: null}
-						</Row>
-					),
+									<b>
+									Authors: {printNames(record.Authors)}
+									</b>
+								</Col>
+
+								<Col span={24}>
+									{typeArray.map((type) => (
+										<CustomTag record={record} type={type} key={typeArray.indexOf(type)}/>
+									))}
+								</Col>
+								{typeof record.Date !== "undefined" 
+									? 
+									<Col span={24}>
+										Submitted on: {typeof record.Date === "string" ? record.Date : record.Date.toLocaleDateString("en-UK")}
+									</Col> 
+									: null
+								}
+							</Row>
+						)},
 				}}
 				className={
 					expandController.isAllExpanded() ? "table-expanding-all" : ""

@@ -61,7 +61,7 @@ function Chart(): JSX.Element {
 				</Col>
 				{graphMap[chart].withSelect
 					? <Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
-						{typeArray.map((elem: any) =>
+						{typeArray.map((elem: keyof Paper) =>
 							<Option key={elem} value={elem}>
 								{elem}
 							</Option>

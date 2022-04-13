@@ -6,7 +6,10 @@ export const store = configureStore({
 		papers: papersReducer,
 		filters: filtersReducer,
 		form: formReducer
-	}
+	},
+	middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+		serializableCheck: false
+	})
 })
 
 
