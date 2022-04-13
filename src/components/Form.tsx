@@ -21,8 +21,8 @@ type TypeOfExplanationProps = {
 function TypeOfExplanation({ name, description, imageUrl }: TypeOfExplanationProps) {
 	return (
 		<>
-			<p style={{margin: 0}}><i>{name}</i>, {description}</p>
-			{imageUrl ? <Collapse style={{marginBottom: 10}}>
+			<p style={{ margin: 0 }}><i>{name}</i>, {description}</p>
+			{imageUrl ? <Collapse style={{ marginBottom: 10 }}>
 				<Panel header="Example" key="1">
 					<img src={`${process.env.PUBLIC_URL + "/explanation_types_examples/"}${imageUrl}`} style={{width: "100%"}}/>
 				</Panel>
