@@ -27,7 +27,7 @@ function DefaultLayout() {
 	const navigate = useNavigate()
 
 	const [sideBarCollapsed, setSideBarCollapsed] = useState(false)
-	const [selectedKeys, setSelectedKeys] = useState<string[]>()
+	const [selectedKeys, setSelectedKeys] = useState<Page[]>()
 
 	useEffect(() => {
 		setSelectedKeys([pathToPage(location.pathname as Path)])

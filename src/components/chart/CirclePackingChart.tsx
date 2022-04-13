@@ -1,7 +1,7 @@
-import { ResponsiveCirclePackingCanvas } from "@nivo/circle-packing"
+import { ResponsiveCirclePackingCanvas, ComputedDatum } from "@nivo/circle-packing"
+import React from "react"
 import { useFilteredPapers } from "../../hooks"
 import { Paper } from "../../types"
-import { typeArray } from "../../utils"
 
 const theme = {
 	"textColor": "#ffffff",
@@ -18,12 +18,17 @@ let data: {
 	]
 }
 
-function GenerateData(columnValue: string) {
+function GenerateData(columnValue: keyof Paper) {
 	const papers: Paper[] = useFilteredPapers()
-	const dataRaw: any = {}
+	const dataRaw: { 
+		[key: string]: Array<{name: string, value: number, url: string}>
+	} = {}
 
-	papers.forEach(function (paper: any) {
-		for (const elem of paper[columnValue]) {
+	papers.forEach(function (paper: Paper) {
+		const array = paper[columnValue]
+		if (!Array.isArray(array)) return
+
+		for (const elem of array) {
 			if (dataRaw[elem]) {
 				dataRaw[elem].push({ name: paper.Title, value: 1, url: paper.url })
 			} else {
@@ -45,20 +50,22 @@ function GenerateData(columnValue: string) {
 }
 
 type LineChartProps = {
-	type: string
+	type: keyof Paper
 }
 
 
 function CirclePackingChart({ type }: LineChartProps) {
 
-	function HandleClick(e: any) {
+	function HandleClick(e: ComputedDatum<
+		{ name: string, children: Record<string, unknown>[], url?: string }>
+	) {
 		console.log(e)
 		if ("url" in e.data) {
 			window.open(e.data.url, "_blank")
 		}
 	}
 
-	data = GenerateData(type as keyof Paper)
+	data = GenerateData(type)
 	return (
 		<div style={{ height: "900px", width: "100%", marginTop: "20px" }}>
 			<ResponsiveCirclePackingCanvas
