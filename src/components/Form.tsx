@@ -1,4 +1,4 @@
-import { Form, Input, InputNumber, Button, Col, Row, Collapse, notification } from "antd"
+import { Form, Input, InputNumber, Button, Col, Row, Collapse, notification, Typography, Image } from "antd"
 import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Venue } from "../types"
 import Select from "./Select"
 import { fromFilterValue } from "../utils"
@@ -11,6 +11,7 @@ import { InfoCircleOutlined } from "@ant-design/icons"
 const { Item } = Form
 const { TextArea } = Input
 const { Panel } = Collapse
+const { Text } = Typography
 
 type TypeOfExplanationProps = {
 	name: string,
@@ -19,12 +20,15 @@ type TypeOfExplanationProps = {
 }
 
 function TypeOfExplanation({ name, description, imageUrl }: TypeOfExplanationProps) {
+	const imageCitation = imageUrl ? imageUrl.split(".")[0].split("_") : undefined
+	const citation = imageCitation?.[imageCitation?.length - 1]
 	return (
 		<>
 			<p style={{ margin: 0 }}><i>{name}</i>, {description}</p>
 			{imageUrl ? <Collapse style={{ marginBottom: 10 }}>
 				<Panel header="Example" key="1">
-					<img src={`${process.env.PUBLIC_URL + "/explanation_types_examples/"}${imageUrl}`} style={{width: "100%"}}/>
+					<Image src={`${process.env.PUBLIC_URL + "/explanation_types_examples/"}${imageUrl}`} style={{width: "100%"}}/>
+					<Text>[{citation}]</Text>
 				</Panel>
 			</Collapse> : null}
 			
