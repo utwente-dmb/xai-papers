@@ -90,7 +90,7 @@ function CirclePackingChart({ type }: LineChartProps) {
 					]
 				}}
 				labelsSkipRadius={40}
-				labelsFilter={label => ((label.label.toString().length / label.node.radius) < 0.35) && !(label.label === "root")}
+				labelsFilter={label => ((label.label.toString().length / label.node.radius) < 0.35) && !(label.label === "root") && !("url" in label.node.data)}
 				padding={5}
 				leavesOnly={false}
 				enableLabels={true}
