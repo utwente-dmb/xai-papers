@@ -12,17 +12,17 @@ const theme = {
 			}
 		}
 	},
-	
+
 }
 
 function GenerateData(col: string) {
 	const papers: Paper[] = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
 	const dataRaw: any = {}
 
-	papers.forEach(function (value: any) {
+	papers.forEach(function (paper: any) {
 		if (dataRaw["Papers"]) {
-			if (value["Year"] > dataRaw["Papers"][dataRaw["Papers"].length - 1]["x"]) {
-				dataRaw["Papers"].push({ x: value["Year"], y: dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] + 1 })
+			if (paper["Year"] > dataRaw["Papers"][dataRaw["Papers"].length - 1]["x"]) {
+				dataRaw["Papers"].push({ x: paper["Year"], y: dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] + 1 })
 			}
 			else if (dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"]) {
 				dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] += 1
@@ -30,20 +30,20 @@ function GenerateData(col: string) {
 		}
 		else {
 			dataRaw["Papers"] = []
-			dataRaw["Papers"].push({ x: value["Year"], y: 1 })
+			dataRaw["Papers"].push({ x: paper["Year"], y: 1 })
 		}
 
-		for (const elem of value[col]) {
+		for (const elem of paper[col]) {
 			if (dataRaw[elem]) {
-				if (value["Year"] > dataRaw[elem][dataRaw[elem].length - 1]["x"]) {
-					dataRaw[elem].push({ x: value["Year"], y: dataRaw[elem][dataRaw[elem].length - 1]["y"] + 1 })
+				if (paper["Year"] > dataRaw[elem][dataRaw[elem].length - 1]["x"]) {
+					dataRaw[elem].push({ x: paper["Year"], y: dataRaw[elem][dataRaw[elem].length - 1]["y"] + 1 })
 				}
 				else if (dataRaw[elem][dataRaw[elem].length - 1]["y"]) {
 					dataRaw[elem][dataRaw[elem].length - 1]["y"] += 1
 				}
 			} else {
 				dataRaw[elem] = []
-				dataRaw[elem].push({ x: value["Year"], y: 1, z: elem })
+				dataRaw[elem].push({ x: paper["Year"], y: 1, z: elem })
 			}
 
 		}
@@ -51,7 +51,7 @@ function GenerateData(col: string) {
 
 	let dataFormated = []
 	for (const [key, value] of Object.entries(dataRaw)) {
-		dataFormated.push({ "id": key, "data": value, "label": "yabba" })
+		dataFormated.push({ "id": key, "data": value, })
 	}
 	dataFormated = dataFormated.reverse()
 	return dataFormated
@@ -62,7 +62,7 @@ type LineChartProps = {
 }
 
 function GrowthLineChart({ type }: LineChartProps) {
-	const data2: any = GenerateData(type)
+	const data2: any = GenerateData(type as keyof Paper)
 
 	return (
 		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
