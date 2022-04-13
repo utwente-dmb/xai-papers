@@ -24,33 +24,29 @@ const theme = {
 function GenerateData(columnValue: string) {
 	let textSize = 0
 
-	const data: Array<{ id: string, value: number }> = []
+	const dataFormated: Array<{ id: string, value: number }> = []
 
 	const papers: Paper[] = useFilteredPapers()
-	const count: { [key: string]: { [key: string]: number } } = {}
+	const dataRaw: { [key: string]: number } = {}
 
 	papers.forEach(function (value: any) {
-		for (const col of typeArray) {
-			if (!(col in count)) {
-				count[col] = {}
-			}
-			for (const elem of value[col]) {
-				if (count[col][elem]) {
-					count[col][elem] += 1
-				} else {
-					count[col][elem] = 1
-				}
-
+		for (const elem of value[columnValue]) {
+			if (dataRaw[elem]) {
+				dataRaw[elem] += 1
+			} else {
+				dataRaw[elem] = 1
 			}
 		}
 	})
-	for (const [key, value] of Object.entries(count[columnValue])) {
-		data.push({ id: key, value: value })
+
+	for (const [key, value] of Object.entries(dataRaw)) {
+		dataFormated.push({ id: key, value: value })
 		if (key.length > textSize) {
 			textSize = key.length
 		}
 	}
-	return [data, textSize]
+
+	return { dataFormated, textSize }
 }
 
 type BarChartProps = {
@@ -65,15 +61,14 @@ export function ResetData() {
 }
 
 function BarChart({ type }: BarChartProps) {
-	const data: any = GenerateData(type as keyof Paper)
+	const { data, textLength }: Array<{ id: string, value: number }> | any = GenerateData(type as keyof Paper)
 	console.log(data)
-
 	return (
 		<div style={{ height: "545px", width: "100%", marginTop: "30px" }}>
 			<ResponsiveBar
-				data={data[0]}
+				data={data}
 				layout="horizontal"
-				margin={{ top: 26, right: 30, bottom: 50, left: data[1] * 9 }}
+				margin={{ top: 26, right: 30, bottom: 50, left: textLength * 9 }}
 				indexBy="id"
 				label={d => `${d.value}`}
 				colors={{ scheme: "spectral" }}

@@ -23,27 +23,19 @@ function GenerateData(columnValue: string) {
 	const dataRaw: any = {}
 
 	papers.forEach(function (paper: any) {
-		for (const col of typeArray) {
-			if (!(col in dataRaw)) {
-				dataRaw[col] = {}
-			}
-			if (Array.isArray(paper[col])) {
-				for (const elem of paper[col]) {
-					if (dataRaw[col][elem]) {
-						dataRaw[col][elem].push({ name: paper.Title, value: 1, url: paper.url })
-					} else {
-						dataRaw[col][elem] = []
-						dataRaw[col][elem].push({ name: paper.Title, value: 1, url: paper.url })
+		for (const elem of paper[columnValue]) {
+			if (dataRaw[elem]) {
+				dataRaw[elem].push({ name: paper.Title, value: 1, url: paper.url })
+			} else {
+				dataRaw[elem] = []
+				dataRaw[elem].push({ name: paper.Title, value: 1, url: paper.url })
 
-					}
-				}
 			}
-
 		}
 	})
 
 	data["children"] = []
-	for (const [key, value] of Object.entries(dataRaw[columnValue])) {
+	for (const [key, value] of Object.entries(dataRaw)) {
 		data["children"].push({ name: key, children: value })
 	}
 	console.log(data)
@@ -66,7 +58,7 @@ function CirclePackingChart({ type }: LineChartProps) {
 		}
 	}
 
-	data = GenerateData(type)
+	data = GenerateData(type as keyof Paper)
 	return (
 		<div style={{ height: "900px", width: "100%", marginTop: "20px" }}>
 			<ResponsiveCirclePackingCanvas
