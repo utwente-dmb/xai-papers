@@ -1,6 +1,7 @@
 import { useFilteredPapers } from "../../hooks"
-import { ResponsiveLine, Serie } from "@nivo/line"
+import { ResponsiveLine } from "@nivo/line"
 import { Paper } from "../../types"
+import { NoDataChartText } from "./index"
 
 
 const theme = {
@@ -17,7 +18,7 @@ const theme = {
 
 function GenerateData(col: keyof Paper) {
 	const papers: Paper[] = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
-	const dataRaw: any = {}
+	const dataRaw: { [key: string]: Array<{ x: string, y: number }> } = {}
 
 	papers.forEach(function (paper: Paper) {
 		if (dataRaw["Papers"]) {
@@ -45,17 +46,17 @@ function GenerateData(col: keyof Paper) {
 				}
 			} else {
 				dataRaw[elem] = []
-				dataRaw[elem].push({ x: paper["Year"], y: 1, z: elem })
+				dataRaw[elem].push({ x: paper["Year"], y: 1 })
 			}
 
 		}
 	})
 
-	let dataFormated = []
+	const dataFormated: Array<{ id: string, data: Array<{ x: string, y: number }> }> = []
 	for (const [key, value] of Object.entries(dataRaw)) {
-		dataFormated.push({ "id": key, "data": value, })
+		dataFormated.push({ id: key, data: value })
 	}
-	dataFormated = dataFormated.reverse()
+
 	return dataFormated
 }
 
@@ -64,12 +65,16 @@ type LineChartProps = {
 }
 
 function GrowthLineChart({ type }: LineChartProps) {
-	const data2: any = GenerateData(type)
-
+	const data: Array<{ id: string, data: Array<{ x: string, y: number }> }> = GenerateData(type)
+	if (data.length < 1) {
+		return (
+			<NoDataChartText />
+		)
+	}
 	return (
 		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
 			<ResponsiveLine
-				data={data2}
+				data={data}
 				margin={{ top: 25, right: 200, bottom: 50, left: 60 }}
 				xScale={{
 					type: "time",
