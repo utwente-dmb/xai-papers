@@ -115,26 +115,31 @@ function Papers(): JSX.Element {
 				expandable={{
 					expandRowByClick: true,
 					expandedRowRender: (record) => (
-						<>
-							<Row gutter={[0, 4]}>
-								{record.Abstract.length > 0
-									? <Col span={24}>
-										{record.Abstract}
-									</Col>
-									: null}
+						<Row gutter={[0, 4]}>
+							{record.Abstract.length > 0
+								? <Col span={24}>
+									{record.Abstract}
+								</Col>
+								: null}
 
+							<Col span={24}>
+								<b>
+									Authors: {printNames(record.Authors)}
+								</b>
+							</Col>
+
+							<Col span={24}>
+								{typeArray.map((type) => (
+									<CustomTag record={record} type={type} key={typeArray.indexOf(type)}/>
+								))}
+							</Col>
+							{typeof record.Date !== "undefined" 
+								? 
 								<Col span={24}>
-									<b>
-										Authors: {printNames(record.Authors)}
-									</b>
-								</Col>
-								<Col span={24}>
-									{typeArray.map((type) => (
-										<CustomTag record={record} type={type} key={typeArray.indexOf(type)}/>
-									))}
-								</Col>
-							</Row>
-						</>
+									Submitted on: {record.Date.toLocaleDateString("en-UK")}
+								</Col> 
+								: null}
+						</Row>
 					),
 				}}
 				className={

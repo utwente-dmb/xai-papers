@@ -1,26 +1,27 @@
-export const baseUrl = "/"
+export type Page = "landing" | "papers" | "charts" | "add-paper"
+export type Path = "/" | "/papers" | "/charts" | "/add-paper"
 
-export const pathMap: { [key: string]: string } = {
-	[`${baseUrl}`]: "landing",
-	[`${baseUrl}papers`]: "papers",
-	[`${baseUrl}charts`]: "charts",
-	[`${baseUrl}add-paper`]: "add-paper",
+export const pathMap: { [key in Path]: Page } = {
+	["/"]: "landing",
+	["/papers"]: "papers",
+	["/charts"]: "charts",
+	["/add-paper"]: "add-paper",
 }
 
-export const pathToPage = (path: string): string => {
+export const pathToPage = (path: Path): Page => {
 	if (path in pathMap) {
 		return pathMap[path]
 	}
 	return "landing"
 }
 
-export const pageToPath = (page: string): string => {
+export const pageToPath = (page: Page): Path => {
 	for (const entry of Object.entries(pathMap)) {
 		if (entry[1] === page) {
-			return entry[0]
+			return entry[0] as Path
 		}
 	}
-	return baseUrl
+	return "/"
 }
 
 export const githubUrl = "https://www.github.com/BorisGerretzen/DMBLiteratureWebsite"

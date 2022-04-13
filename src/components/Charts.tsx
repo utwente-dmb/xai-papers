@@ -31,12 +31,12 @@ function Chart(): JSX.Element {
 		"Line Chart": {
 			withSelect: true,
 			element: <GrowthLineChart type={type} />,
-			description: "The line chart below displays the increase in the number of papers on the subject of Explainable AI over time. The filtering option on the right allows you to select a particular tag and see the developments over time associated with that specific tag.",
+			description: "The line chart displays the increase in the number of papers on the subject of Explainable AI over time. The filtering option on the right allows you to select a particular attribute so that its development over time can be observed. It should be noted that papers can have multiple tags of the same attribute so the sum of tags is greater than the amount of papers in the database.",
 		},
 		"Bar Chart": {
 			withSelect: true,
 			element: <BarChart type={type} />,
-			description: "The bar chart shows the distribution of tags"
+			description: "The bar chart shows the distribution of tags for a selected attribute. The attribute shown can be changed with the dropdown menu on the right. It should be noted that papers can have multiple tags of the same attribute so the total amount of all the added bars will be greater than the amount of papers in the database."
 		},
 		"Connected Graph": {
 			withSelect: false,
@@ -46,7 +46,7 @@ function Chart(): JSX.Element {
 		"Circle Packing": {
 			withSelect: true,
 			element: <CirclePackingChart type={type} />,
-			description: "The circle packing chart below displays the hierarchic organization which exists within the papers on Explainable AI. A specific tag can be selected to show the distribution that occurs for that tag. Each of the circles can be hovered over and clicked on to display more information"
+			description: "The circle packing chart displays the hierarchic organization which exists within the papers on Explainable AI. A specific attribute can be selected to show the distribution of tags associated with it. Each of the circles can be hovered over to see the title of the paper and clicked on to go to the paper itself."
 		},
 	}
 	return (
