@@ -4,7 +4,7 @@ import { INode, NodeConfig } from "@antv/g6"
 import { message } from "antd"
 import { Paper } from "../../types"
 import { typeArray } from "../../utils"
-
+import { NoDataChartText } from "./index"
 function CreateGraphData() {
 	const papers = useFilteredPapers()
 	const nodes: Array<IUserNode> = []
@@ -120,10 +120,17 @@ Graphin.registerBehavior("sampleBehavior", {
 
 
 function ConnectedChart() {
-	const data3 = CreateGraphData()
+	const data: GraphinData = CreateGraphData()
+
+	if (data.nodes.length < 1) {
+		return (
+			<NoDataChartText />
+		)
+	}
+
 	return (
 		<div className="TestChart">
-			<Graphin data={data3} layout={
+			<Graphin data={data} layout={
 				{
 					type: "force",
 					maxIteration: 1000,

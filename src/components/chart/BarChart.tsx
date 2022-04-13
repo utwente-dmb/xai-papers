@@ -1,6 +1,7 @@
 import { ResponsiveBar } from "@nivo/bar"
 import { useFilteredPapers } from "../../hooks"
 import { Paper } from "../../types"
+import { NoDataChartText } from "./index"
 
 const theme = {
 	"axis": {
@@ -23,7 +24,7 @@ const theme = {
 function GenerateData(columnValue: keyof Paper) {
 	let textSize = 0
 
-	const dataFormated: Array<{ id: string, value: number }> = []
+	const data: Array<{ id: string, value: number }> = []
 
 	const papers: Paper[] = useFilteredPapers()
 	const dataRaw: { [key: string]: number } = {}
@@ -42,13 +43,13 @@ function GenerateData(columnValue: keyof Paper) {
 	})
 
 	for (const [key, value] of Object.entries(dataRaw)) {
-		dataFormated.push({ id: key, value: value })
+		data.push({ id: key, value: value })
 		if (key.length > textSize) {
 			textSize = key.length
 		}
 	}
 
-	return { dataFormated, textSize }
+	return { data, textSize }
 }
 
 type BarChartProps = {
@@ -56,14 +57,18 @@ type BarChartProps = {
 }
 
 function BarChart({ type }: BarChartProps) {
-	const { dataFormated, textSize } = GenerateData(type)
-	console.log(dataFormated)
+	const { data, textSize } = GenerateData(type)
+	if (data.length < 1) {
+		return (
+			<NoDataChartText />
+		)
+	}
 	return (
 		<div style={{ height: "545px", width: "100%", marginTop: "30px" }}>
 			<ResponsiveBar
-				data={dataFormated}
+				data={data}
 				layout="horizontal"
-				margin={{ top: 26, right: 30, bottom: 50, left: textSize * 9 }}
+				margin={{ top: 26, right: 30, bottom: 50, left: textSize * 10 + 5 }}
 				indexBy="id"
 				label={d => `${d.value}`}
 				colors={{ scheme: "spectral" }}
