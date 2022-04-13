@@ -19,7 +19,7 @@ function GenerateData(col: string) {
 	const papers: Paper[] = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
 	const dataRaw: any = {}
 
-	papers.forEach(function (paper: Paper) {
+	papers.forEach(function (paper: any) {
 		if (dataRaw["Papers"]) {
 			if (paper["Year"] > dataRaw["Papers"][dataRaw["Papers"].length - 1]["x"]) {
 				dataRaw["Papers"].push({ x: paper["Year"], y: dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] + 1 })
