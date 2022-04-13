@@ -45,7 +45,7 @@ function CreateGraphData() {
 				target: paper2.url,
 				style: {
 					keyshape: {
-						endArrow: {},
+						endArrow: { path: "OogaBooga" },
 						type: "line",
 						poly: {
 							distance: 600 - 5 * similarity,
