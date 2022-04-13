@@ -4,8 +4,7 @@ import {
 	Layout,
 	Menu,
 	Button,
-	Typography,
-	Row
+	Typography
 } from "antd"
 import {
 	PlusCircleOutlined,
@@ -28,16 +27,15 @@ function DefaultLayout() {
 	const navigate = useNavigate()
 
 	const [sideBarCollapsed, setSideBarCollapsed] = useState(false)
-	const [selectedKeys, setSelectedKeys] = useState<string[]>()
+	const [selectedKeys, setSelectedKeys] = useState<Page[]>()
 
 	useEffect(() => {
 		setSelectedKeys([pathToPage(location.pathname as Path)])
-	}, [])
+	}, [location.pathname])
 
-	const customNavigate = ({ key }: { key: string }) => {
+	const onClickMenuItem = ({ key }: { key: string }) => {
 		window.scrollTo(0, 0)
 		navigate(pageToPath(key as Page))
-		setSelectedKeys([key])
 	}
 
 	const [showExplainableAIText, setShowExplainableAIText] = useState(false)
@@ -75,7 +73,7 @@ function DefaultLayout() {
 				/>
 				<Menu 
 					mode="inline" 
-					onClick={customNavigate}
+					onClick={onClickMenuItem}
 					selectedKeys={selectedKeys}
 				>
 					<Menu.Item key="landing" icon={<HomeOutlined />}>Home</Menu.Item>
@@ -94,7 +92,7 @@ function DefaultLayout() {
 				{/* Main Content */}
 				<Content style={{ padding: "0 50px", marginTop: 20 }}>
 					<Routes>
-						<Route path={"/"} element={<LandingPage customNavigate={customNavigate} />}/>
+						<Route path={"/"} element={<LandingPage />}/>
 						<Route path={"/papers"} element={<Papers />}/>
 						<Route path={"/charts"} element={<Charts />}/>
 						<Route path={"/add-paper"} element={<AddPaper />}/>

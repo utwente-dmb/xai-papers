@@ -1,7 +1,8 @@
 import { Row, Col, Typography, Image } from "antd"
 import { FilterOutlined, FileAddOutlined, CheckCircleOutlined } from "@ant-design/icons"
-import { githubUrl } from "../utils"
+import { githubUrl, Page, pageToPath } from "../utils"
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 const { Title, Text } = Typography
 
@@ -93,13 +94,15 @@ function TextWithImage({ textAlignment = "left", text, description, imageUrl }: 
 	)
 }
 
-type LandingPageProps = {
-	customNavigate: ({ key }: {
-		key: string;
-	}) => void
-}
 
-function LandingPage( { customNavigate }: LandingPageProps) {
+function LandingPage() {
+
+	const navigate = useNavigate()
+
+	const customNavigate = (page: Page) => {
+		window.scrollTo(0, 0)
+		navigate(pageToPath(page)) 
+	}
 
 	return (
 		<>
@@ -126,11 +129,11 @@ function LandingPage( { customNavigate }: LandingPageProps) {
 					description={
 						<>
 						Quickly find relevant XAI papers by 
-							<a onClick={() => customNavigate({key: "papers"})}>
+							<a onClick={() => customNavigate("papers")}>
 							&nbsp;filtering and searching&nbsp;
 							</a>
 							in the dataset, using our categorization scheme. Prefer visuals? Use our 
-							<a onClick={() => customNavigate({key: "charts"})}>
+							<a onClick={() => customNavigate("charts")}>
 								&nbsp;charts page&nbsp;
 							</a>
 							for interactive graphs.
@@ -143,7 +146,7 @@ function LandingPage( { customNavigate }: LandingPageProps) {
 					description={
 						<>
 							Make this a living collection by 
-							<a onClick={() => customNavigate({key: "add-paper"})}>
+							<a onClick={() => customNavigate("add-paper")}>
 								&nbsp;adding papers&nbsp;
 							</a>
 							to this collection! Label the paper using our categorization
@@ -195,7 +198,7 @@ function LandingPage( { customNavigate }: LandingPageProps) {
 							&nbsp;Github page
 						</a> and append the generated entry to our
 					database. Some automated tests check whether the new database entry is in the right format, but that shouldn’t be any problem with our 
-						<a onClick={() => customNavigate({key: "add-paper"})}>
+						<a onClick={() => customNavigate("add-paper")}>
 								&nbsp;generation tool
 						</a>.
 					</>

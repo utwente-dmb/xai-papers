@@ -1,5 +1,5 @@
 import { useFilteredPapers } from "../../hooks"
-import { ResponsiveLine } from "@nivo/line"
+import { ResponsiveLine, Serie } from "@nivo/line"
 import { Paper } from "../../types"
 
 
@@ -15,11 +15,11 @@ const theme = {
 
 }
 
-function GenerateData(col: string) {
+function GenerateData(col: keyof Paper) {
 	const papers: Paper[] = useFilteredPapers().sort((a, b) => a.Year.localeCompare(b.Year))
 	const dataRaw: any = {}
 
-	papers.forEach(function (paper: any) {
+	papers.forEach(function (paper: Paper) {
 		if (dataRaw["Papers"]) {
 			if (paper["Year"] > dataRaw["Papers"][dataRaw["Papers"].length - 1]["x"]) {
 				dataRaw["Papers"].push({ x: paper["Year"], y: dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] + 1 })
@@ -32,8 +32,10 @@ function GenerateData(col: string) {
 			dataRaw["Papers"] = []
 			dataRaw["Papers"].push({ x: paper["Year"], y: 1 })
 		}
+		const array = paper[col]
+		if (!Array.isArray(array)) return
 
-		for (const elem of paper[col]) {
+		for (const elem of array) {
 			if (dataRaw[elem]) {
 				if (paper["Year"] > dataRaw[elem][dataRaw[elem].length - 1]["x"]) {
 					dataRaw[elem].push({ x: paper["Year"], y: dataRaw[elem][dataRaw[elem].length - 1]["y"] + 1 })
@@ -58,11 +60,11 @@ function GenerateData(col: string) {
 }
 
 type LineChartProps = {
-	type: string
+	type: keyof Paper
 }
 
 function GrowthLineChart({ type }: LineChartProps) {
-	const data2: any = GenerateData(type as keyof Paper)
+	const data2: any = GenerateData(type)
 
 	return (
 		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>

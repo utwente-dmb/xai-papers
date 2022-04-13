@@ -1,7 +1,6 @@
 import { ResponsiveBar } from "@nivo/bar"
 import { useFilteredPapers } from "../../hooks"
 import { Paper } from "../../types"
-import { typeArray } from "../../utils"
 
 const theme = {
 	"axis": {
@@ -21,7 +20,7 @@ const theme = {
 
 }
 
-function GenerateData(columnValue: string) {
+function GenerateData(columnValue: keyof Paper) {
 	let textSize = 0
 
 	const dataFormated: Array<{ id: string, value: number }> = []
@@ -29,8 +28,11 @@ function GenerateData(columnValue: string) {
 	const papers: Paper[] = useFilteredPapers()
 	const dataRaw: { [key: string]: number } = {}
 
-	papers.forEach(function (value: any) {
-		for (const elem of value[columnValue]) {
+	papers.forEach((paper: Paper) => {
+		const array = paper[columnValue]
+		if (!Array.isArray(array)) return
+
+		for (const elem of array) {
 			if (dataRaw[elem]) {
 				dataRaw[elem] += 1
 			} else {
@@ -50,25 +52,18 @@ function GenerateData(columnValue: string) {
 }
 
 type BarChartProps = {
-	type: string
-}
-
-let dataOld: any = {}
-let year = 0
-export function ResetData() {
-	dataOld = {}
-	year = 0
+	type: keyof Paper
 }
 
 function BarChart({ type }: BarChartProps) {
-	const { data, textLength }: Array<{ id: string, value: number }> | any = GenerateData(type as keyof Paper)
-	console.log(data)
+	const { dataFormated, textSize } = GenerateData(type)
+	console.log(dataFormated)
 	return (
 		<div style={{ height: "545px", width: "100%", marginTop: "30px" }}>
 			<ResponsiveBar
-				data={data}
+				data={dataFormated}
 				layout="horizontal"
-				margin={{ top: 26, right: 30, bottom: 50, left: textLength * 9 }}
+				margin={{ top: 26, right: 30, bottom: 50, left: textSize * 9 }}
 				indexBy="id"
 				label={d => `${d.value}`}
 				colors={{ scheme: "spectral" }}

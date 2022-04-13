@@ -1,4 +1,4 @@
-import Graphin, { GraphinData, IG6GraphEvent } from "@antv/graphin"
+import Graphin, { GraphinData, IG6GraphEvent, IUserEdge, IUserNode } from "@antv/graphin"
 import { useFilteredPapers } from "../../hooks"
 import { INode, NodeConfig } from "@antv/g6"
 import { message } from "antd"
@@ -7,8 +7,8 @@ import { typeArray } from "../../utils"
 
 function CreateGraphData() {
 	const papers = useFilteredPapers()
-	const nodes: any = []
-	const edges: any = []
+	const nodes: Array<IUserNode> = []
+	const edges: Array<IUserEdge> = []
 	// const requiredNodes: Array<Paper> = []
 	const minimumSimilarityForEdge = 5
 	const similarityColumns: Array<keyof Paper> = typeArray
@@ -45,14 +45,14 @@ function CreateGraphData() {
 				target: paper2.url,
 				style: {
 					keyshape: {
-						endArrow: false,
+						endArrow: {},
 						type: "line",
 						poly: {
 							distance: 600 - 5 * similarity,
 						},
 						lineWidth: 1 + similarity * 0.5,
 						opacity: (1 + similarity) / 50,
-						stroke: 1,
+						stroke: "1",
 						fill: "#ffffff"
 					}
 				}
@@ -63,7 +63,7 @@ function CreateGraphData() {
 
 	// Loop over all papers that require nodes and create them
 	papers.forEach(function (paper) {
-		nodes.push({
+		const node = {
 			id: paper.url,
 			label: { value: paper.Authors[0] + "et al" },
 			size: 150,
@@ -76,7 +76,8 @@ function CreateGraphData() {
 				},
 				label: { value: paper.Authors[0] + " et al" },
 			}
-		})
+		}
+		nodes.push(node)
 	})
 
 	const graphData: GraphinData = {

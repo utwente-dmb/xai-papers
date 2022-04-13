@@ -1,23 +1,22 @@
-import { Row, Select, Col, Radio } from "antd"
+import { Row, Select, Col, Radio, RadioChangeEvent } from "antd"
 import { ConnectedChart, CirclePackingChart, GrowthLineChart, BarChart } from "./chart"
-import { useState } from "react"
+import React, { useState } from "react"
 import { typeArray } from "../utils"
+import { Paper } from "../types"
 
 const { Option } = Select
 const { Button, Group } = Radio
 
 function Chart(): JSX.Element {
 
-
 	const [chart, setChart] = useState("Line Chart")
+	const [type, setType] = useState<keyof Paper>("Type of Data")
 
-	const [type, setType] = useState("Type of Data")
-
-	function HandleChartChange(e: any) {
+	function HandleChartChange(e: RadioChangeEvent): void {
 		setChart(e.target.value)
 	}
 
-	function HandleChange(value: string) {
+	function HandleChange(value: keyof Paper) {
 		setType(value)
 	}
 
