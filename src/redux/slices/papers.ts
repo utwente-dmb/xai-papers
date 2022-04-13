@@ -6,6 +6,7 @@ import papers from "../../db/db.json"
 const initialState: Array<Paper> = []
 
 papers.forEach((json) => {
+
 	if (isPaper(json)) {
 		initialState.push(json)
 	} else {
