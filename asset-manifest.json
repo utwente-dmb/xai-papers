@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DMBLiteratureWebsite/static/css/main.480c8c0a.css",
-    "main.js": "/DMBLiteratureWebsite/static/js/main.2f590774.js",
+    "main.js": "/DMBLiteratureWebsite/static/js/main.df96f131.js",
     "static/js/787.aca04360.chunk.js": "/DMBLiteratureWebsite/static/js/787.aca04360.chunk.js",
     "index.html": "/DMBLiteratureWebsite/index.html",
     "main.480c8c0a.css.map": "/DMBLiteratureWebsite/static/css/main.480c8c0a.css.map",
-    "main.2f590774.js.map": "/DMBLiteratureWebsite/static/js/main.2f590774.js.map",
+    "main.df96f131.js.map": "/DMBLiteratureWebsite/static/js/main.df96f131.js.map",
     "787.aca04360.chunk.js.map": "/DMBLiteratureWebsite/static/js/787.aca04360.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.480c8c0a.css",
-    "static/js/main.2f590774.js"
+    "static/js/main.df96f131.js"
   ]
 }
