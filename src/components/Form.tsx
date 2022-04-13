@@ -222,79 +222,79 @@ function AddPaperForm() {
 								<TypeOfExplanation 
 									name="Decision Rules"
 									description="Logical rules, including decision sets[16], anchors[24], decision tables[13] and programs[31]."
-									imageUrl="decision_rules_139.PNG"
+									imageUrl="decision_rules_16.PNG"
 								/>
 
 								<TypeOfExplanation 
 									name="Decision Tree"
 									description="Rooted graph with conditional statement at each node, e.g. ProtoTree [19]."
-									imageUrl="decision_tree_179.png"
+									imageUrl="decision_tree_19.png"
 								/>
 
 								<TypeOfExplanation 
 									name="Disentanglement"
 									description="Disentangled representation, where each disjoint feature might have a semantic meaning. E.g. InfoGAN [5]."
-									imageUrl="disentanglement_44.PNG"
+									imageUrl="disentanglement_5.PNG"
 								/>
 
 								<TypeOfExplanation 
 									name="Feature Importance"
 									description="Set of 1-dimensional non-binary values/scores to indicate feature relevance, feature contribution or attribution. A feature is not necessarily an input feature to predictive model &#55349;&#56403; , but it should be a feature in the explanation. Examples include SHAP[18] and importance scores by LIME[23]."
-									imageUrl="feature_importance_212.PNG"
+									imageUrl="feature_importance_22.PNG"
 								/>
 
 								<TypeOfExplanation 
 									name="Feature Plot"
 									description="Plot or figure showing relations or interactions between features or between feature(s) and outcome. Examples include Partial Dependence Plot[7], Individual Conditional Expectation plot[9] and Feature Auditing[1]."
-									imageUrl="feature_plot_82.PNG"
+									imageUrl="feature_plot_9.PNG"
 								/>
 					
 								<TypeOfExplanation 
 									name="Graph"
 									description="Graphical network structure with nodes and edges, e.g. Abstract Policy Graph[28], Knowledge Graph[32], Flow Graph[25] and Finite State Automata[11]."
-									imageUrl="graph_252.PNG"
+									imageUrl="graph_27.PNG"
 								/>
 
 								<TypeOfExplanation 
 									name="Heatmap"
 									description="Map with at least 2 dimensions visually highlighting non-binary feature attribution, activation, sensitivity, attention or saliency. Includes attention maps[26], perturbation masks [6] and Layer-Wise Relevance Propagation [2]."
-									imageUrl="heatmap_222.PNG"
+									imageUrl="heatmap_25.PNG"
 								/>
 
 								<TypeOfExplanation 
 									name="Localization"
 									description="Binary feature importance. Features can be any type of covariate used in the explanation, such as words, tabular features, or bounding boxes. Examples include binary maps with image patches[23], segmentation[12] and bounding boxes[33]."
-									imageUrl="Localization_212.PNG"
+									imageUrl="Localization_22.PNG"
 								/>
 
 								<TypeOfExplanation 
 									name="Prototypes"
 									description="(Parts of) Representative examples, including concepts[15], influential training instances[10], prototypical parts [4, 19], nearest neighbors and criticisms[14]."
-									imageUrl="prototypes_125.PNG"
+									imageUrl="prototypes_14.PNG"
 								/>
 
 								<TypeOfExplanation 
 									name="Representation Synthesis"
 									description="Artificially produced visualization to explain representations of the predictive model. Examples include generated data samples[27], Activation Maximization[20] and feature visualization[21]."
-									imageUrl="representation_synthesis_180.PNG"
+									imageUrl="representation_synthesis_33.PNG"
 								/>
 
 								<TypeOfExplanation 
 									name="Representation Visualization"
 									description="Charts or plots to visualize representations of the predictive model, including visualizations of dimensionality reduction with scatter plots[30], visual cluster analysis[17] and Principal Component Analysis."
-									imageUrl="representation_visualization_259.PNG"
+									imageUrl="representation_visualization_29.PNG"
 								/>
 
 								<TypeOfExplanation 
 									name="Text"
 									description="Textual explanation via natural language [3, 22]."
-									imageUrl="text_208.PNG"
+									imageUrl="text_21.PNG"
 								/>
 
 								<TypeOfExplanation 
 									name="White-box Model"
 									description="Intrinsically interpretable models (excluding decision rules). Predictive model &#55349;&#56403; is interpretable and therefore acts as explanation. Examples include a scoring sheet[29] and linear regression. Decision Rules and Decision Trees do not fall into this category, since they are categories on their own."
-									imageUrl="white_box_model_258.PNG"
+									imageUrl="white_box_model_28.PNG"
 								/>
 
 								<TypeOfExplanation 
