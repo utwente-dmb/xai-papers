@@ -1,5 +1,4 @@
 export { default as Filters } from "./Filters"
-export { default as Charts } from "./Charts"
 export { default as TagList } from "./TagList"
-export { default as AddPaperForm } from "./Form"
 export { default as Select } from "./Select"
+export * from "./chart"
