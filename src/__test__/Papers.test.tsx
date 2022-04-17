@@ -6,7 +6,6 @@ import { store } from "../redux"
 import "@testing-library/jest-dom"
 import { Data } from "../types/paper"
 
-
 let container: HTMLElement | null = null
 
 const mouseClickEvents = ["mousedown", "click", "mouseup"]
@@ -22,7 +21,6 @@ function simulateMouseClick(element: any) {
 		)
 	)
 }
-
 
 describe("Test", () => {
 	it("Checks filtered papers for tags", () => {
