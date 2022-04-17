@@ -1,6 +1,6 @@
 import { render, unmountComponentAtNode } from "react-dom"
 import { act } from "react-dom/test-utils"
-import { Filters, Papers } from "../components"
+import { Papers } from "../pages"
 import { Provider } from "react-redux"
 import { papersActions, store } from "../redux"
 import "@testing-library/jest-dom"
@@ -30,7 +30,7 @@ describe("Test", () => {
 	it("Checks filtered papers for tags", () => {
 		// Render filters
 		act(() => {
-			render(<Provider store={store}><Filters /><Papers /></Provider>, container)
+			render(<Provider store={store}><Papers /></Provider>, container)
 		})
 
 		// Get all the dropdowns and click them
