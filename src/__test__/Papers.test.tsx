@@ -1,13 +1,10 @@
 import { render, unmountComponentAtNode } from "react-dom"
 import { act } from "react-dom/test-utils"
-import { Filters, Papers } from "../components"
+import { Papers } from "../pages"
 import { Provider } from "react-redux"
-import { papersActions, store } from "../redux"
+import { store } from "../redux"
 import "@testing-library/jest-dom"
-import { prettyDOM } from "@testing-library/react"
-import { Data, Explanation, Problem, Model, Task, Method } from "../types/paper"
-import { brotliCompressSync } from "zlib"
-import { useFilteredPapers } from "../hooks"
+import { Data } from "../types/paper"
 
 let container: HTMLElement | null = null
 
@@ -25,12 +22,11 @@ function simulateMouseClick(element: any) {
 	)
 }
 
-
 describe("Test", () => {
 	it("Checks filtered papers for tags", () => {
 		// Render filters
 		act(() => {
-			render(<Provider store={store}><Filters /><Papers /></Provider>, container)
+			render(<Provider store={store}> <Papers/> </Provider>, container)
 		})
 
 		// Get all the dropdowns and click them
