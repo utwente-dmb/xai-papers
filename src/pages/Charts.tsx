@@ -9,7 +9,6 @@ const { Option } = Select
 const { Button, Group } = Radio
 
 function App() {
-
 	const [chart, setChart] = useState("Line Chart")
 	const [type, setType] = useState<keyof Paper>("Type of Data")
 
@@ -49,7 +48,6 @@ function App() {
 			description: "The circle packing chart displays the hierarchic organization which exists within the papers on Explainable AI. A specific attribute can be selected to show the distribution of tags associated with it. Each of the circles can be hovered over to see the title of the paper and clicked on to go to the paper itself."
 		},
 	}
-
 	return (
 		<>
 			<Filters />

@@ -4,8 +4,7 @@ import { INode, NodeConfig } from "@antv/g6"
 import { message } from "antd"
 import { Paper } from "../../types"
 import { typeArray } from "../../utils"
-import { NoDataChartText } from "./index"
-
+import { NoDataText } from "./index"
 function CreateGraphData() {
 	const papers = useFilteredPapers()
 	const nodes: Array<IUserNode> = []
@@ -46,7 +45,7 @@ function CreateGraphData() {
 				target: paper2.url,
 				style: {
 					keyshape: {
-						endArrow: { path: "OogaBooga" },
+						endArrow: {path:"123"},//Pointless variable that is required by the library
 						type: "line",
 						poly: {
 							distance: 600 - 5 * similarity,
@@ -125,7 +124,7 @@ function ConnectedChart() {
 
 	if (data.nodes.length < 1) {
 		return (
-			<NoDataChartText />
+			<NoDataText />
 		)
 	}
 
