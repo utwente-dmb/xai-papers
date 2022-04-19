@@ -7,6 +7,7 @@ import { NoDataText } from "./index"
 //Refer to https://nivo.rocks/circle-packing/
 
 //Theme Variable, Changes the defualt values for the nivo graph
+
 const theme = {
 	"textColor": "#ffffff",
 	"fontSize": 20,
@@ -66,9 +67,11 @@ function CirclePackingChart({ type }: LineChartProps) {
 	//Function that opens a the url for a clicked paper
 	const data = GenerateData(type)
 
+
 	function HandleClick(e: ComputedDatum<
 		{ name: string, children: Record<string, unknown>[], url?: string }>
 	) {
+
 		if ("url" in e.data) {
 			window.open(e.data.url, "_blank")
 		}
@@ -82,6 +85,7 @@ function CirclePackingChart({ type }: LineChartProps) {
 	}
 	return (
 		//Parent div is required by nivo, the height would defines the size of the graph has to be greater than 0 for the graph to render
+
 		<div style={{ height: "900px", width: "100%", marginTop: "20px" }}>
 			<ResponsiveCirclePackingCanvas
 				data={data}

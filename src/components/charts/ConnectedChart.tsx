@@ -5,6 +5,7 @@ import { message } from "antd"
 import { Paper } from "../../types"
 import { typeArray } from "../../utils"
 import { NoDataText } from "./index"
+
 function CreateGraphData() {
 	const papers = useFilteredPapers()
 	const nodes: Array<IUserNode> = []
