@@ -53,6 +53,7 @@ function App() {
 			<Filters />
 			<>
 				<Row justify="space-between" style={{ marginBottom: 12 }}>
+					{/* Chart Select Buttons */}
 					<Col span={12}>
 						<Group defaultValue={chart} buttonStyle="solid" onChange={HandleChartChange}>
 							{Object.keys(graphMap).map(elem =>
@@ -61,6 +62,8 @@ function App() {
 								</Button>)}
 						</Group>
 					</Col>
+					
+					{/* If the current chart uses the type of X data, also render a Select for that */}
 					{graphMap[chart].withSelect
 						? <Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
 							{typeArray.map((elem: keyof Paper) =>
@@ -72,11 +75,14 @@ function App() {
 						: null}
 				</Row>
 
+				{/* Description of the chart */}
 				<Row justify="center" style={{ marginBottom: 8 }}>
 					<Col span={12}>
 						{graphMap[chart].description}
 					</Col>
 				</Row>
+
+				{/* The chart itself */}
 				{graphMap[chart].element}
 
 			</>

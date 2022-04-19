@@ -29,13 +29,13 @@ function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
 type FilterProps<T> = {
 	placeholder: string, 
 	enumerator: Record<number, string>,
-	handleChange: ((val: Array<FilterValue<T>>) => void) | ((val?: FilterValue<T>) => void),
+	handleChange: ((val: Array<FilterValue<T>>) => void) | ((val?: FilterValue<T>) => void), // Non-Array val type is for if single is true
 	value: Array<T>
-    span?: number,
-	single?: boolean
+    span?: number, // Span means the width for ant design. span of 24 means a width of 100%
+	single?: boolean // If single is true, the select will only allow a single value to be selected.
   }
 
-function Filter<T>({ placeholder, enumerator, handleChange, value, span, single }: FilterProps<T> ): JSX.Element {
+function CustomSelect<T>({ placeholder, enumerator, handleChange, value, span, single }: FilterProps<T> ): JSX.Element {
 	const defaultValue = toFilterValue(value, placeholder)
 
 	return (
@@ -64,4 +64,4 @@ function Filter<T>({ placeholder, enumerator, handleChange, value, span, single 
 		</Col>
 	)
 }
-export default Filter
+export default CustomSelect

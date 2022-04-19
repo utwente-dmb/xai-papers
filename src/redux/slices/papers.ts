@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit"
 import { Paper } from "../../types"
 import { isPaper } from "../../utils"
-import papers from "../../db/db.json"
+import papers from "../../db/db.json" // Loading the papers from the db.json
 
 const initialState: Array<Paper> = []
 
+// Go through the papers, fix the date if necessary and assert that they are actually Papers according to the isPaper function
 papers.forEach((json) => {
 	const paper = json as Paper
 	if (typeof paper.Date === "string") {

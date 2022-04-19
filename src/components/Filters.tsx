@@ -66,6 +66,7 @@ function Filters(): JSX.Element {
 
 	return (
 		<Row gutter={[4, 4]} justify="center" style={{ marginBottom: 12 }}>
+			{/* First row of the filters */}
 			<Col span={8}>
 				<Form.Item
 					label="State of Filter"
@@ -80,16 +81,23 @@ function Filters(): JSX.Element {
 					</Radio.Group>
 				</Form.Item>
 			</Col>
+			
+			{/* Reset Filters button */}
 			<Col span={16}>
 				<Button onClick={handleReset}>Reset Filters</Button>
 			</Col>
 
+			{/* Second row */}
 			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data} span={8} />
 			<Select placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} value={filters.problem} span={8} />
 			<Select placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} value={filters.model} span={8} />
+
+			{/* Third row */}
 			<Select placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} value={filters.task} span={8} />
 			<Select placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} value={filters.explanation} span={8} />
 			<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method} span={8} />
+
+			{/* Fourth row */}
 			<Select placeholder="Venue" enumerator={Venue} handleChange={handleVenueChange} value={filters.venue} span={8} />
 
 			<Col span={8}>
