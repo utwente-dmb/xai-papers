@@ -23,7 +23,8 @@ import {
 } from "@ant-design/icons"
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
 import { Papers, AddPaper, Charts, Home } from "./pages"
-import { pathToPage, pageToPath, Page, Path } from "./utils"
+import { Page, Path } from "./types"
+import { pathToPage, pageToPath } from "./utils"
 
 const { Content, Sider } = Layout
 const { Text } = Typography
