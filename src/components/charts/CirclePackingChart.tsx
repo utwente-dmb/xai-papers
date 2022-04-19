@@ -89,7 +89,7 @@ function CirclePackingChart({ type }: LineChartProps) {
 				id="name"
 				colors={["#f0f2f5", "#1890ff", "#d8e6f3"]} //Change colors of the graph from here, order is parent to children
 				labelsSkipRadius={40}
-				labelsFilter={label => ((label.label.toString().length / label.node.radius) < 0.35) && !(label.label === "root")}
+				labelsFilter={label => ((label.label.toString().length / label.node.radius) < 0.35) && !(label.label === "root") && !("url" in label.node.data)}
 				padding={5}
 				leavesOnly={false}
 				enableLabels={true}

@@ -1,6 +1,6 @@
-import { Row, Select, Col, Radio, RadioChangeEvent } from "antd"
 import { Filters } from "../components"
-import { ConnectedChart, CirclePackingChart, GrowthLineChart, BarChart } from "../components/charts"
+import { Row, Select, Col, Radio, RadioChangeEvent } from "antd"
+import { ConnectedChart, CirclePackingChart, GrowthLineChart, BarChart } from "../components"
 import React, { useState } from "react"
 import { typeArray } from "../utils"
 import { Paper } from "../types"
@@ -9,6 +9,17 @@ const { Option } = Select
 const { Button, Group } = Radio
 
 function App() {
+	const [chart, setChart] = useState("Line Chart")
+	const [type, setType] = useState<keyof Paper>("Type of Data")
+
+	function HandleChartChange(e: RadioChangeEvent): void {
+		setChart(e.target.value)
+	}
+
+	function HandleChange(value: keyof Paper) {
+		setType(value)
+	}
+
 	const [chart, setChart] = useState("Line Chart")
 	const [type, setType] = useState<keyof Paper>("Type of Data")
 
@@ -63,7 +74,7 @@ function App() {
 					</Col>
 					{graphMap[chart].withSelect
 						? <Select defaultValue={type} style={{ width: 240 }} onChange={HandleChange}>
-							{typeArray.map((elem: any) =>
+							{typeArray.map((elem: keyof Paper) =>
 								<Option key={elem} value={elem}>
 									{elem}
 								</Option>
@@ -78,7 +89,6 @@ function App() {
 					</Col>
 				</Row>
 				{graphMap[chart].element}
-
 
 			</>
 		</>

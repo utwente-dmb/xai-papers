@@ -6,8 +6,12 @@ import papers from "../../db/db.json"
 const initialState: Array<Paper> = []
 
 papers.forEach((json) => {
-	if (isPaper(json)) {
-		initialState.push(json)
+	const paper = json as Paper
+	if (typeof paper.Date === "string") {
+		paper.Date = new Date(paper.Date)
+	}
+	if (isPaper(paper)) {
+		initialState.push(paper)
 	} else {
 		console.log(json, " is not a paper and was excluded fromt the list")
 	}
