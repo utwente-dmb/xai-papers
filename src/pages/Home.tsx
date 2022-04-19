@@ -1,6 +1,7 @@
 import { Row, Col, Typography, Image } from "antd"
 import { FilterOutlined, FileAddOutlined, CheckCircleOutlined } from "@ant-design/icons"
-import { githubUrl, Page, pageToPath } from "../utils"
+import { githubUrl, pageToPath } from "../utils"
+import { Page } from "../types"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
