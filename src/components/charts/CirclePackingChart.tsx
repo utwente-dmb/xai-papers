@@ -84,7 +84,6 @@ function CirclePackingChart({ type }: LineChartProps) {
 	}
 	return (
 		//Parent div is required by nivo, the height would defines the size of the graph has to be greater than 0 for the graph to render
-
 		<div style={{ height: "900px", width: "100%", marginTop: "20px" }}>
 			<ResponsiveCirclePackingCanvas
 				data={data}
