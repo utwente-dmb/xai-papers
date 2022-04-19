@@ -117,7 +117,6 @@ function PapersPage() {
 					expandable={{
 						expandRowByClick: true,
 						expandedRowRender: (record) => {
-							console.log("record", record.Date, typeof record.Date, new Date(record.Date as any).toLocaleDateString("en-UK"))
 							return (
 								<Row gutter={[0, 4]}>
 									{record.Abstract.length > 0
