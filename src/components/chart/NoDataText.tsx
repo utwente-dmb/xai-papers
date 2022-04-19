@@ -1,6 +1,6 @@
 import { Row } from "antd"
-
-function NoDataChartText() {
+//A function that returns a div with text stating that "No data available for the selected options."
+function NoDataText() {
 	return (<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
 		<Row justify="center">
 			<b>
@@ -10,5 +10,5 @@ function NoDataChartText() {
 	</div>)
 }
 
-export default NoDataChartText
+export default NoDataText
 
