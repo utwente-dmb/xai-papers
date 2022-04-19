@@ -1,7 +1,9 @@
 import { Page, Path } from "../types"
 
+// Github url that is used in hyperlinks
 export const githubUrl = "https://www.github.com/BorisGerretzen/DMBLiteratureWebsite"
 
+// Map between the different Paths and Pages defined in types/navigation
 export const pathMap: { [key in Path]: Page } = {
 	["/"]: "landing",
 	["/papers"]: "papers",
@@ -9,6 +11,7 @@ export const pathMap: { [key in Path]: Page } = {
 	["/add-paper"]: "add-paper",
 }
 
+// Functions to swap between pages and paths if necessary
 export const pathToPage = (path: Path): Page => {
 	if (path in pathMap) {
 		return pathMap[path]

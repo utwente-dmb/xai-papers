@@ -169,7 +169,6 @@ function AddPaper() {
 							icon: <InfoCircleOutlined/>
 						}} required >
 							<Select placeholder="Type of Data" enumerator={Data} handleChange={handleChangeData} value={form["Type of Data"]} />
-
 						</Item>
 
 						<Item label="Type of Problem" required >

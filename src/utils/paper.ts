@@ -1,6 +1,9 @@
 import { Filters } from "../redux/slices/filters"
 import { Paper, Data, Problem, Model, Task, Explanation, Method, Venue } from "../types"
+import { isSomeEnum, isEnumArray } from "./utils"
 
+// Function that checks if an object is of type Paper. 
+// Uses typescript typeguards to ensure that objects that pass the checks are actually given type Paper
 export function isPaper(paper: any): paper is Paper {
 	return "url" in paper 
         && "Title" in paper 
@@ -22,23 +25,10 @@ export function isPaper(paper: any): paper is Paper {
         && isEnumArray(Method)(paper["Method used to explain"])
 }
 
-export const isEnumArray = <T>(e: T) => (data: Array<T>): data is Array<T> => {
-	let isTrue = true
-	data.forEach((d) => {
-		if (!isSomeEnum(e)(d)) {
-			console.log(`${d} is not part of given enum`)
-			isTrue = false
-		}
-	})
-	return isTrue
-}
-
-export const isSomeEnum = <T>(e: T) => (token: any): token is T[keyof T] =>
-	Object.values(e).includes(token as T[keyof T])
-
+// Array of the type of X, used throughout the project for consistency
 export const typeArray: (keyof Paper)[] = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
-export const enumArray = [Data, Problem, Model, Task, Explanation, Method]
 
+// Map from name of type object to type of X string
 export const enumKeyMap: Record<keyof Omit<Filters, "filterStateAND" | "startYear" | "endYear" | "search" >, keyof Paper> = {
 	data: "Type of Data", 
 	problem: "Type of Problem", 
@@ -49,6 +39,7 @@ export const enumKeyMap: Record<keyof Omit<Filters, "filterStateAND" | "startYea
 	venue: "Venue",
 }
 
+// returns the dedicated color to the given type of X/Venue given. Colors are 
 export const getColor = (type: keyof Paper) => {
 	switch (type) {
 	case "Type of Data":
