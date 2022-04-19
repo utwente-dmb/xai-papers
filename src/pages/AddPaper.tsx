@@ -15,9 +15,10 @@ const { Panel } = Collapse
 type TypeOfExplanationProps = {
 	name: string,
 	description: string,
-	imageUrl?: string
+	imageUrl?: string // In this case, imageUrl should be inside the explanation_types_examples folder
 }
 
+// if imageUrl is given, it will render a panel with the image.
 function TypeOfExplanation({ name, description, imageUrl }: TypeOfExplanationProps) {
 	const imageCitation = imageUrl ? imageUrl.split(".")[0].split("_") : undefined
 	const citation = imageCitation?.[imageCitation?.length - 1]
@@ -33,6 +34,7 @@ function TypeOfExplanation({ name, description, imageUrl }: TypeOfExplanationPro
 		</>
 	)
 }
+
 function AddPaper() {
 
 	const dispatch = useAppDispatch()
@@ -117,7 +119,6 @@ function AddPaper() {
 
 	const venueValue = form.Venue.value as Venue
 	const venue = form.Venue.isOld ? [venueValue] : ["Other" as Venue]
-
 
 	return (
 		<div className="addpaper" >
