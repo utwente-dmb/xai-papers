@@ -20,17 +20,6 @@ function App() {
 		setType(value)
 	}
 
-	const [chart, setChart] = useState("Line Chart")
-	const [type, setType] = useState<keyof Paper>("Type of Data")
-
-	function HandleChartChange(e: RadioChangeEvent): void {
-		setChart(e.target.value)
-	}
-
-	function HandleChange(value: keyof Paper) {
-		setType(value)
-	}
-
 	const graphMap: {
 		[key: string]: {
 			withSelect: boolean,

@@ -61,7 +61,6 @@ type LineChartProps = {
 	type: keyof Paper
 }
 
-
 function CirclePackingChart({ type }: LineChartProps) {
 	//Function that opens a the url for a clicked paper
 	const data = GenerateData(type)
