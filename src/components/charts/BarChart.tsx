@@ -2,10 +2,10 @@ import { ResponsiveBar } from "@nivo/bar"
 import { useFilteredPapers } from "../../hooks"
 import { Paper } from "../../types"
 import { NoDataText } from "./index"
-
 //Refer to https://nivo.rocks/bar/ for further information
 
 //Theme Variable, Changes the defualt values for the nivo graph
+
 const theme = {
 	"axis": {
 		"legend": {
@@ -23,6 +23,7 @@ const theme = {
 	},
 
 }
+
 //Function that loops over all the filtered papers and generated appropiate data that is then used by the graph
 function GenerateData(columnValue: keyof Paper) {
 	//FilteredPapers is the list of papers that are available with the currently selected filtering options
@@ -41,6 +42,7 @@ function GenerateData(columnValue: keyof Paper) {
 		if (!Array.isArray(array)) return
 		
 		//Goes through all the tags in a category, and increases the value for the tag
+
 		for (const elem of array) {
 			if (dataRaw[elem]) {
 				dataRaw[elem] += 1
@@ -50,11 +52,13 @@ function GenerateData(columnValue: keyof Paper) {
 		}
 	})
 
+
 	//Changes the format to be more appropiate for nivo
 	for (const [key, value] of Object.entries(dataRaw)) {
 		data.push({ id: key, value: value })
 		
 		//Changed(increased) based on the longest string for bar name
+
 		if (key.length > textSize) {
 			textSize = key.length
 		}
@@ -70,7 +74,6 @@ type BarChartProps = {
 
 function BarChart({ type }: BarChartProps) {
 	const { data, textSize } = GenerateData(type)
-
 	//If no papers with selected filtering options then display appropaite information
 	if (data.length < 1) {
 		return (

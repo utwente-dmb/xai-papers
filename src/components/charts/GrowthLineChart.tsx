@@ -2,7 +2,6 @@ import { useFilteredPapers } from "../../hooks"
 import { ResponsiveLine } from "@nivo/line"
 import { Paper } from "../../types"
 import { NoDataText } from "./index"
-
 //Refer to https://nivo.rocks/line/
 
 //Theme Variable, Changes the defualt values for the nivo graph
@@ -34,12 +33,13 @@ function GenerateData(col: keyof Paper) {
 				dataRaw["Papers"].push({ x: paper["Year"], y: dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] + 1 })
 			}
 			//Otherwise increase the number of tags for the year
+
 			else if (dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"]) {
 				dataRaw["Papers"][dataRaw["Papers"].length - 1]["y"] += 1
 			}
 		}
-
 		//if paper not in list create an array for papers
+
 		else {
 			dataRaw["Papers"] = []
 			dataRaw["Papers"].push({ x: paper["Year"], y: 1 })
@@ -64,6 +64,7 @@ function GenerateData(col: keyof Paper) {
 			}
 			//Check if there is an object for a tag, if not create an array 
 			else {
+
 				dataRaw[elem] = []
 				dataRaw[elem].push({ x: paper["Year"], y: 1 })
 			}
@@ -76,6 +77,7 @@ function GenerateData(col: keyof Paper) {
 	}
 
 	return data
+
 }
 
 type LineChartProps = {
@@ -93,6 +95,7 @@ function GrowthLineChart({ type }: LineChartProps) {
 	}
 	return (
 		//Parent div is required by nivo, the height would defines the size of the graph has to be greater than 0 for the graph to render
+
 		<div style={{ height: "450px", width: "100%", marginTop: "20px" }}>
 			<ResponsiveLine
 				data={data}
