@@ -1,5 +1,7 @@
 import { Page, Path } from "../types"
 
+export const githubUrl = "https://www.github.com/BorisGerretzen/DMBLiteratureWebsite"
+
 export const pathMap: { [key in Path]: Page } = {
 	["/"]: "landing",
 	["/papers"]: "papers",
@@ -22,5 +24,3 @@ export const pageToPath = (page: Page): Path => {
 	}
 	return "/"
 }
-
-export const githubUrl = "https://www.github.com/BorisGerretzen/DMBLiteratureWebsite"
