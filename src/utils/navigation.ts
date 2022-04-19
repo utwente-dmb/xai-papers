@@ -1,5 +1,4 @@
-export type Page = "landing" | "papers" | "charts" | "add-paper"
-export type Path = "/" | "/papers" | "/charts" | "/add-paper"
+import { Page, Path } from "../types"
 
 export const pathMap: { [key in Path]: Page } = {
 	["/"]: "landing",
