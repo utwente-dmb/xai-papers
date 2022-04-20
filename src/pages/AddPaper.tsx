@@ -1,10 +1,9 @@
 import { Form, Input, InputNumber, Button, Col, Row, Collapse, notification, Image } from "antd"
 import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Venue } from "../types"
 import { Select } from "../components"
-import { fromFilterValue } from "../utils"
+import { fromFilterValue, printNames } from "../utils"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { formActions } from "../redux"
-import { printNames } from "../utils/utils"
 import React, { useState, useEffect } from "react"
 import { InfoCircleOutlined } from "@ant-design/icons"
 
@@ -35,14 +34,39 @@ function TypeOfExplanation({ name, description, imageUrl }: TypeOfExplanationPro
 	)
 }
 
+function isUrl(str: string) {
+	const pattern = new RegExp("^(https?:\\/\\/)?"+ // protocol
+		"((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|"+ // domain name
+		"((\\d{1,3}\\.){3}\\d{1,3}))"+ // OR ip (v4) address
+		"(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*"+ // port and path
+		"(\\?[;&a-z\\d%_.~+=-]*)?"+ // query string
+		"(\\#[-a-z\\d_]*)?$","i") // fragment locator
+	return !!pattern.test(str)
+}
+
 function AddPaper() {
 
 	const dispatch = useAppDispatch()
 	const form = useAppSelector((state) => state.form)
+
 	const [json, setJson] = useState("")
+	const [showJson, setShowJson] = useState(false)
 	useEffect(() => {
 		setJson("," + JSON.stringify(form, null, 2))
+
+		setShowJson(form["Type of Data"].length > 0 
+		&& form["Type of Explanation"].length > 0 
+		&& form["Type of Model to be Explained"].length > 0 
+		&& form["Type of Problem"].length > 0
+		&& form["Type of Task"].length > 0
+		&& form["Method used to explain"].length > 0
+		&& form.Title.length > 0
+		&& form.Venue.value.length > 0
+		&& form.Authors.length > 0
+		&& isUrl(form.url))
+
 	}, [form])
+
 
 	function handleChangeTitle(event: React.FormEvent<HTMLInputElement>) {
 		dispatch(formActions.setTitle(event.currentTarget.value))
@@ -325,12 +349,15 @@ function AddPaper() {
 						</Item>
 					</Form>
 				</Col>
-				<Col span={8}>
-					<Item label="Your JSON">
-						<TextArea value={json} autoSize />
-						<Button onClick={copyJsonToClipboard}>Copy To Clipboard</Button>
-					</Item>
-				</Col>
+				{showJson 
+					?<Col span={8}>
+						<Item label="Your JSON">
+							<TextArea value={json} autoSize />
+							<Button onClick={copyJsonToClipboard}>Copy To Clipboard</Button>
+						</Item>
+					</Col>
+					: null}
+				
 			</Row>
 
 			<h2>References</h2>
