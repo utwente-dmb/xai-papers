@@ -2,6 +2,10 @@ import schema from "../db/schema.json"
 
 const properties = schema.items.properties
 
+
+// This creates an object with the schema.json enum as both keys and values. 
+// The synstax is a bit weird, but this is what typescript would compile a type to.
+// Because of the syntax it can be used to get the correct types using typeof (creating a normal object does not work)
 export let Data: any
 (function (Data) {
 	properties["Type of Data"].items.enum.forEach((val) => {

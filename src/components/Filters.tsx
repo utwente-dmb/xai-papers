@@ -1,5 +1,5 @@
 import React from "react"
-import { Col, Row, DatePicker, Input, Tooltip, Form, Radio, RadioChangeEvent, Button } from "antd"
+import { Col, Row, DatePicker, Input, Tooltip, Form, Radio, RadioChangeEvent, Button, Checkbox } from "antd"
 import { InfoCircleOutlined } from "@ant-design/icons"
 import { Data, Explanation, Method, Model, Problem, Task, FilterValue, Venue } from "../types"
 import { filtersActions } from "../redux"
@@ -7,6 +7,7 @@ import { useAppDispatch, useAppSelector } from "../hooks"
 import { fromFilterValue } from "../utils"
 import Select from "./Select"
 import Moment from "moment"
+import { CheckboxChangeEvent } from "antd/lib/checkbox"
 
 const { RangePicker } = DatePicker
 const { Search } = Input
@@ -60,12 +61,23 @@ function Filters(): JSX.Element {
 		dispatch(filtersActions.setSearch(value.currentTarget.value))
 	}
 
+	function handleShowOriginal(value: CheckboxChangeEvent) {
+		console.log("Value", value.target.checked)
+		dispatch(filtersActions.setShowOriginal(value.target.checked))
+	}
+
+	function handleShowNew(value: CheckboxChangeEvent) {
+		console.log("Value", value.target.checked)
+		dispatch(filtersActions.setShowNew(value.target.checked))
+	}
+
 	function handleReset() {
 		dispatch(filtersActions.reset())
 	}
 
 	return (
 		<Row gutter={[4, 4]} justify="center" style={{ marginBottom: 12 }}>
+			{/* First row of the filters */}
 			<Col span={8}>
 				<Form.Item
 					label="State of Filter"
@@ -80,16 +92,29 @@ function Filters(): JSX.Element {
 					</Radio.Group>
 				</Form.Item>
 			</Col>
-			<Col span={16}>
+			
+			{/* Reset Filters button */}
+			<Col span={8}>
 				<Button onClick={handleReset}>Reset Filters</Button>
 			</Col>
+			<Col span={4}>
+				<Checkbox onChange={handleShowOriginal} checked={filters.showOriginal}>Show Original Papers</Checkbox>
+			</Col>
+			<Col span={4}>
+				<Checkbox onChange={handleShowNew} checked={filters.showNew}>Show New Papers</Checkbox>
+			</Col>
 
+			{/* Second row */}
 			<Select placeholder="Type of Data" enumerator={Data} handleChange={handleDataChange} value={filters.data} span={8} />
 			<Select placeholder="Type of Problem" enumerator={Problem} handleChange={handleProblemChange} value={filters.problem} span={8} />
 			<Select placeholder="Type of Model to be Explained" enumerator={Model} handleChange={handleModelChange} value={filters.model} span={8} />
+
+			{/* Third row */}
 			<Select placeholder="Type of Task" enumerator={Task} handleChange={handleTaskChange} value={filters.task} span={8} />
 			<Select placeholder="Type of Explanation" enumerator={Explanation} handleChange={handleExplanationChange} value={filters.explanation} span={8} />
 			<Select placeholder="Method used to explain" enumerator={Method} handleChange={handleMethodChange} value={filters.method} span={8} />
+
+			{/* Fourth row */}
 			<Select placeholder="Venue" enumerator={Venue} handleChange={handleVenueChange} value={filters.venue} span={8} />
 
 			<Col span={8}>

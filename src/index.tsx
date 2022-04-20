@@ -1,10 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import "./index.css"
 import { store } from "./redux"
 import { HashRouter } from "react-router-dom"
 import { Provider } from "react-redux"
-import reportWebVitals from "./reportWebVitals"
 import { useState, useEffect } from "react"
 import "antd/dist/antd.css"
 import {
@@ -23,7 +21,8 @@ import {
 } from "@ant-design/icons"
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom"
 import { Papers, AddPaper, Charts, Home } from "./pages"
-import { pathToPage, pageToPath, Page, Path } from "./utils"
+import { Page, Path } from "./types"
+import { pathToPage, pageToPath } from "./utils"
 
 const { Content, Sider } = Layout
 const { Text } = Typography
@@ -121,9 +120,3 @@ function DefaultLayout() {
 		</Layout>
 	)
 }
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals()
