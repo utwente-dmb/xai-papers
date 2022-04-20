@@ -12402,4 +12402,37 @@
   "Abstract": " A nice paper",
   "Date": "2022-04-13T11:10:37.664Z"
 }
+,{
+  "Title": "A New Paper",
+  "url": "218312098312038",
+  "Year": "2020",
+  "Venue": {
+    "isOld": false,
+    "value": "UT"
+  },
+  "Authors": [
+    "Meike"
+  ],
+  "Type of Data": [
+    "Any",
+    "Tabular / structured"
+  ],
+  "Type of Problem": [
+    "Model Inspection"
+  ],
+  "Type of Model to be Explained": [
+    "Any (for a specific task); model-agnostic"
+  ],
+  "Type of Task": [
+    "Generation"
+  ],
+  "Type of Explanation": [
+    "Prototypes"
+  ],
+  "Method used to explain": [
+    "Supervised explanation training"
+  ],
+  "Abstract": " A nice paper",
+  "Date": "2022-05-13T11:10:37.664Z"
+}
 ]

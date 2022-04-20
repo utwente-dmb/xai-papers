@@ -46,14 +46,9 @@ function PapersPage() {
 			title: "Title",
 			dataIndex: "Title",
 			render: (text: string, row: Paper) => (
-				<Row justify="space-between">
-					<a href={row.url} target="_blank" rel="noreferrer">
-						{text}
-					</a>
-					{row.IsOld 
-						? <Tag style={{marginLeft: 5}} color="blue">Original</Tag> 
-						: null}
-				</Row>
+				<a href={row.url} target="_blank" rel="noreferrer">
+					{text}
+				</a>
 			),
 			key: "title",
 			defaultSortOrder: "ascend",
@@ -61,6 +56,39 @@ function PapersPage() {
 				compare: (a: Paper, b: Paper) => a.Title.localeCompare(b.Title),
 				multiple: 1
 			}
+		},
+		{
+			title: "Submitted",
+			dataIndex: "Date",
+			key: "date",
+			defaultSortOrder: "descend",
+			sorter: {
+				compare: (a: Paper, b: Paper) => {
+					if (typeof a.Date === "undefined") {
+						return 1
+					}
+
+					if (typeof b.Date === "undefined") {
+						return -1
+					}
+
+					return a.Date.getTime() - b.Date.getTime()
+				},
+				multiple: 4
+			},
+			render: (_, row: Paper) => (
+				<>
+					{typeof row.Date !== "undefined" 
+						? 
+						<Col span={24}>
+							{typeof row.Date === "string" ? row.Date : row.Date.toLocaleDateString("en-UK")}
+						</Col> 
+						: <Tag style={{marginLeft: 5}} color="blue">Original</Tag> 
+					}
+				</>
+			),
+			width: 100
+
 		},
 		{
 			title: "Venue",
@@ -136,13 +164,6 @@ function PapersPage() {
 											<CustomTag record={record} type={type} key={typeArray.indexOf(type)}/>
 										))}
 									</Col>
-									{typeof record.Date !== "undefined" 
-										? 
-										<Col span={24}>
-										Submitted on: {typeof record.Date === "string" ? record.Date : record.Date.toLocaleDateString("en-UK")}
-										</Col> 
-										: null
-									}
 								</Row>
 							)},
 					}}

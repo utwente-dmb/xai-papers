@@ -29,7 +29,7 @@ export function isPaper(paper: any): paper is Paper {
 export const typeArray: (keyof Paper)[] = ["Type of Data", "Type of Problem", "Type of Model to be Explained", "Type of Task", "Type of Explanation", "Method used to explain"]
 
 // Map from name of type object to type of X string
-export const enumKeyMap: Record<keyof Omit<Filters, "filterStateAND" | "startYear" | "endYear" | "search" >, keyof Paper> = {
+export const enumKeyMap: Record<keyof Omit<Filters, "filterStateAND" | "startYear" | "endYear" | "search" | "showOriginal" | "showNew" >, keyof Paper> = {
 	data: "Type of Data", 
 	problem: "Type of Problem", 
 	model: "Type of Model to be Explained", 

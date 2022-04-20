@@ -7,10 +7,18 @@ export function useFilteredPapers(): Array<Paper> {
 	const { papers, filters } = useAppSelector((state) => state)
 
 	const filteredPapers = papers.filter((paper) => { 
+		// New/Original Papers check
+		if (!filters.showOriginal && typeof paper.Date === "undefined") {
+			return false
+		}
+		if (!filters.showNew && typeof paper.Date !== "undefined") {
+			return false
+		}
+
+		// Search Query check
 		let noFilters = true
 		let toAdd = true
 
-		// Search Query check
 		let search = filters.search.toLowerCase().trim()
 		if (search.length > 0) {
 			let proceed = false
