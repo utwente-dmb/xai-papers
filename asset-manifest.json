@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/DMBLiteratureWebsite/static/css/main.d1ac164c.css",
-    "main.js": "/DMBLiteratureWebsite/static/js/main.e7a6568a.js",
+    "main.js": "/DMBLiteratureWebsite/static/js/main.4a837296.js",
     "index.html": "/DMBLiteratureWebsite/index.html",
     "main.d1ac164c.css.map": "/DMBLiteratureWebsite/static/css/main.d1ac164c.css.map",
-    "main.e7a6568a.js.map": "/DMBLiteratureWebsite/static/js/main.e7a6568a.js.map"
+    "main.4a837296.js.map": "/DMBLiteratureWebsite/static/js/main.4a837296.js.map"
   },
   "entrypoints": [
     "static/css/main.d1ac164c.css",
-    "static/js/main.e7a6568a.js"
+    "static/js/main.4a837296.js"
   ]
 }
