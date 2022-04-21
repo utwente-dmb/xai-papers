@@ -42,7 +42,6 @@ function CreateGraphData() {
 			// Add either paper to node list, if it doesnt exist already
 
 			// Create edge and add to edge list
-			// console.log(similarity, (0.5 * similarity ^ 2))
 			const edge = {
 				source: paper1.url,
 				target: paper2.url,
