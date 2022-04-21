@@ -15,6 +15,14 @@ export function useFilteredPapers(): Array<Paper> {
 			return false
 		}
 
+		// Year Check
+		if (typeof filters.startYear !== "undefined" && parseInt(paper.Year) < filters.startYear) {
+			return false
+		}
+		if (typeof filters.endYear !== "undefined" && parseInt(paper.Year) > filters.endYear) {
+			return false
+		}
+
 		// Search Query check
 		let noFilters = true
 		let toAdd = true
@@ -58,14 +66,6 @@ export function useFilteredPapers(): Array<Paper> {
 			}
 
 			if (!proceed) return false
-		}
-
-		// Year Check
-		if (typeof filters.startYear !== "undefined" && parseInt(paper.Year) < filters.startYear) {
-			return false
-		}
-		if (typeof filters.endYear !== "undefined" && parseInt(paper.Year) > filters.endYear) {
-			return false
 		}
 
 		// Type Filters Check
