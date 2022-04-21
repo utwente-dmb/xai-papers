@@ -1,6 +1,6 @@
 import { Select, Col, Tag } from "antd"
-import { Paper, FilterValue } from "../types"
-import { getColor, toFilterValue } from "../utils"
+import { Paper, SelectValue } from "../types"
+import { getColor, toSelectValue } from "../utils"
 
 const { Option } = Select
 
@@ -29,14 +29,14 @@ function tagRender<T>({ label, closable, onClose, value }: TagRenderProps<T>) {
 type FilterProps<T> = {
 	placeholder: string, 
 	enumerator: Record<number, string>,
-	handleChange: ((val: Array<FilterValue<T>>) => void) | ((val?: FilterValue<T>) => void), // Non-Array val type is for if single is true
+	handleChange: ((val: Array<SelectValue<T>>) => void) | ((val?: SelectValue<T>) => void), // Non-Array val type is for if single is true
 	value: Array<T>
     span?: number, // Span means the width for ant design. span of 24 means a width of 100%
 	single?: boolean // If single is true, the select will only allow a single value to be selected.
   }
 
 function CustomSelect<T>({ placeholder, enumerator, handleChange, value, span, single }: FilterProps<T> ): JSX.Element {
-	const defaultValue = toFilterValue(value, placeholder)
+	const defaultValue = toSelectValue(value, placeholder)
 
 	return (
 		<Col span={span ?? 24}>
