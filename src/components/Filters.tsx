@@ -62,12 +62,10 @@ function Filters(): JSX.Element {
 	}
 
 	function handleShowOriginal(value: CheckboxChangeEvent) {
-		console.log("Value", value.target.checked)
 		dispatch(filtersActions.setShowOriginal(value.target.checked))
 	}
 
 	function handleShowNew(value: CheckboxChangeEvent) {
-		console.log("Value", value.target.checked)
 		dispatch(filtersActions.setShowNew(value.target.checked))
 	}
 

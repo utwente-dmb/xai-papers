@@ -1,10 +1,12 @@
-import Graphin, { GraphinData, IG6GraphEvent, IUserEdge, IUserNode } from "@antv/graphin"
+import Graphin, { GraphinData, IG6GraphEvent, IUserEdge, IUserNode, Behaviors } from "@antv/graphin"
 import { useFilteredPapers } from "../../hooks"
 import { INode, NodeConfig } from "@antv/g6"
 import { message } from "antd"
 import { Paper } from "../../types"
 import { typeArray } from "../../utils"
-import { NoDataText } from "./index"
+import { NoDataText } from "./index" 
+
+const { ZoomCanvas, DragCanvas, ClickSelect } = Behaviors
 
 function CreateGraphData() {
 	const papers = useFilteredPapers()
@@ -40,7 +42,6 @@ function CreateGraphData() {
 			// Add either paper to node list, if it doesnt exist already
 
 			// Create edge and add to edge list
-			console.log(similarity, (0.5 * similarity ^ 2))
 			const edge = {
 				source: paper1.url,
 				target: paper2.url,
@@ -104,7 +105,7 @@ const defaultNode = {
 	},
 }
 
-Graphin.registerBehavior("sampleBehavior", {
+Graphin.registerBehavior("openPaperOnClick", {
 	getEvents() {
 		return {
 			"node:click": "onClick",
@@ -113,8 +114,10 @@ Graphin.registerBehavior("sampleBehavior", {
 	onClick(evt: IG6GraphEvent) {
 		const node = evt.item as INode
 		const model = node.getModel() as NodeConfig
-		message.info(model.id)
-		// window.open(model.id,"_blank")?.focus();
+		message.info({
+			content: (<a href={model.id} target="_blank" rel="noreferrer">{model.id}</a>)
+		})
+		// window.open(model.id,"_blank")?.focus()
 	},
 })
 
@@ -130,18 +133,24 @@ function ConnectedChart() {
 
 	return (
 		<div className="TestChart">
-			<Graphin data={data} layout={
-				{
-					type: "force",
-					maxIteration: 1000,
-					//unitRadius: 100,
-					preventOverlap: true,
-					nodeSpacing: 100,
-					nodeSize: 10,
-					strictRadial: false,
-					workerEnabled: true,
-					gpuEnabled: true,
-				}} defaultNode={defaultNode} modes={{ default: ["sampleBehavior", "drag-canvas", "zoom-canvas"] }} />
+			<Graphin 
+				data={data} 
+				layout={
+					{
+						type: "force",
+						maxIteration: 1000,
+						//unitRadius: 100,
+						preventOverlap: true,
+						nodeSpacing: 100,
+						nodeSize: 10,
+						strictRadial: false,
+						gpuEnabled: true,
+					}} 
+				defaultNode={defaultNode} 
+				modes={{ default: ["openPaperOnClick"] }}>
+				<ZoomCanvas enableOptimize/>
+				<DragCanvas />
+			</Graphin>
 		</div>
 	)
 }

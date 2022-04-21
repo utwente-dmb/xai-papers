@@ -1,5 +1,6 @@
+import React from "react" 
 import { ResponsiveCirclePackingCanvas, ComputedDatum } from "@nivo/circle-packing"
-import React from "react"
+import { message } from "antd"
 import { useFilteredPapers } from "../../hooks"
 import { Paper } from "../../types"
 import { NoDataText } from "./index"
@@ -72,7 +73,9 @@ function CirclePackingChart({ type }: LineChartProps) {
 	) {
 
 		if ("url" in e.data) {
-			window.open(e.data.url, "_blank")
+			message.info({
+				content: (<a href={e.data.url} target="_blank" rel="noreferrer">{e.data.url}</a>)
+			})
 		}
 	}
 
