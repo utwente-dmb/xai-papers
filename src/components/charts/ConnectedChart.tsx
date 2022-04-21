@@ -4,7 +4,7 @@ import { INode, NodeConfig } from "@antv/g6"
 import { message } from "antd"
 import { Paper } from "../../types"
 import { typeArray } from "../../utils"
-import { NoDataText } from "./index"
+import { NoDataText } from "./index" 
 
 function CreateGraphData() {
 	const papers = useFilteredPapers()
@@ -40,7 +40,7 @@ function CreateGraphData() {
 			// Add either paper to node list, if it doesnt exist already
 
 			// Create edge and add to edge list
-			console.log(similarity, (0.5 * similarity ^ 2))
+			// console.log(similarity, (0.5 * similarity ^ 2))
 			const edge = {
 				source: paper1.url,
 				target: paper2.url,
@@ -139,7 +139,6 @@ function ConnectedChart() {
 					nodeSpacing: 100,
 					nodeSize: 10,
 					strictRadial: false,
-					workerEnabled: true,
 					gpuEnabled: true,
 				}} defaultNode={defaultNode} modes={{ default: ["sampleBehavior", "drag-canvas", "zoom-canvas"] }} />
 		</div>

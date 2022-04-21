@@ -1,10 +1,10 @@
+import "antd/dist/antd.css"
 import React from "react"
 import ReactDOM from "react-dom"
 import { store } from "./redux"
 import { HashRouter } from "react-router-dom"
 import { Provider } from "react-redux"
 import { useState, useEffect } from "react"
-import "antd/dist/antd.css"
 import {
 	Layout,
 	Menu,
