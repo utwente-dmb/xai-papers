@@ -1,7 +1,7 @@
 import { Form, Input, InputNumber, Button, Col, Row, Collapse, notification, Image } from "antd"
-import { Problem, Method, Data, Task, Explanation, Model, FilterValue, Venue } from "../types"
+import { Problem, Method, Data, Task, Explanation, Model, SelectValue, Venue } from "../types"
 import { Select } from "../components"
-import { fromFilterValue, printNames } from "../utils"
+import { fromSelectValue, printNames } from "../utils"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { formActions } from "../redux"
 import React, { useState, useEffect } from "react"
@@ -85,7 +85,7 @@ function AddPaper() {
 		dispatch(formActions.setAuthors(authors))
 	}
 
-	function handleChangeVenueDropdown(value?: FilterValue<Venue>) {
+	function handleChangeVenueDropdown(value?: SelectValue<Venue>) {
 		const newVenue = value?.label ?? ""
 		if (newVenue === "Other") {
 			dispatch(formActions.setIsOldVenue(false))
@@ -101,28 +101,28 @@ function AddPaper() {
 		dispatch(formActions.setVenue(venue))
 	}
 
-	function handleChangeData(value: Array<FilterValue<typeof Data>>) {
-		dispatch(formActions.setData(fromFilterValue(value)))
+	function handleChangeData(value: Array<SelectValue<typeof Data>>) {
+		dispatch(formActions.setData(fromSelectValue(value)))
 	}
 
-	function handleChangeProblem(value: Array<FilterValue<typeof Problem>>) {
-		dispatch(formActions.setProblem(fromFilterValue(value)))
+	function handleChangeProblem(value: Array<SelectValue<typeof Problem>>) {
+		dispatch(formActions.setProblem(fromSelectValue(value)))
 	}
 
-	function handleChangeModel(value: Array<FilterValue<typeof Model>>) {
-		dispatch(formActions.setModel(fromFilterValue(value)))
+	function handleChangeModel(value: Array<SelectValue<typeof Model>>) {
+		dispatch(formActions.setModel(fromSelectValue(value)))
 	}
 
-	function handleChangeTask(value: Array<FilterValue<typeof Task>>) {
-		dispatch(formActions.setTask(fromFilterValue(value)))
+	function handleChangeTask(value: Array<SelectValue<typeof Task>>) {
+		dispatch(formActions.setTask(fromSelectValue(value)))
 	}
 
-	function handleChangeExplanation(value: Array<FilterValue<typeof Explanation>>) {
-		dispatch(formActions.setExplanation(fromFilterValue(value)))
+	function handleChangeExplanation(value: Array<SelectValue<typeof Explanation>>) {
+		dispatch(formActions.setExplanation(fromSelectValue(value)))
 	}
 
-	function handleChangeMethod(value: Array<FilterValue<typeof Method>>) {
-		dispatch(formActions.setMethod(fromFilterValue(value)))
+	function handleChangeMethod(value: Array<SelectValue<typeof Method>>) {
+		dispatch(formActions.setMethod(fromSelectValue(value)))
 	}
 
 	function handleChangeAbstract(value: React.ChangeEvent<HTMLTextAreaElement>) {

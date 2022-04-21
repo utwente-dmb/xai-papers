@@ -1,4 +1,4 @@
 export * from "./paper"
-export * from "./filter"
+export * from "./select"
 export * from "./navigation"
 export * from "./utils"

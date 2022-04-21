@@ -1,10 +1,10 @@
 import React from "react"
 import { Col, Row, DatePicker, Input, Tooltip, Form, Radio, RadioChangeEvent, Button, Checkbox } from "antd"
 import { InfoCircleOutlined } from "@ant-design/icons"
-import { Data, Explanation, Method, Model, Problem, Task, FilterValue, Venue } from "../types"
+import { Data, Explanation, Method, Model, Problem, Task, SelectValue, Venue } from "../types"
 import { filtersActions } from "../redux"
 import { useAppDispatch, useAppSelector } from "../hooks"
-import { fromFilterValue } from "../utils"
+import { fromSelectValue } from "../utils"
 import Select from "./Select"
 import Moment from "moment"
 import { CheckboxChangeEvent } from "antd/lib/checkbox"
@@ -17,32 +17,32 @@ function Filters(): JSX.Element {
 	const filters = useAppSelector((state) => state.filters)
 	const dispatch = useAppDispatch()
 
-	function handleDataChange(value: Array<FilterValue<typeof Data>>) {
-		dispatch(filtersActions.setData(fromFilterValue(value)))
+	function handleDataChange(value: Array<SelectValue<typeof Data>>) {
+		dispatch(filtersActions.setData(fromSelectValue(value)))
 	}
 
-	function handleProblemChange(value: Array<FilterValue<typeof Problem>>) {
-		dispatch(filtersActions.setProblem(fromFilterValue(value)))
+	function handleProblemChange(value: Array<SelectValue<typeof Problem>>) {
+		dispatch(filtersActions.setProblem(fromSelectValue(value)))
 	}
 
-	function handleModelChange(value: Array<FilterValue<typeof Model>>) {
-		dispatch(filtersActions.setModel(fromFilterValue(value)))
+	function handleModelChange(value: Array<SelectValue<typeof Model>>) {
+		dispatch(filtersActions.setModel(fromSelectValue(value)))
 	}
 
-	function handleTaskChange(value: Array<FilterValue<typeof Task>>) {
-		dispatch(filtersActions.setTask(fromFilterValue(value)))
+	function handleTaskChange(value: Array<SelectValue<typeof Task>>) {
+		dispatch(filtersActions.setTask(fromSelectValue(value)))
 	}
 
-	function handleExplanationChange(value: Array<FilterValue<typeof Explanation>>) {
-		dispatch(filtersActions.setExplanation(fromFilterValue(value)))
+	function handleExplanationChange(value: Array<SelectValue<typeof Explanation>>) {
+		dispatch(filtersActions.setExplanation(fromSelectValue(value)))
 	}
 
-	function handleMethodChange(value: Array<FilterValue<typeof Method>>) {
-		dispatch(filtersActions.setMethod(fromFilterValue(value)))
+	function handleMethodChange(value: Array<SelectValue<typeof Method>>) {
+		dispatch(filtersActions.setMethod(fromSelectValue(value)))
 	}
 
-	function handleVenueChange(value: Array<FilterValue<Venue>>) {
-		dispatch(filtersActions.setVenue(fromFilterValue(value)))
+	function handleVenueChange(value: Array<SelectValue<Venue>>) {
+		dispatch(filtersActions.setVenue(fromSelectValue(value)))
 	}
 
 	function handleFilterChange(event: RadioChangeEvent) {
