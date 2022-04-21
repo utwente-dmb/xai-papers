@@ -54,6 +54,7 @@ function AddPaper() {
 	useEffect(() => {
 		setJson("," + JSON.stringify(form, null, 2))
 
+		// if this boolean is true, the json will be shown
 		setShowJson(form["Type of Data"].length > 0 
 		&& form["Type of Explanation"].length > 0 
 		&& form["Type of Model to be Explained"].length > 0 
