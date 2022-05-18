@@ -1,14 +1,14 @@
 # DMB Literature Website
-![Database validation](https://github.com/BorisGerretzen/DMBLiteratureWebsite/actions/workflows/main.yml/badge.svg)
-![Test](https://github.com/BorisGerretzen/DMBLiteratureWebsite/actions/workflows/test.yml/badge.svg)
-![Database validation](https://github.com/BorisGerretzen/DMBLiteratureWebsite/actions/workflows/deploy.yml/badge.svg)
-[![Check code cleanliness](https://github.com/BorisGerretzen/DMBLiteratureWebsite/actions/workflows/linter.yml/badge.svg)](https://github.com/BorisGerretzen/DMBLiteratureWebsite/actions/workflows/linter.yml)\
+![Database validation](https://github.com/utwente-dmb/xai-papers/actions/workflows/main.yml/badge.svg)
+![Test](https://github.com/utwente-dmb/xai-papers/actions/workflows/test.yml/badge.svg)
+![Database validation](https://github.com/utwente-dmb/xai-papers/actions/workflows/deploy.yml/badge.svg)
+[![Check code cleanliness](https://github.com/utwente-dmb/xai-papers/actions/workflows/linter.yml/badge.svg)](https://github.com/utwente-dmb/xai-papers/actions/workflows/linter.yml)\
 This is a research paper visualisation website, hosted on Github pages. If you want your paper added to the database, follow the instructions below.
 
 ## Add a paper
 To add a paper, follow these steps:
 - Fork this repository by clicking the fork button in the top right.
-- Go to https://borisgerretzen.github.io/DMBLiteratureWebsite/#/add-paper to generate a database entry.
+- Go to https://utwente-dmb.github.io/xai-papers/#/add-paper to generate a database entry.
 - Edit the file ```src/db/db.json``` in your fork.
 - After the final entry's '}' (and before the final ']') append the JSON code copied from the literature website.
 - Commit the changes, The current naming convention for the commit is as follows, the title of the commit should remain "update db.json" and in the commit message please include the title, the link to the paper, and the authors of the paper you added.

@@ -1,7 +1,7 @@
 import { Page, Path } from "../types"
 
 // Github url that is used in hyperlinks
-export const githubUrl = "https://www.github.com/BorisGerretzen/DMBLiteratureWebsite"
+export const githubUrl = "https://www.github.com/utwente-dmb/xai-papers"
 
 // Map between the different Paths and Pages defined in types/navigation
 export const pathMap: { [key in Path]: Page } = {

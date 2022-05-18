@@ -1,7 +1,7 @@
 {
-  "name": "dmb-literature-website",
+  "name": "xai-papers",
   "version": "0.1.0",
-  "homepage": "https://borisgerretzen.github.io/DMBLiteratureWebsite/",
+  "homepage": "https://utwente-dmb.github.io/xai-papers/",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",

@@ -150,7 +150,7 @@ function AddPaper() {
 			<h2>Paper Submission</h2>
 			<p>The original paper already includes classification of over 300 research papers. Of course this list is not exhaustive and therefore we would like to ask the wider research community to aid in extending the original research.</p>
 
-			<p>You can contribute to this project by going to the project&rsquo;s <a href="https://github.com/BorisGerretzen/DMBLiteratureWebsite/blob/master/src/db/db.json" target="_blank" rel="noreferrer" >GitHub</a>. This page shows the current contents of the database. To add a new entry simply fork the project and append the db.json file using the following template.</p>
+			<p>You can contribute to this project by going to the project&rsquo;s <a href="https://github.com/utwente-dmb/xai-papers/blob/master/src/db/db.json" target="_blank" rel="noreferrer" >GitHub</a>. This page shows the current contents of the database. To add a new entry simply fork the project and append the db.json file using the following template.</p>
 			
 			<Row>
 				<Col span={16}>
