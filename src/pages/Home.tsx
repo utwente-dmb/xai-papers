@@ -239,15 +239,15 @@ function LandingPage() {
 			</Title>
 			<Text>
 			This website is based on the data collected by Meike Nauta, Jan Trienes, Shreyasi Pathak, Elisa Nguyen, Michelle Peters, Yasmin Schmitt, Jörg Schlötterer, Maurice van Keulen, Christin Seifert as described in
-					<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
-						&ensp;&quot;From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI&quot;
-					</a>
-					<small>
-					&ensp;(preprint, 2022)
-					</small>
-					<br/>
-					<br/>
-					If you found this resource helpful, please cite our work:
+				<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
+					&ensp;&quot;From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI&quot;
+				</a>
+				<small>
+				&ensp;(preprint, 2022)
+				</small>
+				<br/>
+				<br/>
+				If you found this resource helpful, please cite our work:
 				<pre>{citation}</pre>
 			</Text>
 			<Row justify="center">
