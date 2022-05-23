@@ -186,7 +186,7 @@ function LandingPage() {
 					IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR.
 					</>
 				}
-				imageUrl="/categories.png"
+				imageUrl="/categories_xai.png"
 			/>
 			<TextWithImage 
 				textAlignment="right"
