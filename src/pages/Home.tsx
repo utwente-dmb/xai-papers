@@ -186,7 +186,7 @@ function LandingPage() {
 					IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR.
 					</>
 				}
-				imageUrl="/protocol_categories.png"
+				imageUrl="/categories.png"
 			/>
 			<TextWithImage 
 				textAlignment="right"
@@ -223,14 +223,6 @@ function LandingPage() {
 			<Row style={{marginTop: 30}}>
 
 				<Text>
-				This website is based on the data collected by Meike Nauta, Jan Trienes, Shreyasi Pathak, Elisa Nguyen, Michelle Peters, Yasmin Schmitt, Jörg Schlötterer, Maurice van Keulen, Christin Seifert as described in
-					<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
-						&ensp;&quot;From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI&quot;
-					</a>
-					<small>
-					&ensp;(preprint, 2022)
-					</small>
-					<br/>
 					<br/>
 					We thank <a href="https://www.linkedin.com/in/abdullah-aziz-qazi/" target="_blank" rel="noreferrer">Abdullah Qazi</a>, 
 					<a href="https://www.linkedin.com/in/boris-gerretzen/" target="_blank" rel="noreferrer"> Boris Gerretzen</a>, 
@@ -243,10 +235,19 @@ function LandingPage() {
 				</Text>
 			</Row>
 			<Title level={4}>
-				Citation
+				Paper and Citation
 			</Title>
 			<Text>
-				If you found this resource helpful, please cite our work:
+			This website is based on the data collected by Meike Nauta, Jan Trienes, Shreyasi Pathak, Elisa Nguyen, Michelle Peters, Yasmin Schmitt, Jörg Schlötterer, Maurice van Keulen, Christin Seifert as described in
+					<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
+						&ensp;&quot;From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI&quot;
+					</a>
+					<small>
+					&ensp;(preprint, 2022)
+					</small>
+					<br/>
+					<br/>
+					If you found this resource helpful, please cite our work:
 				<pre>{citation}</pre>
 			</Text>
 			<Row justify="center">

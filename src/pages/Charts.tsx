@@ -30,7 +30,7 @@ function App() {
 		"Line Chart": {
 			withSelect: true,
 			element: <GrowthLineChart type={type} />,
-			description: "The line chart displays the increase in the number of papers on the subject of Explainable AI over time. The filtering option on the right allows you to select a particular attribute so that its development over time can be observed. It should be noted that papers can have multiple tags of the same attribute so the sum of tags is greater than the amount of papers in the database.",
+			description: "The line chart displays the increase in the number of papers on the subject of Explainable AI over time (accumulative). The filtering option on the right allows you to select a particular attribute so that its development over time can be observed. It should be noted that papers can have multiple tags of the same attribute so the sum of tags is greater than the amount of papers in the database.",
 		},
 		"Bar Chart": {
 			withSelect: true,
@@ -40,12 +40,12 @@ function App() {
 		"Connected Graph": {
 			withSelect: false,
 			element: (<ConnectedChart />),
-			description: "The connected graph below displays all the papers in the research as nodes. The thickness of the edges is dependent upon the number of tag links that two papers have. Filtering options can be applied and the nodes can be clicked to reveal a link to the particular paper."
+			description: "The connected graph below displays all the papers in the research as nodes. Papers are connected when they have many tags in common. Filtering options can be applied and the nodes can be clicked to reveal a link to the particular paper."
 		},
 		"Circle Packing": {
 			withSelect: true,
 			element: <CirclePackingChart type={type} />,
-			description: "The circle packing chart displays the hierarchic organization which exists within the papers on Explainable AI. A specific attribute can be selected to show the distribution of tags associated with it. Each of the circles can be hovered over to see the title of the paper and clicked on to go to the paper itself."
+			description: "The circle packing chart clusters the papers on Explainable AI based on a specific attribute. Select an attribute on the right. Each of the circles can be hovered over to see the title of the paper and clicked on to go to the paper itself."
 		},
 	}
 	return (
