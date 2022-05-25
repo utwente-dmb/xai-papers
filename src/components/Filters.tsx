@@ -96,10 +96,10 @@ function Filters(): JSX.Element {
 				<Button onClick={handleReset}>Reset Filters</Button>
 			</Col>
 			<Col span={4}>
-				<Checkbox onChange={handleShowOriginal} checked={filters.showOriginal}>Show Original Papers</Checkbox>
+				<Checkbox onChange={handleShowOriginal} checked={filters.showOriginal}>Show Original Papers from Survey</Checkbox>
 			</Col>
 			<Col span={4}>
-				<Checkbox onChange={handleShowNew} checked={filters.showNew}>Show New Papers</Checkbox>
+				<Checkbox onChange={handleShowNew} checked={filters.showNew}>Show New Papers from Community</Checkbox>
 			</Col>
 
 			{/* Second row */}

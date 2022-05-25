@@ -181,7 +181,7 @@ function LandingPage() {
 					All papers in this collection are categorized along the scheme as presented by
 						<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
 						&nbsp;Nauta et al. (2022)
-						</a>. 
+						</a> and shown in the image on the right. 
 					The initial collection contains categorization of papers on explainable AI published in 2014-2020 at conferences AAAI,
 					IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR.
 					</>

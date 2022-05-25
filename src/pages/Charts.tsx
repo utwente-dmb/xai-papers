@@ -30,17 +30,17 @@ function App() {
 		"Line Chart": {
 			withSelect: true,
 			element: <GrowthLineChart type={type} />,
-			description: "The line chart displays the increase in the number of papers on the subject of Explainable AI over time (accumulative). The filtering option on the right allows you to select a particular attribute so that its development over time can be observed. It should be noted that papers can have multiple tags of the same attribute so the sum of tags is greater than the amount of papers in the database.",
+			description: "The line chart displays the increase in the number of papers on the subject of Explainable AI over time (accumulative). The filtering option on the right allows you to select a particular attribute so that its development over time can be observed. It should be noted that papers can have multiple labels within a category so the sum of labels is greater than the number of papers in the database.",
 		},
 		"Bar Chart": {
 			withSelect: true,
 			element: <BarChart type={type} />,
-			description: "The bar chart shows the distribution of tags for a selected attribute. The attribute shown can be changed with the dropdown menu on the right. It should be noted that papers can have multiple tags of the same attribute so the total amount of all the added bars will be greater than the amount of papers in the database."
+			description: "The bar chart shows the distribution of labels for a selected attribute. The attribute shown can be changed with the dropdown menu on the right. It should be noted that papers can have multiple labels within a category so the total length of all the bars can be greater than the number of papers in the database."
 		},
 		"Connected Graph": {
 			withSelect: false,
 			element: (<ConnectedChart />),
-			description: "The connected graph below displays all the papers in the research as nodes. Papers are connected when they have many tags in common. Filtering options can be applied and the nodes can be clicked to reveal a link to the particular paper."
+			description: "The connected graph below displays papers as nodes in a graph. Papers are connected when they have many labels from our categorization in common. Filtering options can be applied and the nodes can be clicked to reveal a link to the particular paper."
 		},
 		"Circle Packing": {
 			withSelect: true,
