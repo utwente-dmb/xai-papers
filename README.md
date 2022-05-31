@@ -2,8 +2,12 @@
 ![Database validation](https://github.com/utwente-dmb/xai-papers/actions/workflows/main.yml/badge.svg)
 ![Test](https://github.com/utwente-dmb/xai-papers/actions/workflows/test.yml/badge.svg)
 ![Database validation](https://github.com/utwente-dmb/xai-papers/actions/workflows/deploy.yml/badge.svg)
-[![Check code cleanliness](https://github.com/utwente-dmb/xai-papers/actions/workflows/linter.yml/badge.svg)](https://github.com/utwente-dmb/xai-papers/actions/workflows/linter.yml)\
-This is an exploration and visualisation website for explainable AI papers, hosted on Github pages: https://utwente-dmb.github.io/xai-papers/#/. The initial set of XAI papers was collected and labelled by [Nauta et al. (2022)](https://arxiv.org/abs/2201.08164) as part of a large-scale literature review on the evaluation of Explainable AI. This website provides an interactive way to explore the dataset, and we invite the community to extend the XAI dataset in order to make this a living and curated collection of explainable AI methods. 
+[![Check code cleanliness](https://github.com/utwente-dmb/xai-papers/actions/workflows/linter.yml/badge.svg)](https://github.com/utwente-dmb/xai-papers/actions/workflows/linter.yml)
+
+
+### Website: https://utwente-dmb.github.io/xai-papers/
+
+This is an exploration and visualisation website for a categorization of explainable AI papers, hosted on Github pages. The initial set of XAI papers was collected and labelled by [Nauta et al. (2022)](https://arxiv.org/abs/2201.08164) as part of a large-scale literature review on the evaluation of Explainable AI. This website provides an interactive way to explore the dataset, and we invite the community to extend the XAI dataset in order to make this a living and curated collection of explainable AI methods. 
 
 If you want your paper added to the database, follow the instructions below.
 
