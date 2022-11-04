@@ -12368,5 +12368,45 @@
     "Should the paper be included with filter?": "Yes",
     "Abstract": "Collaborative Filtering(CF)-based recommendation algorithms, such as Latent Factor Models (LFM), work well in terms of prediction accuracy. However, the latent features make it difficulty to explain the recommendation results to the users. Fortunately, with the continuous growth of online user reviews, the information available for training a recommender system is no longer limited to just numerical star ratings or user/item features. By extracting explicit user opinions about various aspects of a product from the reviews, it is possible to learn more details about what aspects a user cares, which further sheds light on the possibility to make explainable recommendations. In this work, we propose the Explicit Factor Model (EFM) to generate explainable recommendations, meanwhile keep a high prediction accuracy. We first extract explicit product features (i.e. aspects) and user opinions by phrase-level sentiment analysis on user reviews, then generate both recommendations and disrecommendations according to the specific product features to the user's interests and the hidden features learned. Besides, intuitional feature-level explanations about why an item is or is not recommended are generated from the model. Offline experimental results on several real-world datasets demonstrate the advantages of our framework over competitive baseline algorithms on both rating prediction and top-K recommendation tasks. Online experiments show that the detailed explanations make the recommendations and disrecommendations more influential on user's purchasing behavior.",
     "IsOld": true
+  },
+  {
+    "Paper-ID": "acl/SchuffAV20",
+    "Title": "F1 is Not Enough! Models and Evaluation Towards User-Centered Explainable Question Answering.",
+    "url": "https://doi.org/10.18653/v1/2020.emnlp-main.575",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
+    "Authors": [
+      "Hendrik Schuff",
+      "Heike Adel",
+      "Ngoc Thang Vu",
+    ],
+    "Type of Data": [
+      "Text"
+    ],
+    "Type of Problem": [
+      "Transparent Box Design",
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network",
+      "Bayesian or Hierarchical Network"
+    ],
+    "Type of Task": [
+      "Question Answering"
+    ],
+    "Type of Explanation": [
+      "Text"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model",
+      "Supervised explanation training"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Explainable question answering systems predict an answer together with an explanation showing why the answer has been selected. The goal is to enable users to assess the correctness of the system and understand its reasoning process. However, we show that current models and evaluation settings have shortcomings regarding the coupling of answer and explanation which might cause serious issues in user experience. As a remedy, we propose a hierarchical model and a new regularization term to strengthen the answer-explanation coupling as well as two evaluation scores to quantify the coupling. We conduct experiments on the HOTPOTQA benchmark data set and perform a user study. The user study shows that our models increase the ability of the users to judge the correctness of the system and that scores like F1 are not enough to estimate the usefulness of a model in a practical setting with human users. Our scores are better aligned with user experience, making them promising candidates for model selection.",
+    "IsOld": false
   }
 ]
