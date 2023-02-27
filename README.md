@@ -6,29 +6,19 @@
 
 
 ### Website: https://utwente-dmb.github.io/xai-papers/
+### Paper: http://dx.doi.org/10.1145/3583558
+This is an exploration and visualisation website for a categorization of explainable AI papers, hosted on Github pages. The initial set of XAI papers was collected and labelled by [Nauta et al. (2023)](http://dx.doi.org/10.1145/3583558) as part of a large-scale literature review on the evaluation of Explainable AI, published in [ACM Computing Surveys](https://dl.acm.org/doi/10.1145/3583558). This website provides an interactive way to [explore the dataset](https://utwente-dmb.github.io/xai-papers/#/papers), and we invite the community to extend the XAI dataset in order to make this a living and curated collection of explainable AI methods. 
 
-This is an exploration and visualisation website for a categorization of explainable AI papers, hosted on Github pages. The initial set of XAI papers was collected and labelled by [Nauta et al. (2022)](https://arxiv.org/abs/2201.08164) as part of a large-scale literature review on the evaluation of Explainable AI. This website provides an interactive way to explore the dataset, and we invite the community to extend the XAI dataset in order to make this a living and curated collection of explainable AI methods. 
-
-If you want your paper added to the database, follow the instructions below.
+If you want to add an XAI paper to the database, follow the instructions below.
 
 ## Add a paper
-To add a paper, follow these steps:
 - Fork this repository by clicking the fork button in the top right.
-- Go to https://utwente-dmb.github.io/xai-papers/#/add-paper to generate a database entry.
+- Go to https://utwente-dmb.github.io/xai-papers/#/add-paper and fill in the form to generate a database entry (will be shown on the right side of the webpage).
 - Edit the file ```src/db/db.json``` in your fork.
-- After the final entry's '}' (and before the final ']') append the JSON code copied from the literature website.
-- Commit the changes, The current naming convention for the commit is as follows, the title of the commit should remain "update db.json" and in the commit message please include the title, the link to the paper, and the authors of the paper you added.
+- After the final entry's '}' (and before the final ']') append the JSON code copied from our website.
+- Commit the changes. The current naming convention for the commit is as follows, the title of the commit should remain "update db.json" and in the commit message please include the title, the link to the paper, and the authors of the paper you added.
 - Create a new pull request from your forked repository to the main repository. 
-- When enough people approve your pull request and it passes the automated tests, it will be merged and your paper will show up on the website.
-
-
-## Remove a paper
-To remove a paper, follow these steps:
-- Fork this repository by clicking the fork button in the top right.
-- Edit the file ```src/db/db.json```, look for the paper you want to remove and remove the entire object from the file.
-- Commit the changes, The current naming convention for removals is as follows, the title should remain "update db.json" and in the commit message please specify why you want the entry removed from the database. 
-- Create a new pull request from your forked repository to this one.
-- When enough people approve your pull request and it passes the automated tests, your paper will be removed.
+- When your pull request is approved and passes the automated tests, it will be merged and your paper will show up on the website.
 
 ## Review a pull request
 To review a pull request, follow these steps:
