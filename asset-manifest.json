@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/xai-papers/static/css/main.d1ac164c.css",
-    "main.js": "/xai-papers/static/js/main.9ba3783c.js",
+    "main.js": "/xai-papers/static/js/main.47ceed15.js",
     "index.html": "/xai-papers/index.html",
     "main.d1ac164c.css.map": "/xai-papers/static/css/main.d1ac164c.css.map",
-    "main.9ba3783c.js.map": "/xai-papers/static/js/main.9ba3783c.js.map"
+    "main.47ceed15.js.map": "/xai-papers/static/js/main.47ceed15.js.map"
   },
   "entrypoints": [
     "static/css/main.d1ac164c.css",
-    "static/js/main.9ba3783c.js"
+    "static/js/main.47ceed15.js"
   ]
 }
