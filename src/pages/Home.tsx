@@ -7,13 +7,19 @@ import { useNavigate } from "react-router-dom"
 
 const { Title, Text } = Typography
 
-const citation = ` @article{nauta2022anecdotal,
-	title = { From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI },
-		author = { Nauta, Meike and Trienes, Jan and Pathak, Shreyasi and Nguyen, Elisa and Peters, Michelle and Schmitt, Yasmin and Schl{
-	\\"o}tterer, J{\\"o}rg and van Keulen, Maurice and Seifert, Christin},
-		journal = { arXiv preprint arXiv: 2201.08164 },
-			year = { 2022}
-	} `
+const citation = `@article{10.1145/3583558,
+author = {Nauta, Meike and Trienes, Jan and Pathak, Shreyasi and Nguyen, Elisa and Peters, Michelle and Schmitt, Yasmin and Schl\"{o}tterer, J\"{o}rg and van Keulen, Maurice and Seifert, Christin},
+title = {From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI},
+year = {2023},
+month = {feb},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3583558},
+doi = {10.1145/3583558},
+journal = {ACM Comput. Surv.},
+comment   = {https://utwente-dmb.github.io/xai-papers/},
+} `
 
 type TextIconProps = {
 	Icon: (props: any) => JSX.Element | null
@@ -118,8 +124,8 @@ function LandingPage() {
 				</Text>
 				<Text style={{fontSize: 18}}>
 					The initial dataset was collected and labelled by 
-					<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer" >
-						&nbsp;Nauta et al. (2022)
+					<a href="http://dx.doi.org/10.1145/3583558" target="_blank" rel="noreferrer" >
+						&nbsp;Nauta et al. (2023)
 					</a> as part of a large-scale literature review on the evaluation of Explainable Artificial Intelligence. This website provides an interactive way to explore the dataset, and we invite the community to extend the XAI dataset in order to make this a living and curated collection of explainable AI methods. Contribute by adding papers following our categorization scheme, and reviewing suggestions from others.
 				</Text>
 			</Row>
@@ -179,8 +185,8 @@ function LandingPage() {
 				description={
 					<>
 					All papers in this collection are categorized along the scheme as presented by
-						<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
-						&nbsp;Nauta et al. (2022)
+						<a href="http://dx.doi.org/10.1145/3583558" target="_blank" rel="noreferrer">
+						&nbsp;Nauta et al. (2023)
 						</a> and shown in the image on the right. 
 					The initial collection contains categorization of papers on explainable AI published in 2014-2020 at conferences AAAI,
 					IJCAI, NeurIPS, ICML, ICLR, CVPR, ICCV, ACL, WWW, ICDM, KDD and SIGIR.
@@ -239,11 +245,11 @@ function LandingPage() {
 			</Title>
 			<Text>
 				This website is based on the data collected by Meike Nauta, Jan Trienes, Shreyasi Pathak, Elisa Nguyen, Michelle Peters, Yasmin Schmitt, Jörg Schlötterer, Maurice van Keulen, Christin Seifert as described in
-				<a href="https://arxiv.org/abs/2201.08164" target="_blank" rel="noreferrer">
+				<a href="http://dx.doi.org/10.1145/3583558" target="_blank" rel="noreferrer">
 						&ensp;&quot;From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI&quot;
 				</a>
 				<small>
-					&ensp;(preprint, 2022)
+					&ensp;(ACM Computing Surveys, 2023)
 				</small>
 				<br/>
 				<br/>
