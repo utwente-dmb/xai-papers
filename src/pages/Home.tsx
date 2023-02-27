@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom"
 
 const { Title, Text } = Typography
 
-const citation = `@article{10.1145/3583558,
+const citation = `@article{Nauta2023_csur_evaluating-xai-survey,
 author = {Nauta, Meike and Trienes, Jan and Pathak, Shreyasi and Nguyen, Elisa and Peters, Michelle and Schmitt, Yasmin and Schlötterer, Jörg and van Keulen, Maurice and Seifert, Christin},
 title = {From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI},
 year = {2023},
