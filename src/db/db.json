@@ -12404,5 +12404,42 @@
   ],
   "Abstract": "Prototype-based methods use interpretable representations to address the black-box nature of deep learning models, in contrast to post-hoc explanation methods that only approximate such models. We propose the Neural Prototype Tree (ProtoTree), an intrinsically interpretable deep learning method for fine-grained image recognition. ProtoTree combines prototype learning with decision trees, and thus results in a globally interpretable model by design. Additionally, ProtoTree can locally explain a single prediction by outlining a decision path through the tree. Each node in our binary tree contains a trainable prototypical part. The presence or absence of this learned prototype in an image determines the routing through a node. Decision making is therefore similar to human reasoning: Does the bird have a red throat? And an elongated beak? Then it’s a hummingbird! We tune the accuracy-interpretability trade-off using ensemble methods, pruning and binarizing. We apply pruning without sacrificing accuracy, resulting in a small tree with only 8 learned prototypes along a path to classify a bird from 200 species. An ensemble of 5 ProtoTrees achieves competitive accuracy on the CUB-200-2011 and Stanford Cars data sets. Code is available at github.com/M-Nauta/ProtoTree.",
   "Date": "2022-11-14T11:34:04.758Z"
-}
+  },
+  {
+  "Title": "SIGNed explanations: Unveiling relevant features by reducing bias",
+  "url": "https://doi.org/10.1016/j.inffus.2023.101883",
+  "Year": "2020",
+  "Venue": {
+    "isOld": false,
+    "value": "Inf.Fus."
+  },
+  "Authors": [
+    "Nils Gumpfer",
+    "Joshua Prim",
+    "Till Keller",
+    "Bernhard Seeger",
+    "Michael Guckert",
+    "Jennifer Hannig"
+  ],
+  "Type of Data": [
+    "Images"
+  ],
+  "Type of Problem": [
+    "Outcome Explanation"
+  ],
+  "Type of Model to be Explained": [
+    "(Deep) Neural Network"
+  ],
+  "Type of Task": [
+    "Classification"
+  ],
+  "Type of Explanation": [
+    "Heatmap"
+  ],
+  "Method used to explain": [
+    "Post-hoc explanation method"
+  ],
+  "Abstract": "The rise of artificial intelligence (AI) is accompanied by a growing need for methods to explain the decisions of AI models. In the last decade, new explanation methods have been developed in the field of explainable AI (XAI) that enable the interpretation of predictions and provide additional information to human experts. In computer vision tasks, XAI methods are typically used to compute heatmaps to identify regions or pixels of an image that were particularly relevant to the output of the AI model. Heatmaps computed on deep neural networks often appear visually noisy due to the Shattered Gradients Problem. Therefore, several explanation methods use multiplication by the input values to increase contrast and reduce noise in heatmaps. However, this can induce a bias with the magnitude of the input values in the explanation. In this work, we proposed a novel technique called SIGN, which can be combined with existing XAI methods to prevent this bias. We implemented SIGN-based variants of the existing XAI methods Gradient x Input, SmoothGrad, DeconvNet, Guided Backpropagation, and Layer-wise Relevance Propagation (LRP), called Gradient x SIGN, SmoothGrad x SIGN, DeconvNet x SIGN, Guided Backpropagation x SIGN, and LRP-SIGN, and compared them to ten state-of-the-art XAI methods on MNIST, ImageNet, and MIT Places365 using different dense and convolutional model architectures. The SIGNed explanations were able to outperform the existing methods in all tested metrics. The code to reproduce the experiments is available from GitHub via https://github.com/nilsgumpfer/SIGN.",
+  "Date": "2023-11-17T09:35:03.322Z"
+  }
 ]
