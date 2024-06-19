@@ -12404,5 +12404,39 @@
   ],
   "Abstract": "Prototype-based methods use interpretable representations to address the black-box nature of deep learning models, in contrast to post-hoc explanation methods that only approximate such models. We propose the Neural Prototype Tree (ProtoTree), an intrinsically interpretable deep learning method for fine-grained image recognition. ProtoTree combines prototype learning with decision trees, and thus results in a globally interpretable model by design. Additionally, ProtoTree can locally explain a single prediction by outlining a decision path through the tree. Each node in our binary tree contains a trainable prototypical part. The presence or absence of this learned prototype in an image determines the routing through a node. Decision making is therefore similar to human reasoning: Does the bird have a red throat? And an elongated beak? Then it’s a hummingbird! We tune the accuracy-interpretability trade-off using ensemble methods, pruning and binarizing. We apply pruning without sacrificing accuracy, resulting in a small tree with only 8 learned prototypes along a path to classify a bird from 200 species. An ensemble of 5 ProtoTrees achieves competitive accuracy on the CUB-200-2011 and Stanford Cars data sets. Code is available at github.com/M-Nauta/ProtoTree.",
   "Date": "2022-11-14T11:34:04.758Z"
+},
+{
+  "Title": "T-TAME: Trainable Attention Mechanism for Explaining Convolutional Networks and Vision Transformers",
+  "url": "https://doi.org/10.1109/ACCESS.2024.3405788",
+  "Year": "2024",
+  "Venue": {
+    "isOld": false,
+    "value": "IEEE Access"
+  },
+  "Authors": [
+    "Mariano V. Ntrougkas",
+    "Nikolaos Gkalelis",
+    "Vasileios Mezaris"
+  ],
+  "Type of Data": [
+    "Images"
+  ],
+  "Type of Problem": [
+    "Outcome Explanation"
+  ],
+  "Type of Model to be Explained": [
+    "(Deep) Neural Network"
+  ],
+  "Type of Task": [
+    "Classification"
+  ],
+  "Type of Explanation": [
+    "Heatmap"
+  ],
+  "Method used to explain": [
+    "Post-hoc explanation method"
+  ],
+  "Abstract": "The development and adoption of Vision Transformers and other deep-learning architectures for image classification tasks has been rapid. However, the “black box” nature of neural networks is a barrier to adoption in applications where explainability is essential. While some techniques for generating explanations have been proposed, primarily for Convolutional Neural Networks, adapting such techniques to the new paradigm of Vision Transformers is non-trivial. This paper presents T-TAME, Transformer-compatible Trainable Attention Mechanism for Explanations ( https://github.com/IDT-ITI/T-TAME ), a general methodology for explaining deep neural networks used in image classification tasks. The proposed architecture and training technique can be easily applied to any convolutional or Vision Transformer-like neural network, using a streamlined training approach. After training, explanation maps can be computed in a single forward pass; these explanation maps are comparable to or outperform the outputs of computationally expensive perturbation-based explainability techniques, achieving SOTA performance. We apply T-TAME to three popular deep learning classifier architectures, VGG-16, ResNet-50, and ViT-B-16, trained on the ImageNet dataset, and we demonstrate improvements over existing state-of-the-art explainability methods. A detailed analysis of the results and an ablation study provide insights into how the T-TAME design choices affect the quality of the generated explanation maps.",
+  "Date": "2024-06-19T12:21:37.836Z"
 }
 ]
