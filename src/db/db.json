@@ -12404,5 +12404,40 @@
   ],
   "Abstract": "Prototype-based methods use interpretable representations to address the black-box nature of deep learning models, in contrast to post-hoc explanation methods that only approximate such models. We propose the Neural Prototype Tree (ProtoTree), an intrinsically interpretable deep learning method for fine-grained image recognition. ProtoTree combines prototype learning with decision trees, and thus results in a globally interpretable model by design. Additionally, ProtoTree can locally explain a single prediction by outlining a decision path through the tree. Each node in our binary tree contains a trainable prototypical part. The presence or absence of this learned prototype in an image determines the routing through a node. Decision making is therefore similar to human reasoning: Does the bird have a red throat? And an elongated beak? Then it’s a hummingbird! We tune the accuracy-interpretability trade-off using ensemble methods, pruning and binarizing. We apply pruning without sacrificing accuracy, resulting in a small tree with only 8 learned prototypes along a path to classify a bird from 200 species. An ensemble of 5 ProtoTrees achieves competitive accuracy on the CUB-200-2011 and Stanford Cars data sets. Code is available at github.com/M-Nauta/ProtoTree.",
   "Date": "2022-11-14T11:34:04.758Z"
+},
+{
+  "Title": "Understanding the Dependence of Perception Model Competency on Regions in an Image",
+  "url": "https://doi.org/10.1007/978-3-031-63797-1_8",
+  "Year": "2024",
+  "Venue": {
+    "isOld": false,
+    "value": "World Conference on Explainable Artificial Intelligence (xAI)"
+  },
+  "Authors": [
+    "Sara Pohland & Claire Tomlin"
+  ],
+  "Type of Data": [
+    "Images"
+  ],
+  "Type of Problem": [
+    "Outcome Explanation"
+  ],
+  "Type of Model to be Explained": [
+    "(Deep) Neural Network"
+  ],
+  "Type of Task": [
+    "Other",
+    "Classification",
+    "Anomaly detection"
+  ],
+  "Type of Explanation": [
+    "Heatmap",
+    "Localization"
+  ],
+  "Method used to explain": [
+    "Post-hoc explanation method"
+  ],
+  "Abstract": "While deep neural network (DNN)-based perception models are useful for many applications, these models are black boxes and their outputs are not yet well understood. To confidently enable a real-world, decision-making system to utilize such a perception model without human intervention, we must enable the system to reason about the perception model’s level of competency and respond appropriately when the model is incompetent. In order for the system to make an intelligent decision about the appropriate action when the model is incompetent, it would be useful for the system to understand why the model is incompetent. We explore five novel methods for identifying regions in the input image contributing to low model competency, which we refer to as image cropping, segment masking, pixel perturbation, competency gradients, and reconstruction loss. We assess the ability of these five methods to identify unfamiliar objects, recognize regions associated with unseen classes, and identify unexplored areas in an environment. We find that the competency gradients and reconstruction loss methods show great promise in identifying regions associated with low model competency, particularly when aspects of the image that are unfamiliar to the perception model are causing this reduction in competency. Both of these methods boast low computation times and high levels of accuracy in detecting image regions that are unfamiliar to the model, allowing them to provide potential utility in decision-making pipelines. The code for reproducing our methods and results is available on GitHub: https://github.com/sarapohland/explainable-competency.",
+  "Date": "2024-08-04T18:38:51.875Z"
 }
 ]
